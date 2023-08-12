@@ -49,10 +49,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['home'] = 'Home/HomeController/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+//////////////////////Home Controller//////
+//$route['default_controller'] = 'Home/HomeController';
+$route['about'] = 'Home/HomeController/about';
+$route['contact'] = 'Home/HomeController/contact';
+$route['blog'] = 'Home/HomeController/blog';
+$route['faq'] = 'Home/HomeController/faq';
+$route['services'] = 'Home/HomeController/services';
+$route['training'] = 'Home/HomeController/training';
+//////////Home Controller//////
 
 ///////admin////////
 $route['admin/login'] = 'Admin/Login/index';
@@ -68,6 +77,14 @@ $route['admin/banner/create'] = 'Admin/banner/create';
 $route['admin/banner/edit/(:num)'] = 'Admin/banner/edit/$1';
 $route['admin/banner/update/(:num)'] = 'Admin/banner/update/$1';
 $route['admin/banner/delete/(:num)'] = 'Admin/banner/delete/$1';
+
+$route['admin/blog'] = 'Admin/Blog/index'; // List all blog posts
+$route['admin/blog/create'] = 'Admin/Blog/create'; // Create a new blog post
+$route['admin/blog/edit/(:num)'] = 'Admin/Blog/edit/$1'; // Edit a blog post
+$route['admin/blog/update/(:num)'] = 'Admin/Blog/update/$1'; // Update a blog post
+$route['admin/blog/delete/(:num)'] = 'Admin/Blog/delete/$1'; // Delete a blog post
+$route['admin/blog/(:num)'] = 'Admin/Blog/view/$1'; // View a single blog post
+
 
 $route['admin/faq'] = 'Admin/FAQ/index';
 $route['admin/faq/add'] = 'Admin/FAQ/add';

@@ -1,0 +1,55 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class HomeController extends CI_Controller {
+
+    public function index() {
+        // Load the homepage view
+        //echo "dfsdf";exit;
+        $data['page_title']="Home || Digital win ||";
+        $this->load->view('home/index');
+    }
+
+    public function about() {
+        // Load the about view
+        $data['page_title']="Home || Digital win ||";
+
+        $this->load->view('home/about',$data);
+    }
+
+    public function contact() {
+        // Load the contact view
+        //echo "hi"; exit;
+        $data['page_title']="Home || Digital win ||";
+
+        $this->load->view('home/contact'$data);
+    }
+
+    public function blog() {
+        // Load the blog view
+        $data['page_title']="Home || Digital win ||";
+
+        $this->load->view('home/blog'$data);
+    }
+
+    public function faq() {
+        // Load the FAQ view
+        $data['page_title']="Home || Digital win ||";
+
+        $this->load->view('home/faq'$data);
+    }
+
+    public function services() {
+        // Load the services view
+        $data['page_title']="Home || Digital win ||";
+
+        $this->load->view('home/services'$data);
+    }
+
+    public function training() {
+        // Load the training view
+        $data['page_title']="Home || Digital win ||";
+
+        $this->load->view('home/training'$data);
+    }
+}

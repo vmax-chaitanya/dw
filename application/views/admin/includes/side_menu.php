@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/">
+                        <a class="nav-link" href="<?php echo base_url();?>admin/blog">
                             <i class="icon-handbag menu-icon"></i>
                             <span class="menu-title">Blogs</span>
                         </a>
