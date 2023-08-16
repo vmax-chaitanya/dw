@@ -56,10 +56,17 @@ class HomeController extends CI_Controller {
     }
 
     public function training() {
-        // Load the training view
+       
         $data['page_title']="Home || Digital win ||";
         $data['trainings'] = $this->Home_model->getTrainingBanners();
         //print_r($data['training']); exit;
         $this->load->view('home/training',$data);
+    }
+    public function training_detail($training_id) {
+       
+        $data['page_title']="Home || Digital win ||";
+        $data['training'] = $this->Home_model->get_training_by_id($training_id);
+        //print_r($data['training']); exit;
+        $this->load->view('home/training_detail',$data);
     }
 }

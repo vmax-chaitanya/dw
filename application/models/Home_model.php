@@ -39,4 +39,10 @@ class Home_model extends CI_Model {
         $this->db->where('status', '1');
         return $this->db->get('training')->result_array();
     }
+    public function get_training_by_id($id)
+    {
+        $this->db->where('id', $id);
+        $query = $this->db->get('training');
+        return $query->row_array();
+    }
 }

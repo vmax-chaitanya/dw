@@ -1,19 +1,16 @@
 <header class="main-header clearfix">
-                <nav class="main-menu clearfix">
-                    <div class="main-menu-wrapper clearfix">
-                        <div class="main-menu-wrapper__left">
-                            <div class="main-menu-wrapper__logo">
-                                <a href="index.html"><img
-                                        src="<?php echo base_url();?>assets/home/images/resources/logo-1.png"
-                                       
-                                        ></a>
-                            </div>
-                            <div class="main-menu-wrapper__main-menu">
-                                <a href="#" class="mobile-nav__toggler"><i
-                                        class="fa fa-bars"></i></a>
-                                <ul class="main-menu__list">
+    <nav class="main-menu clearfix">
+        <div class="main-menu-wrapper clearfix">
+            <div class="main-menu-wrapper__left">
+                <div class="main-menu-wrapper__logo">
+                    <a href="index.html"><img
+                            src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
+                </div>
+                <div class="main-menu-wrapper__main-menu">
+                    <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                    <ul class="main-menu__list">
 
-                                    <!-- <li class="dropdown megamenu">
+                        <!-- <li class="dropdown megamenu">
                                 <a href="index.html">Home </a>
                                 <ul>
                                     <li>
@@ -24,7 +21,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="home-showcase__item">
                                                                 <div class="home-showcase__image">
-                                                                    <img src="<?php echo base_url();?>assets/home/images/home-showcase/home-showcase-1-1.jpg"
+                                                                    <img src="<?php echo base_url(); ?>assets/home/images/home-showcase/home-showcase-1-1.jpg"
                                                                         alt="">
                                                                     <div class="home-showcase__buttons">
                                                                         <a href="index.html"
@@ -43,7 +40,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="home-showcase__item">
                                                                 <div class="home-showcase__image">
-                                                                    <img src="<?php echo base_url();?>assets/home/images/home-showcase/home-showcase-1-2.jpg"
+                                                                    <img src="<?php echo base_url(); ?>assets/home/images/home-showcase/home-showcase-1-2.jpg"
                                                                         alt="">
                                                                     <div class="home-showcase__buttons">
                                                                         <a href="index2.html"
@@ -62,7 +59,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="home-showcase__item">
                                                                 <div class="home-showcase__image">
-                                                                    <img src="<?php echo base_url();?>assets/home/images/home-showcase/home-showcase-1-3.jpg"
+                                                                    <img src="<?php echo base_url(); ?>assets/home/images/home-showcase/home-showcase-1-3.jpg"
                                                                         alt="">
                                                                     <div class="home-showcase__buttons">
                                                                         <a href="index3.html"
@@ -81,7 +78,7 @@
                                                         <div class="col-lg-3">
                                                             <div class="home-showcase__item">
                                                                 <div class="home-showcase__image">
-                                                                    <img src="<?php echo base_url();?>assets/home/images/home-showcase/home-showcase-1-4.jpg"
+                                                                    <img src="<?php echo base_url(); ?>assets/home/images/home-showcase/home-showcase-1-4.jpg"
                                                                         alt="">
                                                                     <div class="home-showcase__buttons">
                                                                         <a href="index-dark.html"
@@ -102,7 +99,7 @@
                                 </ul>
                             </li> -->
 
-                                    <!-- <li class="dropdown">
+                        <!-- <li class="dropdown">
                                     <a href="#">Pages</a>
                                     <ul>
                                         <li><a href="about.html">About</a></li>
@@ -166,57 +163,140 @@
                                                 Details</a></li>
                                     </ul>
                                 </li> -->
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li class="dropdown">
-                                        <a href="#">Services</a>
-                                        <ul>
-                                            <li><a href="#">Search Engine
-                                                    Optimization (SEO)</a></li>
-                                            <li><a href="#">Search Engine
-                                                    Marketing (SEM)</a></li>
-                                            <li><a href="#">Social Media
-                                                    Marketing</a></li>
-                                            <li><a href="#">Pay-Per-Click (PPC)
-                                                    & Google Advertising</a></li>
-                                            <li><a href="#">Content Marketing</a></li>
-                                            <li><a href="#">Website Design and
-                                                    Development</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Training</a>
-                                        <ul>
-                                            <li><a href="#">Certified course in
-                                                    digital marketing.</a></li>
-                                            <li><a href="#">Diploma in digital
-                                                    marketing.</a></li>
-                                            <li><a href="#">Advanced digital
-                                                    marketing with AI.</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="main-menu-wrapper__right">
-                            <!-- <div class="main-menu-wrapper__search-box">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown">
+                            <a href="#">Services</a>
+                            <ul>
+                                <li><a href="#">Search Engine
+                                        Optimization (SEO)</a></li>
+                                <li><a href="#">Search Engine
+                                        Marketing (SEM)</a></li>
+                                <li><a href="#">Social Media
+                                        Marketing</a></li>
+                                <li><a href="#">Pay-Per-Click (PPC)
+                                        & Google Advertising</a></li>
+                                <li><a href="#">Content Marketing</a></li>
+                                <li><a href="#">Website Design and
+                                        Development</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown ">
+                            <a href="#">Training</a>
+                            <ul>
+                                <li><a href="#">Certified course in
+                                        digital marketing.</a></li>
+                                <li><a href="#">Diploma in digital
+                                        marketing.</a></li>
+                                <li><a href="#">Advanced digital
+                                        marketing with AI.</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="dropdown megamenu">
+                            <a href="index.html">Home </a>
+                            <ul>
+                                <li class="dropdown">
+                                    <section class="home-showcase">
+                                        <div class="container">
+                                            <div class="home-showcase__inner">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+
+
+                                                        <ul>
+                                                            <li><a href="#">Certified course in
+                                                                    digital marketing.</a></li>
+                                                            <li><a href="#">Diploma in digital
+                                                                    marketing.</a></li>
+                                                            <li><a href="#">Advanced digital
+                                                                    marketing with AI.</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <div class="home-showcase__item">
+                                                            <div class="home-showcase__image">
+                                                                <img src="assets/images/home-showcase/home-showcase-1-2.jpg"
+                                                                    alt>
+                                                                <div class="home-showcase__buttons">
+                                                                    <ul>
+                                                                        <li><a href="#">Certified course in
+                                                                                digital marketing.</a></li>
+                                                                        <li><a href="#">Diploma in digital
+                                                                                marketing.</a></li>
+                                                                        <li><a href="#">Advanced digital
+                                                                                marketing with AI.</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="home-showcase__item">
+                                                            <div class="home-showcase__image">
+                                                                <img src="assets/images/home-showcase/home-showcase-1-3.jpg"
+                                                                    alt>
+                                                                <div class="home-showcase__buttons">
+                                                                    <a href="index3.html"
+                                                                        class="thm-btn home-showcase__buttons__item">Multi
+                                                                        Page</a>
+                                                                    <a href="index3-one-page.html"
+                                                                        class="thm-btn home-showcase__buttons__item">One
+                                                                        Page</a>
+                                                                </div>
+                                                            </div>
+                                                            <h3 class="home-showcase__title">Home
+                                                                Page
+                                                                03
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="home-showcase__item">
+                                                            <div class="home-showcase__image">
+                                                                <img src="assets/images/home-showcase/home-showcase-1-4.jpg"
+                                                                    alt>
+                                                                <div class="home-showcase__buttons">
+                                                                    <a href="index-dark.html"
+                                                                        class="thm-btn home-showcase__buttons__item">View
+                                                                        Page</a>
+                                                                </div>
+                                                            </div>
+                                                            <h3 class="home-showcase__title">Home
+                                                                Dark
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-menu-wrapper__right">
+                <!-- <div class="main-menu-wrapper__search-box">
                             <a href="#"
                                 class="main-menu-wrapper__search search-toggler icon-magnifying-glass"></a>
                         </div> -->
-                            <div class="main-menu-wrapper__call">
-                                <div class="main-menu-wrapper__call-icon">
-                                    <span class="icon-chatting"></span>
-                                </div>
-                                <div class="main-menu-wrapper__call-number">
-                                    <p>Reach US:</p>
-                                    <h5><a href="tel:91 9154357401">+91
-                                            9154357401/02</a></h5>
-                                    <h5><a
-                                            href="info@digitalwinbusinessagency.com">info@digitalwinbusinessagency.com</a></h5>
-                                </div>
-                            </div>
-                        </div>
+                <div class="main-menu-wrapper__call">
+                    <div class="main-menu-wrapper__call-icon">
+                        <span class="icon-chatting"></span>
                     </div>
-                </nav>
-            </header>
+                    <div class="main-menu-wrapper__call-number">
+                        <p>Reach US:</p>
+                        <h5><a href="tel:91 9154357401">+91
+                                9154357401/02</a></h5>
+                        <h5><a href="info@digitalwinbusinessagency.com">info@digitalwinbusinessagency.com</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
