@@ -62,8 +62,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php $i = 1;
-                                                foreach ($banners as $banner) : ?>
+                                                <?php $i = 1;  foreach ($banners as $banner) : ?>
                                                     <tr>
                                                         <td><?php echo $i++; ?></td>
                                                         <td><?php echo $banner['name']; ?></td>

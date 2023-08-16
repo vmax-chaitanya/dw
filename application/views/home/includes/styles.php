@@ -1,6 +1,6 @@
 <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact || DigitalWin || DigitalWin HTML Template For Business</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><?php echo $page_title; ?></title>
         <!-- favicons Icons -->
         <link rel="apple-touch-icon" sizes="180x180"
             href="<?php echo base_url();?>assets/home/images/favicons/apple-touch-icon.png" />

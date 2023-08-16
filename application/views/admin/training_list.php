@@ -55,7 +55,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Name</th>
-                                                    <th>Description</th>
+                                                    <!-- <th>Description</th> -->
                                                     <th>Image</th>
                                                     <th>Duration</th>
                                                     <th>Brochure</th>
@@ -69,7 +69,7 @@
                                                     <tr>
                                                         <td><?php echo $i++; ?></td>
                                                         <td><?php echo $training['name']; ?></td>
-                                                        <td><?php echo $training['description']; ?></td>
+                                                        <!-- <td><?php echo $training['description']; ?></td> -->
                                                         <td>
                                                             <?php if ($training['image']) : ?>
                                                                 <img src="<?php echo base_url('' . $training['image']); ?>" alt="Training Image" width="150">

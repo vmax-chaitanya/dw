@@ -4,6 +4,7 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
+
     <?php include("includes/styles.php"); ?>
 </head>
 
@@ -20,20 +21,22 @@
         <!--Main Slider Start-->
         <section class="main-slider">
             <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
-    "effect": "fade",
-     "pagination": {
-        "el": "#main-slider-pagination",
-        "type": "bullets",
-        "clickable": true
-      },
-    "navigation": {
-        "nextEl": "#main-slider__swiper-button-next",
-        "prevEl": "#main-slider__swiper-button-prev"
-    },
-    "autoplay": {
-        "delay": 5000
-    }}'>
+                "effect": "fade",
+                "pagination": {
+                    "el": "#main-slider-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                },
+                "navigation": {
+                    "nextEl": "#main-slider__swiper-button-next",
+                    "prevEl": "#main-slider__swiper-button-prev"
+                },
+                "autoplay": {
+                    "delay": 5000
+                }}'>
                 <div class="swiper-wrapper">
+
+                <?php $i = 1; foreach ($banners as $banner) : ?>
                     <div class="swiper-slide">
                         <div class="image-layer"
                             style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/main-slider-1-1.jpg);">
@@ -54,9 +57,9 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="main-slider__content">
-                                        <p>Welcome to our digital marketing
-                                            agency</p>
-                                        <h2>AI-Driven Digital <br>Marketing Services</h2>
+                                        <p><?php echo $banner['name']; ?></p>
+                                        <h2><?php echo $banner['description']; ?></h2>
+
                                         <a href="about.html" class="thm-btn">Discover
                                             More</a>
                                     </div>
@@ -64,68 +67,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/main-slider-1-2.jpg);">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="main-slider-border"></div>
-                        <div class="main-slider-border main-slider-border-two"></div>
-                        <div class="main-slider-border main-slider-border-three"></div>
-                        <div class="main-slider-border main-slider-border-four"></div>
-                        <div class="main-slider-border main-slider-border-five"></div>
-                        <div class="main-slider-border main-slider-border-six"></div>
+                    <?php endforeach; ?>
 
-                        <div class="main-slider-shape-1"></div>
-                        <div class="main-slider-shape-2"></div>
-                        <div class="main-slider-shape-3"></div>
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="main-slider__content">
-                                        <p>Welcome to our digital marketing
-                                            agency</p>
-                                        <h2>Stay ahead with <br> AI-driven digital marketing <br>
-                                            solutions</h2>
-                                        <a href="about.html" class="thm-btn">Discover
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/main-slider-1-3.jpg);">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="main-slider-border"></div>
-                        <div class="main-slider-border main-slider-border-two"></div>
-                        <div class="main-slider-border main-slider-border-three"></div>
-                        <div class="main-slider-border main-slider-border-four"></div>
-                        <div class="main-slider-border main-slider-border-five"></div>
-                        <div class="main-slider-border main-slider-border-six"></div>
-
-                        <div class="main-slider-shape-1"></div>
-                        <div class="main-slider-shape-2"></div>
-                        <div class="main-slider-shape-3"></div>
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="main-slider__content">
-                                        <p>Welcome to our digital marketing
-                                            agency</p>
-                                        <h2>Accelerate growth <br> with an AI-driven <br> marketing partner</h2>
-                                        <a href="about.html" class="thm-btn">Discover
-                                            More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <!-- If we need navigation buttons -->
                 <div class="swiper-pagination" id="main-slider-pagination"></div>
@@ -267,7 +210,8 @@
                         <div class="get-to-know__left wow slideInLeft" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="get-to-know__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/get-to-know-img.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/get-to-know-img.jpg"
+                                    alt>
                                 <div class="get-to-know__video-link">
                                     <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
                                         <div class="get-to-know__video-icon">
@@ -418,7 +362,8 @@
                             <li data-filter=".filter-item" class="active"><span class="filter-text">All</span></li>
                             <li data-filter=".bra"><span class="filter-text">Branding</span></li>
                             <li data-filter=".photo"><span class="filter-text">Photography</span></li>
-                            <li data-filter=".web"><span class="filter-text">Web Design</span></li>
+                            <li data-filter=".web"><span class="filter-text">Web
+                                    Design</span></li>
                             <li data-filter=".app"><span class="filter-text last-pd-none">Apps</span></li>
                         </ul>
                     </div>
@@ -429,24 +374,26 @@
                         <div class="project-one__single">
                             <div class="project-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-1.jpg"
-                                    alt="">
+                                    alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
+                                            Experience</a>
                                     </h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra app web">
+                    <div class="col-xl-6 col-lg-6 col-md-6 filter-item bra app web">
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-2.jpg"
-                                    alt="">
+                                    alt>
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
+                                            Experience</a>
                                     </h3>
                                 </div>
                             </div>
@@ -457,10 +404,11 @@
                         <div class="project-one__single">
                             <div class="project-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-3.jpg"
-                                    alt="">
+                                    alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
+                                            Experience</a>
                                     </h3>
                                 </div>
                             </div>
@@ -471,10 +419,11 @@
                         <div class="project-one__single">
                             <div class="project-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-4.jpg"
-                                    alt="">
+                                    alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
+                                            Experience</a>
                                     </h3>
                                 </div>
                             </div>
@@ -485,10 +434,11 @@
                         <div class="project-one__single">
                             <div class="project-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-5.jpg"
-                                    alt="">
+                                    alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
+                                            Experience</a>
                                     </h3>
                                 </div>
                             </div>
@@ -499,24 +449,26 @@
                         <div class="project-one__single">
                             <div class="project-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-6.jpg"
-                                    alt="">
+                                    alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
+                                            Experience</a>
                                     </h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item app photo">
+                    <div class="col-xl-6 col-lg-6 col-md-6 filter-item app photo">
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-7.jpg"
-                                    alt="">
+                                    alt>
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
+                                            Experience</a>
                                     </h3>
                                 </div>
                             </div>
