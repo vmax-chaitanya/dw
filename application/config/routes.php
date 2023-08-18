@@ -169,4 +169,20 @@ $route['admin/social_media/edit/(:num)'] = 'Admin/social_media/edit/$1'; // Edit
 $route['admin/social_media/update/(:num)'] = 'Admin/social_media/update/$1'; // Handle social media data update by ID
 $route['admin/social_media/delete/(:num)'] = 'Admin/social_media/delete/$1'; // Delete social media data by ID
 $route['admin/social_media/create_or_update'] = 'admin/social_media/create_or_update_social_media'; 
+
+
+// Routes for Certification Courses
+$route['admin/certification_courses'] = 'admin/CertificationCourses/index';
+$route['admin/certification_courses/add'] = 'admin/CertificationCourses/add';
+$route['admin/certification_courses/create'] = 'admin/CertificationCourses/create';
+$route['admin/certification_courses/edit/(:any)'] = 'admin/CertificationCourses/edit/$1';
+$route['admin/certification_courses/update/(:any)'] = 'admin/CertificationCourses/update/$1';
+$route['admin/certification_courses/delete/(:any)'] = 'admin/CertificationCourses/delete/$1';
+
+$route['admin/training_curriculum/(:num)'] = 'admin/TrainingCurriculum/index/$1';
+$route['admin/training_curriculum/add/(:num)'] = 'admin/TrainingCurriculum/add/$1';
+$route['admin/training_curriculum/create/(:num)'] = 'admin/TrainingCurriculum/create/$1';
+$route['admin/training_curriculum/edit/(:num)'] = 'admin/TrainingCurriculum/edit/$1';
+$route['admin/training_curriculum/update/(:num)'] = 'admin/TrainingCurriculum/update/$1';
+$route['admin/training_curriculum/delete/(:num)'] = 'admin/TrainingCurriculum/delete/$1';
 ///////admin////////
