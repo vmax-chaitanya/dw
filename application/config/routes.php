@@ -62,6 +62,8 @@ $route['faq'] = 'Home/HomeController/faq';
 $route['services'] = 'Home/HomeController/services';
 $route['training'] = 'Home/HomeController/training';
 $route['training-detail/(:num)'] = 'Home/HomeController/training_detail/$1';
+$route['blogs'] = 'Home/HomeController/blogs';
+$route['blog-detail/(:num)'] = 'Home/HomeController/blog_detail/$1';
 //////////Home Controller//////
 
 ///////admin////////

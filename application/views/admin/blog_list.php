@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.bootstrapdash.com/demo/libertyui/template/demo/vertical-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:38:16 GMT -->
+
 
 <head>
     <!-- Required meta tags -->
@@ -53,7 +53,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Title</th>
-                                                    <th>Description</th>
+                                                    <!-- <th>Description</th> -->
                                                     <th>Status</th>
                                                     <th>Image</th>
                                                     <th>Created At</th>
@@ -71,9 +71,9 @@
                                                         <td>
                                                             <?php echo $blog['title']; ?>
                                                         </td>
-                                                        <td>
+                                                        <!-- <td>
                                                             <?php echo $blog['description']; ?>
-                                                        </td>
+                                                        </td> -->
                                                         <td>
                                                             <?php if ($blog['status'] == '1'): ?>
                                                                 <label class="badge badge-success">Active</label>
@@ -131,6 +131,6 @@
 </body>
 
 
-<!-- Mirrored from www.bootstrapdash.com/demo/libertyui/template/demo/vertical-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:38:18 GMT -->
+
 
 </html>

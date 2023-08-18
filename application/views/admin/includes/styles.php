@@ -1,4 +1,4 @@
-<title>LibertyUI Premium Bootstrap Admin Dashboard Template</title>
+<title>Digital Win || Admin</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/admin/flag-icon-css/css/flag-icon.min.css">
   <!-- <link rel="stylesheet" href="<?php echo base_url(); ?>assets/admin/mdi/css/materialdesignicons.min.css"> -->

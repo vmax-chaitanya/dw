@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.bootstrapdash.com/demo/libertyui/template/demo/vertical-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:38:16 GMT -->
+
 
 <head>
     <!-- Required meta tags -->
@@ -135,6 +135,6 @@
 </body>
 
 
-<!-- Mirrored from www.bootstrapdash.com/demo/libertyui/template/demo/vertical-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:38:18 GMT -->
+
 
 </html>

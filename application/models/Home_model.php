@@ -34,7 +34,7 @@ class Home_model extends CI_Model {
         $this->db->where('status', '1');
         return $this->db->get('banners')->result_array();
     }
-    public function getTrainingBanners()
+    public function getActiveTraining()
     {
         $this->db->where('status', '1');
         return $this->db->get('training')->result_array();
@@ -45,4 +45,15 @@ class Home_model extends CI_Model {
         $query = $this->db->get('training');
         return $query->row_array();
     }
+    // public function getActiveBlog()
+    // {
+    //     $this->db->where('status', '1');
+    //     return $this->db->get('blogs')->result_array();
+    // }
+    // public function get_blog_by_id($id)
+    // {
+    //     $this->db->where('id', $id);
+    //     $query = $this->db->get('blogs');
+    //     return $query->row_array();
+    // }
 }

@@ -2,13 +2,13 @@
 <html lang="en">
 
 
-<!-- Mirrored from qutiiz-html.vercel.app/main-html/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:30 GMT -->
-<!-- Added by HTTrack -->
+
+
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
     <?php include("includes/styles.php"); ?>
-   
+
 </head>
 
 <body>
@@ -23,7 +23,8 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/page-header-bg.jpg)">
+            <div class="page-header-bg"
+                style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/page-header-bg.jpg)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -48,23 +49,92 @@
         </section>
         <!--Page Header End-->
 
+        <!--About Page Start-->
+        <section class="about-page" style="padding-bottom: 10px !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="about-page__left">
+                            <div class="about-page__img">
+                                <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
+                            </div>
+                            <!-- <div class="about-page__founded">
+                                <h5>Founded <br> in 2014</h5>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="about-page__right">
+                            <div class="section-title text-left">
+                                <!-- <span class="section-title__tagline">read about us</span> -->
+                                <h2 class="section-title__title">
+                                    <?php echo $training['name']; ?>
+                                </h2>
+                            </div>
+                            <!-- <p class="about-page__right-text-1">We’re committed to delivering the best digital marketing
+                                for your businesses</p> -->
+                            <p class="about-page__right-text-2">
+                                <?php echo $training['description']; ?>
+                            </p>
+                            <div class="about-page__points-box">
+                                <ul class="list-unstyled about-page__points">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-draw-check-mark"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Develop a vision statement</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-draw-check-mark"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Grow your customer base</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled about-page__points about-page__points-two">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-draw-check-mark"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Increase your monthly sales</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-draw-check-mark"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Beat your competition</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About Page End-->
         <!--Project Details Start-->
         <section class="project-details">
             <div class="container">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-xl-12">
                         <div class="project-details__img">
                             <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="project-details__content">
                     <div class="row">
-                        <div class="col-xl-8 col-lg-7">
+                        <div class="col-xl-7 col-lg-7">
                             <div class="project-details__content-left">
-                                <h3 class="project-details__content-title"><?php echo $training['name']; ?></h3>
-                                <p class="project-details__content-text-2"><?php echo $training['description']; ?></p>
-                               
+
                                 <ul class="list-unstyled project-details__points">
                                     <li>
                                         <div class="icon">
@@ -91,97 +161,48 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- <div class="col-xl-4 col-lg-5">
-                            <div class="project-details__content-right">
-                                <div class="project-details__details-box">
-                                    <div class="project-details__details-info">
-                                        <div class="project-details__details-info-single">
-                                            <h5 class="project-details__details-info-client">Clients:</h5>
-                                            <p class="project-details__details-info-name">Jessica Brown</p>
+                        <div class="col-xl-5 col-lg-5">
+                            <div class="contact-page__form">
+                                <form
+                                    action="https://qutiiz-html.vercel.app/main-html/<?php echo base_url(); ?>assets/home/inc/sendemail.php"
+                                    class="comment-one__form contact-form-validated" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Your name" name="name">
+                                            </div>
                                         </div>
-                                        <div class="project-details__details-info-single">
-                                            <h5 class="project-details__details-info-client">Category:</h5>
-                                            <p class="project-details__details-info-name">Web &amp; Application Design
-                                            </p>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="email" placeholder="Email address" name="email">
+                                            </div>
                                         </div>
-                                        <div class="project-details__details-info-single">
-                                            <h5 class="project-details__details-info-client">Date:</h5>
-                                            <p class="project-details__details-info-name">20 September, 2021</p>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Phone number" name="phone">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="project-details__details-social-list">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="project-details__content">
-                    <div class="row">
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="project-details__content-left">
-                                <h3 class="project-details__content-title"><?php echo $training['name']; ?></h3>
-                                <p class="project-details__content-text-2"><?php echo $training['description']; ?></p>
-                               
-                                <ul class="list-unstyled project-details__points">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-increment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <h4>Attract and retain quality high paying customers</h4>
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                when an unknown printer took a galley of type and scrambled it to make a
-                                                type specimen book has survived not only five centuries.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-checking"></span>
-                                        </div>
-                                        <div class="text">
-                                            <h4>Strong business plan requires experience</h4>
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                when an unknown printer took a galley of type and scrambled it to make a
-                                                type specimen book has survived not only five centuries.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="project-details__content-right">
-                                <div class="project-details__details-box">
-                                    <div class="project-details__details-info">
-                                        <div class="project-details__details-info-single">
-                                            <h5 class="project-details__details-info-client">Clients:</h5>
-                                            <p class="project-details__details-info-name">Jessica Brown</p>
-                                        </div>
-                                        <div class="project-details__details-info-single">
-                                            <h5 class="project-details__details-info-client">Category:</h5>
-                                            <p class="project-details__details-info-name">Web &amp; Application Design
-                                            </p>
-                                        </div>
-                                        <div class="project-details__details-info-single">
-                                            <h5 class="project-details__details-info-client">Date:</h5>
-                                            <p class="project-details__details-info-name">20 September, 2021</p>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="email" placeholder="Subject" name="subject">
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="project-details__details-social-list">
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box">
+                                                <textarea name="message" placeholder="Write a message"></textarea>
+                                            </div>
+                                            <button type="submit" class="thm-btn comment-form__btn">Download
+                                                Brochure</button>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- <div class="row">
                     <div class="col-xl-12">
                         <div class="project-details__pagination-box">
@@ -212,10 +233,10 @@
         </section>
         <!--Project Details End-->
 
-  
 
 
-       
+
+
 
 
         <!--Similar Work Start-->
@@ -230,7 +251,8 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-4.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-4.jpg"
+                                    alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
                                     <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
@@ -243,7 +265,8 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-5.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-5.jpg"
+                                    alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
                                     <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
@@ -256,7 +279,8 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-6.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-6.jpg"
+                                    alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
                                     <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
