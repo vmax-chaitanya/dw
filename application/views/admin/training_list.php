@@ -96,7 +96,8 @@
                                                         </td>
                                                         <td>
                                                             <a href="<?php echo base_url('admin/key_highlights/' . $training['id']); ?>" class="btn btn-outline-primary">Add Highlites</a>
-                                                            <a href="<?php echo base_url('admin/training/edit/' . $training['id']); ?>" class="btn btn-outline-primary">Edit</a>
+                                                            <a href="<?php echo base_url('admin/training_curriculum/' . $training['id']); ?>" class="btn btn-outline-secondary">Add curriculum</a>
+                                                            <a href="<?php echo base_url('admin/training/edit/' . $training['id']); ?>" class="btn btn-outline-info">Edit</a>
                                                             <a href="<?php echo base_url('admin/training/delete/' . $training['id']); ?>" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this training?')">Delete</a>
                                                         </td>
                                                     </tr>

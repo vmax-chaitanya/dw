@@ -95,6 +95,8 @@
                                         <div class="row">
                                             <div class="col-md-9"></div>
                                             <div class="col-md-3">
+                                                <input type="hidden" name="training_id" value="<?php echo ($curriculum['training_id']);?>" >
+                                                <input type="hidden" name="old_icon" value="<?php echo ($curriculum['icon']);?>" >
                                                 <button type="submit" class="btn btn-success mr-2">Update</button>
                                                 <a href="<?php echo site_url('admin/training_curriculum/' . $curriculum['training_id']); ?>" class="btn btn-light">Cancel</a>
                                             </div>

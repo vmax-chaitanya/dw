@@ -33,7 +33,7 @@
                                     <h4 class="card-title">Data table</h4>
                                 </div>
                                 <div class="col-md-2 ms-auto">
-                                    <a href="<?php echo base_url(); ?>admin/services/add" class="w-100 btn btn-primary">Add</a>
+                                    <a href="<?php echo base_url(); ?>admin/training_curriculum/add/<?php echo $training_id;?>" class="w-100 btn btn-primary">Add</a>
                                 </div>
                             </div>
 

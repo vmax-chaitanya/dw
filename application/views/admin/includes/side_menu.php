@@ -54,6 +54,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url();?>admin/certification_courses">
+                            <i class="icon-handbag menu-icon"></i>
+                            <span class="menu-title">Certification Courses</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url();?>admin/faq">
                             <i class="icon-handbag menu-icon"></i>
                             <span class="menu-title">FAQs</span>
@@ -77,6 +83,7 @@
                             <span class="menu-title">Address</span>
                         </a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url();?>admin/contact">
                             <i class="icon-handbag menu-icon"></i>

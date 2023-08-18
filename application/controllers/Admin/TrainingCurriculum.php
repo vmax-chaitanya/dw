@@ -16,21 +16,22 @@ class TrainingCurriculum extends CI_Controller
     public function index($training_id)
     {
         $data['training_id'] = $training_id;
-        $data['curriculum'] = $this->training_curriculum_model->get_curriculum_by_training($training_id);
+        $data['curriculums'] = $this->training_curriculum_model->get_curriculum_by_training($training_id);
         $this->load->view('admin/training_curriculum_list', $data);
     }
 
     public function add($training_id)
     {
         // Load view to add curriculum for a specific training
-        $this->load->view('admin/training_curriculum_create', array('training_id' => $training_id));
+        $data['training_id'] = $training_id;
+        $this->load->view('admin/training_curriculum_create', $data);
     }
 
     public function create($training_id)
     {
         $this->form_validation->set_rules('name', 'Name', 'required|max_length[150]');
         $this->form_validation->set_rules('description', 'Description', 'required');
-        $this->form_validation->set_rules('icon', 'Icon', 'required|max_length[300]');
+        //$this->form_validation->set_rules('icon', 'Icon', 'required|max_length[300]');
         $this->form_validation->set_rules('status', 'Status', 'required|in_list[1,2,3]');
 
         if ($this->form_validation->run() === FALSE) {
@@ -39,19 +40,13 @@ class TrainingCurriculum extends CI_Controller
             // Upload icon image and process data
             // Example upload logic:
             if (!empty($_FILES['icon']['name'])) {
-                $config['upload_path'] = './assets/images/icons/';
-                $config['allowed_types'] = 'gif|jpg|jpeg|png';
-                $config['max_size'] = 2048; // 2MB max size, adjust as needed
 
-                $this->load->library('upload', $config);
-
-                if ($this->upload->do_upload('icon')) {
-                    $icon_data = $this->upload->data();
-                    $icon_path = '/assets/images/icons/' . $icon_data['file_name'];
-                } else {
-                    $this->session->set_flashdata('error', $this->upload->display_errors());
-                    redirect('admin/training_curriculum/add/' . $training_id);
-                }
+                $temp = $_FILES['icon']['tmp_name'];
+                $name = $_FILES['icon']['name'];
+                $fileName = time() . $name;
+                $path = "./assets/images/curriculum/$fileName";
+                $icon_path = '/assets/images/curriculum/' . $fileName;
+                $a = move_uploaded_file($temp, $path);
             } else {
                 $icon_path = '';
             }
@@ -69,7 +64,7 @@ class TrainingCurriculum extends CI_Controller
             $result = $this->training_curriculum_model->create_curriculum($data);
             if ($result) {
                 $this->session->set_flashdata('success', 'Curriculum created successfully.');
-                redirect('admin/training_curriculum/index/' . $training_id);
+                redirect('admin/training_curriculum/' . $training_id);
             } else {
                 $this->session->set_flashdata('error', 'Error Occurred');
                 redirect('admin/training_curriculum/add/' . $training_id);
@@ -85,7 +80,7 @@ class TrainingCurriculum extends CI_Controller
 
     public function update($id)
     {
-        $this->form_validation->set_rules('training_id', 'Training ID', 'required');
+        // $this->form_validation->set_rules('training_id', 'Training ID', 'required');
         $this->form_validation->set_rules('name', 'Name', 'required|max_length[150]');
         $this->form_validation->set_rules('description', 'Description', 'required');
         $this->form_validation->set_rules('status', 'Status', 'required|in_list[1,2,3]');
@@ -100,8 +95,8 @@ class TrainingCurriculum extends CI_Controller
                 $temp = $_FILES['icon']['tmp_name'];
                 $name = $_FILES['icon']['name'];
                 $fileName = time() . $name;
-                $path = "./assets/images/icons/$fileName";
-                $icon_name = '/assets/images/icons/'.$fileName;
+                $path = "./assets/images/curriculum/$fileName";
+                $icon_name = '/assets/images/curriculum/'.$fileName;
                 $a = move_uploaded_file($temp, $path);
             } else {
                 $icon_name = $this->input->post('old_icon');
@@ -120,7 +115,7 @@ class TrainingCurriculum extends CI_Controller
             $result = $this->training_curriculum_model->update_curriculum($id, $data);
             if ($result) {
                 $this->session->set_flashdata('success', 'Curriculum updated successfully.');
-                redirect('admin/training_curriculum');
+                redirect('admin/training_curriculum/'.$this->input->post('training_id'));
             } else {
                 $this->session->set_flashdata('error', 'Error Occurred');
                 redirect('admin/training_curriculum/edit/' . $id);

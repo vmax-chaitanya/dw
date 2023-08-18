@@ -39,6 +39,7 @@ class CertificationCourses extends CI_Controller
                 'tag' => $this->input->post('tag'),
                 'rating' => $this->input->post('rating'),
                 'learners' => $this->input->post('learners'),
+                'status' => $this->input->post('status'),
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace this with the actual created_by user ID
             );
@@ -77,6 +78,8 @@ class CertificationCourses extends CI_Controller
                 'tag' => $this->input->post('tag'),
                 'rating' => $this->input->post('rating'),
                 'learners' => $this->input->post('learners'),
+                'status' => $this->input->post('status'),
+
                 'created_at' => time(),
                 'created_by' => '2'// Replace this with the actual created_by user ID
             );
