@@ -58,6 +58,7 @@
                                                             <option value="1">Gallery</option>
                                                             <option value="2">Client Logos</option>
                                                             <option value="3">Tools Images</option>
+                                                            <option value="4">Certification</option>
                                                         </select>
                                                     </div>
                                                 </div>

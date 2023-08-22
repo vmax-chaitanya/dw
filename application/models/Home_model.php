@@ -45,6 +45,13 @@ class Home_model extends CI_Model {
         $query = $this->db->get('training');
         return $query->row_array();
     }
+
+    public function getActiveCurriculum($training_id)
+    {
+        $this->db->where('status', '1');
+        $this->db->where('training_id', $training_id);
+        return $this->db->get('training_curricullum')->result_array();
+    }
     // public function getActiveBlog()
     // {
     //     $this->db->where('status', '1');

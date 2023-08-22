@@ -83,6 +83,27 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Icon</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" class="form-control" name="icon" required>
+                                                        <?php echo form_error('icon', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Banner Image</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" class="form-control" name="banner_image">
+                                                        <?php echo form_error('banner_image', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Status</label>
                                                     <div class="col-sm-9">
                                                         <select class="form-control" name="status" required>
@@ -105,8 +126,19 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-10">
-                                                        <textarea class="form-control" name="description" rows="4" required><?php echo set_value('description'); ?></textarea>
+                                                        <textarea id="" class="form-control" name="description" rows="4" required><?php echo set_value('description'); ?></textarea>
                                                         <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Description 1</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="description_new" rows="4" required><?php echo set_value('description_new'); ?></textarea>
+                                                        <?php echo form_error('description_new', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>

@@ -29,7 +29,15 @@ class Services extends CI_Controller
         $this->form_validation->set_rules('name', 'Name', 'required|max_length[200]');
         $this->form_validation->set_rules('description', 'Description', 'required');
         $this->form_validation->set_rules('status', 'Status', 'required|in_list[1,2,3]');
-
+        if (empty($_FILES['image']['name'])) {
+            $this->form_validation->set_rules('image', 'Image ', 'required');
+        }
+        if (empty($_FILES['image']['name'])) {
+            $this->form_validation->set_rules('icon', 'Icon', 'required');
+        }
+        if (empty($_FILES['image']['name'])) {
+            $this->form_validation->set_rules('banner_image', 'Banner Image', 'required');
+        }
         if ($this->form_validation->run() === FALSE) {
             $this->load->view('admin/services_create');
         } else {
@@ -42,12 +50,37 @@ class Services extends CI_Controller
                 $image_name = '/assets/images/services/'.$fileName;
                 $a = move_uploaded_file($temp, $path);
             }
+            $icon = '';
+            if (!empty($_FILES['icon']['name'])) {
+
+                $temp = $_FILES['icon']['tmp_name'];
+                $name = $_FILES['icon']['name'];
+                $fileName = time() . $name;
+                $path = "./assets/images/service_icon/$fileName";
+                $icon = '/assets/images/service_icon/' . $fileName;
+                $a = move_uploaded_file($temp, $path);
+            }
+
+            // Handle brochure upload
+            $banner_image = '';
+            if (!empty($_FILES['banner_image']['name'])) {
+
+                $temp = $_FILES['banner_image']['tmp_name'];
+                $name = $_FILES['banner_image']['name'];
+                $fileName = time() . $name;
+                $path = "./assets/images/banner_image/$fileName";
+                $banner_image = '/assets/images/banner_image/' . $fileName;
+                $a = move_uploaded_file($temp, $path);
+            }
 
             $data = array(
                 'name' => $this->input->post('name'),
                 'description' => $this->input->post('description'),
+                'description_new' => $this->input->post('description_new'),
                 'status' => $this->input->post('status'),
                 'image' => $image_name,
+                'banner_image' => $banner_image,
+                'icon' => $icon,
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace this with the actual created_by user ID
             );
@@ -91,12 +124,44 @@ class Services extends CI_Controller
             } else {
                 $image_name = $this->input->post('old_image');
             }
+            $icon = '';
+            if (!empty($_FILES['icon']['name'])) {
+
+                $temp = $_FILES['icon']['tmp_name'];
+                $name = $_FILES['icon']['name'];
+                $fileName = time() . $name;
+                $path = "./assets/images/service_icon/$fileName";
+                $icon = '/assets/images/service_icon/' . $fileName;
+                $a = move_uploaded_file($temp, $path);
+            }else{
+                $icon = $this->input->post('old_icon');
+
+            }
+
+            // Handle brochure upload
+            $banner_image = '';
+            if (!empty($_FILES['banner_image']['name'])) {
+
+                $temp = $_FILES['banner_image']['tmp_name'];
+                $name = $_FILES['banner_image']['name'];
+                $fileName = time() . $name;
+                $path = "./assets/images/banner_image/$fileName";
+                $banner_image = '/assets/images/banner_image/' . $fileName;
+                $a = move_uploaded_file($temp, $path);
+            }else{
+                $banner_image = $this->input->post('old_banner_image');
+
+            }
 
             $data = array(
                 'name' => $this->input->post('name'),
                 'description' => $this->input->post('description'),
+                'description_new' => $this->input->post('description_new'),
+
                 'status' => $this->input->post('status'),
                 'image' => $image_name,
+                'banner_image' => $banner_image,
+                'icon' => $icon,
                 'created_at' => time(),
                 'created_by' => '2'// Replace this with the actual created_by user ID
             );

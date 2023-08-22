@@ -13,3 +13,10 @@
   <!-- End plugin js for this page -->
   <!-- Custom js for this page-->
   <script src="<?php echo base_url(); ?>assets/admin/js/data-table.js"></script>
+  <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>

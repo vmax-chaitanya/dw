@@ -51,7 +51,6 @@ class HomeController extends CI_Controller {
     public function services() {
         // Load the services view
         $data['page_title']="Home || Digital win ||";
-
         $this->load->view('home/services',$data);
     }
 
@@ -59,6 +58,7 @@ class HomeController extends CI_Controller {
        
         $data['page_title']="Home || Digital win ||";
         $data['trainings'] = $this->Home_model->getActiveTraining();
+
         //print_r($data['training']); exit;
         $this->load->view('home/training',$data);
     }
@@ -66,6 +66,8 @@ class HomeController extends CI_Controller {
        
         $data['page_title']="Home || Digital win ||";
         $data['training'] = $this->Home_model->get_training_by_id($training_id);
+        $data['curriculums'] = $this->Home_model->getActiveCurriculum($training_id);
+       // $data['curriculums'] = $this->Home_model->getActiveCurriculum($training_id);
         //print_r($data['training']); exit;
         $this->load->view('home/training_detail',$data);
     }

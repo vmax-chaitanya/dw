@@ -59,6 +59,7 @@
                                                             <option value="1" <?php echo ($gallery_item['type'] == '1') ? 'selected' : ''; ?>>Gallery</option>
                                                             <option value="2" <?php echo ($gallery_item['type'] == '2') ? 'selected' : ''; ?>>Client Logos</option>
                                                             <option value="3" <?php echo ($gallery_item['type'] == '3') ? 'selected' : ''; ?>>Tools Images</option>
+                                                            <option value="4" <?php echo ($gallery_item['type'] == '4') ? 'selected' : ''; ?>>Certification</option>
                                                         </select>
                                                     </div>
                                                 </div>
