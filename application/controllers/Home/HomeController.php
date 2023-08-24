@@ -6,7 +6,10 @@ class HomeController extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('admin/contact_model'); // Load the Contact_model
+
         $this->load->model('Home_model');
+        $this->load->helper('download');
         $this->load->library('form_validation');
     }
     public function index() {
@@ -67,8 +70,9 @@ class HomeController extends CI_Controller {
         $data['page_title']="Home || Digital win ||";
         $data['training'] = $this->Home_model->get_training_by_id($training_id);
         $data['curriculums'] = $this->Home_model->getActiveCurriculum($training_id);
+        $data['key_highlites'] = $this->Home_model->getActiveKeyHighlites($training_id);
        // $data['curriculums'] = $this->Home_model->getActiveCurriculum($training_id);
-        //print_r($data['training']); exit;
+        //echo "<pre>"; print_r($data['key_highlites']); exit;
         $this->load->view('home/training_detail',$data);
     }
     public function blogs() {
@@ -84,5 +88,34 @@ class HomeController extends CI_Controller {
         $data['training'] = $this->Home_model->get_blog_by_id($blog_id);
         //print_r($data['training']); exit;
         $this->load->view('home/blog_detail',$data);
+    }
+    public function create_contact()
+    {
+  // echo "jghfjhgfvfhgfhghgfhgfhg"; exit;
+            $data = array(
+                'name' => $this->input->post('name'),
+                'email' => $this->input->post('email'),
+                'mobile' => $this->input->post('mobile'),
+                'message' => $this->input->post('message'),
+                'services_ids' => $this->input->post('services_ids'),
+                'status' => 1,
+                'created_at' => date("Y-m-d H:i:s")
+            );
+
+            $result = $this->contact_model->create_contact($data);
+            if ($result) {
+               // echo "Data inserted successfully!";
+
+              //  $file_path = base_url().'/assets/images/brochure/1692100123contact-one-img-2.jpg'; // Adjust the path to your file
+                $file_path =  base_url('' . '/assets/images/brochure/1692100123contact-one-img-2.jpg');
+                $file_name = '1692100123contact-one-img-2.jpg';
+                $file_url  = force_download($file_name, file_get_contents($file_path));
+                echo $file_url;
+                exit;
+            } else {
+                echo "Error inserting data.";
+                exit;
+            }
+            exit;
     }
 }

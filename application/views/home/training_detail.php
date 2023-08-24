@@ -84,9 +84,8 @@
 								</ul>
 							</div>
 							<div class="contact-page__form mt-3">
-                                <form
-                                    action="https://qutiiz-html.vercel.app/main-html/<?php echo base_url(); ?>assets/home/inc/sendemail.php"
-                                    class="comment-one__form contact-form-validated" novalidate="novalidate">
+                                <form id="contact-form" method="POST" 
+                                    class="" >
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
@@ -100,12 +99,12 @@
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="phone">
+                                                <input type="text" placeholder="Phone number" name="mobile">
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Subject" name="subject">
+                                                <input type="text" placeholder="Subject" name="subject">
                                             </div>
                                         </div>
                                     </div>
@@ -114,7 +113,8 @@
                                             <div class="comment-form__input-box">
                                                 <textarea name="message" placeholder="Write a message"></textarea>
                                             </div>
-                                            <button type="submit" class="thm-btn comment-form__btn">Download
+                                            <!-- <input type="text" name="services_ids" value="<?php echo $this->uri->segment(2);?> -->
+                                            <button type="" class="thm-btn comment-form__btn">Download
                                                 Brochure</button>
                                         </div>
                                     </div>
@@ -181,6 +181,8 @@
                         experts</span>
                     <h2 class="section-title__title">Key Highlites</h2>
                     <div class="row">
+                    <?php $i = 1; foreach ($key_highlites as $key_highlite): ?>
+
                         <div class="col-xl-4">
                             <div class="service-details__benefits-content">
 
@@ -190,47 +192,14 @@
                                             <span class="icon-draw-check-mark"></span>
                                         </div>
                                         <div class="text">
-                                            <p>Nsectetur cing elit</p>
+                                            <p><?php echo $key_highlite['name']; ?></p>
                                         </div>
                                     </li>
 
                                 </ul>
                             </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="service-details__benefits-content">
-
-                                <ul class="list-unstyled service-details__benefits-list">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Nsectetur cing elit</p>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-4">
-                            <div class="service-details__benefits-content">
-
-                                <ul class="list-unstyled service-details__benefits-list">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Nsectetur cing elit</p>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-
-
+                        </div>                       
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
@@ -244,7 +213,7 @@
                     <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
                         experts</span>
                     <h2 class="section-title__title">Faqs</h2>
-                    <div class="row">
+                    <div class="row" style="text-align:left">
                     <?php $i = 1; foreach ($curriculums as $curriculum): ?>
                         <div class="col-xl-6 col-lg-6 mt-2 mb-2">
                             <div class="faq-page__single">

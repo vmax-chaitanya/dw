@@ -28,3 +28,57 @@
 
         <!-- template js -->
         <script src="<?php echo base_url();?>assets/home/js/qutiiz.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+<script>
+        // add validation 
+        $(function() {
+            $("form[name='contact']").validate({
+                rules: {
+                    name: "required",
+                    subject: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    mobile: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 10
+                    }
+                },
+                messages: {
+                     name: "Please Enter Name",
+                     subject: "Please Enter Subject",
+                 
+                     mobile: {
+                        required: "Please Enter Mobile Number",
+                        minlength: "Please Enter 10 digit valid Mobile Number",
+                        maxlength: "Please Enter 10 digit valid Mobile Number",
+                    },
+                    email: "Please Enter a valid email address"
+                }
+                // submitHandler: function(form) {
+                //     form.submit();
+                // }
+            });
+        });
+</script>
+<script>
+$(document).ready(function() {
+    $("#contact-form").submit(function(e) {
+        e.preventDefault();
+
+        var formData = $(this).serialize();
+       
+        $.ajax({
+            method: "POST",
+            url: "<?php echo base_url('contact-insert'); ?>", // URL for the create method
+            data: formData,
+            success: function(response) {
+                window.location.href = response;
+            }
+        });
+    });
+});
+</script>
