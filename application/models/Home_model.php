@@ -59,6 +59,23 @@ class Home_model extends CI_Model {
         $this->db->where('training_id', $training_id);
         return $this->db->get('key_highlights')->result_array();
     }
+    public function getActiveCertification()
+    {
+        $this->db->where('status', '1');
+        return $this->db->get('certification_courses')->result_array();
+    }
+    public function getActiveTools()
+    {
+        $this->db->where('status', '1');
+        $this->db->where('type', '3');
+        return $this->db->get('gallery')->result_array();
+    }
+    public function getActiveCertificationCoursesTools()
+    {
+        $this->db->where('status', '1');
+        $this->db->where('type', '4');
+        return $this->db->get('gallery')->result_array();
+    }
 
     // public function getActiveBlog()
     // {

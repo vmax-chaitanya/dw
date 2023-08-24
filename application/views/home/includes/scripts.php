@@ -64,7 +64,7 @@
             });
         });
 </script>
-<script>
+<!-- <script>
 $(document).ready(function() {
     $("#contact-form").submit(function(e) {
         e.preventDefault();
@@ -77,6 +77,27 @@ $(document).ready(function() {
             data: formData,
             success: function(response) {
                 window.location.href = response;
+            }
+        });
+    });
+});
+</script> -->
+<script>
+$(document).ready(function() {
+    $('.ajax-form').submit(function(e) {
+        e.preventDefault();
+        
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            dataType: 'text', // Set the expected data type
+            success: function(response) {
+                // Initiate the file download
+                window.location.href = response; // The response contains the file URL
+            },
+            error: function(error) {
+                console.log('Error:', error);
             }
         });
     });
