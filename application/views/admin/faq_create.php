@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -87,11 +83,11 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-2 col-form-label">Answer</label>
+                                                    <label class="col-sm-2 col-form-label">Question</label>
                                                     <div class="col-sm-10">
-                                                        <textarea class="form-control" name="answer" rows="4"
-                                                            required><?php echo set_value('answer'); ?></textarea>
-                                                        <?php echo form_error('answer', '<p class="text-danger">', '</p>'); ?>
+                                                        <textarea class="form-control" name="question" rows="4"
+                                                            required><?php echo set_value('question'); ?></textarea>
+                                                        <?php echo form_error('question', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>

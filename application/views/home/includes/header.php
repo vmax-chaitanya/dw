@@ -163,10 +163,10 @@
                                                 Details</a></li>
                                     </ul>
                                 </li> -->
-                        <li><a href="<?php echo base_url();?>">Home</a></li>
-                        <li><a href="<?php echo base_url();?>about">About</a></li>
+                        <li><a href="<?php echo base_url(); ?>">Home</a></li>
+                        <li><a href="<?php echo base_url(); ?>about">About</a></li>
                         <li class="dropdown">
-                            <a href="<?php echo base_url();?>service">Services</a>
+                            <a href="<?php echo base_url(); ?>service">Services</a>
                             <ul>
                                 <li><a href="#">Search Engine
                                         Optimization (SEO)</a></li>
@@ -182,7 +182,7 @@
                             </ul>
                         </li>
                         <li class="dropdown ">
-                            <a href="<?php echo base_url();?>training">Training</a>
+                            <a href="<?php echo base_url(); ?>training">Training</a>
                             <ul>
                                 <li><a href="#">Certified course in
                                         digital marketing.</a></li>
@@ -192,7 +192,7 @@
                                         marketing with AI.</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url();?>contact">Contact</a></li>
+                        <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
                         <li class="dropdown megamenu">
                             <a href="index.html">Home </a>
                             <ul>
@@ -201,9 +201,8 @@
                                         <div class="container">
                                             <div class="home-showcase__inner">
                                                 <div class="row">
-                                                    <div class="col-lg-4">
 
-
+                                                    <div class="col-lg-3">
                                                         <ul>
                                                             <li><a href="#">Certified course in
                                                                     digital marketing.</a></li>
@@ -212,62 +211,26 @@
                                                             <li><a href="#">Advanced digital
                                                                     marketing with AI.</a></li>
                                                         </ul>
-
-                                                    </div>
-                                                    <div class="col-lg-2">
-                                                        <div class="home-showcase__item">
-                                                            <div class="home-showcase__image">
-                                                                <img src="assets/images/home-showcase/home-showcase-1-2.jpg"
-                                                                    alt>
-                                                                <div class="home-showcase__buttons">
-                                                                    <ul>
-                                                                        <li><a href="#">Certified course in
-                                                                                digital marketing.</a></li>
-                                                                        <li><a href="#">Diploma in digital
-                                                                                marketing.</a></li>
-                                                                        <li><a href="#">Advanced digital
-                                                                                marketing with AI.</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
                                                     </div>
                                                     <div class="col-lg-3">
-                                                        <div class="home-showcase__item">
-                                                            <div class="home-showcase__image">
-                                                                <img src="assets/images/home-showcase/home-showcase-1-3.jpg"
-                                                                    alt>
-                                                                <div class="home-showcase__buttons">
-                                                                    <a href="index3.html"
-                                                                        class="thm-btn home-showcase__buttons__item">Multi
-                                                                        Page</a>
-                                                                    <a href="index3-one-page.html"
-                                                                        class="thm-btn home-showcase__buttons__item">One
-                                                                        Page</a>
-                                                                </div>
-                                                            </div>
-                                                            <h3 class="home-showcase__title">Home
-                                                                Page
-                                                                03
-                                                            </h3>
-                                                        </div>
+                                                        <ul>
+                                                            <li><a href="#">Certified course in
+                                                                    digital marketing.</a></li>
+                                                            <li><a href="#">Diploma in digital
+                                                                    marketing.</a></li>
+                                                            <li><a href="#">Advanced digital
+                                                                    marketing with AI.</a></li>
+                                                        </ul>
                                                     </div>
                                                     <div class="col-lg-3">
-                                                        <div class="home-showcase__item">
-                                                            <div class="home-showcase__image">
-                                                                <img src="assets/images/home-showcase/home-showcase-1-4.jpg"
-                                                                    alt>
-                                                                <div class="home-showcase__buttons">
-                                                                    <a href="index-dark.html"
-                                                                        class="thm-btn home-showcase__buttons__item">View
-                                                                        Page</a>
-                                                                </div>
-                                                            </div>
-                                                            <h3 class="home-showcase__title">Home
-                                                                Dark
-                                                            </h3>
-                                                        </div>
+                                                        <ul>
+                                                            <li><a href="#">Certified course in
+                                                                    digital marketing.</a></li>
+                                                            <li><a href="#">Diploma in digital
+                                                                    marketing.</a></li>
+                                                            <li><a href="#">Advanced digital
+                                                                    marketing with AI.</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>

@@ -68,8 +68,10 @@ class HomeController extends CI_Controller
 
         $data['page_title'] = "Home || Digital win ||";
         $data['services_detail'] = $this->Home_model->get_service_by_id($service_id);
-        $data['curriculums'] = $this->Home_model->getActiveCurriculum($service_id);
-        $data['key_highlites'] = $this->Home_model->getActiveKeyHighlites($service_id);
+        $data['services_types'] = $this->Home_model->services_types($service_id);
+        $data['services_we_choose'] = $this->Home_model->services_we_choose($service_id);
+        $data['service_faqs'] = $this->Home_model->getActiveServiceFaq($service_id);
+        //echo "<pre>"; print_r($data['services_types']); exit;
         $data['services'] = $this->Home_model->getActiveServices();
 
         $this->load->view('home/service_detail', $data);

@@ -72,7 +72,8 @@
                                 <ul class="service-details__sidebar-service-list list-unstyled">
                                     <?php $i = 1;
                                     foreach ($trainings as $training): ?>
-                                        <li <?php echo ($training['id'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>">
+                                        <li <?php echo ($training['id'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a
+                                                href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>">
                                                 <?php echo $training['name']; ?> <span class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>

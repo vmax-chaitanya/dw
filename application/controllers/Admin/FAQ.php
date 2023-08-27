@@ -31,6 +31,8 @@ class FAQ extends CI_Controller
 
     public function create()
     {
+      //  echo "ffff"; exit;
+//echo "<pre>"; print_r($this->input->post()); exit;
         // $this->form_validation->set_rules('type', 'Type', 'required|in_list[1,2]');
         $this->form_validation->set_rules('question', 'Question', 'required|max_length[500]');
         $this->form_validation->set_rules('answer', 'Answer', 'required|max_length[500]');
@@ -38,6 +40,7 @@ class FAQ extends CI_Controller
         $service_id = $this->input->post('page_id');
         if ($this->form_validation->run() === FALSE) {
             // $data['pages'] = $this->faq_model->get_all_pages();
+            echo "ffffw"; exit;
             if ($service_id) {
                 redirect('admin/faq_create?service_id=' . $service_id); // Redirect to the service-specific FAQ list
             } else {

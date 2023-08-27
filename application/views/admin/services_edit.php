@@ -115,7 +115,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-10">
-                                                        <textarea class="form-control" name="description" rows="4"  id="editor" required><?php echo $service['description']; ?></textarea>
+                                                        <textarea class="form-control" name="description" rows="4"  id="editor" required><?php echo $service['description']; ?></>
                                                         <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>

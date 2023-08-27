@@ -4971,6 +4971,7 @@ ul {
   margin-bottom: 30px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  height: 100%;
 }
 
 .services-two__single:hover {

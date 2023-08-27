@@ -49,37 +49,38 @@
                 }}'>
                 <div class="swiper-wrapper">
 
-                <?php $i = 1; foreach ($banners as $banner) : ?>
-                    <div class="swiper-slide">
-                        <div class="image-layer"
-                            style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/main-slider-1-1.jpg);">
-                        </div>
-                        <!-- /.image-layer -->
-                        <div class="main-slider-border"></div>
-                        <div class="main-slider-border main-slider-border-two"></div>
-                        <div class="main-slider-border main-slider-border-three"></div>
-                        <div class="main-slider-border main-slider-border-four"></div>
-                        <div class="main-slider-border main-slider-border-five"></div>
-                        <div class="main-slider-border main-slider-border-six"></div>
+                <?php $i = 1;
+                foreach ($banners as $banner): ?>
+                            <div class="swiper-slide">
+                                <div class="image-layer"
+                                    style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
+                                </div>
+                                <!-- /.image-layer -->
+                                <div class="main-slider-border"></div>
+                                <div class="main-slider-border main-slider-border-two"></div>
+                                <div class="main-slider-border main-slider-border-three"></div>
+                                <div class="main-slider-border main-slider-border-four"></div>
+                                <div class="main-slider-border main-slider-border-five"></div>
+                                <div class="main-slider-border main-slider-border-six"></div>
 
-                        <div class="main-slider-shape-1"></div>
-                        <div class="main-slider-shape-2"></div>
-                        <div class="main-slider-shape-3"></div>
+                                <div class="main-slider-shape-1"></div>
+                                <div class="main-slider-shape-2"></div>
+                                <div class="main-slider-shape-3"></div>
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="main-slider__content">
-                                        <p><?php echo $banner['name']; ?></p>
-                                        <h2><?php echo $banner['description']; ?></h2>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="main-slider__content">
+                                                <p><?php echo $banner['name']; ?></p>
+                                                <h2><?php echo $banner['description']; ?></h2>
 
-                                        <a href="about.html" class="thm-btn">Discover
-                                            More</a>
+                                                <a href="about.html" class="thm-btn">Discover
+                                                    More</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
                     <?php endforeach; ?>
 
                 </div>
@@ -223,7 +224,7 @@
                         <div class="get-to-know__left wow slideInLeft" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="get-to-know__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/get-to-know-img.jpg"
+                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images.jpg"
                                     alt>
                                 <div class="get-to-know__video-link">
                                     <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
@@ -295,6 +296,93 @@
 
         <!--Get To Know End-->
 
+        <!--Services Two Start-->
+        <section class="services-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-online-shopping"></span>
+                            </div>
+                            <h3 class="services-two__title"><a href="website-development.html">Unparalleled Insights</a></h3>
+                            <p class="services-two__text">With AI's ability to analyze vast amounts of data in real-time, you gain invaluable insights into customer behavior, market trends, and performance metrics. These insights empower you to make informed decisions that drive success.
+</p>
+                            <a class="services-two__arrow" href="website-development.html"><span
+                                    class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="200ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-growth"></span>
+                            </div>
+                            <h3 class="services-two__title"><a href="graphic-design.html">Enhanced Personalization</a>
+                            </h3>
+                            <p class="services-two__text">Customers today expect personalized experiences. AI enables you to deliver tailored content, product recommendations, and communication, fostering stronger relationships and customer loyalty.
+</p>
+                            <a class="services-two__arrow" href="graphic-design.html"><span
+                                    class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="300ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-webpage"></span>
+                            </div>
+                            <h3 class="services-two__title"><a href="digital-marketing.html">Improved Efficiency</a></h3>
+                            <p class="services-two__text">Repetitive manual tasks can hinder productivity. AI automates these processes, freeing up your team to focus on strategic initiatives that lead to growth.
+</p>
+                            <a class="services-two__arrow" href="digital-marketing.html"><span
+                                    class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="400ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-front-end"></span>
+                            </div>
+                            <h3 class="services-two__title"><a href="social-marketing.html">Predictive Capabilities</a></h3>
+                            <p class="services-two__text">AI predictive analytics help you anticipate future trends and customer needs, allowing you to stay proactive and seize opportunities before your competitors.</p>
+                            <a class="services-two__arrow" href="social-marketing.html"><span
+                                    class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="400ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-front-end"></span>
+                            </div>
+                            <h3 class="services-two__title"><a href="social-marketing.html">Cost Savings</a></h3>
+                            <p class="services-two__text">By streamlining processes and optimizing resources, AI helps reduce operational costs, making your business more agile and resilient.
+</p>
+                            <a class="services-two__arrow" href="social-marketing.html"><span
+                                    class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="400ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-front-end"></span>
+                            </div>
+                            <h3 class="services-two__title"><a href="social-marketing.html">Embracing AI in Business</a></h3>
+                            <p class="services-two__text">Get insights into the importance of adopting AI-driven solutions in today's rapidly evolving business landscape and how it can transform your organization's success.
+</p>
+                            <a class="services-two__arrow" href="social-marketing.html"><span
+                                    class="icon-right-arrow"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Services Two End-->
+        
         <!--Brand One Start-->
         <!-- <section class="brand-one">
                 <div class="container">
@@ -371,35 +459,36 @@
                     <span class="section-title__tagline">Short Term / Long Term Programs For Students And Working Professionals</span>
                 </div>
                 <div class="row">
-                <?php $i = 1; foreach ($trainings as $training) : ?>
-                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                        <!--Blog One Start-->
-                        <div class="blog-one__single">
-                            <div class="blog-one__img">
-                                <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
-                                <a href="<?php echo base_url();?>training-detail/<?php echo $training['id']; ?>">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date" style="left:0px !important;right:288px !important">
-                                    <p><?php echo $training['duration']; ?></p>
+                <?php $i = 1;
+                foreach ($trainings as $training): ?>
+                            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                                <!--Blog One Start-->
+                                <div class="blog-one__single">
+                                    <div class="blog-one__img">
+                                        <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
+                                        <a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>">
+                                            <span class="blog-one__plus"></span>
+                                        </a>
+                                        <div class="blog-one__date" style="left:0px !important;right:288px !important">
+                                            <p><?php echo $training['duration']; ?></p>
+                                        </div>
+                                    </div>
+                                    <div class="blog-one__content">
+                                        <ul class="list-unstyled blog-one__meta">
+                                            <!-- <li><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></li> -->
+                                            <!-- <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li> -->
+                                        </ul>
+                                        <!-- <p><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></p> -->
+
+                                        <h3 class="blog-one__title">
+                                            <a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>"><?php echo $training['name']; ?></a>
+                                        </h3>
+                                        <p>Online | Classroom  | E-Learning</p>
+                               
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog-one__content">
-                                <ul class="list-unstyled blog-one__meta">
-                                    <!-- <li><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></li> -->
-                                    <!-- <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li> -->
-                                </ul>
-                                <!-- <p><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></p> -->
-
-                                <h3 class="blog-one__title">
-                                    <a href="<?php echo base_url();?>training-detail/<?php echo $training['id']; ?>"><?php echo $training['name']; ?></a>
-                                </h3>
-                                <p>Online | Classroom  | E-Learning</p>
-                               
-                            </div>
-                        </div>
-                    </div>
                     <?php endforeach; ?>
 
                     <!-- <div class="blog-sidebar__load-more text-center">
@@ -596,7 +685,7 @@
                         <div class="why-choose-one__left wow fadeInLeft" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="why-choose-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/why-choose-one-img.jpg"
+                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images1.jpg"
                                     alt>
                             </div>
                         </div>
