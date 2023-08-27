@@ -163,10 +163,10 @@
                                                 Details</a></li>
                                     </ul>
                                 </li> -->
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="<?php echo base_url();?>">Home</a></li>
+                        <li><a href="<?php echo base_url();?>about">About</a></li>
                         <li class="dropdown">
-                            <a href="#">Services</a>
+                            <a href="<?php echo base_url();?>service">Services</a>
                             <ul>
                                 <li><a href="#">Search Engine
                                         Optimization (SEO)</a></li>
@@ -182,7 +182,7 @@
                             </ul>
                         </li>
                         <li class="dropdown ">
-                            <a href="#">Training</a>
+                            <a href="<?php echo base_url();?>training">Training</a>
                             <ul>
                                 <li><a href="#">Certified course in
                                         digital marketing.</a></li>
@@ -192,7 +192,7 @@
                                         marketing with AI.</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="<?php echo base_url();?>contact">Contact</a></li>
                         <li class="dropdown megamenu">
                             <a href="index.html">Home </a>
                             <ul>

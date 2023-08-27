@@ -96,38 +96,8 @@
         </section>
         <!--Page Header End-->
 
-        <!--Tranining Page Start-->
-        <!-- <section class="projects-page">
-            <div class="container">
-               
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">recent projects</span> 
-                    <h2 class="section-title__title">Trainings</h2>
-                </div>
-                <div class="row filter-layout">
-                <?php $i = 1;
-                foreach ($trainings as $training): ?>
-                    <div class="col-xl-4 col-lg-6 col-md-6 filter-item bra photo web">
-                        
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
-                                <div class="project-one__hover">
-                                <p class="project-one__tagline">Graphic</p> 
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>"><?php echo $training['name']; ?></a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </section> -->
-        <!--Tranining Page End-->
-
-        <!--Blog Page Start-->
-        <section class="blog-one blog-one__blog-page">
+        <!--Projects Page Start-->
+        <section class="projects-page">
             <div class="container">
                 <div class="section-title text-center">
 
@@ -135,48 +105,30 @@
                     <span class="section-title__tagline">Short Term / Long Term Programs For Students And Working
                         Professionals</span>
                 </div>
-                <div class="row">
-                    <?php $i = 1; foreach ($trainings as $training): ?>
-                        <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                            <!--Blog One Start-->
-                            <div class="blog-one__single">
-                                <div class="blog-one__img">
-                                    <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
-                                    <a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>">
-                                        <span class="blog-one__plus"></span>
-                                    </a>
-                                    <div class="blog-one__date" style="left:0px !important;right:288px !important">
-                                        <p>
-                                            <?php echo $training['duration']; ?>
-                                        </p>
+                <div class="row filter-layout">
+                    <?php $i = 1;
+                    foreach ($services as $service): ?>
+                        <div class="col-xl-4 col-lg-6 col-md-6 filter-item bra photo web">
+                            <!--Portfolio One Single-->
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img src="<?php echo base_url('' . $service['image']); ?>" alt="">
+                                    <div class="project-one__hover">
+                                        <!-- <p class="project-one__tagline">Graphic</p> -->
+                                        <h3 class="project-one__title"><a href="<?php echo base_url();?>service-detail/<?php echo $service['id'];?>">
+                                                <?php echo $service['name']; ?>
+                                            </a>
+                                        </h3>
                                     </div>
-                                </div>
-                                <div class="blog-one__content">
-                                    <ul class="list-unstyled blog-one__meta">
-                                        <!-- <li><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></li> -->
-                                        <!-- <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li> -->
-                                    </ul>
-                                    <!-- <p><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></p> -->
-
-                                    <h3 class="blog-one__title">
-                                        <a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>"><?php echo $training['name']; ?></a>
-                                    </h3>
-                                    <p>Online | Classroom </p>
-
                                 </div>
                             </div>
                         </div>
                     <?php endforeach; ?>
-
-                    <!-- <div class="blog-sidebar__load-more text-center">
-                        <a href="blog.html" class="thm-btn blog-sidebar__load-more-btn">load more
-                            posts</a>
-                    </div> -->
                 </div>
             </div>
         </section>
-        <!--Blog Page End-->
+        <!--Projects Page End-->
+
 
 
         <!--Blog Page Start-->
@@ -663,9 +615,9 @@
         </section>
         <!--End Services Three-->
 
-       
 
-       
+
+
 
 
         <!--Site Footer Start-->

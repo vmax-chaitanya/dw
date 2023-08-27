@@ -76,6 +76,17 @@ class Home_model extends CI_Model {
         $this->db->where('type', '4');
         return $this->db->get('gallery')->result_array();
     }
+    public function getActiveServices()
+    {
+        $this->db->where('status', '1');
+        return $this->db->get('services')->result_array();
+    }
+    public function get_service_by_id($id)
+    {
+        $this->db->where('id', $id);
+        $query = $this->db->get('services');
+        return $query->row_array();
+    }
 
     // public function getActiveBlog()
     // {

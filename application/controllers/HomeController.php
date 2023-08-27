@@ -7,7 +7,7 @@ class HomeController extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('admin/contact_model'); // Load the Contact_model
+        $this->load->model('Admin/contact_model'); // Load the Contact_model
 
         $this->load->model('Home_model');
         $this->load->helper('download');
@@ -60,7 +60,19 @@ class HomeController extends CI_Controller
     {
         // Load the services view
         $data['page_title'] = "Home || Digital win ||";
+        $data['services'] = $this->Home_model->getActiveServices();
         $this->load->view('home/services', $data);
+    }
+    public function service_detail($service_id)
+    {
+
+        $data['page_title'] = "Home || Digital win ||";
+        $data['services_detail'] = $this->Home_model->get_service_by_id($service_id);
+        $data['curriculums'] = $this->Home_model->getActiveCurriculum($service_id);
+        $data['key_highlites'] = $this->Home_model->getActiveKeyHighlites($service_id);
+        $data['services'] = $this->Home_model->getActiveServices();
+
+        $this->load->view('home/service_detail', $data);
     }
 
     public function training()
@@ -83,10 +95,6 @@ class HomeController extends CI_Controller
         $data['curriculums'] = $this->Home_model->getActiveCurriculum($training_id);
         $data['key_highlites'] = $this->Home_model->getActiveKeyHighlites($training_id);
         $data['trainings'] = $this->Home_model->getActiveTraining();
-
-        // $data['curriculums'] = $this->Home_model->getActiveCurriculum($training_id);
-        //echo "<pre>"; print_r($data['key_highlites']); exit;
-
         $this->load->view('home/training_detail', $data);
     }
     public function blogs()

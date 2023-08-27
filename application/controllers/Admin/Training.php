@@ -9,7 +9,7 @@ class Training extends CI_Controller
         if (!$this->session->userdata('user_id')) {
             redirect('admin/login'); // Redirect to login page
         }
-        $this->load->model('admin/training_model');
+        $this->load->model('Admin/training_model');
         $this->load->library('form_validation');
     }
 

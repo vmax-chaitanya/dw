@@ -58,7 +58,7 @@
                                 <span class="icon-conversation"></span>
                             </div>
                             <h3 class="contact-info__title">About</h3>
-                            <p class="contact-info__text" style="text-align: justify;">DigitalWin
+                            <p class="contact-info__text" >DigitalWin
                                 Business Agency is a dynamic and
                                 results-driven digital marketing agency
                                 dedicated to helping businesses thrive in
@@ -72,7 +72,7 @@
                                 <span class="icon-address"></span>
                             </div>
                             <h3 class="contact-info__title">address</h3>
-                            <p class="contact-info__text" style="text-align: justify;">DIGITALWIN
+                            <p class="contact-info__text" >DIGITALWIN
                                 BUSINESS AGENCY PVT LTD.,
                                 MIG-161, 3rd Floor, Above Lenskart, Opp Sri
                                 Sri Holistic Hospital, Road No 1, KPHB,
@@ -89,7 +89,7 @@
                             <h3 class="contact-info__title">contact</h3>
                             <h4>
                                 <a href="mailto:info@digitalwinbusinessagency.com" class="contact-info__mail"
-                                    style="text-align: justify;">info@digitalwinbusinessagency.com
+                                    >info@digitalwinbusinessagency.com
                                 </a>
                                 <a href="tel:919154357401" class="contact-info__phone">+91
                                     9154357401</a>

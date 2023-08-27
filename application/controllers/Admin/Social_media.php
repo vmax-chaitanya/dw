@@ -9,7 +9,7 @@ class Social_media extends CI_Controller
         if (!$this->session->userdata('user_id')) {
             redirect('admin/login'); // Redirect to login page
         }
-        $this->load->model('admin/social_media_model');
+        $this->load->model('Admin/social_media_model');
         $this->load->library('form_validation');
     }
 

@@ -7,7 +7,7 @@ class Gallery extends CI_Controller
         if (!$this->session->userdata('user_id')) {
             redirect('admin/login'); // Redirect to login page
         }
-        $this->load->model('admin/gallery_model');
+        $this->load->model('Admin/gallery_model');
         $this->load->library('form_validation');
     }
 

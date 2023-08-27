@@ -49,22 +49,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['home'] = 'Home/HomeController/index';
+
+//////////////////////Home Controller//////
+$route['default_controller'] = 'HomeController';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-//////////////////////Home Controller//////
-//$route['default_controller'] = 'Home/HomeController';
-$route['about'] = 'Home/HomeController/about';
-$route['contact'] = 'Home/HomeController/contact';
-$route['blog'] = 'Home/HomeController/blog';
-$route['faq'] = 'Home/HomeController/faq';
-$route['services'] = 'Home/HomeController/services';
-$route['training'] = 'Home/HomeController/training';
-$route['contact-insert'] = 'Home/HomeController/create_contact';
-$route['training-detail/(:num)'] = 'Home/HomeController/training_detail/$1';
-$route['blogs'] = 'Home/HomeController/blogs';
-$route['blog-detail/(:num)'] = 'Home/HomeController/blog_detail/$1';
+$route['about'] = 'HomeController/about';
+$route['contact'] = 'HomeController/contact';
+$route['blog'] = 'HomeController/blog';
+$route['faq'] = 'HomeController/faq';
+$route['services'] = 'HomeController/services';
+$route['service-detail/(:num)'] = 'HomeController/service_detail/$1';
+
+$route['training'] = 'HomeController/training';
+$route['contact-insert'] = 'HomeController/create_contact';
+$route['training-detail/(:num)'] = 'HomeController/training_detail/$1';
+$route['blogs'] = 'HomeController/blogs';
+$route['blog-detail/(:num)'] = 'HomeController/blog_detail/$1';
 //////////Home Controller//////
 
 ///////admin////////

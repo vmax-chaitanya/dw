@@ -149,7 +149,7 @@
                                                     <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-10">
                                                         <textarea class="form-control" name="description" rows="4"
-                                                            required><?php echo set_value('description', $training['description']); ?></textarea>
+                                                        id="editor" required><?php echo set_value('description', $training['description']); ?></textarea>
                                                         <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>

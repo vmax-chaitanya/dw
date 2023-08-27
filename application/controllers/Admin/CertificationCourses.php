@@ -9,7 +9,7 @@ class CertificationCourses extends CI_Controller
         if (!$this->session->userdata('user_id')) {
             redirect('admin/login'); // Redirect to login page
         }
-        $this->load->model('admin/certification_courses_model'); // Load the model for certification courses
+        $this->load->model('Admin/certification_courses_model'); // Load the model for certification courses
         $this->load->library('form_validation');
     }
 

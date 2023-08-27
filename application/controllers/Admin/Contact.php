@@ -9,7 +9,7 @@ class Contact extends CI_Controller
         if (!$this->session->userdata('user_id')) {
             redirect('admin/login'); // Redirect to login page
         }
-        $this->load->model('admin/contact_model'); // Load the Contact_model
+        $this->load->model('Admin/contact_model'); // Load the Contact_model
         $this->load->library('form_validation');
     }
 

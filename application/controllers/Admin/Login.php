@@ -5,7 +5,7 @@ class Login extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->model('admin/user_model'); // Assuming your user model is in 'admin' folder
+        $this->load->model('Admin/user_model'); // Assuming your user model is in 'admin' folder
     }
 
     public function index() {

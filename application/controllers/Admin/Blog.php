@@ -4,7 +4,10 @@ class Blog extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('admin/blog_model'); // Load the model to interact with the 'blogs' table
+        $this->load->model('Admin/blog_model'); // Load the model to interact with the 'blogs' table
+        if (!$this->session->userdata('user_id')) {
+            redirect('admin/login'); // Redirect to login page
+        }
         $this->load->library('form_validation');
     }
 

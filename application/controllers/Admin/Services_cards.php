@@ -9,7 +9,7 @@ class Services_cards extends CI_Controller
         if (!$this->session->userdata('user_id')) {
             redirect('admin/login'); // Redirect to login page
         }
-        $this->load->model('admin/services_cards_model');
+        $this->load->model('Admin/services_cards_model');
         $this->load->library('form_validation');
     }
 
