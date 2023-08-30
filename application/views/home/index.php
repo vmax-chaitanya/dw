@@ -108,124 +108,7 @@
         </section>
         <!--Main Slider End-->
 
-        <!--Services One Start-->
-        <section class="services-one">
-            <div class="services-one-shape wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"><img
-                    class="float-bob-x" src="<?php echo base_url(); ?>assets/home/images/shapes/services-one-shape.png"
-                    alt></div>
-            <div class="container">
-                <div class="services-one__top">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="services-one__top-left">
-                                <div class="section-title text-left">
-                                    <span class="section-title__tagline">our
-                                        services list</span>
-                                    <h2 class="section-title__title">what
-                                        we’re offering</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="services-one__top-text-box">
-                                <p class="services-one__top-text">DigitalWin: Your strategic partner in embracing
-                                    limitless AI possibilities, revolutionizing business operations with a passionate
-                                    team of professionals dedicated to propelling your success.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-one__bottom">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <ul class="list-unstyled services-one__list">
-                                <li class="services-one__single wow fadeInUp" data-wow-delay="100ms">
-                                    <div class="services-one__icon">
-                                        <span class="icon-online-shopping"></span>
-                                        <!-- <img class="icon-growth" src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"  height="100" width="100" style="margin-top: -30px;" class=""> -->
-                                    </div>
-
-                                    <h3 class="services-one__title"><a href="website-development.html">Search Engine
-                                            Optimization <br>(SEO):</a></h3>
-                                    <a class="services-one__arrow" href="website-development.html"><span
-                                            class="icon-right-arrow"></span></a>
-                                </li>
-                                <li class="services-one__single wow fadeInUp" data-wow-delay="200ms">
-                                    <div class="services-one__icon">
-                                        <span class="icon-growth"></span>
-                                    </div>
-
-                                    <h3 class="services-one__title"><a href="graphic-design.html">Search Engine
-                                            Marketing <br> (SEM): </a></h3>
-                                    <a class="services-one__arrow" href="graphic-design.html"><span
-                                            class="icon-right-arrow"></span></a>
-                                </li>
-                                <li class="services-one__single wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="services-one__icon">
-                                        <span class="icon-webpage"></span>
-                                    </div>
-
-                                    <h3 class="services-one__title"><a href="digital-marketing.html">Social Media
-                                            Marketing: </a></h3>
-                                    <a class="services-one__arrow" href="digital-marketing.html"><span
-                                            class="icon-right-arrow"></span></a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <ul class="list-unstyled services-one__list">
-                                <li class="services-one__single wow fadeInUp" data-wow-delay="400ms">
-                                    <div class="services-one__icon">
-                                        <span class="icon-front-end"></span>
-                                    </div>
-
-                                    <h3 class="services-one__title"><a href="social-marketing.html">Pay-Per-Click (PPC)
-                                            & <br>Google Advertising: </a></h3>
-                                    <a class="services-one__arrow" href="social-marketing.html"><span
-                                            class="icon-right-arrow"></span></a>
-                                </li>
-                                <li class="services-one__single wow fadeInUp" data-wow-delay="100ms">
-                                    <div class="services-one__icon">
-                                        <span class="icon-online-shopping"></span>
-                                    </div>
-
-                                    <h3 class="services-one__title"><a href="website-development.html">Content
-                                            Marketing: </a></h3>
-                                    <a class="services-one__arrow" href="website-development.html"><span
-                                            class="icon-right-arrow"></span></a>
-                                </li>
-                                <li class="services-one__single wow fadeInUp" data-wow-delay="200ms">
-                                    <div class="services-one__icon">
-                                        <span class="icon-growth"></span>
-                                    </div>
-
-                                    <h3 class="services-one__title"><a href="graphic-design.html">Web Development: </a>
-                                    </h3>
-                                    <a class="services-one__arrow" href="graphic-design.html"><span
-                                            class="icon-right-arrow"></span></a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="services-one__find-solutions">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <p class="services-one__find-solutions-text">DigitalWin
-                                services built specifically for your
-                                business. <a href="about.html">Find Your
-                                    Solution</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Services One End-->
-
+        
         <!--Get To Know Start-->
         <section class="get-to-know">
             <div class="container">
@@ -321,7 +204,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-online-shopping"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="website-development.html">Unparalleled Insights</a>
+                            <h3 class="services-two__title"><a href="#">Unparalleled Insights</a>
                             </h3>
                             <p class="services-two__text">With AI's ability to analyze vast amounts of data in
                                 real-time, you gain invaluable insights into customer behavior, market trends, and
@@ -336,7 +219,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-growth"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="graphic-design.html">Enhanced Personalization</a>
+                            <h3 class="services-two__title"><a href="#">Enhanced Personalization</a>
                             </h3>
                             <p class="services-two__text">Customers today expect personalized experiences. AI enables
                                 you to deliver tailored content, product recommendations, and communication, fostering
@@ -350,7 +233,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-webpage"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="digital-marketing.html">Improved Efficiency</a>
+                            <h3 class="services-two__title"><a href="#">Improved Efficiency</a>
                             </h3>
                             <p class="services-two__text">Repetitive manual tasks can hinder productivity. AI automates
                                 these processes, freeing up your team to focus on strategic initiatives that lead to
@@ -364,7 +247,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="social-marketing.html">Predictive Capabilities</a>
+                            <h3 class="services-two__title"><a href="#">Predictive Capabilities</a>
                             </h3>
                             <p class="services-two__text">AI predictive analytics help you anticipate future trends and
                                 customer needs, allowing you to stay proactive and seize opportunities before your
@@ -378,7 +261,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="social-marketing.html">Cost Savings</a></h3>
+                            <h3 class="services-two__title"><a href="#">Cost Savings</a></h3>
                             <p class="services-two__text">By streamlining processes and optimizing resources, AI helps
                                 reduce operational costs, making your business more agile and resilient.</p>
 
@@ -390,7 +273,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="social-marketing.html">Embracing AI in Business</a>
+                            <h3 class="services-two__title"><a href="#">Embracing AI in Business</a>
                             </h3>
                             <p class="services-two__text">Get insights into the importance of adopting AI-driven
                                 solutions in today's rapidly evolving business landscape and how it can transform your
@@ -471,6 +354,311 @@
         <!--Brand One End-->
 
 
+        <!--Blog Page Start-->
+        <section class="blog-one blog-one__blog-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <!--Blog One Start-->
+                        <div class="blog-one__single">
+                            <div class="blog-one__img">
+                                <img src="<?php echo base_url();?>assets/images/driven/small_bussigness.jpg" alt="">
+                                <!-- <a href="#">
+                                    <span class="blog-one__plus"></span>
+                                </a> -->
+                                <!-- <div class="blog-one__date">
+                                    <p>25 <br> AUG</p>
+                                </div> -->
+                            </div>
+                            <div class="blog-one__content">
+                                <!-- <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li>
+                                </ul> -->
+                                <h3 class="blog-one__title">
+                                    <a href="#">Small Businesses</a>
+                                </h3>
+                                <!-- <div class="blog-one__person">
+                                    <div class="blog-one__person-img">
+                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-one__person-content">
+                                        <p>by Mike Hardson</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <!--Blog One Start-->
+                        <div class="blog-one__single">
+                            <div class="blog-one__img">
+                                <img src="<?php echo base_url();?>assets/images/driven/start_up.jpg" alt="">
+                                <!-- <a href="#">
+                                    <span class="blog-one__plus"></span>
+                                </a>
+                                <div class="blog-one__date">
+                                    <p>25 <br> AUG</p>
+                                </div> -->
+                            </div>
+                            <div class="blog-one__content">
+                                <!-- <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li>
+                                </ul> -->
+                                <h3 class="blog-one__title">
+                                    <a href="#">Startups</a>
+                                </h3>
+                                <!-- <div class="blog-one__person">
+                                    <div class="blog-one__person-img">
+                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-one__person-content">
+                                        <p>by Mike Hardson</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <!--Blog One Start-->
+                        <div class="blog-one__single">
+                            <div class="blog-one__img">
+                                <img src="<?php echo base_url();?>assets/images/driven/ecommerce.jpg" alt="">
+                                <!-- <a href="#">
+                                    <span class="blog-one__plus"></span>
+                                </a>
+                                <div class="blog-one__date">
+                                    <p>25 <br> AUG</p>
+                                </div> -->
+                            </div>
+                            <div class="blog-one__content">
+                                <!-- <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li>
+                                </ul> -->
+                                <h3 class="blog-one__title">
+                                    <a href="#">E-commerce Businesses</a>
+                                </h3>
+                                <!-- <div class="blog-one__person">
+                                    <div class="blog-one__person-img">
+                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-one__person-content">
+                                        <p>by Mike Hardson</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <!--Blog One Start-->
+                        <div class="blog-one__single">
+                            <div class="blog-one__img">
+                                <img src="<?php echo base_url();?>assets/images/driven/b2b.jpg" alt="">
+                                <!-- <a href="#">
+                                    <span class="blog-one__plus"></span>
+                                </a>
+                                <div class="blog-one__date">
+                                    <p>25 <br> AUG</p>
+                                </div> -->
+                            </div>
+                            <div class="blog-one__content">
+                                <!-- <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li>
+                                </ul> -->
+                                <h3 class="blog-one__title">
+                                    <a href="#">B2B Companies </a>
+                                </h3>
+                                <div class="blog-one__person">
+                                    <!-- <div class="blog-one__person-img">
+                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-one__person-content">
+                                        <p>by Mike Hardson</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="500ms">
+                        <!--Blog One Start-->
+                        <div class="blog-one__single">
+                            <div class="blog-one__img">
+                                <img src="<?php echo base_url();?>assets/images/driven/professional_services.jpg" alt="">
+                                <!-- <a href="#">
+                                    <span class="blog-one__plus"></span>
+                                </a>
+                                <div class="blog-one__date">
+                                    <p>25 <br> AUG</p>
+                                </div> -->
+                            </div>
+                            <div class="blog-one__content">
+                                <!-- <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li>
+                                </ul> -->
+                                <h3 class="blog-one__title">
+                                    <a href="#">Professional Services
+                                    </a>
+                                </h3>
+                                <div class="blog-one__person">
+                                    <!-- <div class="blog-one__person-img">
+                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-one__person-content">
+                                        <p>by Mike Hardson</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
+                        <!--Blog One Start-->
+                        <div class="blog-one__single">
+                            <div class="blog-one__img">
+                                <img src="<?php echo base_url();?>assets/images/driven/local_bussigness.jpg" alt="">
+                                <!-- <a href="#">
+                                    <span class="blog-one__plus"></span>
+                                </a>
+                                <div class="blog-one__date">
+                                    <p>25 <br> AUG</p>
+                                </div> -->
+                            </div>
+                            <div class="blog-one__content">
+                                <!-- <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li>
+                                </ul> -->
+                                <h3 class="blog-one__title">
+                                    <a href="#">Local Businesses</a>
+                                </h3>
+                                <div class="blog-one__person">
+                                    <!-- <div class="blog-one__person-img">
+                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-one__person-content">
+                                        <p>by Mike Hardson</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="700ms">
+                        <!--Blog One Start-->
+                        <div class="blog-one__single">
+                            <div class="blog-one__img">
+                                <img src="<?php echo base_url();?>assets/images/driven/non_profit_orginization.jpg" alt="">
+                                <!-- <a href="#">
+                                    <span class="blog-one__plus"></span>
+                                </a>
+                                <div class="blog-one__date">
+                                    <p>25 <br> AUG</p>
+                                </div> -->
+                            </div>
+                            <div class="blog-one__content">
+                                <!-- <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li>
+                                </ul> -->
+                                <h3 class="blog-one__title">
+                                    <a href="#">Nonprofit Organizations</a>
+                                </h3>
+                                <div class="blog-one__person">
+                                    <!-- <div class="blog-one__person-img">
+                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-one__person-content">
+                                        <p>by Mike Hardson</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="800ms">
+                        <!--Blog One Start-->
+                        <div class="blog-one__single">
+                            <div class="blog-one__img">
+                                <img src="<?php echo base_url();?>assets/images/driven/educational.jpg" alt="">
+                                <!-- <a href="#">
+                                    <span class="blog-one__plus"></span>
+                                </a>
+                                <div class="blog-one__date">
+                                    <p>25 <br> AUG</p>
+                                </div> -->
+                            </div>
+                            <div class="blog-one__content">
+                                <!-- <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li>
+                                </ul> -->
+                                <h3 class="blog-one__title">
+                                    <a href="#">Education Institutions</a>
+                                </h3>
+                                <div class="blog-one__person">
+                                    <!-- <div class="blog-one__person-img">
+                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-one__person-content">
+                                        <p>by Mike Hardson</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="900ms">
+                        <!--Blog One Start-->
+                        <div class="blog-one__single">
+                            <div class="blog-one__img">
+                                <img src="<?php echo base_url();?>assets/images/driven/real-estate.jpg" alt="">
+                                <!-- <a href="#">
+                                    <span class="blog-one__plus"></span>
+                                </a>
+                                <div class="blog-one__date">
+                                    <p>25 <br> AUG</p>
+                                </div> -->
+                            </div>
+                            <div class="blog-one__content">
+                                <!-- <ul class="list-unstyled blog-one__meta">
+                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    </li>
+                                </ul> -->
+                                <h3 class="blog-one__title">
+                                    <a href="#">Real Estate Agencies</a>
+                                </h3>
+                                <div class="blog-one__person">
+                                    <!-- <div class="blog-one__person-img">
+                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-one__person-content">
+                                        <p>by Mike Hardson</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="blog-sidebar__load-more text-center">
+                        <a href="blog.html" class="thm-btn blog-sidebar__load-more-btn">load more
+                            posts</a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!--Blog Page End-->
+
 
         <!--Services Two Start-->
         <section class="services-two">
@@ -486,7 +674,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-online-shopping"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="website-development.html">Expertise</a></h3>
+                            <h3 class="services-two__title"><a href="#">Expertise</a></h3>
                             <p class="services-two__text">Our team of AI experts and industry professionals brings
                                 in-depth knowledge and experience to the table, ensuring you receive top-notch solutions
                                 tailored to your business needs.</p>
@@ -1387,7 +1575,7 @@
                                     <img
                                         src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-img-1.jpg"
                                         alt>
-                                    <a href="blog-details.html">
+                                    <a href="#">
                                         <span class="blog-one__plus"></span>
                                     </a>
                                     <div class="blog-one__date">
@@ -1396,16 +1584,16 @@
                                 </div>
                                 <div class="blog-one__content">
                                     <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="blog-details.html"><i
+                                        <li><a href="#"><i
                                                     class="far fa-folder-open"></i>
                                                 Business</a></li>
-                                        <li><a href="blog-details.html"><i
+                                        <li><a href="#"><i
                                                     class="far fa-comments"></i>
                                                 02 Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="blog-one__title">
-                                        <a href="blog-details.html">Get few
+                                        <a href="#">Get few
                                             solutions to hire a best candidate</a>
                                     </h3>
                                     <div class="blog-one__person">
@@ -1429,7 +1617,7 @@
                                     <img
                                         src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-img-2.jpg"
                                         alt>
-                                    <a href="blog-details.html">
+                                    <a href="#">
                                         <span class="blog-one__plus"></span>
                                     </a>
                                     <div class="blog-one__date">
@@ -1438,16 +1626,16 @@
                                 </div>
                                 <div class="blog-one__content">
                                     <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="blog-details.html"><i
+                                        <li><a href="#"><i
                                                     class="far fa-folder-open"></i>
                                                 Business</a></li>
-                                        <li><a href="blog-details.html"><i
+                                        <li><a href="#"><i
                                                     class="far fa-comments"></i>
                                                 02 Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="blog-one__title">
-                                        <a href="blog-details.html">Bring to the
+                                        <a href="#">Bring to the
                                             table win-win survival strategies</a>
                                     </h3>
                                     <div class="blog-one__person">
@@ -1471,7 +1659,7 @@
                                     <img
                                         src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-img-3.jpg"
                                         alt>
-                                    <a href="blog-details.html">
+                                    <a href="#">
                                         <span class="blog-one__plus"></span>
                                     </a>
                                     <div class="blog-one__date">
@@ -1480,16 +1668,16 @@
                                 </div>
                                 <div class="blog-one__content">
                                     <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="blog-details.html"><i
+                                        <li><a href="#"><i
                                                     class="far fa-folder-open"></i>
                                                 Business</a></li>
-                                        <li><a href="blog-details.html"><i
+                                        <li><a href="#"><i
                                                     class="far fa-comments"></i>
                                                 02 Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="blog-one__title">
-                                        <a href="blog-details.html">Capitalize
+                                        <a href="#">Capitalize
                                             on low hanging fruit to identify a</a>
                                     </h3>
                                     <div class="blog-one__person">
