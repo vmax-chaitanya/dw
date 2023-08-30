@@ -30,6 +30,7 @@ class Services_cards extends CI_Controller
         $this->form_validation->set_rules('name', 'Name', 'required|max_length[500]');
         $this->form_validation->set_rules('description', 'Description', 'required');
         $this->form_validation->set_rules('status', 'Status', 'required|in_list[1,2,3]');
+        $this->form_validation->set_rules('type', 'Type', 'required|in_list[1,2]');
 
         if ($this->form_validation->run() === FALSE) {
             $this->load->view('admin/services_cards_create');
@@ -50,6 +51,7 @@ class Services_cards extends CI_Controller
                 'name' => $this->input->post('name'),
                 'description' => $this->input->post('description'),
                 'status' => $this->input->post('status'),
+                'type' => $this->input->post('type'),
                 'image' => $image_name,
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace this with the actual created_by user ID
@@ -80,6 +82,7 @@ class Services_cards extends CI_Controller
         $this->form_validation->set_rules('name', 'Name', 'required|max_length[500]');
         $this->form_validation->set_rules('description', 'Description', 'required');
         $this->form_validation->set_rules('status', 'Status', 'required|in_list[1,2,3]');
+        $this->form_validation->set_rules('type', 'Type', 'required|in_list[1,2]');
 
         if ($this->form_validation->run() === FALSE) {
             $data['service_card'] = $this->services_cards_model->get_services_card_by_id($id);
@@ -104,6 +107,7 @@ class Services_cards extends CI_Controller
                 'name' => $this->input->post('name'),
                 'description' => $this->input->post('description'),
                 'status' => $this->input->post('status'),
+                'type' => $this->input->post('type'),
                 'image' => $image_name,
                 'created_at' => time(),
                 'created_by' => $this->input->post('created_by') // Replace this with the actual created_by user ID
