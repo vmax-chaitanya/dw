@@ -9,11 +9,13 @@ class Services_cards_model extends CI_Model
         $this->load->database();
     }
 
-    public function get_all_services_cards()
-    {
+    public function get_all_services_cards($type)
+    { 
+        $this->db->where('type', $type);
         $query = $this->db->get('services_cards');
         return $query->result_array();
     }
+    
 
     public function create_services_card($data)
     {

@@ -3,8 +3,7 @@
         <div class="main-menu-wrapper clearfix">
             <div class="main-menu-wrapper__left">
                 <div class="main-menu-wrapper__logo">
-                    <a href="index.html"><img
-                            src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
+                    <a href="index.html"><img src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
                 </div>
                 <div class="main-menu-wrapper__main-menu">
                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -166,33 +165,33 @@
                         <li><a href="<?php echo base_url(); ?>">Home</a></li>
                         <li><a href="<?php echo base_url(); ?>about">About</a></li>
                         <li class="dropdown">
-                                    <a href="#">Home</a>
-                                    <ul class = "">
-                                        <div class="sections__container">
-                                            <div class="col">
-                                                <span class="btn"><a href="#">HOME page 1</a></span>
-                                            </div>
-                                            <div class="col">
-                                                <span class="btn"><a href="#">HOME page 2</a></span>
-                                            </div>
-                                            <div class="col">
-                                                <span class="btn"><a href="#">HOME page 3</a></span>
-                                            </div>
-                                            <div class="col">
-                                                <span class="btn"><a href="#">HOME page 4</a></span>
-                                            </div>
-                                            <div class="col">
-                                                <span class="btn"><a href="#">HOME page 5</a></span>
-                                            </div>
-                                            <div class="col">
-                                                <span class="btn"><a href="#">HOME page 6</a></span>
-                                            </div>
-                                            
-                                           
-                                        </div>
-                                       
-                                    </ul>
-                                </li>
+                            <a href="#">Home</a>
+                            <ul class="">
+                                <div class="sections__container">
+                                    <div class="col">
+                                        <span class="btn"><a href="#">HOME page 1</a></span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="btn"><a href="#">HOME page 2</a></span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="btn"><a href="#">HOME page 3</a></span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="btn"><a href="#">HOME page 4</a></span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="btn"><a href="#">HOME page 5</a></span>
+                                    </div>
+                                    <div class="col">
+                                        <span class="btn"><a href="#">HOME page 6</a></span>
+                                    </div>
+
+
+                                </div>
+
+                            </ul>
+                        </li>
                         <li class="dropdown">
                             <a href="<?php echo base_url(); ?>service">Services</a>
                             <ul>
@@ -269,7 +268,7 @@
                             </ul>
                         </li>
 
-                       
+
                     </ul>
                 </div>
             </div>

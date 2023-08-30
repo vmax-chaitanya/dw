@@ -74,7 +74,7 @@ $route['admin/login'] = 'Admin/Login/index';
 $route['admin/do_login'] = 'Admin/Login/do_login';
 $route['admin/logout'] = 'Admin/Login/logout';
 
-$route['admin/dashboard'] = 'admin/dashboard/index';
+$route['admin/dashboard'] = 'Admin/dashboard/index';
 
 
 $route['admin/banner'] = 'Admin/banner/index';
@@ -126,31 +126,31 @@ $route['admin/testimonials/delete/(:num)'] = 'Admin/Testimonials/delete/$1';
 
 
 // Routes for Services
-$route['admin/services'] = 'admin/services/index'; // Display the list of services
-$route['admin/services/add'] = 'admin/services/add'; // Display the form to add a new service
-$route['admin/services/create'] = 'admin/services/create'; // Process the form submission to create a new service
-$route['admin/services/edit/(:any)'] = 'admin/services/edit/$1'; // Display the form to edit an existing service
-$route['admin/services/update/(:any)'] = 'admin/services/update/$1'; // Process the form submission to update a service
-$route['admin/services/delete/(:any)'] = 'admin/services/delete/$1'; // Delete a service
+$route['admin/services'] = 'Admin/services/index'; // Display the list of services
+$route['admin/services/add'] = 'Admin/services/add'; // Display the form to add a new service
+$route['admin/services/create'] = 'Admin/services/create'; // Process the form submission to create a new service
+$route['admin/services/edit/(:any)'] = 'Admin/services/edit/$1'; // Display the form to edit an existing service
+$route['admin/services/update/(:any)'] = 'Admin/services/update/$1'; // Process the form submission to update a service
+$route['admin/services/delete/(:any)'] = 'Admin/services/delete/$1'; // Delete a service
 
 
 // Routes for Services Cards
-$route['admin/services_cards/(:num)'] = 'admin/services_cards/index/$1'; // Display the list of services cards
+$route['admin/services_cards/(:num)'] = 'Admin/services_cards/index/$1'; // Display the list of services cards
 //$route['admin/services_cards/(:num)'] = 'admin/services/add_cards/$1';
-$route['admin/services_cards/add/(:num)'] = 'admin/services_cards/add/$1'; // Display the form to add a new service card
-$route['admin/services_cards/create/(:num)'] = 'admin/services_cards/create/$1'; // Process the form submission to create a new service card
-$route['admin/services_cards/edit/(:any)/(:num)'] = 'admin/services_cards/edit/$1/$1'; // Display the form to edit an existing service card
-$route['admin/services_cards/update/(:any)'] = 'admin/services_cards/update/$1'; // Process the form submission to update a service card
-$route['admin/services_cards/delete/(:any)'] = 'admin/services_cards/delete/$1'; // Delete a service card
+$route['admin/services_cards/add/(:num)'] = 'Admin/services_cards/add/$1'; // Display the form to add a new service card
+$route['admin/services_cards/create/(:num)'] = 'Admin/services_cards/create/$1'; // Process the form submission to create a new service card
+$route['admin/services_cards/edit/(:any)/(:num)'] = 'Admin/services_cards/edit/$1/$1'; // Display the form to edit an existing service card
+$route['admin/services_cards/update/(:any)'] = 'Admin/services_cards/update/$1'; // Process the form submission to update a service card
+$route['admin/services_cards/delete/(:any)'] = 'Admin/services_cards/delete/$1'; // Delete a service card
 
 
 // Training Routes
-$route['admin/training'] = 'admin/training/index';
-$route['admin/training/add'] = 'admin/training/add';
-$route['admin/training/create'] = 'admin/training/create';
-$route['admin/training/edit/(:num)'] = 'admin/training/edit/$1';
-$route['admin/training/update/(:num)'] = 'admin/training/update/$1';
-$route['admin/training/delete/(:num)'] = 'admin/training/delete/$1';
+$route['admin/training'] = 'Admin/training/index';
+$route['admin/training/add'] = 'Admin/training/add';
+$route['admin/training/create'] = 'Admin/training/create';
+$route['admin/training/edit/(:num)'] = 'Admin/training/edit/$1';
+$route['admin/training/update/(:num)'] = 'Admin/training/update/$1';
+$route['admin/training/delete/(:num)'] = 'Admin/training/delete/$1';
 
 
 $route['admin/contact'] = 'Admin/Contact';
@@ -177,17 +177,17 @@ $route['admin/social_media/create_or_update'] = 'admin/social_media/create_or_up
 
 
 // Routes for Certification Courses
-$route['admin/certification_courses'] = 'admin/CertificationCourses/index';
-$route['admin/certification_courses/add'] = 'admin/CertificationCourses/add';
-$route['admin/certification_courses/create'] = 'admin/CertificationCourses/create';
-$route['admin/certification_courses/edit/(:any)'] = 'admin/CertificationCourses/edit/$1';
-$route['admin/certification_courses/update/(:any)'] = 'admin/CertificationCourses/update/$1';
-$route['admin/certification_courses/delete/(:any)'] = 'admin/CertificationCourses/delete/$1';
+$route['admin/certification_courses'] = 'Admin/CertificationCourses/index';
+$route['admin/certification_courses/add'] = 'Admin/CertificationCourses/add';
+$route['admin/certification_courses/create'] = 'Admin/CertificationCourses/create';
+$route['admin/certification_courses/edit/(:any)'] = 'Admin/CertificationCourses/edit/$1';
+$route['admin/certification_courses/update/(:any)'] = 'Admin/CertificationCourses/update/$1';
+$route['admin/certification_courses/delete/(:any)'] = 'Admin/CertificationCourses/delete/$1';
 
-$route['admin/training_curriculum/(:num)'] = 'admin/TrainingCurriculum/index/$1';
-$route['admin/training_curriculum/add/(:num)'] = 'admin/TrainingCurriculum/add/$1';
-$route['admin/training_curriculum/create/(:num)'] = 'admin/TrainingCurriculum/create/$1';
-$route['admin/training_curriculum/edit/(:num)'] = 'admin/TrainingCurriculum/edit/$1';
-$route['admin/training_curriculum/update/(:num)'] = 'admin/TrainingCurriculum/update/$1';
-$route['admin/training_curriculum/delete/(:num)'] = 'admin/TrainingCurriculum/delete/$1';
+$route['admin/training_curriculum/(:num)'] = 'Admin/TrainingCurriculum/index/$1';
+$route['admin/training_curriculum/add/(:num)'] = 'Admin/TrainingCurriculum/add/$1';
+$route['admin/training_curriculum/create/(:num)'] = 'Admin/TrainingCurriculum/create/$1';
+$route['admin/training_curriculum/edit/(:num)'] = 'Admin/TrainingCurriculum/edit/$1';
+$route['admin/training_curriculum/update/(:num)'] = 'Admin/TrainingCurriculum/update/$1';
+$route['admin/training_curriculum/delete/(:num)'] = 'Admin/TrainingCurriculum/delete/$1';
 ///////admin////////

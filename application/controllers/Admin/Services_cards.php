@@ -15,7 +15,11 @@ class Services_cards extends CI_Controller
 
     public function index($service_id)
     {
-        $data['service_cards'] = $this->services_cards_model->get_all_services_cards();
+        $type=1;
+        $data['service_cards_type_1'] = $this->services_cards_model->get_all_services_cards($type);
+       
+        $type=2;
+        $data['service_cards_type_2'] = $this->services_cards_model->get_all_services_cards($type);
         $this->load->view('admin/services_cards_list', $data);
     }
 
