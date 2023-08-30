@@ -8,17 +8,23 @@
     <?php include("includes/styles.php"); ?>
     <style>
         .blog-one__date {
-    position: absolute;
-    bottom: 0;
-    right: 190px;
-    background-color: var(--qutiiz-base);
-    padding: 12px 19px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 25px;
+            position: absolute;
+            bottom: 0;
+            right: 190px;
+            background-color: var(--qutiiz-base);
+            padding: 12px 19px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 25px;
+        }
+        .p {
+  text-align: center;
+  max-width: 220px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
-</style
+    </style>
 </head>
 
 <body>
@@ -49,38 +55,42 @@
                 }}'>
                 <div class="swiper-wrapper">
 
-                <?php $i = 1;
-                foreach ($banners as $banner): ?>
-                            <div class="swiper-slide">
-                                <div class="image-layer"
-                                    style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
-                                </div>
-                                <!-- /.image-layer -->
-                                <div class="main-slider-border"></div>
-                                <div class="main-slider-border main-slider-border-two"></div>
-                                <div class="main-slider-border main-slider-border-three"></div>
-                                <div class="main-slider-border main-slider-border-four"></div>
-                                <div class="main-slider-border main-slider-border-five"></div>
-                                <div class="main-slider-border main-slider-border-six"></div>
+                    <?php $i = 1;
+                    foreach ($banners as $banner): ?>
+                        <div class="swiper-slide">
+                            <div class="image-layer"
+                                style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
+                            </div>
+                            <!-- /.image-layer -->
+                            <div class="main-slider-border"></div>
+                            <div class="main-slider-border main-slider-border-two"></div>
+                            <div class="main-slider-border main-slider-border-three"></div>
+                            <div class="main-slider-border main-slider-border-four"></div>
+                            <div class="main-slider-border main-slider-border-five"></div>
+                            <div class="main-slider-border main-slider-border-six"></div>
 
-                                <div class="main-slider-shape-1"></div>
-                                <div class="main-slider-shape-2"></div>
-                                <div class="main-slider-shape-3"></div>
+                            <div class="main-slider-shape-1"></div>
+                            <div class="main-slider-shape-2"></div>
+                            <div class="main-slider-shape-3"></div>
 
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="main-slider__content">
-                                                <p><?php echo $banner['name']; ?></p>
-                                                <h2><?php echo $banner['description']; ?></h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="main-slider__content">
+                                            <p>
+                                                <?php echo $banner['name']; ?>
+                                            </p>
+                                            <h2>
+                                                <?php echo $banner['description']; ?>
+                                            </h2>
 
-                                                <a href="about.html" class="thm-btn">Discover
-                                                    More</a>
-                                            </div>
+                                            <a href="about.html" class="thm-btn">Discover
+                                                More</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     <?php endforeach; ?>
 
                 </div>
@@ -224,8 +234,7 @@
                         <div class="get-to-know__left wow slideInLeft" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="get-to-know__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images.jpg"
-                                    alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images.jpg" alt>
                                 <div class="get-to-know__video-link">
                                     <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
                                         <div class="get-to-know__video-icon">
@@ -299,6 +308,12 @@
         <!--Services Two Start-->
         <section class="services-two">
             <div class="container">
+                <div class="section-title text-center">
+                    <!-- <span class="section-title__tagline">our team members</span> -->
+                    <h2 class="section-title__title">Why Choose AI-Driven Solutions?
+
+                    </h2>
+                </div>
                 <div class="row">
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
                         <!--Services Two Single-->
@@ -306,11 +321,13 @@
                             <div class="services-two__icon">
                                 <span class="icon-online-shopping"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="website-development.html">Unparalleled Insights</a></h3>
-                            <p class="services-two__text">With AI's ability to analyze vast amounts of data in real-time, you gain invaluable insights into customer behavior, market trends, and performance metrics. These insights empower you to make informed decisions that drive success.
-</p>
-                            <a class="services-two__arrow" href="website-development.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <h3 class="services-two__title"><a href="website-development.html">Unparalleled Insights</a>
+                            </h3>
+                            <p class="services-two__text">With AI's ability to analyze vast amounts of data in
+                                real-time, you gain invaluable insights into customer behavior, market trends, and
+                                performance metrics. These insights empower you to make informed decisions that drive
+                                success.</p>
+
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="200ms">
@@ -321,10 +338,10 @@
                             </div>
                             <h3 class="services-two__title"><a href="graphic-design.html">Enhanced Personalization</a>
                             </h3>
-                            <p class="services-two__text">Customers today expect personalized experiences. AI enables you to deliver tailored content, product recommendations, and communication, fostering stronger relationships and customer loyalty.
-</p>
-                            <a class="services-two__arrow" href="graphic-design.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <p class="services-two__text">Customers today expect personalized experiences. AI enables
+                                you to deliver tailored content, product recommendations, and communication, fostering
+                                stronger relationships and customer loyalty.</p>
+
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="300ms">
@@ -333,11 +350,12 @@
                             <div class="services-two__icon">
                                 <span class="icon-webpage"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="digital-marketing.html">Improved Efficiency</a></h3>
-                            <p class="services-two__text">Repetitive manual tasks can hinder productivity. AI automates these processes, freeing up your team to focus on strategic initiatives that lead to growth.
-</p>
-                            <a class="services-two__arrow" href="digital-marketing.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <h3 class="services-two__title"><a href="digital-marketing.html">Improved Efficiency</a>
+                            </h3>
+                            <p class="services-two__text">Repetitive manual tasks can hinder productivity. AI automates
+                                these processes, freeing up your team to focus on strategic initiatives that lead to
+                                growth.</p>
+
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="400ms">
@@ -346,10 +364,12 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="social-marketing.html">Predictive Capabilities</a></h3>
-                            <p class="services-two__text">AI predictive analytics help you anticipate future trends and customer needs, allowing you to stay proactive and seize opportunities before your competitors.</p>
-                            <a class="services-two__arrow" href="social-marketing.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <h3 class="services-two__title"><a href="social-marketing.html">Predictive Capabilities</a>
+                            </h3>
+                            <p class="services-two__text">AI predictive analytics help you anticipate future trends and
+                                customer needs, allowing you to stay proactive and seize opportunities before your
+                                competitors.</p>
+
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="400ms">
@@ -359,10 +379,9 @@
                                 <span class="icon-front-end"></span>
                             </div>
                             <h3 class="services-two__title"><a href="social-marketing.html">Cost Savings</a></h3>
-                            <p class="services-two__text">By streamlining processes and optimizing resources, AI helps reduce operational costs, making your business more agile and resilient.
-</p>
-                            <a class="services-two__arrow" href="social-marketing.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <p class="services-two__text">By streamlining processes and optimizing resources, AI helps
+                                reduce operational costs, making your business more agile and resilient.</p>
+
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="400ms">
@@ -371,18 +390,19 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="social-marketing.html">Embracing AI in Business</a></h3>
-                            <p class="services-two__text">Get insights into the importance of adopting AI-driven solutions in today's rapidly evolving business landscape and how it can transform your organization's success.
-</p>
-                            <a class="services-two__arrow" href="social-marketing.html"><span
-                                    class="icon-right-arrow"></span></a>
+                            <h3 class="services-two__title"><a href="social-marketing.html">Embracing AI in Business</a>
+                            </h3>
+                            <p class="services-two__text">Get insights into the importance of adopting AI-driven
+                                solutions in today's rapidly evolving business landscape and how it can transform your
+                                organization's success.</p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--Services Two End-->
-        
+
         <!--Brand One Start-->
         <!-- <section class="brand-one">
                 <div class="container">
@@ -450,185 +470,103 @@
             </section> -->
         <!--Brand One End-->
 
-                <!--Blog Page Start-->
-                <section class="blog-one blog-one__blog-page">
-            <div class="container">
-            <div class="section-title text-center">
-                    
-                    <h2 class="section-title__title">Explore Our Programs</h2>
-                    <span class="section-title__tagline">Short Term / Long Term Programs For Students And Working Professionals</span>
-                </div>
-                <div class="row">
-                <?php $i = 1;
-                foreach ($trainings as $training): ?>
-                            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                                <!--Blog One Start-->
-                                <div class="blog-one__single">
-                                    <div class="blog-one__img">
-                                        <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
-                                        <a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>">
-                                            <span class="blog-one__plus"></span>
-                                        </a>
-                                        <div class="blog-one__date" style="left:0px !important;right:288px !important">
-                                            <p><?php echo $training['duration']; ?></p>
-                                        </div>
-                                    </div>
-                                    <div class="blog-one__content">
-                                        <ul class="list-unstyled blog-one__meta">
-                                            <!-- <li><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></li> -->
-                                            <!-- <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li> -->
-                                        </ul>
-                                        <!-- <p><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></p> -->
 
-                                        <h3 class="blog-one__title">
-                                            <a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>"><?php echo $training['name']; ?></a>
-                                        </h3>
-                                        <p>Online | Classroom  | E-Learning</p>
-                               
-                                    </div>
-                                </div>
-                            </div>
-                    <?php endforeach; ?>
 
-                    <!-- <div class="blog-sidebar__load-more text-center">
-                        <a href="blog.html" class="thm-btn blog-sidebar__load-more-btn">load more
-                            posts</a>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-        <!--Blog Page End-->
-
-        <!--Project One Start-->
-        <section class="project-one">
+        <!--Services Two Start-->
+        <section class="services-two">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="section-title__tagline">recent projects</span>
-                    <h2 class="section-title__title">work showcase</h2>
+                    <!-- <span class="section-title__tagline">our team members</span> -->
+                    <h2 class="section-title__title">Why Choose DigitalWin Business Agency For Your Business?</h2>
                 </div>
                 <div class="row">
-                    <div class="col-xl-12">
-                        <ul class="project-filter style1 post-filter has-dynamic-filters-counter list-unstyled">
-                            <li data-filter=".filter-item" class="active"><span class="filter-text">All</span></li>
-                            <li data-filter=".bra"><span class="filter-text">Branding</span></li>
-                            <li data-filter=".photo"><span class="filter-text">Photography</span></li>
-                            <li data-filter=".web"><span class="filter-text">Web
-                                    Design</span></li>
-                            <li data-filter=".app"><span class="filter-text last-pd-none">Apps</span></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row filter-layout masonary-layout">
-                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-1.jpg"
-                                    alt>
-                                <div class="project-one__hover project-one__hover-pl-40">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
-                                            Experience</a>
-                                    </h3>
-                                </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-online-shopping"></span>
                             </div>
+                            <h3 class="services-two__title"><a href="website-development.html">Expertise</a></h3>
+                            <p class="services-two__text">Our team of AI experts and industry professionals brings
+                                in-depth knowledge and experience to the table, ensuring you receive top-notch solutions
+                                tailored to your business needs.</p>
+
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 filter-item bra app web">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-2.jpg"
-                                    alt>
-                                <div class="project-one__hover">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
-                                            Experience</a>
-                                    </h3>
-                                </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="200ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-growth"></span>
                             </div>
+                            <h3 class="services-two__title"><a href="graphic-design.html">Customization</a>
+                            </h3>
+                            <p class="services-two__text"> We understand that each business is unique, and so are its
+                                challenges. Our AI solutions are highly customizable, ensuring a perfect fit for your
+                                specific requirements.
+                            </p>
+
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra web">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-3.jpg"
-                                    alt>
-                                <div class="project-one__hover project-one__hover-pl-40">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
-                                            Experience</a>
-                                    </h3>
-                                </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="300ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-webpage"></span>
                             </div>
+                            <h3 class="services-two__title"><a href="digital-marketing.html">Scalability</a></h3>
+                            <p class="services-two__text">Whether you're a startup or an established enterprise, our
+                                AI-driven solutions are designed to scale effortlessly with your business growth,
+                                providing unmatched flexibility</p>
+
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-4.jpg"
-                                    alt>
-                                <div class="project-one__hover project-one__hover-pl-40">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
-                                            Experience</a>
-                                    </h3>
-                                </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="400ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-front-end"></span>
                             </div>
+                            <h3 class="services-two__title"><a href="social-marketing.html">Results-Driven</a></h3>
+                            <p class="services-two__text">Your success is our ultimate goal. We measure our achievements
+                                based on the tangible results we deliver to your business, helping you achieve a
+                                significant return on your investment.</p>
+
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra web">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-5.jpg"
-                                    alt>
-                                <div class="project-one__hover project-one__hover-pl-40">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
-                                            Experience</a>
-                                    </h3>
-                                </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="400ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-front-end"></span>
                             </div>
+                            <h3 class="services-two__title"><a href="social-marketing.html">Dynamic Pricing
+                                    Optimization: </a></h3>
+                            <p class="services-two__text">Stay ahead of the competition with AI-driven dynamic pricing
+                                strategies. Our algorithms analyse market dynamics, competitor pricing, and customer
+                                behaviour to optimize your pricing in real-time, maximizing profitability while
+                                maintaining competitiveness.</p>
+
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item app photo">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-6.jpg"
-                                    alt>
-                                <div class="project-one__hover project-one__hover-pl-40">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
-                                            Experience</a>
-                                    </h3>
-                                </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp  mb-3" data-wow-delay="400ms">
+                        <!--Services Two Single-->
+                        <div class="services-two__single">
+                            <div class="services-two__icon">
+                                <span class="icon-front-end"></span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 filter-item app photo">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-one-img-7.jpg"
-                                    alt>
-                                <div class="project-one__hover">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor
-                                            Experience</a>
-                                    </h3>
-                                </div>
-                            </div>
+                            <h3 class="services-two__title"><a href="social-marketing.html">Embracing AI in Business</a>
+                            </h3>
+                            <p class="services-two__text">Get insights into the importance of adopting AI-driven
+                                solutions in today's rapidly evolving business landscape and how it can transform your
+                                organization's success.</p>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Project One End-->
+        <!--Services Two End-->
 
         <!--Counter One Start-->
         <section class="counter-one">
@@ -680,13 +618,13 @@
         <!--Why Choose One Start-->
         <section class="why-choose-one">
             <div class="container">
+
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
                         <div class="why-choose-one__left wow fadeInLeft" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="why-choose-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images1.jpg"
-                                    alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images1.jpg" alt>
                             </div>
                         </div>
                     </div>

@@ -66,20 +66,21 @@
                                             </div>
                                         </div>
 
-
                                         <div class="row">
-                                            <div class="col-md-12">
+                                        <div class="col-md-6">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-2 col-form-label">Description</label>
-                                                    <div class="col-sm-10">
-                                                        <textarea class="form-control" name="description" rows="4"  id="editor" ><?php echo set_value('description'); ?></textarea>
-                                                        <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
+                                                    <label class="col-sm-3 col-form-label">Type</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-control" name="type" required>
+                                                            <option value="">Select type</option>
+                                                            <option value="1">type</option>
+                                                            <option value="2">service provide</option>
+                                                            
+                                                        </select>
+                                                        <?php echo form_error('type', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                        <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Status</label>
@@ -94,16 +95,21 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Created By</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="number" class="form-control" name="created_by" value="<?php echo set_value('created_by'); ?>" required>
-                                                        <?php echo form_error('created_by', '<p class="text-danger">', '</p>'); ?>
+                                                    <label class="col-sm-2 col-form-label">Description</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="description" rows="4"  id="editor" ><?php echo set_value('description'); ?></textarea>
+                                                        <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
+                                       
 
                                         <div class="row">
                                             <div class="col-md-9"></div>

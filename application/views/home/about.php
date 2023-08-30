@@ -22,7 +22,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(<?php echo base_url();?>assets/home/images/backgrounds/page-header-bg.jpg)">
+            <div class="page-header-bg" style="background-image: url(<?php echo base_url();?>assets/home/images/about/about_banner.jpg)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -55,7 +55,7 @@
                     <div class="col-xl-6">
                         <div class="about-page__left">
                             <div class="about-page__img">
-                                <img src="<?php echo base_url();?>assets/home/images/resources/about-page-img.jpg" alt="">
+                                <img src="<?php echo base_url();?>assets/home/images/about/about image.jpg" alt="">
                             </div>
                             <div class="about-page__founded">
                                 <h5>Founded <br> in 2014</h5>

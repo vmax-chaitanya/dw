@@ -166,6 +166,34 @@
                         <li><a href="<?php echo base_url(); ?>">Home</a></li>
                         <li><a href="<?php echo base_url(); ?>about">About</a></li>
                         <li class="dropdown">
+                                    <a href="#">Home</a>
+                                    <ul class = "">
+                                        <div class="sections__container">
+                                            <div class="col">
+                                                <span class="btn"><a href="#">HOME page 1</a></span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="btn"><a href="#">HOME page 2</a></span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="btn"><a href="#">HOME page 3</a></span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="btn"><a href="#">HOME page 4</a></span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="btn"><a href="#">HOME page 5</a></span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="btn"><a href="#">HOME page 6</a></span>
+                                            </div>
+                                            
+                                           
+                                        </div>
+                                       
+                                    </ul>
+                                </li>
+                        <li class="dropdown">
                             <a href="<?php echo base_url(); ?>service">Services</a>
                             <ul>
                                 <li><a href="#">Search Engine
@@ -181,7 +209,7 @@
                                         Development</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown ">
+                        <!-- <li class="dropdown ">
                             <a href="<?php echo base_url(); ?>training">Training</a>
                             <ul>
                                 <li><a href="#">Certified course in
@@ -191,7 +219,7 @@
                                 <li><a href="#">Advanced digital
                                         marketing with AI.</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
                         <li class="dropdown megamenu">
                             <a href="index.html">Home </a>
@@ -240,6 +268,8 @@
                                 </li>
                             </ul>
                         </li>
+
+                       
                     </ul>
                 </div>
             </div>
