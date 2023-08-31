@@ -80,6 +80,15 @@ class Services extends CI_Controller
                 'status' => $this->input->post('status'),
                 'image' => $image_name,
                 'banner_image' => $banner_image,
+                'banner_text' => $this->input->post('banner_text'),
+
+                'module_name_1' => $this->input->post('module_name_1'),
+                'module_quote_1' => $this->input->post('module_quote_1'),
+                'module_name_2' => $this->input->post('module_name_2'),
+                'module_quote_2' => $this->input->post('module_quote_2'),
+                'module_name_3' => $this->input->post('module_name_3'),
+                'module_quote_3' => $this->input->post('module_quote_3'),
+
                 'icon' => $icon,
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace this with the actual created_by user ID
@@ -161,6 +170,15 @@ class Services extends CI_Controller
                 'status' => $this->input->post('status'),
                 'image' => $image_name,
                 'banner_image' => $banner_image,
+                'banner_text' =>$this->input->post('banner_text'),
+
+                'module_name_1' => $this->input->post('module_name_1'),
+                'module_quote_1' => $this->input->post('module_quote_1'),
+                'module_name_2' => $this->input->post('module_name_2'),
+                'module_quote_2' => $this->input->post('module_quote_2'),
+                'module_name_3' => $this->input->post('module_name_3'),
+                'module_quote_3' => $this->input->post('module_quote_3'),
+
                 'icon' => $icon,
                 'created_at' => time(),
                 'created_by' => '2'// Replace this with the actual created_by user ID

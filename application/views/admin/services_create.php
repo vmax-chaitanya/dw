@@ -72,19 +72,6 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Banner Image</label>
-                                                    <div class="col-sm-9">
-                                                        <input type="file" class="form-control" name="banner_image">
-                                                        <?php echo form_error('banner_image', '<p class="text-danger">', '</p>'); ?>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Status</label>
                                                     <div class="col-sm-9">
                                                         <select class="form-control" name="status" required>
@@ -99,13 +86,37 @@
                                             </div>
 
                                         </div>
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Banner Image</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" class="form-control" name="banner_image">
+                                                        <?php echo form_error('banner_image', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Banner Text</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="banner_text"
+                                                            value="<?php echo set_value('banner_text'); ?>" required>
+                                                        <?php echo form_error('banner_text', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-10">
                                                         <textarea class="form-control" name="description" rows="6"
-                                                        id="editor" ><?php echo set_value('description'); ?></textarea>
+                                                            id="editor"><?php echo set_value('description'); ?></textarea>
                                                         <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
@@ -116,12 +127,83 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Description 1</label>
                                                     <div class="col-sm-10">
-                                                        <textarea class="form-control" name="description_new" rows="6" required><?php echo set_value('description_new'); ?></textarea>
+                                                        <textarea class="form-control" name="description_new" rows="6"
+                                                            required><?php echo set_value('description_new'); ?></textarea>
                                                         <?php echo form_error('description_new', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module name 1</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="module_name_1"
+                                                            value="<?php echo set_value('module_name_1'); ?>">
+                                                        <?php echo form_error('module_name_1', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module Quote 1</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="module_quote_1"
+                                                            value="<?php echo set_value('module_quote_1'); ?>">
+                                                        <?php echo form_error('module_quote_1', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module name 2</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="module_name_2"
+                                                            value="<?php echo set_value('module_name_2'); ?>">
+                                                        <?php echo form_error('module_name_2', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module Quote 2</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="module_quote_2"
+                                                            value="<?php echo set_value('module_quote_2'); ?>">
+                                                        <?php echo form_error('module_quote_2', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module name 2</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="module_name_3"
+                                                            value="<?php echo set_value('module_name_3'); ?>">
+                                                        <?php echo form_error('module_name_3', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module Quote 3</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="module_quote_3"
+                                                            value="<?php echo set_value('module_quote_3'); ?>">
+                                                        <?php echo form_error('module_quote_3', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
 
                                         <div class="row">
                                             <div class="col-md-9"></div>

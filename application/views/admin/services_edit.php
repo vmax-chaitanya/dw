@@ -78,6 +78,26 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Status</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-control" name="status" required>
+                                                            <option value="">Select Status</option>
+                                                            <option value="1" <?php echo ($service['status'] == '1') ? 'selected' : ''; ?>>Active</option>
+                                                            <option value="2" <?php echo ($service['status'] == '2') ? 'selected' : ''; ?>>Inactive</option>
+                                                            <option value="3" <?php echo ($service['status'] == '3') ? 'selected' : ''; ?>>Other</option>
+                                                        </select>
+                                                        <?php echo form_error('status', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+
+                                       
+
+                                        <div class="row">
+                                        <div class="col-md-6">
+                                                <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Banner Image</label>
                                                     <div class="col-sm-9">
                                                         <input type="file" class="form-control" name="banner_image">
@@ -89,22 +109,13 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-
-                                       
-
-                                        <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Status</label>
+                                                    <label class="col-sm-3 col-form-label">Banner Text</label>
                                                     <div class="col-sm-9">
-                                                        <select class="form-control" name="status" required>
-                                                            <option value="">Select Status</option>
-                                                            <option value="1" <?php echo ($service['status'] == '1') ? 'selected' : ''; ?>>Active</option>
-                                                            <option value="2" <?php echo ($service['status'] == '2') ? 'selected' : ''; ?>>Inactive</option>
-                                                            <option value="3" <?php echo ($service['status'] == '3') ? 'selected' : ''; ?>>Other</option>
-                                                        </select>
-                                                        <?php echo form_error('status', '<p class="text-danger">', '</p>'); ?>
+                                                        <input type="text" class="form-control" name="banner_text"
+                                                            value="<?php echo $service['banner_text']; ?>" required>
+                                                        <?php echo form_error('banner_text', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -129,6 +140,75 @@
                                                         <textarea class="form-control" name="description_new" rows="4"
                                                             required><?php echo set_value('description_new', $service['description_new']); ?></textarea>
                                                         <?php echo form_error('description_new', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module name 1</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="module_name_1"
+                                                            value="<?php echo $service['module_name_1']; ?>"  >
+                                                        <?php echo form_error('module_name_1', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module Quote 1</label>
+                                                    <div class="col-sm-9">
+                                                    <input type="text" class="form-control" name="module_quote_1"
+                                                            value="<?php echo $service['module_quote_1']; ?>" >
+                                                        <?php echo form_error('module_quote_1', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module name 2</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="module_name_2"
+                                                            value="<?php echo $service['module_name_2']; ?>" >
+                                                        <?php echo form_error('module_name_2', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module Quote 2</label>
+                                                    <div class="col-sm-9">
+                                                    <input type="text" class="form-control" name="module_quote_2"
+                                                            value="<?php echo $service['module_quote_2']; ?>" >
+                                                        <?php echo form_error('module_quote_2', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module name 3</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" name="module_name_3"
+                                                            value="<?php echo $service['module_name_3']; ?>" >
+                                                        <?php echo form_error('module_name_3', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Module Quote 3</label>
+                                                    <div class="col-sm-9">
+                                                    <input type="text" class="form-control" name="module_quote_3"
+                                                            value="<?php echo $service['module_quote_3']; ?>" >
+                                                        <?php echo form_error('module_quote_3', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>
