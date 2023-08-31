@@ -313,7 +313,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" style="text-align: justify;">Our mission
+                                            <p class="about-page__right-text-2" >Our mission
                                                 is to provide exceptional digital marketing solutions that drive
                                                 tangible results for our clients. We are committed to helping businesses
                                                 unlock their full potential in the online landscape through strategic
@@ -332,7 +332,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                        <image src="<?php echo base_url(); ?>assets/home/images/mission/values.png"
+                                        <image src="<?php echo base_url(); ?>assets/home/images/mission/vision.png"
                                             height="200px" width="200px" class="" alt="" />
                                     </div>
                                     <div class="col-xl-9">
@@ -370,7 +370,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" style="text-align: justify;">Our vision
+                                            <p class="about-page__right-text-2" >Our vision
                                                 is to be a leading force in the digital marketing industry, empowering
                                                 businesses to succeed and thrive in the digital world. We envision a
                                                 future where every business, regardless of its size or industry, can
@@ -426,7 +426,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" style="text-align: justify;">Our values
+                                            <p class="about-page__right-text-2" >Our values
                                                 as human-generated language are rooted in innovation, integrity, and
                                                 customer-centricity. We strive to push the boundaries of digital
                                                 solutions, maintain transparency and honesty in our dealings, and place
@@ -729,7 +729,7 @@
                     <div class="testimonial-one__carousel owl-theme owl-carousel">
                         <!--Testimonial One Single-->
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">I'm thrilled with the results
+                            <p class="testimonial-one__text" >I'm thrilled with the results
                                 from this digital marketing agency. Their team's in-depth knowledge and innovative
                                 strategies helped us reach a broader audience and boost conversions.</p>
                             <div class="testimonial-one__client-info">
@@ -750,7 +750,7 @@
                         </div>
 
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">Efficient and knowledgeable
+                            <p class="testimonial-one__text" >Efficient and knowledgeable
                                 team! Their expertise in SEO and social media marketing played a crucial role in
                                 elevating our brand visibility and driving more customers to our website.</p>
                             <div class="testimonial-one__client-info">
@@ -769,7 +769,7 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">I am extremely satisfied with
+                            <p class="testimonial-one__text" >I am extremely satisfied with
                                 the services provided by ABC Digital Marketing. They have implemented successful SEO
                                 strategies that have improved my website's organic rankings and traffic.</p>
                             <div class="testimonial-one__client-info">
@@ -788,7 +788,7 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">DigitalWin has exceeded my
+                            <p class="testimonial-one__text" >DigitalWin has exceeded my
                                 expectations with their outstanding services. Their team's deep knowledge of the digital
                                 landscape has helped me stay ahead of the competition.</p>
                             <div class="testimonial-one__client-info">
@@ -807,7 +807,7 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">DIGITALWIN has been an
+                            <p class="testimonial-one__text" >DIGITALWIN has been an
                                 invaluable asset to my business. Their expertise in search engine optimization has
                                 significantly improved my website's visibility and organic rankings.</p>
                             <div class="testimonial-one__client-info">

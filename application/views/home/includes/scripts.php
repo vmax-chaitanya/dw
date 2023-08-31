@@ -64,24 +64,25 @@
             });
         });
 </script>
-<!-- <script>
+<script>
 $(document).ready(function() {
     $("#contact-form").submit(function(e) {
         e.preventDefault();
-
+alert("hi");
         var formData = $(this).serialize();
        
         $.ajax({
             method: "POST",
-            url: "<?php echo base_url('contact-insert'); ?>", // URL for the create method
+            url: "<?php echo base_url('contact-enquiry'); ?>", // URL for the create method
             data: formData,
             success: function(response) {
-                window.location.href = response;
+                alert(response);
+             //   window.location.href = response;
             }
         });
     });
 });
-</script> -->
+</script>
 <script>
 $(document).ready(function() {
     $('.ajax-form').submit(function(e) {

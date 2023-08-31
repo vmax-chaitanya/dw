@@ -116,9 +116,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="contact-page__form">
-                            <form
-                                action="https://qutiiz-html.vercel.app/main-html/<?php echo base_url(); ?>assets/home/inc/sendemail.php"
-                                class="comment-one__form contact-form-validated" novalidate="novalidate">
+                            <form action="#" id="contact-form" name="contact" >
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
@@ -132,12 +130,12 @@
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Phone number" name="phone">
+                                            <input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="email" placeholder="Subject" name="subject">
+                                            <input type="text" placeholder="Subject" name="subject">
                                         </div>
                                     </div>
                                 </div>

@@ -353,6 +353,158 @@
             </section> -->
         <!--Brand One End-->
 
+         <!--Project One Start-->
+         <section class="project-one pt-0">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <span class="section-title__tagline">Services</span>
+                        <h2 class="section-title__title">work showcase</h2>
+                    </div>
+                    <div class="row">
+                        <!-- <div class="col-xl-12">
+                            <ul
+                                class="project-filter style1 post-filter has-dynamic-filters-counter list-unstyled">
+                                <li data-filter=".filter-item" class="active"><span
+                                        class="filter-text">All</span></li>
+                                <li data-filter=".bra"><span class="filter-text">Branding</span></li>
+                                <li data-filter=".photo"><span
+                                        class="filter-text">Photography</span></li>
+                                <li data-filter=".web"><span class="filter-text">Web
+                                        Design</span></li>
+                                <li data-filter=".app"><span
+                                        class="filter-text last-pd-none">Apps</span></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="row filter-layout masonary-layout">
+                        <div
+                            class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
+                            <!--Portfolio One Single-->
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img
+                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services2.jpg"
+                                        alt>
+                                    <div
+                                        class="project-one__hover project-one__hover-pl-40">
+                                        <p class="project-one__tagline">Service</p>
+                                        <h3 class="project-one__title"><a
+                                                href="project-details.html">SEO</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 filter-item bra app web">
+                            <!--Portfolio One Single-->
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img
+                                        src="<?php echo base_url();?>assets/home/images/resources/project-one-img-2.jpg"
+                                        alt>
+                                    <div class="project-one__hover">
+                                        <p class="project-one__tagline">Service</p>
+                                        <h3 class="project-one__title"><a
+                                                href="project-details.html">Fimlor
+                                                Experience</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-3 col-lg-6 col-md-6 filter-item bra web">
+                            <!--Portfolio One Single-->
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img
+                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services3.jpg"
+                                        alt>
+                                    <div
+                                        class="project-one__hover project-one__hover-pl-40">
+                                        <p class="project-one__tagline">Service</p>
+                                        <h3 class="project-one__title"><a
+                                                href="project-details.html">Social Media Marketing</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
+                            <!--Portfolio One Single-->
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img
+                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services_2_5.jpg"
+                                        alt>
+                                    <div
+                                        class="project-one__hover project-one__hover-pl-40">
+                                        <p class="project-one__tagline">Service</p>
+                                        <h3 class="project-one__title"><a
+                                                href="project-details.html">Website Design</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-3 col-lg-6 col-md-6 filter-item bra web">
+                            <!--Portfolio One Single-->
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img
+                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services1.jpg"
+                                        alt>
+                                    <div
+                                        class="project-one__hover project-one__hover-pl-40">
+                                        <p class="project-one__tagline">Service</p>
+                                        <h3 class="project-one__title"><a
+                                                href="project-details.html">Content Marketing</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-3 col-lg-6 col-md-6 filter-item app photo">
+                            <!--Portfolio One Single-->
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img
+                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services.jpg"
+                                        alt>
+                                    <div
+                                        class="project-one__hover project-one__hover-pl-40">
+                                        <p class="project-one__tagline">Service</p>
+                                        <h3 class="project-one__title"><a
+                                                href="project-details.html">Pay Per Click</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-6 col-lg-6 col-md-6 filter-item app photo">
+                            <!--Portfolio One Single-->
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img
+                                        src="<?php echo base_url();?>assets/home/images/home_services/home_service5.jpg"
+                                        alt>
+                                    <div class="project-one__hover">
+                                        <p class="project-one__tagline">Service</p>
+                                        <h3 class="project-one__title"><a
+                                                href="project-details.html">Search Engine Marketing</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Project One End-->
 
         <!--Blog Page Start-->
         <section class="blog-one blog-one__blog-page pt-0">
@@ -1250,7 +1402,7 @@
                     <div class="testimonial-one__carousel owl-theme owl-carousel">
                         <!--Testimonial One Single-->
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">I'm thrilled with the results
+                            <p class="testimonial-one__text" >I'm thrilled with the results
                                 from this digital marketing agency. Their team's in-depth knowledge and innovative
                                 strategies helped us reach a broader audience and boost conversions.</p>
                             <div class="testimonial-one__client-info">
@@ -1271,7 +1423,7 @@
                         </div>
 
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">Efficient and knowledgeable
+                            <p class="testimonial-one__text" >Efficient and knowledgeable
                                 team! Their expertise in SEO and social media marketing played a crucial role in
                                 elevating our brand visibility and driving more customers to our website.</p>
                             <div class="testimonial-one__client-info">
@@ -1290,7 +1442,7 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">I am extremely satisfied with
+                            <p class="testimonial-one__text" >I am extremely satisfied with
                                 the services provided by ABC Digital Marketing. They have implemented successful SEO
                                 strategies that have improved my website's organic rankings and traffic.</p>
                             <div class="testimonial-one__client-info">
@@ -1309,7 +1461,7 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">DigitalWin has exceeded my
+                            <p class="testimonial-one__text" >DigitalWin has exceeded my
                                 expectations with their outstanding services. Their team's deep knowledge of the digital
                                 landscape has helped me stay ahead of the competition.</p>
                             <div class="testimonial-one__client-info">
@@ -1328,7 +1480,7 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" style="text-align: justify;">DIGITALWIN has been an
+                            <p class="testimonial-one__text" >DIGITALWIN has been an
                                 invaluable asset to my business. Their expertise in search engine optimization has
                                 significantly improved my website's visibility and organic rankings.</p>
                             <div class="testimonial-one__client-info">
@@ -1436,7 +1588,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" style="text-align: justify;">Our mission
+                                            <p class="about-page__right-text-2" >Our mission
                                                 is to provide exceptional digital marketing solutions that drive
                                                 tangible results for our clients. We are committed to helping businesses
                                                 unlock their full potential in the online landscape through strategic
@@ -1455,7 +1607,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                    <image src="<?php echo base_url();?>assets/home/images/mission/values.png"  height="200px" width="200px" class="" alt="" />
+                                    <image src="<?php echo base_url();?>assets/home/images/mission/vision.png"  height="200px" width="200px" class="" alt="" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -1492,7 +1644,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" style="text-align: justify;">Our vision
+                                            <p class="about-page__right-text-2" >Our vision
                                                 is to be a leading force in the digital marketing industry, empowering
                                                 businesses to succeed and thrive in the digital world. We envision a
                                                 future where every business, regardless of its size or industry, can
@@ -1547,7 +1699,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" style="text-align: justify;">Our values
+                                            <p class="about-page__right-text-2" >Our values
                                                 as human-generated language are rooted in innovation, integrity, and
                                                 customer-centricity. We strive to push the boundaries of digital
                                                 solutions, maintain transparency and honesty in our dealings, and place

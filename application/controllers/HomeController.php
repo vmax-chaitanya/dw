@@ -115,7 +115,7 @@ class HomeController extends CI_Controller
         //print_r($data['training']); exit;
         $this->load->view('home/blog_detail', $data);
     }
-    public function create_contact()
+    public function training_enquiry()
     {
 
         $data = array(
@@ -137,6 +137,32 @@ class HomeController extends CI_Controller
             $file_name = time() . '.jpg';
             $file_url = force_download($file_name, file_get_contents($file_path));
             echo $file_url;
+            exit;
+        } else {
+            echo "Error inserting data.";
+            exit;
+        }
+        exit;
+    }
+
+    public function contact_enquiry()
+    {
+
+        $data = array(
+            'name' => $this->input->post('name'),
+            'email' => $this->input->post('email'),
+            'mobile' => $this->input->post('mobile'),
+            'subject' => $this->input->post('subject'),
+            'message' => $this->input->post('message'),
+            'services_ids' => $this->input->post('services_ids'),
+            'status' => 1,
+            'created_at' => date("Y-m-d H:i:s")
+        );
+
+        $result = $this->contact_model->create_contact($data);
+        if ($result) {
+          
+            echo "Thanks for Inserting";
             exit;
         } else {
             echo "Error inserting data.";
