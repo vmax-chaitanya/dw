@@ -196,6 +196,6 @@
     <?php include("includes/scripts.php"); ?>
 </body>
 
-<!-- Mirrored from qutiiz-html.vercel.app/main-html/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:41 GMT -->
+<!-- Mirrored from qutiiz-html.vercel.app/main-html/<?php echo base_url();?>contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:41 GMT -->
 
 </html>

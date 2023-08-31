@@ -108,6 +108,12 @@ class Home_model extends CI_Model {
         $this->db->where('service_id', $service_id);
         return $this->db->get('services_cards')->result_array();
     }
+    public function getActiveServiceNames()
+    {
+        $this->db->select('id,name');
+        $this->db->where('status', '1');
+        return $this->db->get('services')->result_array();
+    }
 
     // public function getActiveBlog()
     // {

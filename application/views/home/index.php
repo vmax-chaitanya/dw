@@ -57,40 +57,40 @@
 
                     <?php $i = 1;
                     foreach ($banners as $banner): ?>
-                        <div class="swiper-slide">
-                            <div class="image-layer"
-                                style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
-                            </div>
-                            <!-- /.image-layer -->
-                            <div class="main-slider-border"></div>
-                            <div class="main-slider-border main-slider-border-two"></div>
-                            <div class="main-slider-border main-slider-border-three"></div>
-                            <div class="main-slider-border main-slider-border-four"></div>
-                            <div class="main-slider-border main-slider-border-five"></div>
-                            <div class="main-slider-border main-slider-border-six"></div>
+                                <div class="swiper-slide">
+                                    <div class="image-layer"
+                                        style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
+                                    </div>
+                                    <!-- /.image-layer -->
+                                    <div class="main-slider-border"></div>
+                                    <div class="main-slider-border main-slider-border-two"></div>
+                                    <div class="main-slider-border main-slider-border-three"></div>
+                                    <div class="main-slider-border main-slider-border-four"></div>
+                                    <div class="main-slider-border main-slider-border-five"></div>
+                                    <div class="main-slider-border main-slider-border-six"></div>
 
-                            <div class="main-slider-shape-1"></div>
-                            <div class="main-slider-shape-2"></div>
-                            <div class="main-slider-shape-3"></div>
+                                    <div class="main-slider-shape-1"></div>
+                                    <div class="main-slider-shape-2"></div>
+                                    <div class="main-slider-shape-3"></div>
 
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="main-slider__content">
-                                            <p>
-                                                <?php echo $banner['name']; ?>
-                                            </p>
-                                            <h2>
-                                                <?php echo $banner['description']; ?>
-                                            </h2>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="main-slider__content">
+                                                    <p>
+                                                        <?php echo $banner['name']; ?>
+                                                    </p>
+                                                    <h2>
+                                                        <?php echo $banner['description']; ?>
+                                                    </h2>
 
-                                            <a href="about.html" class="thm-btn">Discover
-                                                More</a>
+                                                    <a href="<?php echo base_url();?>about" class="thm-btn">Discover
+                                                        More</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
                     <?php endforeach; ?>
 
                 </div>
@@ -110,7 +110,7 @@
 
         
         <!--Get To Know Start-->
-        <section class="get-to-know">
+        <section class="get-to-know pt-5">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -189,7 +189,7 @@
         <!--Get To Know End-->
 
         <!--Services Two Start-->
-        <section class="services-two">
+        <section class="services-two pt-0">
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">our team members</span> -->
@@ -355,14 +355,20 @@
 
 
         <!--Blog Page Start-->
-        <section class="blog-one blog-one__blog-page">
+        <section class="blog-one blog-one__blog-page pt-0">
             <div class="container">
+            <div class="section-title text-center">
+                    <!-- <span class="section-title__tagline">our team members</span> -->
+                    <h2 class="section-title__title">Why Choose AI-Driven Solutions?
+
+                    </h2>
+                </div>
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url();?>assets/images/driven/small_bussigness.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/small_bussigness.jpg" alt="">
                                 <!-- <a href="#">
                                     <span class="blog-one__plus"></span>
                                 </a> -->
@@ -394,7 +400,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url();?>assets/images/driven/start_up.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/start_up.jpg" alt="">
                                 <!-- <a href="#">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -426,7 +432,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url();?>assets/images/driven/ecommerce.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/ecommerce.jpg" alt="">
                                 <!-- <a href="#">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -458,7 +464,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url();?>assets/images/driven/b2b.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/b2b.jpg" alt="">
                                 <!-- <a href="#">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -490,7 +496,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url();?>assets/images/driven/professional_services.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/professional_services.jpg" alt="">
                                 <!-- <a href="#">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -523,7 +529,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url();?>assets/images/driven/local_bussigness.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/local_bussigness.jpg" alt="">
                                 <!-- <a href="#">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -555,7 +561,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url();?>assets/images/driven/non_profit_orginization.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/non_profit_orginization.jpg" alt="">
                                 <!-- <a href="#">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -588,7 +594,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url();?>assets/images/driven/educational.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/educational.jpg" alt="">
                                 <!-- <a href="#">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -621,7 +627,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url();?>assets/images/driven/real-estate.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/real-estate.jpg" alt="">
                                 <!-- <a href="#">
                                     <span class="blog-one__plus"></span>
                                 </a>
@@ -661,7 +667,7 @@
 
 
         <!--Services Two Start-->
-        <section class="services-two">
+        <section class="services-two pt-0">
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">our team members</span> -->
@@ -1392,7 +1398,10 @@
                         <div class="tab" id="business">
                             <div class="tabs-content__inner">
                                 <div class="row">
-                                    <div class="col-xl-12">
+                                <div class="col-xl-3">
+                                <image src="<?php echo base_url();?>assets/home/images/mission/mission.png"  height="200px" width="200px" class="" alt="" />
+</div>
+                                    <div class="col-xl-9">
                                         <div class="tabs-content__left">
                                             <!-- <ul
                                                     class="list-unstyled tabs-content__points">
@@ -1446,7 +1455,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-
+                                    <image src="<?php echo base_url();?>assets/home/images/mission/values.png"  height="200px" width="200px" class="" alt="" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -1500,7 +1509,10 @@
                         <div class="tab " id="soltution">
                             <div class="tabs-content__inner">
                                 <div class="row">
-                                    <div class="col-xl-12">
+                                <div class="col-xl-3">
+                                    <image src="<?php echo base_url();?>assets/home/images/mission/values.png"  height="200px" width="200px" class="" alt="" />
+                                </div>
+                                    <div class="col-xl-9">
                                         <div class="tabs-content__left">
                                             <!-- <ul
                                                     class="list-unstyled tabs-content__points">
@@ -1553,7 +1565,7 @@
                 </div>
                 <div class="financial-advice__bottom">
                     <p class="financial-advice__bottom-text">DigitalWin services
-                        built specifically for your business. <a href="about.html">Find Your Solution</a></p>
+                        built specifically for your business. <a href="<?php echo base_url();?>about">Find Your Solution</a></p>
                 </div>
             </div>
         </section>
@@ -1711,7 +1723,7 @@
                                 <h2 class="cta-one__title">Your Success is Our Mission <br> Let’s Win Digitally</h2>
                             </div>
                             <div class="cta-one__right">
-                                <a href="contact.html" class="cta-one__btn thm-btn">let’s get
+                                <a href="<?php echo base_url();?>contact" class="cta-one__btn thm-btn">let’s get
                                     started</a>
                             </div>
                         </div>

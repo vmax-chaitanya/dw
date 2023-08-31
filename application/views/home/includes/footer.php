@@ -86,13 +86,13 @@
                                     <h3 class="footer-widget__title">Links</h3>
                                     <ul
                                         class="footer-widget__links-list list-unstyled clearfix">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="about.html">Our Mission</a></li>
+                                        <li><a href="<?php echo base_url();?>about">About Us</a></li>
+                                        <li><a href="<?php echo base_url();?>about">Our Mission</a></li>
                                         <li><a href="team.html">Meet the
                                                 Team</a></li>
                                         <li><a href="project.html">Our
                                                 Projects</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="<?php echo base_url();?>contact">Contact</a></li>
                                     </ul>
                                 </div>
                             </div> -->
@@ -190,9 +190,9 @@
                             </div>
                             <div class="site-footer__bottom-right">
                                 <ul class="list-unstyled site-footer__bottom-menu">
-                                    <li><a href="about.html">Terms &
+                                    <li><a href="<?php echo base_url();?>about">Terms &
                                             Conditions</a></li>
-                                    <li><a href="about.html">Privacy
+                                    <li><a href="<?php echo base_url();?>about">Privacy
                                             Policy</a></li>
                                 </ul>
                             </div>

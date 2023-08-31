@@ -1,3 +1,6 @@
+<?php
+$h_services = $this->Home_model->getActiveServiceNames();
+?>
 <header class="main-header clearfix">
     <nav class="main-menu clearfix">
         <div class="main-menu-wrapper clearfix">
@@ -101,7 +104,7 @@
                         <!-- <li class="dropdown">
                                     <a href="#">Pages</a>
                                     <ul>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="<?php echo base_url();?>about">About</a></li>
                                         <li><a href="team.html">Team</a></li>
                                         <li><a href="team-details.html">Team
                                                 Details</a></li>
@@ -165,49 +168,21 @@
                         <li><a href="<?php echo base_url(); ?>">Home</a></li>
                         <li><a href="<?php echo base_url(); ?>about">About</a></li>
                         <li class="dropdown">
-                            <a href="#">Home</a>
+                            <a href="<?php echo base_url(); ?>services">Services</a>
                             <ul class="">
                                 <div class="sections__container">
+                                    <?php foreach($h_services as $service):?>
                                     <div class="col">
-                                        <span class="btn"><a href="#">HOME page 1</a></span>
+                                        <span class="btn"><a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id']?>"><?php echo $service['name']?></a></span>
                                     </div>
-                                    <div class="col">
-                                        <span class="btn"><a href="#">HOME page 2</a></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="btn"><a href="#">HOME page 3</a></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="btn"><a href="#">HOME page 4</a></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="btn"><a href="#">HOME page 5</a></span>
-                                    </div>
-                                    <div class="col">
-                                        <span class="btn"><a href="#">HOME page 6</a></span>
-                                    </div>
+                                   <?php endforeach;?>
 
 
                                 </div>
 
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="<?php echo base_url(); ?>service">Services</a>
-                            <ul>
-                                <li><a href="#">Search Engine
-                                        Optimization (SEO)</a></li>
-                                <li><a href="#">Search Engine
-                                        Marketing (SEM)</a></li>
-                                <li><a href="#">Social Media
-                                        Marketing</a></li>
-                                <li><a href="#">Pay-Per-Click (PPC)
-                                        & Google Advertising</a></li>
-                                <li><a href="#">Content Marketing</a></li>
-                                <li><a href="#">Website Design and
-                                        Development</a></li>
-                            </ul>
-                        </li>
+                       
                         <!-- <li class="dropdown ">
                             <a href="<?php echo base_url(); ?>training">Training</a>
                             <ul>
@@ -220,53 +195,7 @@
                             </ul>
                         </li> -->
                         <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
-                        <li class="dropdown megamenu">
-                            <a href="index.html">Home </a>
-                            <ul>
-                                <li class="dropdown">
-                                    <section class="home-showcase">
-                                        <div class="container">
-                                            <div class="home-showcase__inner">
-                                                <div class="row">
-
-                                                    <div class="col-lg-3">
-                                                        <ul>
-                                                            <li><a href="#">Certified course in
-                                                                    digital marketing.</a></li>
-                                                            <li><a href="#">Diploma in digital
-                                                                    marketing.</a></li>
-                                                            <li><a href="#">Advanced digital
-                                                                    marketing with AI.</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <ul>
-                                                            <li><a href="#">Certified course in
-                                                                    digital marketing.</a></li>
-                                                            <li><a href="#">Diploma in digital
-                                                                    marketing.</a></li>
-                                                            <li><a href="#">Advanced digital
-                                                                    marketing with AI.</a></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="col-lg-3">
-                                                        <ul>
-                                                            <li><a href="#">Certified course in
-                                                                    digital marketing.</a></li>
-                                                            <li><a href="#">Diploma in digital
-                                                                    marketing.</a></li>
-                                                            <li><a href="#">Advanced digital
-                                                                    marketing with AI.</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </section>
-                                </li>
-                            </ul>
-                        </li>
+                      
 
 
                     </ul>

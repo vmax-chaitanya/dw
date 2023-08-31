@@ -22,7 +22,8 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(<?php echo base_url();?>assets/home/images/about/about_banner.jpg)">
+            <div class="page-header-bg"
+                style="background-image: url(<?php echo base_url(); ?>assets/home/images/about/about_banner.jpg)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -49,13 +50,13 @@
 
 
         <!--About Page Start-->
-        <section class="about-page" style="padding-bottom: 10px !important;">
+        <section class="about-page pt-5" style="padding-bottom: 10px !important;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
                         <div class="about-page__left">
                             <div class="about-page__img">
-                                <img src="<?php echo base_url();?>assets/home/images/about/about image.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/about/about image.jpg" alt="">
                             </div>
                             <div class="about-page__founded">
                                 <h5>Founded <br> in 2014</h5>
@@ -126,7 +127,7 @@
                     <!-- <div class="col-xl-6">
                         <div class="about-page__left">
                             <div class="about-page__img">
-                                <img src="<?php echo base_url();?>assets/home/images/resources/about-page-img.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="">
                             </div>
                             <div class="about-page__founded">
                                 <h5>Founded <br> in 2014</h5>
@@ -187,7 +188,7 @@
         <!--About Page End-->
 
         <!--Counter Two Start-->
-        <section class="counter-two about-page-counter-two">
+        <section class="counter-two about-page-counter-two pt-3">
             <div class="container">
                 <div class="counter-two__inner wow fadeInUp" data-wow-delay="100ms" data-wow-duration="2500ms">
                     <div class="counter-two-shape1"></div>
@@ -236,7 +237,8 @@
         <section class="qutiiz-ready-two">
             <div class="qutiiz-ready-two-bg-box">
                 <div class="qutiiz-ready-two-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-                    style="background-image: url(<?php echo base_url();?>assets/home/images/backgrounds/qutiiz-ready-two-bg.jpg)"></div>
+                    style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/qutiiz-ready-two-bg.jpg)">
+                </div>
             </div>
             <div class="container">
                 <div class="row">
@@ -244,7 +246,8 @@
                         <div class="qutiiz-ready-two__inner">
                             <h2 class="qutiiz-ready-two__title">Experience growth with our <br> results-driven marketing
                                 services</h2>
-                            <a href="about.html" class="qutiiz-ready-two__btn thm-btn">Discover more</a>
+                            <a href="<?php echo base_url(); ?>about" class="qutiiz-ready-two__btn thm-btn">Discover
+                                more</a>
                         </div>
                     </div>
                 </div>
@@ -254,7 +257,8 @@
         <!--Financial Advice Start-->
         <section class="financial-advice">
             <div class="financial-advice-bg"
-                style="background-image: url(<?php echo base_url();?>assets/home/images/shapes/financial-advice-shape.png)"></div>
+                style="background-image: url(<?php echo base_url(); ?>assets/home/images/shapes/financial-advice-shape.png)">
+            </div>
             <div class="container">
                 <div class="financial-advice__tab-box tabs-box">
                     <ul class="tab-buttons clearfix list-unstyled">
@@ -270,49 +274,53 @@
                         <div class="tab" id="business">
                             <div class="tabs-content__inner">
                                 <div class="row">
-                                    <div class="col-xl-12">
+                                    <div class="col-xl-3">
+                                        <image src="<?php echo base_url(); ?>assets/home/images/mission/mission.png"
+                                            height="200px" width="200px" class="" alt="" />
+                                    </div>
+                                    <div class="col-xl-9">
                                         <div class="tabs-content__left">
                                             <!-- <ul
-                                                class="list-unstyled tabs-content__points">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span
-                                                            class="icon-draw-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h4>Highest Success
-                                                            Rates</h4>
-                                                        <p>Lorem nibh vel
-                                                            velit a aliqu.
-                                                            Aenean so tudin,
-                                                            lorem is text
-                                                            quis bibendum.</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span
-                                                            class="icon-draw-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h4>we grow
-                                                            businesses</h4>
-                                                        <p>Lorem nibh vel
-                                                            velit a aliqu.
-                                                            Aenean so tudin,
-                                                            lorem is text
-                                                            quis bibendum.</p>
-                                                    </div>
-                                                </li>
-                                            </ul> -->
-                                            <p class="about-page__right-text-2">Our mission is to provide exceptional
-                                                digital marketing solutions that drive tangible results for our clients.
-                                                We are committed to helping businesses unlock their full potential in
-                                                the online landscape through strategic planning, innovative strategies,
-                                                and data-driven insights. By staying at the forefront of digital
-                                                marketing trends and technologies, we aim to deliver measurable success,
-                                                enhance brand visibility, and maximize return on investment for our
-                                                clients.</p>
+                                                    class="list-unstyled tabs-content__points">
+                                                    <li>
+                                                        <div class="icon">
+                                                            <span
+                                                                class="icon-draw-check-mark"></span>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4>Highest Success
+                                                                Rates</h4>
+                                                            <p>Lorem nibh vel
+                                                                velit a aliqu.
+                                                                Aenean so tudin,
+                                                                lorem is text
+                                                                quis bibendum.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon">
+                                                            <span
+                                                                class="icon-draw-check-mark"></span>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4>we grow
+                                                                businesses</h4>
+                                                            <p>Lorem nibh vel
+                                                                velit a aliqu.
+                                                                Aenean so tudin,
+                                                                lorem is text
+                                                                quis bibendum.</p>
+                                                        </div>
+                                                    </li>
+                                                </ul> -->
+                                            <p class="about-page__right-text-2" style="text-align: justify;">Our mission
+                                                is to provide exceptional digital marketing solutions that drive
+                                                tangible results for our clients. We are committed to helping businesses
+                                                unlock their full potential in the online landscape through strategic
+                                                planning, innovative strategies, and data-driven insights. By staying at
+                                                the forefront of digital marketing trends and technologies, we aim to
+                                                deliver measurable success, enhance brand visibility, and maximize
+                                                return on investment for our clients.</p>
                                         </div>
                                     </div>
 
@@ -324,50 +332,51 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-
+                                        <image src="<?php echo base_url(); ?>assets/home/images/mission/values.png"
+                                            height="200px" width="200px" class="" alt="" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
                                             <!-- <ul
-                                                class="list-unstyled tabs-content__points">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span
-                                                            class="icon-draw-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h4>Highest Success
-                                                            Rates</h4>
-                                                        <p>Lorem nibh vel
-                                                            velit a aliqu.
-                                                            Aenean so tudin,
-                                                            lorem is text
-                                                            quis bibendum.</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span
-                                                            class="icon-draw-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h4>we grow
-                                                            businesses</h4>
-                                                        <p>Lorem nibh vel
-                                                            velit a aliqu.
-                                                            Aenean so tudin,
-                                                            lorem is text
-                                                            quis bibendum.</p>
-                                                    </div>
-                                                </li>
-                                            </ul> -->
-                                            <p class="about-page__right-text-2">Our vision is to be a leading force in
-                                                the digital marketing industry, empowering businesses to succeed and
-                                                thrive in the digital world. We envision a future where every business,
-                                                regardless of its size or industry, can leverage the power of digital
-                                                marketing to achieve remarkable growth, create meaningful connections
-                                                with their audience, and leave a lasting impact in their respective
-                                                market.</p>
+                                                    class="list-unstyled tabs-content__points">
+                                                    <li>
+                                                        <div class="icon">
+                                                            <span
+                                                                class="icon-draw-check-mark"></span>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4>Highest Success
+                                                                Rates</h4>
+                                                            <p>Lorem nibh vel
+                                                                velit a aliqu.
+                                                                Aenean so tudin,
+                                                                lorem is text
+                                                                quis bibendum.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon">
+                                                            <span
+                                                                class="icon-draw-check-mark"></span>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4>we grow
+                                                                businesses</h4>
+                                                            <p>Lorem nibh vel
+                                                                velit a aliqu.
+                                                                Aenean so tudin,
+                                                                lorem is text
+                                                                quis bibendum.</p>
+                                                        </div>
+                                                    </li>
+                                                </ul> -->
+                                            <p class="about-page__right-text-2" style="text-align: justify;">Our vision
+                                                is to be a leading force in the digital marketing industry, empowering
+                                                businesses to succeed and thrive in the digital world. We envision a
+                                                future where every business, regardless of its size or industry, can
+                                                leverage the power of digital marketing to achieve remarkable growth,
+                                                create meaningful connections with their audience, and leave a lasting
+                                                impact in their respective market.</p>
                                         </div>
                                     </div>
 
@@ -378,48 +387,53 @@
                         <div class="tab " id="soltution">
                             <div class="tabs-content__inner">
                                 <div class="row">
-                                    <div class="col-xl-12">
+                                    <div class="col-xl-3">
+                                        <image src="<?php echo base_url(); ?>assets/home/images/mission/values.png"
+                                            height="200px" width="200px" class="" alt="" />
+                                    </div>
+                                    <div class="col-xl-9">
                                         <div class="tabs-content__left">
                                             <!-- <ul
-                                                class="list-unstyled tabs-content__points">
-                                                <li>
-                                                    <div class="icon">
-                                                        <span
-                                                            class="icon-draw-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h4>Highest Success
-                                                            Rates</h4>
-                                                        <p>Lorem nibh vel
-                                                            velit a aliqu.
-                                                            Aenean so tudin,
-                                                            lorem is text
-                                                            quis bibendum.</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <span
-                                                            class="icon-draw-check-mark"></span>
-                                                    </div>
-                                                    <div class="text">
-                                                        <h4>we grow
-                                                            businesses</h4>
-                                                        <p>Lorem nibh vel
-                                                            velit a aliqu.
-                                                            Aenean so tudin,
-                                                            lorem is text
-                                                            quis bibendum.</p>
-                                                    </div>
-                                                </li>
-                                            </ul> -->
-                                            <p class="about-page__right-text-2">Our values as human-generated language
-                                                are rooted in innovation, integrity, and customer-centricity. We strive
-                                                to push the boundaries of digital solutions, maintain transparency and
-                                                honesty in our dealings, and place our clients at the heart of
-                                                everything we do. With a passionate team dedicated to excellence, we aim
-                                                to create winning strategies that drive success for our clients and
-                                                foster long-term partnerships built on trust.</p>
+                                                    class="list-unstyled tabs-content__points">
+                                                    <li>
+                                                        <div class="icon">
+                                                            <span
+                                                                class="icon-draw-check-mark"></span>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4>Highest Success
+                                                                Rates</h4>
+                                                            <p>Lorem nibh vel
+                                                                velit a aliqu.
+                                                                Aenean so tudin,
+                                                                lorem is text
+                                                                quis bibendum.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="icon">
+                                                            <span
+                                                                class="icon-draw-check-mark"></span>
+                                                        </div>
+                                                        <div class="text">
+                                                            <h4>we grow
+                                                                businesses</h4>
+                                                            <p>Lorem nibh vel
+                                                                velit a aliqu.
+                                                                Aenean so tudin,
+                                                                lorem is text
+                                                                quis bibendum.</p>
+                                                        </div>
+                                                    </li>
+                                                </ul> -->
+                                            <p class="about-page__right-text-2" style="text-align: justify;">Our values
+                                                as human-generated language are rooted in innovation, integrity, and
+                                                customer-centricity. We strive to push the boundaries of digital
+                                                solutions, maintain transparency and honesty in our dealings, and place
+                                                our clients at the heart of everything we do. With a passionate team
+                                                dedicated to excellence, we aim to create winning strategies that drive
+                                                success for our clients and foster long-term partnerships built on
+                                                trust.</p>
                                         </div>
                                     </div>
 
@@ -430,7 +444,8 @@
                 </div>
                 <div class="financial-advice__bottom">
                     <p class="financial-advice__bottom-text">DigitalWin services
-                        built specifically for your business. <a href="about.html">Find Your Solution</a></p>
+                        built specifically for your business. <a href="<?php echo base_url(); ?>about">Find Your
+                            Solution</a></p>
                 </div>
             </div>
         </section>
@@ -449,7 +464,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-1.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-1.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Jessica Brown</h4>
@@ -469,7 +484,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-2.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-2.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Kevin Martin</h4>
@@ -489,7 +504,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-3.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-3.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Rose ford</h4>
@@ -509,7 +524,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-4.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-4.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Mike hardson</h4>
@@ -529,7 +544,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-1.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-1.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Jessica Brown</h4>
@@ -549,7 +564,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-2.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-2.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Kevin Martin</h4>
@@ -569,7 +584,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-3.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-3.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Rose ford</h4>
@@ -589,7 +604,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-4.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-4.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Mike hardson</h4>
@@ -609,7 +624,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-1.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-1.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Jessica Brown</h4>
@@ -629,7 +644,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-2.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-2.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Kevin Martin</h4>
@@ -649,7 +664,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-3.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-3.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Rose ford</h4>
@@ -669,7 +684,7 @@
                             
                             <div class="team-one__single">
                                 <div class="team-one__img">
-                                    <img src="<?php echo base_url();?>assets/home/images/team/team-one-img-4.jpg" alt="">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-4.jpg" alt="">
                                 </div>
                                 <div class="team-one__content">
                                     <h4 class="team-one__name">Mike hardson</h4>
@@ -719,9 +734,11 @@
                                 strategies helped us reach a broader audience and boost conversions.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url();?>assets/home/images/testimonial/male.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt
+                                        width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url();?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
+                                            alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -738,9 +755,11 @@
                                 elevating our brand visibility and driving more customers to our website.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url();?>assets/home/images/testimonial/male.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt
+                                        width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url();?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
+                                            alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -755,9 +774,11 @@
                                 strategies that have improved my website's organic rankings and traffic.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url();?>assets/home/images/testimonial/female.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt
+                                        width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url();?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
+                                            alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -772,9 +793,11 @@
                                 landscape has helped me stay ahead of the competition.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url();?>assets/home/images/testimonial/male.jpg " alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg " alt
+                                        width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url();?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
+                                            alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -789,9 +812,11 @@
                                 significantly improved my website's visibility and organic rankings.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url();?>assets/home/images/testimonial/female.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt
+                                        width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url();?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
+                                            alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -844,34 +869,34 @@
                 }}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-1.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-1.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-2.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-2.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-3.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-3.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-4.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-4.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-5.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-5.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-1.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-1.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-2.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-2.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-3.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-3.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-4.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-4.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="<?php echo base_url();?>assets/home/images/brand/brand-3-5.png" alt="">
+                            <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-3-5.png" alt="">
                         </div>
                     </div>
                 </div>
