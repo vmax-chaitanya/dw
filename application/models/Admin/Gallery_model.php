@@ -7,8 +7,9 @@ class Gallery_model extends CI_Model
         $this->load->database();
     }
 
-    public function get_all_gallery_items()
+    public function get_all_gallery_items($type)
     {
+		$this->db->where('type',$type);
         $query = $this->db->get('gallery');
         return $query->result_array();
     }

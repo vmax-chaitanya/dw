@@ -18,7 +18,7 @@ $this->load->helper('custom_helper');
                     </div>
                     <div class="site-footer__top-title-box">
                         <h3 class="site-footer__top-title">Let's
-                            work together just drop me a line - <a
+                            work together - <a
                                 href="mailto:<?php echo  $social_media['gmail'];?>"><?php echo  $social_media['gmail'];?></a></h3>
                     </div>
                 </div>

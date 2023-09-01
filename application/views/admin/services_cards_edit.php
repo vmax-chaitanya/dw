@@ -87,8 +87,9 @@
                                                     <div class="col-sm-9">
                                                         <select class="form-control" name="type" required>
                                                             <option value="">Select type</option>
-                                                            <option value="1" <?php echo ($service_card['type'] == '1') ? 'selected' : ''; ?>>type</option>
-                                                            <option value="2" <?php echo ($service_card['type'] == '2') ? 'selected' : ''; ?>>service provide</option>
+                                                            <option value="1" <?php echo ($service_card['type'] == '1') ? 'selected' : ''; ?>>Module 1</option>
+                                                            <option value="2" <?php echo ($service_card['type'] == '2') ? 'selected' : ''; ?>>Module 2</option>
+                                                            <option value="3" <?php echo ($service_card['type'] == '3') ? 'selected' : ''; ?>>Module 3</option>
                                                             
                                                         </select>
                                                         <?php echo form_error('type', '<p class="text-danger">', '</p>'); ?>

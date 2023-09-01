@@ -9,12 +9,15 @@ class Services_cards extends CI_Controller
         if (!$this->session->userdata('user_id')) {
             redirect('admin/login'); // Redirect to login page
         }
+		$this->load->model('Admin/services_model');
         $this->load->model('Admin/services_cards_model');
         $this->load->library('form_validation');
     }
 
     public function index($service_id)
     {
+        $data['service'] = $this->services_model->get_service_by_id($service_id);
+
         $type=1;
         $data['service_cards_type_1'] = $this->services_cards_model->get_all_services_cards($service_id,$type);
        

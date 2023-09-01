@@ -30,10 +30,10 @@
                         <div class="card-body">
                             <div class="row mb-3">
                                 <div class="col-md-10">
-                                    <h4 class="card-title">Data table</h4>
+                                    <h4 class="card-title"><?php echo $service['name'];?></h4>
                                 </div>
                                 <div class="col-md-2 ms-auto">
-                                    <a href="<?php echo base_url();?>admin/services_cards/add/<?php echo $this->uri->segment(3);?>" class="w-100 btn btn-primary">Button</a>
+                                    <a href="<?php echo base_url();?>admin/services_cards/add/<?php echo $this->uri->segment(3);?>" class="w-100 btn btn-primary">Add</a>
                                 </div>
                             </div>
 
@@ -47,6 +47,8 @@
                                     <?php echo $this->session->flashdata('success'); ?>
                                 </div>
                             <?php endif; ?>
+							<h4 class="card-title pt-5">Module 2</h4>
+
                             <div class="row">
                                 <div class="col-12">
                                     <div class="table-responsive">
@@ -97,6 +99,8 @@
                                     </div>
                                 </div>
                             </div>
+
+							<hr><h4 class="card-title pt-5">Module 3</h4>
                             <div class="row">
                                 <div class="col-12">
                                     <div class="table-responsive">
@@ -147,6 +151,8 @@
                                     </div>
                                 </div>
                             </div>
+
+							<hr><h4 class="card-title pt-5">Module 4</h4>
 							<div class="row">
                                 <div class="col-12">
                                     <div class="table-responsive">

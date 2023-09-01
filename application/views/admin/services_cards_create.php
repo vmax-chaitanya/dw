@@ -73,8 +73,9 @@
                                                     <div class="col-sm-9">
                                                         <select class="form-control" name="type" required>
                                                             <option value="">Select type</option>
-                                                            <option value="1">type</option>
-                                                            <option value="2">service provide</option>
+                                                            <option value="1">Module 1</option>
+                                                            <option value="2">Module 2</option>
+                                                            <option value="3">Module 3</option>
                                                             
                                                         </select>
                                                         <?php echo form_error('type', '<p class="text-danger">', '</p>'); ?>

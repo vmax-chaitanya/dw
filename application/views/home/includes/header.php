@@ -6,7 +6,7 @@ $h_services = $this->Home_model->getActiveServiceNames();
     <nav class="main-menu clearfix">
         <div class="main-menu-wrapper clearfix">
             <div class="main-menu-wrapper__left">
-                <div class="main-menu-wrapper__logo">
+                <div class="main-menu-wrapper__logo pt-0 " >
                     <a href="<?php echo base_url();?>"><img height="100" width="250" src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
                 </div>
                 <div class="main-menu-wrapper__main-menu">

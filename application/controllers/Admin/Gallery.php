@@ -13,7 +13,10 @@ class Gallery extends CI_Controller
 
     public function index()
     {
-        $data['gallery_items'] = $this->gallery_model->get_all_gallery_items();
+        $data['gallery'] = $this->gallery_model->get_all_gallery_items(1);
+        $data['client_logos'] = $this->gallery_model->get_all_gallery_items(2);
+        $data['tools'] = $this->gallery_model->get_all_gallery_items(3);
+        $data['certification'] = $this->gallery_model->get_all_gallery_items(4);
         $this->load->view('admin/gallery_list', $data);
     }
 

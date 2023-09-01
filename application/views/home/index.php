@@ -985,10 +985,10 @@
                             <p class="why-choose-one__text">Our AI-driven marketing strategies are designed to make your
                                 brand stand out in a crowded digital landscape.</p>
                             <div class="why-choose-one__bottom">
-                                <div class="why-choose-one__bottom-img">
+                                <!-- <div class="why-choose-one__bottom-img">
                                     <img src="<?php echo base_url(); ?>assets/home/images/resources/why-choose-one-bottom-img.jpg"
                                         alt>
-                                </div>
+                                </div> -->
                                 <ul class="list-unstyled why-choose-one__points">
                                     <li>
                                         <div class="icon">
