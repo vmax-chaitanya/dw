@@ -88,7 +88,7 @@
                                                         </td>
                                                         <td>
                                                             <a href="<?php echo base_url('admin/services_cards/edit/' . $card['id'].'/'.$this->uri->segment(3)); ?>" class="btn btn-outline-primary">Edit</a>
-                                                            <a href="<?php echo base_url('admin/services_cards/delete/' . $card['id']); ?>" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this service card?')">Delete</a>
+                                                            <a href="<?php echo base_url('admin/services_cards/delete/' . $card['id'].'/'.$this->uri->segment(3)); ?>" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this service card?')">Delete</a>
                                                         </td>
                                                     </tr>
                                                 <?php endforeach; ?>
@@ -138,7 +138,57 @@
                                                         </td>
                                                         <td>
                                                             <a href="<?php echo base_url('admin/services_cards/edit/' . $card['id'].'/'.$this->uri->segment(3)); ?>" class="btn btn-outline-primary">Edit</a>
-                                                            <a href="<?php echo base_url('admin/services_cards/delete/' . $card['id']); ?>" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this service card?')">Delete</a>
+                                                            <a href="<?php echo base_url('admin/services_cards/delete/' . $card['id'].'/'.$this->uri->segment(3)); ?>" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this service card?')">Delete</a>
+                                                        </td>
+                                                    </tr>
+                                                <?php endforeach; ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table id="order-listing" class="table order-listing">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Service ID</th>
+                                                    <th>Name</th>
+                                                    <th>Description</th>
+                                                    <th>Image</th>
+                                                    <th>Status</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php $k = 1;
+                                                foreach ($service_cards_type_3 as $card) : ?>
+                                                    <tr>
+                                                        <td><?php echo $k++; ?></td>
+                                                        <td><?php echo $card['service_id']; ?></td>
+                                                        <td><?php echo $card['name']; ?></td>
+                                                        <td><?php echo $card['description']; ?></td>
+                                                        <td>
+                                                            <?php if ($card['image']) : ?>
+                                                                <img src="<?php echo base_url('' . $card['image']); ?>" alt="Service Card Image" width="150">
+                                                            <?php else : ?>
+                                                                No Image
+                                                            <?php endif; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php if ($card['status'] == '1') : ?>
+                                                                <label class="badge badge-success">Active</label>
+                                                            <?php elseif ($card['status'] == '2') : ?>
+                                                                <label class="badge badge-danger">Inactive</label>
+                                                            <?php else : ?>
+                                                                <label class="badge badge-info">Other</label>
+                                                            <?php endif; ?>
+                                                        </td>
+                                                        <td>
+                                                            <a href="<?php echo base_url('admin/services_cards/edit/' . $card['id'].'/'.$this->uri->segment(3)); ?>" class="btn btn-outline-primary">Edit</a>
+                                                            <a href="<?php echo base_url('admin/services_cards/delete/' . $card['id'].'/'.$this->uri->segment(3)); ?>" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this service card?')">Delete</a>
                                                         </td>
                                                     </tr>
                                                 <?php endforeach; ?>

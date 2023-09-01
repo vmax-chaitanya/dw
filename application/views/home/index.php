@@ -140,17 +140,17 @@
                             <p class="get-to-know__text-1">We’re committed
                                 to delivering the best digital marketing for
                                 your businesses</p>
-                            <p class="get-to-know__text-2" style="padding-top: 20px; text-align: justify;"><b>Expertise:
+                            <p class="get-to-know__text-2" style="padding-top: 20px; "><b>Expertise:
                                 </b> Our team of AI experts and industry professionals brings in-depth knowledge and
                                 experience to the table, ensuring you receive top-notch solutions tailored to your
                                 business needs.</p>
-                            <p class="get-to-know__text-2" style="padding-top: 20px; text-align: justify;">
+                            <p class="get-to-know__text-2" style="padding-top: 20px; ">
                                 <b>Customization:</b> We understand that each business is unique, and so are its
                                 challenges. Our AI solutions are highly customizable, ensuring a perfect fit for your
                                 specific requirements.
                             </p>
 
-                            <p class="get-to-know__text-2" style="padding-top: 20px; text-align: justify;">
+                            <p class="get-to-know__text-2" style="padding-top: 20px; ">
                                 <b>Results-Driven:</b> Your success is our ultimate goal. We measure our achievements
                                 based on the tangible results we deliver to your business, helping you achieve a
                                 significant return on your investment.
@@ -819,7 +819,7 @@
 
 
         <!--Services Two Start-->
-        <section class="services-two pt-0">
+        <section class="services-two pt-0 pb-5">
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">our team members</span> -->
@@ -915,7 +915,7 @@
         <!--Services Two End-->
 
         <!--Counter One Start-->
-        <section class="counter-one">
+        <!-- <section class="counter-one">
             <div class="counter-one-shape-1"></div>
             <div class="counter-one-shape-2"></div>
             <div class="counter-one-shape-3"></div>
@@ -958,11 +958,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--Counter One End-->
 
         <!--Why Choose One Start-->
-        <section class="why-choose-one">
+        <section class="why-choose-one" style="padding-top: 200px; !important">
             <div class="container">
 
                 <div class="row">

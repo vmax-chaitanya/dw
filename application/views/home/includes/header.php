@@ -1,12 +1,13 @@
 <?php
 $h_services = $this->Home_model->getActiveServiceNames();
+
 ?>
 <header class="main-header clearfix">
     <nav class="main-menu clearfix">
         <div class="main-menu-wrapper clearfix">
             <div class="main-menu-wrapper__left">
                 <div class="main-menu-wrapper__logo">
-                    <a href="index.html"><img src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
+                    <a href="<?php echo base_url();?>"><img height="100" width="250" src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
                 </div>
                 <div class="main-menu-wrapper__main-menu">
                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -213,7 +214,9 @@ $h_services = $this->Home_model->getActiveServiceNames();
                     <div class="main-menu-wrapper__call-number">
                         <p>Reach US:</p>
                         <h5><a href="tel:91 9154357401">+91
-                                9154357401/02</a></h5>
+                                9154357401</a></h5>
+								<!-- <h5><a href="tel:91 9154357402">+91
+                                9154357402</a></h5> -->
                         <h5><a href="info@digitalwinbusinessagency.com">info@digitalwinbusinessagency.com</a></h5>
                     </div>
                 </div>

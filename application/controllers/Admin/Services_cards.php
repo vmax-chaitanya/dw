@@ -20,6 +20,9 @@ class Services_cards extends CI_Controller
        
         $type=2;
         $data['service_cards_type_2'] = $this->services_cards_model->get_all_services_cards($service_id,$type);
+
+		$type=3;
+         $data['service_cards_type_3'] = $this->services_cards_model->get_all_services_cards($service_id,$type);
         $this->load->view('admin/services_cards_list', $data);
     }
 
@@ -128,7 +131,7 @@ class Services_cards extends CI_Controller
         }
     }
 
-    public function delete($id)
+    public function delete($id,$service_id)
     {
         $services_card = $this->services_cards_model->get_services_card_by_id($id);
 
@@ -137,6 +140,6 @@ class Services_cards extends CI_Controller
         }
 
         $this->services_cards_model->delete_services_card($id);
-        redirect('admin/services_cards');
+        redirect('admin/services_cards/'.$service_id);
     }
 }

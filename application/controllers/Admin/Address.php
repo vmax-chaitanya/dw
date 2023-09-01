@@ -26,7 +26,7 @@ class Address extends CI_Controller
 
     public function create()
     {
-        $this->form_validation->set_rules('email', 'Email', 'required|valid_email|max_length[200]');
+        $this->form_validation->set_rules('email', 'Email', 'required|max_length[200]');
         $this->form_validation->set_rules('contact_1', 'Contact 1', 'required|max_length[11]');
         $this->form_validation->set_rules('contact_2', 'Contact 2', 'required|max_length[11]');
         $this->form_validation->set_rules('company_name', 'Company Name', 'required|max_length[100]');

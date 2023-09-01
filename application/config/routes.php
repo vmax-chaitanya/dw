@@ -142,7 +142,7 @@ $route['admin/services_cards/add/(:num)'] = 'Admin/services_cards/add/$1'; // Di
 $route['admin/services_cards/create/(:num)'] = 'Admin/services_cards/create/$1'; // Process the form submission to create a new service card
 $route['admin/services_cards/edit/(:any)/(:num)'] = 'Admin/services_cards/edit/$1/$1'; // Display the form to edit an existing service card
 $route['admin/services_cards/update/(:any)'] = 'Admin/services_cards/update/$1'; // Process the form submission to update a service card
-$route['admin/services_cards/delete/(:any)'] = 'Admin/services_cards/delete/$1'; // Delete a service card
+$route['admin/services_cards/delete/(:any)/(:any)'] = 'Admin/services_cards/delete/$1/$2'; // Delete a service card
 
 
 // Training Routes

@@ -94,20 +94,20 @@ class Home_model extends CI_Model {
         $this->db->where('page_id', $service_id);
         return $this->db->get('faq')->result_array();
     }
-    public function services_types($service_id)
+    public function services_types($service_id,$module)
     {
         $this->db->where('status', '1');
-        //$this->db->where('type', '1');
+        $this->db->where('type', $module);
         $this->db->where('service_id', $service_id);
         return $this->db->get('services_cards')->result_array();
     }
-    public function services_we_choose($service_id)
-    {
-        $this->db->where('status', '1');
-       // $this->db->where('type', '2');
-        $this->db->where('service_id', $service_id);
-        return $this->db->get('services_cards')->result_array();
-    }
+    // public function services_we_choose($service_id)
+    // {
+    //     $this->db->where('status', '1');
+    //    // $this->db->where('type', '2');
+    //     $this->db->where('service_id', $service_id);
+    //     return $this->db->get('services_cards')->result_array();
+    // }
     public function getActiveServiceNames()
     {
         $this->db->select('id,name');

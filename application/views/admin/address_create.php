@@ -43,7 +43,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Email</label>
                                                     <div class="col-sm-9">
-                                                        <input type="email" class="form-control" name="email" value="<?php echo set_value('email'); ?>" required>
+                                                        <input type="text" class="form-control" name="email" value="<?php echo set_value('email'); ?>" required>
                                                         <?php echo form_error('email', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
