@@ -132,18 +132,18 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Description 1</label>
                                                     <div class="col-sm-10">
                                                         <textarea class="form-control" name="description_new" rows="4"
                                                             required><?php echo set_value('description_new', $service['description_new']); ?></textarea>
-                                                        <?php echo form_error('description_new', '<p class="text-danger">', '</p>'); ?>
+                                                      
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>  -->
                                         <hr>
                                         <div class="row">
                                             <div class="col-md-6">

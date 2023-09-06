@@ -42,10 +42,8 @@
                                     ?>
 
                                     <form class="form-sample" method="POST"
-                                        action="<?php echo site_url('index.php/admin/social_media/create_or_update_social_media'); ?>">
-                                        <input type="hidden" name="id"
-                                            value="<?php echo isset($social_media['id']) ? $social_media['id'] : ''; ?>">
-
+                                        action="<?php echo site_url('index.php/admin/social_media/create_or_update_social_media'); ?>" enctype="multipart/form-data">
+                                      
                                         <p class="card-description">Social Media Details</p>
 
                                         <div class="row">
@@ -132,10 +130,106 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Mission Image</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" class="form-control" name="mission_image"
+                                                            value="">
+                                                            <?php if ($social_media['mission_image']): ?>
+                                                            <img src="<?php echo base_url('' . $social_media['mission_image']); ?>"
+                                                                alt="Blog Image" width="150">
+                                                        <?php else: ?>
+                                                            No Image
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Mission </label>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" name="mission" rows="6"
+                                                            required><?php echo isset($social_media['mission']) ? $social_media['mission'] : ''; ?></textarea>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Vision Image</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" class="form-control" name="vision_image"
+                                                            value="">
+                                                            <?php if ($social_media['vision_image']): ?>
+                                                            <img src="<?php echo base_url('' . $social_media['vision_image']); ?>"
+                                                                alt="Blog Image" width="150">
+                                                        <?php else: ?>
+                                                            No Image
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Vision </label>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" name="vision" rows="6"
+                                                            required><?php echo isset($social_media['vision']) ? $social_media['vision'] : ''; ?></textarea>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Value Image</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" class="form-control" name="value_image"
+                                                            value="">
+                                                            <?php if ($social_media['value_image']): ?>
+                                                            <img src="<?php echo base_url('' . $social_media['value_image']); ?>"
+                                                                alt="Blog Image" width="150">
+                                                        <?php else: ?>
+                                                            No Image
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Value </label>
+                                                    <div class="col-sm-9">
+                                                        <textarea class="form-control" name="value" rows="6"
+                                                            required><?php echo isset($social_media['value']) ? $social_media['value'] : ''; ?></textarea>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
 
                                         <div class="row">
                                             <div class="col-md-9"></div>
                                             <div class="col-md-3">
+                                            <input type="hidden" name="id"  value="<?php echo isset($social_media['id']) ? $social_media['id'] : ''; ?>">
+                                            <input type="hidden" name="old_mission_image"  value="<?php echo isset($social_media['mission_image']) ? $social_media['mission_image'] : ''; ?>">
+
+                                            <input type="hidden" name="old_vision_image"  value="<?php echo isset($social_media['vision_image']) ? $social_media['vision_image'] : ''; ?>">
+
+                                            <input type="hidden" name="old_value_image"  value="<?php echo isset($social_media['value_image']) ? $social_media['value_image'] : ''; ?>">
+
+
                                                 <button type="submit" class="btn btn-success mr-2">Save</button>
                                                 <a href="<?php echo site_url('admin/social_media'); ?>"
                                                     class="btn btn-light">Cancel</a>
