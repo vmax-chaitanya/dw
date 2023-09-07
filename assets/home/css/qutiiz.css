@@ -377,8 +377,8 @@ ul {
   position: relative;
   float: left;
   padding-top: 37px;
-  padding-bottom: 37px;
-  margin-right: 205px;
+  padding-bottom: 0px;
+  margin-right: 10px;
 }
 
 .main-menu-wrapper__main-menu {

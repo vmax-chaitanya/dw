@@ -84,7 +84,7 @@
                                                         <?php echo $banner['description']; ?>
                                                     </h2>
 
-                                                    <a href="<?php echo base_url();?>about" class="thm-btn">Discover
+                                                    <a href="<?php echo base_url();?>contact" class="thm-btn">Discover
                                                         More</a>
                                                 </div>
                                             </div>
@@ -151,7 +151,7 @@
                             </p>
 
                             <p class="get-to-know__text-2" style="padding-top: 20px; ">
-                                <b>Results-Driven:</b> Your success is our ultimate goal. We measure our achievements
+                                <b>AI- Result Driven:</b> Your success is our ultimate goal. We measure our achievements
                                 based on the tangible results we deliver to your business, helping you achieve a
                                 significant return on your investment.
 
@@ -511,7 +511,7 @@
             <div class="container">
             <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">our team members</span> -->
-                    <h2 class="section-title__title">Why Choose AI-Driven Solutions?
+                    <h2 class="section-title__title">Driving success for diverse clients through innovation
 
                     </h2>
                 </div>
@@ -887,7 +887,7 @@
                                 <span class="icon-front-end"></span>
                             </div>
                             <h3 class="services-two__title"><a href="social-marketing.html">Dynamic Pricing
-                                    Optimization: </a></h3>
+                                    Optimization </a></h3>
                             <p class="services-two__text">Stay ahead of the competition with AI-driven dynamic pricing
                                 strategies. Our algorithms analyse market dynamics, competitor pricing, and customer
                                 behaviour to optimize your pricing in real-time, maximizing profitability while
@@ -1443,7 +1443,7 @@
                         </div>
                         <div class="testimonial-one__single">
                             <p class="testimonial-one__text" >I am extremely satisfied with
-                                the services provided by ABC Digital Marketing. They have implemented successful SEO
+                                the services provided by DigitalWin Digital Marketing. They have implemented successful SEO
                                 strategies that have improved my website's organic rankings and traffic.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
@@ -1480,7 +1480,7 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" >DIGITALWIN has been an
+                            <p class="testimonial-one__text" >DigitalWin has been an
                                 invaluable asset to my business. Their expertise in search engine optimization has
                                 significantly improved my website's visibility and organic rankings.</p>
                             <div class="testimonial-one__client-info">

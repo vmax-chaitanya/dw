@@ -1,34 +1,36 @@
-
 <?php
 
 $this->load->helper('custom_helper');
 
- $social_media = get_social_media();
+$social_media = get_social_media();
 // echo $social_media['gmail'];
 
 ?>
 <footer class="site-footer">
     <div class="site-footer__top">
-        <div class="container" style="padding: 0px 0px 0px 0px;">
+        <div class="container" >
             <div class="site-footer__top-inner">
                 <div class="site-footer__top-left" style="margin-left: -45px !important;">
                     <div class="site-footer__top-logo">
-                        <a href="<?php echo base_url();?>"><img src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png" alt height="100" width="250"
-                                style="margin-top: -30px;"></a>
+                        <a href="<?php echo base_url(); ?>"><img
+                                src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png" alt height="80"
+                                width="180" style="margin-top: -30px;"></a>
                     </div>
                     <div class="site-footer__top-title-box">
                         <h3 class="site-footer__top-title">Let's
-                            work together - <a
-                                href="mailto:<?php echo  $social_media['gmail'];?>"><?php echo  $social_media['gmail'];?></a></h3>
+                            work together - <a href="mailto:<?php echo $social_media['gmail']; ?>"><?php echo $social_media['gmail']; ?></a></h3>
                     </div>
                 </div>
                 <div class="site-footer__top-right">
                     <div class="site-footer__top-right-social">
-                        <a href="<?php echo  $social_media['twitter'];?>"><i class="fab fa-twitter"></i></a>
-                        <a href="<?php echo  $social_media['facebook'];?>"><i class="fab fa-facebook"></i></a>
-                        <a href="<?php echo  $social_media['pinterest'];?>"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="<?php echo  $social_media['instagram'];?>"><i   class="fab fa-instagram"></i></a>
-                        <a href="<?php echo  $social_media['linkedin'];?>"><i    class="fab fa-linkedin"></i></a>
+
+                        <a href="<?php echo $social_media['facebook']; ?>"><i class="fab fa-facebook"></i></a>
+
+                        <a href="<?php echo $social_media['instagram']; ?>"><i class="fab fa-instagram"></i></a>
+                        <a href="<?php echo $social_media['linkedin']; ?>"><i class="fab fa-linkedin"></i></a>
+                        <a href="<?php echo $social_media['quora']; ?>"><i class="fab fa-quora"></i></a>
+                        <a href="<?php echo $social_media['pinterest']; ?>"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="<?php echo $social_media['twitter']; ?>"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
@@ -41,13 +43,14 @@ $this->load->helper('custom_helper');
                 <div class="row">
                     <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="footer-widget__column footer-widget__about">
-                            <h3 class="footer-widget__title">About</h3>
+                            <h3 class="footer-widget__title">About Us</h3>
                             <div class="footer-widget__about-text-box">
                                 <p class="footer-widget__about-text">DigitalWin
                                     Business Agency AI Driven - Your
                                     dynamic partner for digital
                                     success. Tailored strategies,
-                                    data-driven results. </p>
+                                    data-driven results...<a href="<?php echo base_url(); ?>about"
+                                        style="color:blue !important">View More</a> </p>
                             </div>
                             <!-- <ul class="footer-widget__about-contact list-unstyled">
                                 <li>
@@ -92,13 +95,13 @@ $this->load->helper('custom_helper');
                                     <h3 class="footer-widget__title">Links</h3>
                                     <ul
                                         class="footer-widget__links-list list-unstyled clearfix">
-                                        <li><a href="<?php echo base_url();?>about">About Us</a></li>
-                                        <li><a href="<?php echo base_url();?>about">Our Mission</a></li>
+                                        <li><a href="<?php echo base_url(); ?>about">About Us</a></li>
+                                        <li><a href="<?php echo base_url(); ?>about">Our Mission</a></li>
                                         <li><a href="team.html">Meet the
                                                 Team</a></li>
                                         <li><a href="project.html">Our
                                                 Projects</a></li>
-                                        <li><a href="<?php echo base_url();?>contact">Contact</a></li>
+                                        <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
                                     </ul>
                                 </div>
                             </div> -->
@@ -106,12 +109,12 @@ $this->load->helper('custom_helper');
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Services</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
-							<?php foreach($h_services as $service):?>
-                                   
-									<li><a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id']?>"><?php echo $service['name']?></a></li>
-                                   <?php endforeach;?>
-                              
-                              
+                                <?php foreach ($h_services as $service): ?>
+
+                                    <li><a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"><?php echo $service['name'] ?></a></li>
+                                <?php endforeach; ?>
+
+
                             </ul>
                         </div>
                     </div>
@@ -132,8 +135,8 @@ $this->load->helper('custom_helper');
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="footer-widget__column footer-widget__explore clearfix">
-                            <h3 class="footer-widget__title">Contact Details</h3>
-								<ul class="footer-widget__about-contact list-unstyled">
+                            <h3 class="footer-widget__title">Contact Us</h3>
+                            <ul class="footer-widget__about-contact list-unstyled">
                                 <li>
                                     <div class="icon">
                                         <i class="fas fa-phone-square-alt"></i>
@@ -212,9 +215,8 @@ $this->load->helper('custom_helper');
                             </div>
                             <div class="site-footer__bottom-right">
                                 <ul class="list-unstyled site-footer__bottom-menu">
-                                    <li><a href="<?php echo base_url();?>about">Terms &
-                                            Conditions</a></li>
-                                    <li><a href="<?php echo base_url();?>about">Privacy
+                                    <li><a href="<?php echo base_url(); ?>about">Disclamer</a></li>
+                                    <li><a href="<?php echo base_url(); ?>about">Privacy
                                             Policy</a></li>
                                 </ul>
                             </div>
@@ -225,3 +227,14 @@ $this->load->helper('custom_helper');
         </div>
     </div>
 </footer>
+
+<div class="fix-items d-flex align-items-center">
+    <!--<div class="demo">-->
+    <!--	<a href="#demo" class="btn-demo">Book a Demo</a>-->
+    <!--</div>-->
+    <div class="wtsapp">
+
+        <a href="https://wa.me/+919154357401" target="_blank"> <img
+                src="<?php echo base_url(); ?>assets/images/WhatsApp.png" class="img-fluid" alt="whatsapp"> </a>
+    </div>
+</div>

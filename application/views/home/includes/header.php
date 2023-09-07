@@ -7,7 +7,7 @@ $h_services = $this->Home_model->getActiveServiceNames();
         <div class="main-menu-wrapper clearfix">
             <div class="main-menu-wrapper__left">
                 <div class="main-menu-wrapper__logo pt-0 " >
-                    <a href="<?php echo base_url();?>"><img height="100" width="250" src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
+                    <a href="<?php echo base_url();?>"><img height="80" width="180" src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
                 </div>
                 <div class="main-menu-wrapper__main-menu">
                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -209,15 +209,15 @@ $h_services = $this->Home_model->getActiveServiceNames();
                         </div> -->
                 <div class="main-menu-wrapper__call">
                     <div class="main-menu-wrapper__call-icon">
-                        <span class="icon-chatting"></span>
+                        <span class="fas fa-phone-square-alt"></span>
                     </div>
                     <div class="main-menu-wrapper__call-number">
                         <p>Reach US:</p>
-                        <h5><a href="tel:91 9154357401">+91
-                                9154357401</a></h5>
+                        <h5><a href="tel:040-2704708">040-2704708</a></h5>
+                        <!-- <h5><a href="tel:91 9154357401">9154357404/01</a></h5> -->
 								<!-- <h5><a href="tel:91 9154357402">+91
                                 9154357402</a></h5> -->
-                        <h5><a href="info@digitalwinbusinessagency.com">info@digitalwinbusinessagency.com</a></h5>
+                        <!-- <h5><a href="info@digitalwinbusinessagency.com">info@digitalwinbusinessagency.com</a></h5> -->
                     </div>
                 </div>
             </div>

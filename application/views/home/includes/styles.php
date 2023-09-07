@@ -4,8 +4,7 @@
     <?php echo $page_title; ?>
 </title>
 <!-- favicons Icons -->
-<link rel="apple-touch-icon" sizes="180x180"
-    href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
 <link rel="icon" type="image/png" sizes="32x32"
     href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
 <link rel="icon" type="image/png" sizes="16x16"
@@ -60,52 +59,76 @@
     }
 </style>
 <style>
-        .sections__container{
-            min-width: 900px;
-        }
-        .sections__container span a{
-            font-size: 16px;
-            line-height: 30px;
-            color: var(--qutiiz-black);
-            font-family: var(--qutiiz-font-two);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-weight: 500;
-            display: flex;
-            padding-left: 20px;
-            padding-right: 20px;
-             padding-top: 10px;
-            padding-bottom: 10px;
-            transition: 500ms;
-            text-align: center;
-             /* min-width: 270px; */
-        }
-        .sections__container span{
-            width: 100%;
-           
-        }
-        .sections__container span:hover{
-            background-color: var(--qutiiz-base);
-            color: var(--qutiiz-white);
-        }
-        .sections__container span:hover > a{
-            color: var(--qutiiz-white);
-        }
-        .sections__container {
-            margin-left: -10px;
-            margin-right: -10px;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        }
-        .sections__container .col {
-            -ms-flex: 0 0 calc(33.333% - 20px);
-            flex: 0 0 calc(33.333% - 20px);
-            max-width: calc(33.333% - 20px);
-            text-align: center;
-        } 
-        .main-menu .main-menu__list>li>ul, .main-menu .main-menu__list>li>ul>li>ul, .stricky-header .main-menu__list>li>ul, .stricky-header .main-menu__list>li>ul>li>ul{
-            left: -540%!important; 
-        }
-    </style>
+    .sections__container {
+        min-width: 900px;
+    }
+
+    .sections__container span a {
+        font-size: 16px;
+        line-height: 30px;
+        color: var(--qutiiz-black);
+        font-family: var(--qutiiz-font-two);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: 500ms;
+        text-align: center;
+        /* min-width: 270px; */
+    }
+
+    .sections__container span {
+        width: 100%;
+
+    }
+
+    .sections__container span:hover {
+        background-color: var(--qutiiz-base);
+        color: var(--qutiiz-white);
+    }
+
+    .sections__container span:hover>a {
+        color: var(--qutiiz-white);
+    }
+
+    .sections__container {
+        margin-left: -10px;
+        margin-right: -10px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .sections__container .col {
+        -ms-flex: 0 0 calc(33.333% - 20px);
+        flex: 0 0 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+        text-align: center;
+    }
+
+    .main-menu .main-menu__list>li>ul,
+    .main-menu .main-menu__list>li>ul>li>ul,
+    .stricky-header .main-menu__list>li>ul,
+    .stricky-header .main-menu__list>li>ul>li>ul {
+        left: -540% !important;
+    }
+</style>
+<style>
+    .fix-items {
+        position: fixed;
+        left: 35px;
+        bottom: 26px;
+
+        z-index: 1;
+
+    }
+
+    .wtsapp {
+        width: 46px;
+    }
+</style>

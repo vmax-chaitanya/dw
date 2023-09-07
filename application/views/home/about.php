@@ -38,10 +38,10 @@
 
             <div class="container">
                 <div class="page-header__inner">
-                    <ul class="thm-breadcrumb list-unstyled">
+                    <!-- <ul class="thm-breadcrumb list-unstyled">
                         <li><a href="index.html">Home</a></li>
                         <li class="active">about us</li>
-                    </ul>
+                    </ul> -->
                     <h2>about us</h2>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                     <div class="col-xl-6">
                         <div class="about-page__right">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">read about us</span>
+                                <span class="section-title__tagline"> about us</span>
                                 <h2 class="section-title__title">get to know about DigitalWin agency solutions</h2>
                             </div>
                             <p class="about-page__right-text-1">We’re committed to delivering the best digital marketing
@@ -246,7 +246,7 @@
                         <div class="qutiiz-ready-two__inner">
                             <h2 class="qutiiz-ready-two__title">Experience growth with our <br> results-driven marketing
                                 services</h2>
-                            <a href="<?php echo base_url(); ?>about" class="qutiiz-ready-two__btn thm-btn">Discover
+                            <a href="<?php echo base_url(); ?>services" class="qutiiz-ready-two__btn thm-btn">Discover
                                 more</a>
                         </div>
                     </div>

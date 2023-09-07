@@ -86,10 +86,10 @@
 
             <div class="container">
                 <div class="page-header__inner">
-                    <ul class="thm-breadcrumb list-unstyled">
+                    <!-- <ul class="thm-breadcrumb list-unstyled">
                         <li><a href="index.html">Home</a></li>
                         <li class="active">Services</li>
-                    </ul>
+                    </ul> -->
                     <h2>Services</h2>
                 </div>
             </div>
