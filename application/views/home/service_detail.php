@@ -315,7 +315,7 @@
         <section class="similar-work pt-5 pb-3">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="section-title__tagline">recent Service</span>
+                    <!-- <span class="section-title__tagline">recent Service</span> -->
                     <h2 class="section-title__title">similar Service</h2>
                 </div>
                 <div class="row">

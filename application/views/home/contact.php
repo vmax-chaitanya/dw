@@ -40,7 +40,7 @@
 						<li><a href="index.html">Home</a></li>
 						<li class="active">contact</li>
 					</ul> -->
-					<h2>contact</h2>
+					<h2>Contact Us</h2>
 				</div>
 			</div>
 		</section>
@@ -171,7 +171,7 @@
 
 		<!--Google Map Start-->
 		<section class="google-map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11713.438823203016!2d78.38269015541992!3d17.4893101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91702e9ced71%3A0x2f98a8d51d48ba5e!2sLenskart.com%20at%20Kukatpally%2C%20Hyderabad!5e1!3m2!1sen!2sin!4v1686419304737!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15221.571488999034!2d78.4000756!3d17.4887495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaddcaa3bf459be9f%3A0x68cfc58ca756b953!2sDigitalWin%20Business%20Agency%20%7C%20Digital%20Marketing%20Services%20%7C%20Digital%20Marketing%20Agency%20%7C%20SEO%20%7C%20SMM!5e0!3m2!1sen!2sin!4v1694330869412!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 		</section>
 		<!--Google Map End-->

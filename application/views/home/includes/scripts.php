@@ -28,9 +28,26 @@
 
         <!-- template js -->
         <script src="<?php echo base_url();?>assets/home/js/qutiiz.js"></script>
-      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
 <script>
+    toastr.options = {
+  "closeButton": true,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": true,
+  "positionClass": "toast-top-right",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "5000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut"
+}
     $(function() {
         $("form[name='contact']").validate({
             rules: {
@@ -70,7 +87,13 @@
                     url: "<?php echo base_url('contact-enquiry'); ?>", // URL for the create method
                     data: formData,
                     success: function(response) {
-                        alert(response);
+                        //alert(response);
+                        // $("#exampleModalLabel").modal("hide");
+                        $('#exampleModal').modal('hide');
+                        
+                         toastr.success('Successfully Updated');
+                         this.reset();
+                         $('#contact-form')[0].reset();
                         // You can perform additional actions after successful submission
                     }
                 });
@@ -99,3 +122,11 @@ $(document).ready(function() {
     });
 });
 </script>
+
+<script>
+        $(document).ready(function() {
+            $("#showFormButton").click(function() {
+                $("#myModal").modal("show");
+            });
+        });
+    </script>

@@ -254,8 +254,8 @@
             </div>
         </section>
         <!--qutiiz Ready End-->
-        <!--Financial Advice Start-->
-        <section class="financial-advice">
+         <!--Financial Advice Start-->
+         <section class="financial-advice">
             <div class="financial-advice-bg"
                 style="background-image: url(<?php echo base_url(); ?>assets/home/images/shapes/financial-advice-shape.png)">
             </div>
@@ -274,9 +274,8 @@
                         <div class="tab" id="business">
                             <div class="tabs-content__inner">
                                 <div class="row">
-                                    <div class="col-xl-3">
-                                        <image src="<?php echo base_url(); ?>assets/home/images/mission/mission.png"
-                                            height="200px" width="200px" class="" alt="" />
+                                <div class="col-xl-3">
+                                <image src="<?php echo base_url('' . $social_media['mission_image']); ?>"  height="150px" width="150px" class="" alt="" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -313,14 +312,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" >Our mission
-                                                is to provide exceptional digital marketing solutions that drive
-                                                tangible results for our clients. We are committed to helping businesses
-                                                unlock their full potential in the online landscape through strategic
-                                                planning, innovative strategies, and data-driven insights. By staying at
-                                                the forefront of digital marketing trends and technologies, we aim to
-                                                deliver measurable success, enhance brand visibility, and maximize
-                                                return on investment for our clients.</p>
+                                            <p class="about-page__right-text-2" ><?php echo $social_media['mission']; ?></p>
                                         </div>
                                     </div>
 
@@ -332,8 +324,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                        <image src="<?php echo base_url(); ?>assets/home/images/mission/vision.png"
-                                            height="200px" width="200px" class="" alt="" />
+                                    <image src="<?php echo base_url('' . $social_media['vision_image']); ?>"  height="150px" width="150px" class="" alt="" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -370,13 +361,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" >Our vision
-                                                is to be a leading force in the digital marketing industry, empowering
-                                                businesses to succeed and thrive in the digital world. We envision a
-                                                future where every business, regardless of its size or industry, can
-                                                leverage the power of digital marketing to achieve remarkable growth,
-                                                create meaningful connections with their audience, and leave a lasting
-                                                impact in their respective market.</p>
+                                            <p class="about-page__right-text-2" ><?php echo $social_media['vision']; ?></p>
                                         </div>
                                     </div>
 
@@ -387,10 +372,9 @@
                         <div class="tab " id="soltution">
                             <div class="tabs-content__inner">
                                 <div class="row">
-                                    <div class="col-xl-3">
-                                        <image src="<?php echo base_url(); ?>assets/home/images/mission/values.png"
-                                            height="200px" width="200px" class="" alt="" />
-                                    </div>
+                                <div class="col-xl-3">
+                                    <image src="<?php echo base_url('' . $social_media['value_image']); ?>"  height="150px" width="150px" class="" alt="" />
+                                </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
                                             <!-- <ul
@@ -426,14 +410,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" >Our values
-                                                as human-generated language are rooted in innovation, integrity, and
-                                                customer-centricity. We strive to push the boundaries of digital
-                                                solutions, maintain transparency and honesty in our dealings, and place
-                                                our clients at the heart of everything we do. With a passionate team
-                                                dedicated to excellence, we aim to create winning strategies that drive
-                                                success for our clients and foster long-term partnerships built on
-                                                trust.</p>
+                                            <p class="about-page__right-text-2" ><?php echo $social_media['value']; ?></p>
                                         </div>
                                     </div>
 
@@ -444,8 +421,7 @@
                 </div>
                 <div class="financial-advice__bottom">
                     <p class="financial-advice__bottom-text">DigitalWin services
-                        built specifically for your business. <a href="<?php echo base_url(); ?>about">Find Your
-                            Solution</a></p>
+                        built specifically for your business. <a href="<?php echo base_url();?>about">Find Your Solution</a></p>
                 </div>
             </div>
         </section>

@@ -1,16 +1,64 @@
-<?php
-
-$this->load->helper('custom_helper');
-
-$social_media = get_social_media();
-// echo $social_media['gmail'];
-
-?>
+<!-- /////// -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Quick Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="contact-page__form mt-3">
+                                <form id="contact-form" name="contact" method="POST" class=""
+                                    action="">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Your name" name="name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="email" placeholder="Email address" name="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Phone number" name="mobile" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Subject" name="subject" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box">
+                                                <textarea name="message" placeholder="Write a message"></textarea>
+                                            </div>
+                                            <input type="hidden" name="services_ids"
+                                                value="<?php echo $this->uri->segment(2); ?>">
+                                            
+                                            <button type="submit" class="thm-btn comment-form__btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //////// -->
 <footer class="site-footer">
     <div class="site-footer__top">
-        <div class="container" >
+        <div class="container">
             <div class="site-footer__top-inner">
-                <div class="site-footer__top-left" style="margin-left: -45px !important;">
+                <div class="site-footer__top-left" >
                     <div class="site-footer__top-logo">
                         <a href="<?php echo base_url(); ?>"><img
                                 src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png" alt height="80"
@@ -18,7 +66,11 @@ $social_media = get_social_media();
                     </div>
                     <div class="site-footer__top-title-box">
                         <h3 class="site-footer__top-title">Let's
-                            work together - <a href="mailto:<?php echo $social_media['gmail']; ?>"><?php echo $social_media['gmail']; ?></a></h3>
+                            work together - <button style="padding: left 20px;" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                               Download Brouchure
+                            </button></h3>
+
                     </div>
                 </div>
                 <div class="site-footer__top-right">
@@ -36,82 +88,42 @@ $social_media = get_social_media();
             </div>
         </div>
     </div>
+
     <div class="site-footer__middle">
-        <div class="site-footer-shape" style="background-image: url(assets/images/shapes/site-footer-shape.png)"></div>
+        <div class="site-footer-shape"
+            style="background-image: url(<?php echo base_url(); ?>assets/home/images/shapes/site-footer-shape.png)">
+        </div>
         <div class="container">
             <div class="site-footer__middle-inner">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                        <div class="footer-widget__column footer-widget__about">
-                            <h3 class="footer-widget__title">About Us</h3>
-                            <div class="footer-widget__about-text-box">
-                                <p class="footer-widget__about-text">DigitalWin
-                                    Business Agency AI Driven - Your
-                                    dynamic partner for digital
-                                    success. Tailored strategies,
-                                    data-driven results...<a href="<?php echo base_url(); ?>about"
-                                        style="color:blue !important">View More</a> </p>
-                            </div>
-                            <!-- <ul class="footer-widget__about-contact list-unstyled">
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-phone-square-alt"></i>
-                                    </div>
-                                    <div class="text">
-                                        <a href="tel:+919154357401">+91
-                                            9154357401</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <div class="text">
-                                        <a href="mailto:info@digitalwinbusinessagency">info@digitalwinbusinessagency</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p>DigitalWin BUSINESS
-                                            AGENCY PVT LTD.,
-                                            MIG-161, 3rd Floor,
-                                            Above Lenskart, Opp Sri
-                                            Sri Holistic Hospital,
-                                            Road No 1, KPHB,
-                                            Hyderabad - 500085</p>
-                                    </div>
-                                </li>
-                            </ul> -->
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="footer-widget__column footer-widget__explore clearfix">
+                            <h3 class="footer-widget__title">Quick Links</h3>
+                            <ul class="footer-widget__explore-list list-unstyled clearfix">
+                                <!-- <li><a href="services.html">What We
+                                                Offer</a></li> -->
+                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Certified course in
+                                        digital marketing.</a></li>
+
+                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Diploma in digital
+                                        marketing.</a></li>
+                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Advanced digital
+                                        marketing with AI.</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- <div
-                                class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp"
-                                data-wow-delay="200ms">
-                                <div
-                                    class="footer-widget__column footer-widget__links clearfix">
-                                    <h3 class="footer-widget__title">Links</h3>
-                                    <ul
-                                        class="footer-widget__links-list list-unstyled clearfix">
-                                        <li><a href="<?php echo base_url(); ?>about">About Us</a></li>
-                                        <li><a href="<?php echo base_url(); ?>about">Our Mission</a></li>
-                                        <li><a href="team.html">Meet the
-                                                Team</a></li>
-                                        <li><a href="project.html">Our
-                                                Projects</a></li>
-                                        <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div> -->
-                    <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Services</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <?php foreach ($h_services as $service): ?>
 
-                                    <li><a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"><?php echo $service['name'] ?></a></li>
+                                    <li><a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"><i
+                                                class="fa-li fa fa-spinner fa-spin"></i> &nbsp;
+                                            <?php echo $service['name'] ?>
+                                        </a></li>
                                 <?php endforeach; ?>
 
 
@@ -124,11 +136,12 @@ $social_media = get_social_media();
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <!-- <li><a href="services.html">What We
                                                 Offer</a></li> -->
-                                <li><a href="#">Certified course in
+                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Certified course in
                                         digital marketing.</a></li>
-                                <li><a href="#">Diploma in digital
+
+                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Diploma in digital
                                         marketing.</a></li>
-                                <li><a href="#">Advanced digital
+                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Advanced digital
                                         marketing with AI.</a></li>
                             </ul>
                         </div>
@@ -210,8 +223,8 @@ $social_media = get_social_media();
                     <div class="col-xl-12">
                         <div class="site-footer__bottom-inner">
                             <div class="site-footer__bottom-left">
-                                <p class="site-footer__bottom-text">©
-                                    Copyrights, 2023 <a href="#">digitalwinbusinessagency</a></p>
+                                <p class="site-footer__bottom-text">
+                                    Copyrights © DigitalWin Business Agency Pvt.Ltd., </p>
                             </div>
                             <div class="site-footer__bottom-right">
                                 <ul class="list-unstyled site-footer__bottom-menu">

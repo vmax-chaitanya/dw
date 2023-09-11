@@ -18,7 +18,7 @@
             border-bottom-left-radius: 0px;
             border-bottom-right-radius: 25px;
         }
-        .p {
+        .p{
   text-align: center;
   max-width: 220px;
   word-wrap: break-word;
@@ -84,7 +84,7 @@
                                                         <?php echo $banner['description']; ?>
                                                     </h2>
 
-                                                    <a href="<?php echo base_url();?>contact" class="thm-btn">Discover
+                                                    <a href="<?php echo base_url();?>services" class="thm-btn">Discover
                                                         More</a>
                                                 </div>
                                             </div>
@@ -110,7 +110,7 @@
 
         
         <!--Get To Know Start-->
-        <section class="get-to-know pt-5">
+        <section class="get-to-know pt-5 pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -119,14 +119,53 @@
                             <div class="get-to-know__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images.jpg" alt>
                                 <div class="get-to-know__video-link">
-                                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
+                                    <a href="https://www.youtube.com/watch?v=tjeBik0Q860" class="video-popup">
                                         <div class="get-to-know__video-icon">
                                             <span class="icon-play-button"></span>
                                         </div>
                                     </a>
                                 </div>
                             </div>
+                            
                         </div>
+                        <div class="contact-page__form mt-3">
+                                <form id="contact-form" name="contact" method="POST" class=""
+                                    action="">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Your name" name="name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="email" placeholder="Email address" name="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Phone number" name="mobile" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Subject" name="subject" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box">
+                                                <textarea name="message" placeholder="Write a message"></textarea>
+                                            </div>
+                                            <input type="hidden" name="services_ids"
+                                                value="<?php echo $this->uri->segment(2); ?>">
+                                            
+                                            <button type="submit" class="thm-btn comment-form__btn">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="get-to-know__right">
@@ -158,11 +197,10 @@
                             </p>
                             <div class="get-to-know__progress">
                                 <div class="get-to-know__progress-single">
-                                    <h4 class="get-to-know__progress-title">Digital
-                                        marketing</h4>
+                                    <h4 class="get-to-know__progress-title">Digital Marketing usage World Wide</h4>
                                     <div class="bar">
-                                        <div class="bar-inner count-bar" data-percent="70%">
-                                            <div class="count-text">70%</div>
+                                        <div class="bar-inner count-bar" data-percent="85.5%">
+                                            <div class="count-text">85.5%</div>
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +227,7 @@
         <!--Get To Know End-->
 
         <!--Services Two Start-->
-        <section class="services-two pt-0">
+        <section class="services-two pt-5 pb-0">
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">our team members</span> -->
@@ -354,7 +392,7 @@
         <!--Brand One End-->
 
          <!--Project One Start-->
-         <section class="project-one pt-0">
+         <section class="project-one pt-5 pb-0">
                 <div class="container">
                     <div class="section-title text-center">
                         <span class="section-title__tagline">Services</span>
@@ -507,7 +545,7 @@
             <!--Project One End-->
 
         <!--Blog Page Start-->
-        <section class="blog-one blog-one__blog-page pt-0">
+        <section class="blog-one blog-one__blog-page pt-5 pb-0">
             <div class="container">
             <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">our team members</span> -->
@@ -696,7 +734,7 @@
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">Local Businesses</a>
+                                    <a href="#">Enterprenuers</a>
                                 </h3>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
@@ -728,7 +766,7 @@
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">Nonprofit Organizations</a>
+                                    <a href="#">Banking & Finance</a>
                                 </h3>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
@@ -819,7 +857,7 @@
 
 
         <!--Services Two Start-->
-        <section class="services-two pt-0 pb-5">
+        <section class="services-two pt-5 pb-5">
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">our team members</span> -->
@@ -962,7 +1000,7 @@
         <!--Counter One End-->
 
         <!--Why Choose One Start-->
-        <section class="why-choose-one" style="padding-top: 200px; !important">
+        <section class="why-choose-one pt-5 pb-3 mt-1" style="" >
             <div class="container">
 
                 <div class="row">
@@ -970,12 +1008,12 @@
                         <div class="why-choose-one__left wow fadeInLeft" data-wow-delay="100ms"
                             data-wow-duration="2500ms">
                             <div class="why-choose-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images1.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images3.jpg" alt>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6">
-                        <div class="why-choose-one__right" style="padding-top: 40px;">
+                        <div class="why-choose-one__right" style="padding-top: 5px;">
                             <div class="section-title text-left">
                                 <!-- <span class="section-title__tagline">company
                                         benefits</span> -->
@@ -1382,7 +1420,7 @@
         <!--Team One End-->
 
         <!--Testimonial One Start-->
-        <section class="testimonial-one">
+        <section class="testimonial-one pt-5">
             <div class="testimonial-one__inner">
                 <div class="container">
                     <div class="row">
@@ -1515,7 +1553,7 @@
         <section class="qutiiz-ready">
             <div class="qutiiz-ready-bg-box">
                 <div class="qutiiz-ready-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-                    style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/qutiiz-ready-bg.jpg)">
+                    style="background-image: url(<?php echo base_url(); ?>assets/home/images/home_images/bg.jpg">
                 </div>
             </div>
             <div class="container">
@@ -1551,8 +1589,8 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                 <div class="col-xl-3">
-                                <image src="<?php echo base_url();?>assets/home/images/mission/mission.png"  height="200px" width="200px" class="" alt="" />
-</div>
+                                <image src="<?php echo base_url('' . $social_media['mission_image']); ?>"  height="150px" width="150px" class="" alt="" />
+                                    </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
                                             <!-- <ul
@@ -1588,14 +1626,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" >Our mission
-                                                is to provide exceptional digital marketing solutions that drive
-                                                tangible results for our clients. We are committed to helping businesses
-                                                unlock their full potential in the online landscape through strategic
-                                                planning, innovative strategies, and data-driven insights. By staying at
-                                                the forefront of digital marketing trends and technologies, we aim to
-                                                deliver measurable success, enhance brand visibility, and maximize
-                                                return on investment for our clients.</p>
+                                            <p class="about-page__right-text-2" ><?php echo $social_media['mission']; ?></p>
                                         </div>
                                     </div>
 
@@ -1607,7 +1638,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                    <image src="<?php echo base_url();?>assets/home/images/mission/vision.png"  height="200px" width="200px" class="" alt="" />
+                                    <image src="<?php echo base_url('' . $social_media['vision_image']); ?>"  height="150px" width="150px" class="" alt="" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -1644,13 +1675,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" >Our vision
-                                                is to be a leading force in the digital marketing industry, empowering
-                                                businesses to succeed and thrive in the digital world. We envision a
-                                                future where every business, regardless of its size or industry, can
-                                                leverage the power of digital marketing to achieve remarkable growth,
-                                                create meaningful connections with their audience, and leave a lasting
-                                                impact in their respective market.</p>
+                                            <p class="about-page__right-text-2" ><?php echo $social_media['vision']; ?></p>
                                         </div>
                                     </div>
 
@@ -1662,7 +1687,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                 <div class="col-xl-3">
-                                    <image src="<?php echo base_url();?>assets/home/images/mission/values.png"  height="200px" width="200px" class="" alt="" />
+                                    <image src="<?php echo base_url('' . $social_media['value_image']); ?>"  height="150px" width="150px" class="" alt="" />
                                 </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -1699,14 +1724,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" >Our values
-                                                as human-generated language are rooted in innovation, integrity, and
-                                                customer-centricity. We strive to push the boundaries of digital
-                                                solutions, maintain transparency and honesty in our dealings, and place
-                                                our clients at the heart of everything we do. With a passionate team
-                                                dedicated to excellence, we aim to create winning strategies that drive
-                                                success for our clients and foster long-term partnerships built on
-                                                trust.</p>
+                                            <p class="about-page__right-text-2" ><?php echo $social_media['value']; ?></p>
                                         </div>
                                     </div>
 
@@ -1717,7 +1735,7 @@
                 </div>
                 <div class="financial-advice__bottom">
                     <p class="financial-advice__bottom-text">DigitalWin services
-                        built specifically for your business. <a href="<?php echo base_url();?>about">Find Your Solution</a></p>
+                        built specifically for your business. <a href="<?php echo base_url();?>services">Find Your Services</a></p>
                 </div>
             </div>
         </section>

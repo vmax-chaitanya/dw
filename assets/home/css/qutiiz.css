@@ -698,7 +698,7 @@ ul {
 
 .stricky-header {
   position: fixed;
-  z-index: 991;
+  /* z-index: 991; */
   top: 0;
   left: 0;
   background-color: #fff;
@@ -2221,7 +2221,7 @@ ul {
 }
 
 .home-showcase__inner {
-  padding: 40px 40px 35px;
+  padding: 30px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 10px 60px 0px rgb(0, 0, 0, 0.07);
   border-radius: 8px;
@@ -2308,7 +2308,10 @@ ul {
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 15px;
+  border-radius: 25px;
+  padding: 10px;
+
+  /* margin-top: 15px; */
 }
 
 .mobile-nav__wrapper .home-showcase .row [class*=col-] {
@@ -2556,7 +2559,7 @@ ul {
   border-bottom-right-radius: 8px;
 }
 
-.get-to-know__img:before {
+/* .get-to-know__img:before {
   position: absolute;
   top: -140px;
   left: -1000000px;
@@ -2566,9 +2569,9 @@ ul {
   background-color: #f6f4f9;
   border-bottom-right-radius: var(--qutiiz-bdr-radius);
   z-index: -1;
-}
+} */
 
-.get-to-know__img:after {
+/* .get-to-know__img:after {
   position: absolute;
   bottom: -120px;
   right: 242px;
@@ -2577,7 +2580,7 @@ ul {
   width: 18px;
   height: 100px;
   border-radius: var(--qutiiz-bdr-radius);
-}
+} */
 
 .get-to-know__img img {
   width: 100%;
@@ -7156,12 +7159,13 @@ ul {
 
 .comment-form__input-box input[type="text"],
 .comment-form__input-box input[type="email"] {
-  height: 68px;
+  height: auto;
   width: 100%;
   border: none;
   background-color: #f6f4f9;
-  padding-left: 30px;
-  padding-right: 30px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  padding: 10px;
   margin-bottom: 10px;
   border-radius: var(--qutiiz-bdr-radius);
   outline: none;
@@ -7176,7 +7180,7 @@ ul {
   height: 175px;
   width: 100%;
   background-color: #f6f4f9;
-  padding: 18px 30px 30px;
+  padding: 10px;
   border: none;
   border-radius: 0px;
   outline: none;
