@@ -66,10 +66,22 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">About</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="about" rows="4"
+                                                        ></textarea>
+                                                        <?php echo form_error('about', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-10">
                                                         <textarea class="form-control" name="description" rows="4"
-                                                            required><?php echo set_value('description'); ?></textarea>
+                                                        id="editor" ><?php echo set_value('description'); ?></textarea>
                                                         <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>

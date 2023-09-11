@@ -56,6 +56,8 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['about'] = 'HomeController/about';
+$route['privacy-policy'] = 'HomeController/privacy_policy';
+$route['disclamer'] = 'HomeController/disclamer';
 $route['contact'] = 'HomeController/contact';
 $route['blog'] = 'HomeController/blog';
 $route['faq'] = 'HomeController/faq';

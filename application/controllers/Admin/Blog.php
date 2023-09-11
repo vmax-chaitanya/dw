@@ -25,6 +25,7 @@ class Blog extends CI_Controller
     public function create()
     {
         $this->form_validation->set_rules('title', 'Title', 'required|max_length[200]');
+        $this->form_validation->set_rules('about', 'About', 'required');
         $this->form_validation->set_rules('description', 'Description', 'required');
         $this->form_validation->set_rules('status', 'Status', 'required|in_list[1,2,3]');
         // Add more form validation rules for other fields if necessary
@@ -47,6 +48,7 @@ class Blog extends CI_Controller
             }
             $data = array(
                 'title' => $this->input->post('title'),
+                'about' => $this->input->post('about'),
                 'description' => $this->input->post('description'),
                 'status' => $this->input->post('status'),
                 'image' => $image_name, // Replace with the file path or URL of the image
@@ -74,6 +76,7 @@ class Blog extends CI_Controller
     public function update($id)
     {
         $this->form_validation->set_rules('title', 'Title', 'required|max_length[200]');
+        $this->form_validation->set_rules('about', 'About', 'required');
         $this->form_validation->set_rules('description', 'Description', 'required');
         $this->form_validation->set_rules('status', 'Status', 'required|in_list[1,2,3]');
         // Add more form validation rules for other fields if necessary
@@ -96,6 +99,7 @@ class Blog extends CI_Controller
             }
             $data = array(
                 'title' => $this->input->post('title'),
+                'about' => $this->input->post('about'),
                 'description' => $this->input->post('description'),
                 'status' => $this->input->post('status'),
                 'image' => $image_name, // Replace with the file path or URL of the image

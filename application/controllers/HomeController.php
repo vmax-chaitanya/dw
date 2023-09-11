@@ -31,6 +31,20 @@ class HomeController extends CI_Controller
 
 		$this->load->view('home/about', $data);
 	}
+	public function privacy_policy()
+	{
+		// Load the about view
+		$data['page_title'] = "Privacy Policy || Digital win ||";
+
+		$this->load->view('home/privacy_policy', $data);
+	}
+	public function disclamer()
+	{
+		// Load the about view
+		$data['page_title'] = "Disclamer || Digital win ||";
+
+		$this->load->view('home/disclamer', $data);
+	}
 
 	public function contact()
 	{
@@ -117,8 +131,8 @@ class HomeController extends CI_Controller
 	{
 
 		$data['page_title'] = "Blogs Details || Digital win ||";
-		$data['training'] = $this->Home_model->get_blog_by_id($blog_id);
-		//print_r($data['training']); exit;
+		$data['blog'] = $this->Home_model->get_blog_by_id($blog_id);
+	
 		$this->load->view('home/blog_detail', $data);
 	}
 	public function training_enquiry()

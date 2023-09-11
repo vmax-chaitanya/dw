@@ -228,8 +228,8 @@
                             </div>
                             <div class="site-footer__bottom-right">
                                 <ul class="list-unstyled site-footer__bottom-menu">
-                                    <li><a href="<?php echo base_url(); ?>about">Disclamer</a></li>
-                                    <li><a href="<?php echo base_url(); ?>about">Privacy
+                                    <li><a href="<?php echo base_url(); ?>disclamer">Disclamer</a></li>
+                                    <li><a href="<?php echo base_url(); ?>privacy-policy">Privacy
                                             Policy</a></li>
                                 </ul>
                             </div>

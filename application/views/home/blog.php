@@ -58,7 +58,7 @@
                             <div class="blog-one__single">
                                 <div class="blog-one__img">
                                     <img src="<?php echo base_url('' . $blog['image']); ?>" alt="">
-                                    <a href="blog-details.html">
+                                    <a href="<?php echo base_url();?>blog-detail/<?php echo $blog['id']; ?>">
                                         <span class="blog-one__plus"></span>
                                     </a>
                                     <div class="blog-one__date">
@@ -67,12 +67,12 @@
                                 </div>
                                 <div class="blog-one__content">
                                     <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="blog-details.html"><i class="far fa-folder-open"></i> Business</a></li>
-                                        <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
-                                        </li>
+                                        <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
+                                        <!-- <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
+                                        </li> -->
                                     </ul>
                                     <h3 class="blog-one__title">
-                                        <a href="blog-details.html"> <?php echo $blog['title']; ?></a>
+                                        <a href="<?php echo base_url();?>blog-detail/<?php echo $blog['id']; ?>"> <?php echo $blog['title']; ?></a>
                                     </h3>
                                     <div class="blog-one__person">
                                         <div class="blog-one__person-img">
