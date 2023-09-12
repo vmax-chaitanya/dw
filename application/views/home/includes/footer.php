@@ -66,7 +66,7 @@
                     </div>
                     <div class="site-footer__top-title-box">
                         <h3 class="site-footer__top-title">Let's
-                            work together - <button style="padding: left 20px;" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            work together - <button style="padding: left 20px; background-color:#9232b2" type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
                                Download Brouchure
                             </button></h3>
@@ -78,11 +78,11 @@
 
                         <a href="<?php echo $social_media['facebook']; ?>"><i class="fab fa-facebook"></i></a>
 
-                        <a href="<?php echo $social_media['instagram']; ?>"><i class="fab fa-instagram"></i></a>
-                        <a href="<?php echo $social_media['linkedin']; ?>"><i class="fab fa-linkedin"></i></a>
-                        <a href="<?php echo $social_media['quora']; ?>"><i class="fab fa-quora"></i></a>
-                        <a href="<?php echo $social_media['pinterest']; ?>"><i class="fab fa-pinterest-p"></i></a>
-                        <a href="<?php echo $social_media['twitter']; ?>"><i class="fab fa-youtube"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['instagram']; ?>"><i class="fab fa-instagram"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['linkedin']; ?>"><i class="fab fa-linkedin"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['quora']; ?>"><i class="fab fa-quora"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['pinterest']; ?>"><i class="fab fa-pinterest-p"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['youtube']; ?>"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>

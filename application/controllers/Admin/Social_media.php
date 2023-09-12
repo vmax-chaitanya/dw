@@ -148,6 +148,7 @@ class Social_media extends CI_Controller
             'whatsapp' => $this->input->post('whatsapp'),
             'quora' => $this->input->post('quora'),
             'linkedin' => $this->input->post('linkedin'),
+            'youtube' => $this->input->post('youtube'),
 
             'mission_image' => $mission_image,
             'mission' => $this->input->post('mission'),
