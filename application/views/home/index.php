@@ -57,40 +57,40 @@
 
                     <?php $i = 1;
                     foreach ($banners as $banner): ?>
-                                <div class="swiper-slide">
-                                    <div class="image-layer"
-                                        style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
-                                    </div>
-                                    <!-- /.image-layer -->
-                                    <div class="main-slider-border"></div>
-                                    <div class="main-slider-border main-slider-border-two"></div>
-                                    <div class="main-slider-border main-slider-border-three"></div>
-                                    <div class="main-slider-border main-slider-border-four"></div>
-                                    <div class="main-slider-border main-slider-border-five"></div>
-                                    <div class="main-slider-border main-slider-border-six"></div>
+                                    <div class="swiper-slide">
+                                        <div class="image-layer"
+                                            style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
+                                        </div>
+                                        <!-- /.image-layer -->
+                                        <div class="main-slider-border"></div>
+                                        <div class="main-slider-border main-slider-border-two"></div>
+                                        <div class="main-slider-border main-slider-border-three"></div>
+                                        <div class="main-slider-border main-slider-border-four"></div>
+                                        <div class="main-slider-border main-slider-border-five"></div>
+                                        <div class="main-slider-border main-slider-border-six"></div>
 
-                                    <div class="main-slider-shape-1"></div>
-                                    <div class="main-slider-shape-2"></div>
-                                    <div class="main-slider-shape-3"></div>
+                                        <div class="main-slider-shape-1"></div>
+                                        <div class="main-slider-shape-2"></div>
+                                        <div class="main-slider-shape-3"></div>
 
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="main-slider__content">
-                                                    <p>
-                                                        <?php echo $banner['name']; ?>
-                                                    </p>
-                                                    <h2>
-                                                        <?php echo $banner['description']; ?>
-                                                    </h2>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="main-slider__content">
+                                                        <p>
+                                                            <?php echo $banner['name']; ?>
+                                                        </p>
+                                                        <h2>
+                                                            <?php echo $banner['description']; ?>
+                                                        </h2>
 
-                                                    <a href="<?php echo base_url();?>services" class="thm-btn">Discover
-                                                        More</a>
+                                                        <a href="<?php echo base_url(); ?>services" class="thm-btn">Discover
+                                                            More</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                     <?php endforeach; ?>
 
                 </div>
@@ -421,13 +421,13 @@
                             <div class="project-one__single">
                                 <div class="project-one__img">
                                     <img
-                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services2.jpg"
+                                        src="<?php echo base_url(); ?>assets/home/images/showcase/api.jpg"
                                         alt>
                                     <div
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">SEO</a>
+                                                href="project-details.html">API Inegration</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -438,13 +438,12 @@
                             <div class="project-one__single">
                                 <div class="project-one__img">
                                     <img
-                                        src="<?php echo base_url();?>assets/home/images/resources/project-one-img-2.jpg"
+                                        src="<?php echo base_url(); ?>assets/home/images/showcase/ai.jpg"
                                         alt>
                                     <div class="project-one__hover">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Fimlor
-                                                Experience</a>
+                                                href="project-details.html">Advance Digital Marketing Services with AI</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -455,14 +454,14 @@
                             <!--Portfolio One Single-->
                             <div class="project-one__single">
                                 <div class="project-one__img">
-                                    <img
-                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services3.jpg"
+                                <img
+                                        src="<?php echo base_url(); ?>assets/home/images/showcase/google_ads.jpg"
                                         alt>
                                     <div
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Social Media Marketing</a>
+                                                href="project-details.html">Google Ads</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -473,14 +472,14 @@
                             <!--Portfolio One Single-->
                             <div class="project-one__single">
                                 <div class="project-one__img">
-                                    <img
-                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services_2_5.jpg"
+                                <img
+                                        src="<?php echo base_url(); ?>assets/home/images/showcase/training.jpg"
                                         alt>
                                     <div
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Website Design</a>
+                                                href="project-details.html">Advance Digital Marketing Training with AI</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -492,13 +491,13 @@
                             <div class="project-one__single">
                                 <div class="project-one__img">
                                     <img
-                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services1.jpg"
+                                        src="<?php echo base_url(); ?>assets/home/images/showcase/native_ads.jpg"
                                         alt>
                                     <div
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Content Marketing</a>
+                                                href="project-details.html">Native Marketing</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -510,13 +509,13 @@
                             <div class="project-one__single">
                                 <div class="project-one__img">
                                     <img
-                                        src="<?php echo base_url();?>assets/home/images/home_services/home_services.jpg"
+                                        src="<?php echo base_url(); ?>assets/home/images/showcase/ecommerce.jpg"
                                         alt>
                                     <div
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Pay Per Click</a>
+                                                href="project-details.html">Responsive Websites for Ecommerce and More</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -528,12 +527,12 @@
                             <div class="project-one__single">
                                 <div class="project-one__img">
                                     <img
-                                        src="<?php echo base_url();?>assets/home/images/home_services/home_service5.jpg"
+                                        src="<?php echo base_url(); ?>assets/home/images/showcase/seo.jpg"
                                         alt>
                                     <div class="project-one__hover">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Search Engine Marketing</a>
+                                                href="project-details.html">SMM & SEO</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -1735,7 +1734,7 @@
                 </div>
                 <div class="financial-advice__bottom">
                     <p class="financial-advice__bottom-text">DigitalWin services
-                        built specifically for your business. <a href="<?php echo base_url();?>services">Find Your Services</a></p>
+                        built specifically for your business. <a href="<?php echo base_url(); ?>services">Find Your Services</a></p>
                 </div>
             </div>
         </section>
@@ -1893,7 +1892,7 @@
                                 <h2 class="cta-one__title">Your Success is Our Mission <br> Let’s Win Digitally</h2>
                             </div>
                             <div class="cta-one__right">
-                                <a href="<?php echo base_url();?>contact" class="cta-one__btn thm-btn">let’s get
+                                <a href="<?php echo base_url(); ?>contact" class="cta-one__btn thm-btn">let’s get
                                     started</a>
                             </div>
                         </div>

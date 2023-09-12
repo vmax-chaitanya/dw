@@ -56,7 +56,7 @@
 							<div class="contact-info__icon">
 								<span class="icon-conversation"></span>
 							</div>
-							<h3 class="contact-info__title">About</h3>
+							<h3 class="contact-info__title">Payment</h3>
 							<p class="contact-info__text">DigitalWin
 								Business Agency is a dynamic and
 								results-driven digital marketing agency

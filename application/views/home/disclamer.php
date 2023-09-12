@@ -23,7 +23,7 @@
         <!--Page Header Start-->
         <section class="page-header">
             <div class="page-header-bg"
-                style="background-image: url(<?php echo base_url(); ?>assets/home/images/about/about_banner.jpg)">
+                style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/disclaimer.jpg)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>

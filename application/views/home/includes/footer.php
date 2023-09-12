@@ -103,13 +103,9 @@
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <!-- <li><a href="services.html">What We
                                                 Offer</a></li> -->
-                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Certified course in
-                                        digital marketing.</a></li>
+                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Support</a></li>
 
-                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Diploma in digital
-                                        marketing.</a></li>
-                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Advanced digital
-                                        marketing with AI.</a></li>
+                              
                             </ul>
                         </div>
                     </div>
