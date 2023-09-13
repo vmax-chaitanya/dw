@@ -8,6 +8,13 @@
 
 <head>
     <?php include("includes/styles.php"); ?>
+    <style>
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
@@ -85,48 +92,26 @@
                             <div class="sidebar__single sidebar__post">
                                 <h3 class="sidebar__title">Latest Posts</h3>
                                 <ul class="sidebar__post-list list-unstyled">
-                                    <li>
-                                        <div class="sidebar__post-image">
-                                            <img src="assets/images/blog/lp-1-1.jpg" alt="">
-                                        </div>
-                                        <div class="sidebar__post-content">
-                                            <h3>
-                                                <span class="sidebar__post-content-meta"><i
-                                                        class="far fa-comments"></i>02 Comments</span>
-                                                <a href="blog-details.html">Get few solutions to hire a candidate</a>
-                                            </h3>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar__post-image">
-                                            <img src="assets/images/blog/lp-1-2.jpg" alt="">
-                                        </div>
-                                        <div class="sidebar__post-content">
-                                            <h3>
-                                                <span class="sidebar__post-content-meta"><i
-                                                        class="far fa-comments"></i>02 Comments</span>
-                                                <a href="blog-details.html">Close the loop on focusing solely on </a>
-                                            </h3>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar__post-image">
-                                            <img src="assets/images/blog/lp-1-3.jpg" alt="">
-                                        </div>
-                                        <div class="sidebar__post-content">
-                                            <h3>
-                                                <span class="sidebar__post-content-meta"><i
-                                                        class="far fa-comments"></i>02 Comments</span>
-                                                <a href="blog-details.html">Organically grow the holistic world view of
-                                                </a>
-                                            </h3>
-                                        </div>
-                                    </li>
+                                    <?php $i = 100;
+                                    foreach ($blogs as $blog): ?>
+                                        <li>
+                                            <div class="sidebar__post-image">
+                                                <img src="<?php echo base_url('' . $blog['image']); ?>"
+                                                    alt="">
+                                            </div>
+                                            <div class="sidebar__post-content">
+                                                <h3>
+                                                    <!-- <span class="sidebar__post-content-meta"><i
+                                                        class="far fa-comments"></i>02 Comments</span> -->
+                                                    <a href="<?php echo base_url();?>blog-detail/<?php echo $blog['id']; ?>"><?php echo $blog['title']; ?></a>
+                                                </h3>
+                                            </div>
+                                        </li>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
                             <div class="contact-page__form mt-3">
-                                <form id="contact-form" name="contact" method="POST" class=""
-                                    action="">
+                                <form id="contact-form" name="contact" method="POST" class="" action="">
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
@@ -156,7 +141,7 @@
                                             </div>
                                             <input type="hidden" name="services_ids"
                                                 value="<?php echo $this->uri->segment(2); ?>">
-                                            
+
                                             <button type="submit" class="thm-btn comment-form__btn">Submit</button>
                                         </div>
                                     </div>
@@ -192,7 +177,7 @@
                             </div>
 
                             <p class="about-page__right-text-2" style="padding-top: 15px !important;">
-                            <?php echo $blog['description']; ?>
+                                <?php echo $blog['description']; ?>
                             </p>
 
 

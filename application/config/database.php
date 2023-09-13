@@ -79,6 +79,11 @@ $db['default'] = array(
 	'username' => 'root',
 	'password' => '',
 	'database' => 'dw',
+
+	// 'username' => 'unv_future_live',
+	// 'password' => 'unv_future_live',
+	// 'database' => 'dw',
+
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

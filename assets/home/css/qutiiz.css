@@ -485,7 +485,7 @@ ul {
 .stricky-header .main-menu__list,
 .stricky-header .main-menu__list ul {
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 0px 50px;
   list-style-type: none;
   align-items: center;
   display: none;
@@ -2674,10 +2674,12 @@ ul {
   margin: 0;
   line-height: 36px;
   padding-bottom: 40px;
+  text-align: justify;
 }
 
 .get-to-know__text-2 {
   margin: 0;
+  text-align: justify;
 }
 
 .get-to-know__progress {
@@ -3608,6 +3610,7 @@ ul {
 
 .testimonial-one__single {
   position: relative;
+  height: 100%;
   display: block;
   border-radius: var(--qutiiz-bdr-radius);
   background-color: rgb(255, 255, 255);
@@ -3622,6 +3625,8 @@ ul {
 
 .testimonial-one__text {
   margin: 0;
+  text-align: justify;
+  word-spacing: 5px;
 }
 
 .testimonial-one__client-info {
@@ -5040,6 +5045,8 @@ ul {
   margin: 0;
   line-height: 32px;
   padding-bottom: 9px;
+  text-align: justify;
+  word-spacing: 4px;
 }
 
 .services-two__arrow {
@@ -7886,6 +7893,7 @@ ul {
 
 .faq-one-accrodion .accrodion-title h4 {
   margin: 0;
+  padding-right: 10px;
   font-size: 20px;
   line-height: 30px;
   color: var(--qutiiz-black);
@@ -7917,7 +7925,7 @@ ul {
   top: 50%;
   right: 0;
   height: 35px;
-  width: 35px;
+  width: 0px;
   border-radius: 50%;
   text-align: center;
   display: flex;
@@ -7933,7 +7941,7 @@ ul {
   content: "\e903";
   color: var(--qutiiz-base);
   height: 35px;
-  width: 35px;
+  width: 0px;
   border-radius: 50%;
   text-align: center;
   display: flex;
@@ -8062,6 +8070,7 @@ ul {
 
 .about-page__right-text-2 {
   margin: 0;
+  text-align: justify;
 }
 
 .about-page__points-box {
@@ -8395,12 +8404,13 @@ ul {
 }
 
 .contact-info__single {
+  height: 100%;
   position: relative;
   display: block;
   background-color: #f6f4f9;
   border-radius: var(--qutiiz-bdr-radius);
   text-align: center;
-  padding: 50px 70px 41px;
+  padding: 50px 35px 41px;
   margin-bottom: 30px;
 }
 

@@ -27,7 +27,7 @@ class HomeController extends CI_Controller
 	public function about()
 	{
 		// Load the about view
-		$data['page_title'] = "Home || Digital win ||";
+		$data['page_title'] = "About || Digital win ||";
 
 		$this->load->view('home/about', $data);
 	}
@@ -45,6 +45,23 @@ class HomeController extends CI_Controller
 
 		$this->load->view('home/disclamer', $data);
 	}
+
+	public function why_only_we()
+	{
+		// Load the about view
+		$data['page_title'] = "Why Only We || Digital win ||";
+
+		$this->load->view('home/why_only_we', $data);
+	}
+
+	public function why_digital_marketing()
+	{
+		// Load the about view
+		$data['page_title'] = "Why Digital Marketing || Digital win ||";
+
+		$this->load->view('home/why_digital_marketing', $data);
+	}
+
 
 	public function contact()
 	{
@@ -129,6 +146,7 @@ class HomeController extends CI_Controller
 	}
 	public function blog_detail($blog_id)
 	{
+		$data['blogs'] = $this->Home_model->get_all_blogs();
 
 		$data['page_title'] = "Blogs Details || Digital win ||";
 		$data['blog'] = $this->Home_model->get_blog_by_id($blog_id);

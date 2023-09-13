@@ -25,6 +25,11 @@
         .about-page__img img{
             object-fit: cover !important;
         }
+        p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
     </style>
 </head>
 
@@ -133,7 +138,7 @@
                                     <?php echo $services_detail['name']; ?>
                                 </h2>
 
-                                <p class="service-details__text-3">
+                                <p class="about-page__right-text-2">
                                     <?php echo $services_detail['description']; ?>
                                 </p>
                                 <!-- <p class="service-details__text-3">Tincidunt elit magnis nulla facilisis sagittis sapien

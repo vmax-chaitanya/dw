@@ -21,7 +21,7 @@
 
 		<!--Page Header Start-->
 		<section class="page-header">
-			<div class="page-header-bg" style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/page-header-bg.jpg)">
+			<div class="page-header-bg" style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/contact.jpg)">
 			</div>
 			<div class="page-header-border"></div>
 			<div class="page-header-border page-header-border-two"></div>
@@ -93,8 +93,7 @@
 									9154357401</a>
 								<a href="tel:919154357402" class="contact-info__phone">+91
 									9154357402</a>
-								<br>
-								<br>
+								
 
 							</h4>
 						</div>

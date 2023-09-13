@@ -177,8 +177,8 @@ $social_media = get_social_media();
                         <li class="dropdown ">
                             <a href="<?php echo base_url(); ?>about">About Us</a>
                             <ul>
-                                <li><a href="#">Who Only We</a></li>
-                                <li><a href="#">Why Digital Marketing</a></li>
+                                <li><a href="<?php echo base_url(); ?>why-only-we">Who Only We</a></li>
+                                <li><a href="<?php echo base_url(); ?>why-digital-marketing">Why Digital Marketing</a></li>
                                 <li><a href="#">Gallery</a></li>
                             </ul>
                         </li>

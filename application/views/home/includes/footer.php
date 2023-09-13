@@ -103,7 +103,7 @@
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <!-- <li><a href="services.html">What We
                                                 Offer</a></li> -->
-                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Support</a></li>
+                                <li><a href="#"><i class="fa-li fa fa-spinner "></i> &nbsp; Support</a></li>
 
                               
                             </ul>
@@ -117,7 +117,7 @@
                                 <?php foreach ($h_services as $service): ?>
 
                                     <li><a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"><i
-                                                class="fa-li fa fa-spinner fa-spin"></i> &nbsp;
+                                                class="fa-li fa fa-spinner "></i> &nbsp;
                                             <?php echo $service['name'] ?>
                                         </a></li>
                                 <?php endforeach; ?>
@@ -132,12 +132,12 @@
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <!-- <li><a href="services.html">What We
                                                 Offer</a></li> -->
-                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Certified course in
+                                <li><a href="#"><i class="fa-li fa fa-spinner "></i> &nbsp; Certified course in
                                         digital marketing.</a></li>
 
-                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Diploma in digital
+                                <li><a href="#"><i class="fa-li fa fa-spinner "></i> &nbsp; Diploma in digital
                                         marketing.</a></li>
-                                <li><a href="#"><i class="fa-li fa fa-spinner fa-spin"></i> &nbsp; Advanced digital
+                                <li><a href="#"><i class="fa-li fa fa-spinner " style="padding-right:5px"></i> &nbsp; Advanced digital
                                         marketing with AI.</a></li>
                             </ul>
                         </div>
