@@ -40,6 +40,25 @@
                                         action="<?php echo site_url('admin/services/create'); ?>"
                                         enctype="multipart/form-data">
                                         <p class="card-description">Service Details</p>
+                                       
+                                        <div class="row">
+                                            
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Type</label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-control" name="type" required>
+                                                            <option value="">Select Type</option>
+                                                            <option value="1">Services</option>
+                                                            <option value="2">Other Services</option>
+                                                          
+                                                        </select>
+                                                        <?php echo form_error('type', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group row">

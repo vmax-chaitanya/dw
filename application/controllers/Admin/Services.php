@@ -15,7 +15,10 @@ class Services extends CI_Controller
 
     public function index()
     {
-        $data['services'] = $this->services_model->get_all_services();
+        $type ="1";
+        $data['services'] = $this->services_model->get_all_services($type);
+        $type ="2";
+        $data['other_services'] = $this->services_model->get_all_services($type);
         $this->load->view('admin/services_list', $data);
     }
 
@@ -27,6 +30,7 @@ class Services extends CI_Controller
     public function create()
     {
         $this->form_validation->set_rules('name', 'Name', 'required|max_length[200]');
+        $this->form_validation->set_rules('type', 'Type', 'required|in_list[1,2]');
         $this->form_validation->set_rules('description', 'Description', 'required');
         $this->form_validation->set_rules('status', 'Status', 'required|in_list[1,2,3]');
         if (empty($_FILES['image']['name'])) {
@@ -74,6 +78,7 @@ class Services extends CI_Controller
             }
 
             $data = array(
+                'type' => $this->input->post('type'),
                 'name' => $this->input->post('name'),
                 'description' => $this->input->post('description'),
                 'description_new' => $this->input->post('description_new'),
@@ -114,6 +119,8 @@ class Services extends CI_Controller
     public function update($id)
     {
         $this->form_validation->set_rules('name', 'Name', 'required|max_length[200]');
+        $this->form_validation->set_rules('type', 'Type', 'required|in_list[1,2]');
+
         $this->form_validation->set_rules('description', 'Description', 'required');
         $this->form_validation->set_rules('status', 'Status', 'required|in_list[1,2,3]');
 
@@ -164,6 +171,8 @@ class Services extends CI_Controller
 
             $data = array(
                 'name' => $this->input->post('name'),
+                'type' => $this->input->post('type'),
+
                 'description' => $this->input->post('description'),
                 'description_new' => $this->input->post('description_new'),
 

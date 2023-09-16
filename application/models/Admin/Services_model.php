@@ -9,8 +9,9 @@ class Services_model extends CI_Model
         $this->load->database();
     }
 
-    public function get_all_services()
+    public function get_all_services($type)
     {
+        $this->db->where('type',$type);
         $query = $this->db->get('services');
         return $query->result_array();
     }
