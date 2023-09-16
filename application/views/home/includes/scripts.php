@@ -130,3 +130,59 @@ $(document).ready(function() {
             });
         });
     </script>
+    [16:44] Bhanu Teja S
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+        var accordionItems = document.querySelectorAll(".accrodion");
+
+
+        accordionItems.forEach(function(item) {
+
+            var title = item.querySelector(".accrodion-title1");
+
+            var content = item.querySelector(".accrodion-content");
+
+
+            title.addEventListener("click", function() {
+
+                if (item.classList.contains("active")) {
+
+                    item.classList.remove("active");
+
+                    content.style.display = "none";
+
+                } else {
+
+                    // Close all other accordion items
+
+                    accordionItems.forEach(function(otherItem) {
+
+                        if (otherItem !== item && otherItem.classList.contains("active")) {
+
+                            otherItem.classList.remove("active");
+
+                            otherItem.querySelector(".accrodion-content").style.display = "none";
+
+                        }
+
+                    });
+
+
+                    // Open the clicked accordion item
+
+                    item.classList.add("active");
+
+                    content.style.display = "block";
+
+                }
+
+            });
+
+        });
+
+    });
+
+</script>

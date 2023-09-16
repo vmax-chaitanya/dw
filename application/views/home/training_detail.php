@@ -228,7 +228,7 @@
                                     <div class="faq-page__single">
                                         <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion2">
                                             <div class="accrodion">
-                                                <div class="accrodion-title">
+                                                <div class="accrodion-title1">
                                                     <h4 class="text-align">
                                                         <?php echo $curriculum['name']; ?>
                                                     </h4>

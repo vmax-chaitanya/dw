@@ -7880,7 +7880,7 @@ ul {
   transform: scaleY(1);
 }
 
-.faq-one-accrodion .accrodion-title {
+.faq-one-accrodion .accrodion-title1 {
   position: relative;
   display: block;
   cursor: pointer;
@@ -7891,7 +7891,7 @@ ul {
   border-radius: var(--qutiiz-bdr-radius);
 }
 
-.faq-one-accrodion .accrodion-title h4 {
+.faq-one-accrodion .accrodion-title1 h4 {
   margin: 0;
   padding-right: 10px;
   font-size: 20px;
@@ -7908,15 +7908,15 @@ ul {
   margin-top: 20px;
 }
 
-.faq-one-accrodion .accrodion.active .accrodion-title {
+.faq-one-accrodion .accrodion.active .accrodion-title1 {
   background-color: var(--qutiiz-white);
 }
 
-.faq-one-accrodion .accrodion.active .accrodion-title h4 {
+.faq-one-accrodion .accrodion.active .accrodion-title1 h4 {
   color: var(--qutiiz-black);
 }
 
-.faq-one-accrodion .accrodion-title h4::before {
+.faq-one-accrodion .accrodion-title1 h4::before {
   content: "\e902";
   font-family: "icomoon" !important;
   font-size: 12px;
@@ -7937,7 +7937,7 @@ ul {
   transition: all 500ms ease;
 }
 
-.faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+.faq-one-accrodion .accrodion.active .accrodion-title1 h4::before {
   content: "\e903";
   color: var(--qutiiz-base);
   height: 35px;
