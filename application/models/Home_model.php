@@ -76,8 +76,15 @@ class Home_model extends CI_Model {
         $this->db->where('type', '4');
         return $this->db->get('gallery')->result_array();
     }
-    public function getActiveServices()
+    public function getActiveServices($type)
     {
+        $this->db->where('type', $type);
+        $this->db->where('status', '1');
+        return $this->db->get('services')->result_array();
+    }
+    public function getActiveOtherServices()
+    {
+        $this->db->where('type', '2');
         $this->db->where('status', '1');
         return $this->db->get('services')->result_array();
     }
@@ -110,14 +117,14 @@ class Home_model extends CI_Model {
     // }
     public function getActiveServiceNames()
     {
-        $this->db->select('id,name');
+        $this->db->select('id,name,type');
         $this->db->where('status', '1');
         $this->db->where('type', '1');
         return $this->db->get('services')->result_array();
     }
     public function getActiveOtherServiceNames()
     {
-        $this->db->select('id,name');
+        $this->db->select('id,name,type');
         $this->db->where('status', '1');
         $this->db->where('type', '2');
         return $this->db->get('services')->result_array();

@@ -29,6 +29,7 @@
     margin-top: 0;
     margin-bottom: 1rem;
     text-align: justify;
+    /* line-height: 26px; */
 }
     </style>
 </head>
@@ -71,7 +72,7 @@
         </section>
         <!--Page Header End-->
         <!--Service Details Start-->
-        <section class="service-details pt-5 pb-3">
+        <section class="service-details pt-5 pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-5">
@@ -80,8 +81,8 @@
                                 <ul class="service-details__sidebar-service-list list-unstyled">
                                     <?php $i = 1;
                                     foreach ($services as $service): ?>
-                                        <li <?php echo ($service['id'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a
-                                                href="<?php echo base_url(); ?>service-detail/<?php echo $service['id']; ?>">
+                                        <li <?php echo ($service['id'] == $this->uri->segment(3)) ? "class='current'" : "class=''"; ?>><a
+                                                href="<?php echo base_url(); ?>service-detail/<?php echo $service['type']; ?>/<?php echo $service['id']; ?>">
                                                 <?php echo $service['name']; ?> <span class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>
@@ -111,6 +112,20 @@
                                                 <input type="text" placeholder="Subject" name="subject" required>
                                             </div>
                                         </div>
+                                        <div class="col-xl-6">
+										<div class="comment-form__input-box" style="padding:15px 0px 15px 0px !important">
+											<select class="select-pad" name="copoun_select" id="copoun_select">
+											<option value="2">Do You Have A Copoun</option>
+											<option value="1">Yes</option>
+											<option value="2">No</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<div class="comment-form__input-box">
+											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
+										</div>
+									</div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-12">
@@ -183,7 +198,7 @@
 
         <?php if(count($services_module1) > 0):?>
         <!--Services Two Start-->
-        <section class="services-two pt-5 pb-3">
+        <section class="services-two pt-5 pb-0">
             <div class="container">
             <div class="section-title text-center">
                         <span class="section-title__tagline"><?php echo isset($services_detail['module_quote_1']) ?  $services_detail['module_quote_1'] : "Quote"; ?></span>
@@ -213,7 +228,7 @@
 
         <?php if(count($services_module2) > 0):?>
         <!--Services Two Start-->
-        <section class="services-two pt-5">
+        <section class="services-two pt-5 pb-0">
             <div class="container">
             <div class="section-title text-center">
 			<span class="section-title__tagline"><?php echo isset($services_detail['module_quote_2']) ?  $services_detail['module_quote_2'] : "Quote"; ?></span>
@@ -244,7 +259,7 @@
 		
         <?php if(count($services_module3) > 0):?>
         <!--Services Two Start-->
-        <section class="services-two pt-5">
+        <section class="services-two pt-5 pb-0  ">
             <div class="container">
             <div class="section-title text-center">
 			<span class="section-title__tagline"><?php echo isset($services_detail['module_quote_3']) ?  $services_detail['module_quote_3'] : "Quote"; ?></span>
@@ -276,7 +291,7 @@
         <?php if (count($service_faqs) > 0) { ?>
 
             <!--FAQ Page Start-->
-            <section class="faq-page pt-5 pb-3">
+            <section class="faq-page pt-5 pb-0">
                 <div class="container">
                     <div class="section-title text-center">
                         <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
@@ -317,7 +332,7 @@
 
         
         <!--Similar Work Start-->
-        <section class="similar-work pt-5 pb-3">
+        <section class="similar-work pt-5 pb-0">
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">recent Service</span> -->

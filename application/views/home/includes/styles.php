@@ -87,3 +87,8 @@
         /* animation: rotation 2s infinite linear; */
     }
 </style>
+<style>
+    .select-pad{
+    padding: 2px 0px 15px 0px !important;
+}
+</style>

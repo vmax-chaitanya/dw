@@ -4975,7 +4975,7 @@ ul {
   border-radius: var(--qutiiz-bdr-radius);
   border: 1px solid transparent;
   background-color: #f6f4f9;
-  padding: 38px 40px 24px;
+  padding: 38px 22px 24px;
   margin-bottom: 30px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
@@ -5043,7 +5043,7 @@ ul {
 .services-two__text {
   font-size: 16px;
   margin: 0;
-  line-height: 32px;
+  line-height: 26px;
   padding-bottom: 9px;
   text-align: justify;
   word-spacing: 4px;
@@ -7164,6 +7164,7 @@ ul {
   display: block;
 }
 
+select,
 .comment-form__input-box input[type="text"],
 .comment-form__input-box input[type="email"] {
   height: auto;

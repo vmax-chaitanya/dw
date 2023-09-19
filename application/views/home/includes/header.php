@@ -185,7 +185,7 @@ $social_media = get_social_media();
                             </ul>
                         </li>
                         <li class="dropdown megamenu">
-                            <a href="<?php echo base_url();?>services">Services </a>
+                            <a href="<?php echo base_url();?>services/1">Services </a>
                             <ul>
                                 <li>
                                     <section class="home-showcase">
@@ -194,7 +194,7 @@ $social_media = get_social_media();
                                                 <div class="row">
                                                     <?php foreach ($h_services as $service): ?>
                                                         <div class="col-lg-3">
-                                                            <a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"
+                                                            <a href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['id'] ?>"
                                                                 class="">
                                                                 <div class="home-showcase__item">
 
@@ -215,7 +215,7 @@ $social_media = get_social_media();
                             </ul>
                         </li>
                         <li class="dropdown megamenu">
-                            <a href="<?php echo base_url();?>services">Other Services </a>
+                            <a href="<?php echo base_url();?>services/2">Other Services </a>
                             <ul>
                                 <li>
                                     <section class="home-showcase">
@@ -224,7 +224,7 @@ $social_media = get_social_media();
                                                 <div class="row">
                                                     <?php foreach ($other_services as $service): ?>
                                                         <div class="col-lg-3">
-                                                            <a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"
+                                                            <a href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['id'] ?>"
                                                                 class="">
                                                                 <div class="home-showcase__item">
 

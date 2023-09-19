@@ -68,7 +68,7 @@ class HomeController extends CI_Controller
 		// Load the contact view
 		//echo "hi"; exit;
 		$data['page_title'] = "Home || Digital win ||";
-		$data['services'] = $this->Home_model->getActiveServices();
+		$data['services'] = $this->Home_model->getActiveServices(1);
 
 		$this->load->view('home/contact', $data);
 	}
@@ -88,14 +88,21 @@ class HomeController extends CI_Controller
 		$this->load->view('home/faq', $data);
 	}
 
-	public function services()
+	public function services($type)
 	{
 		// Load the services view
 		$data['page_title'] = "Home || Digital win ||";
-		$data['services'] = $this->Home_model->getActiveServices();
+		$data['services'] = $this->Home_model->getActiveServices($type);
 		$this->load->view('home/services', $data);
 	}
-	public function service_detail($service_id)
+	public function other_services()
+	{
+		// Load the services view
+		$data['page_title'] = "Home || Digital win ||";
+		$data['services'] = $this->Home_model->getActiveOtherServices();
+		$this->load->view('home/services', $data);
+	}
+	public function service_detail($type,$service_id)
 	{
 
 		$data['page_title'] = "Home || Digital win ||";
@@ -109,10 +116,11 @@ class HomeController extends CI_Controller
 
 		$data['service_faqs'] = $this->Home_model->getActiveServiceFaq($service_id);
 		//echo "<pre>"; print_r($data['services_types']); exit;
-		$data['services'] = $this->Home_model->getActiveServices();
+		$data['services'] = $this->Home_model->getActiveServices($type);
 
 		$this->load->view('home/service_detail', $data);
 	}
+	
 
 	public function training()
 	{
@@ -155,7 +163,7 @@ class HomeController extends CI_Controller
 	}
 	public function training_enquiry()
 	{
-
+//print_r($this->input->post()); exit;
 		$data = array(
 			'name' => $this->input->post('name'),
 			'email' => $this->input->post('email'),
@@ -170,9 +178,8 @@ class HomeController extends CI_Controller
 		if ($result) {
 
 			$this->load->helper('download');
-			$file_path = trim(base_url('' . $this->input->post('brochure')));
-			$file_path = str_replace("/ /", "/", $file_path);
-			$file_name = time() . '.jpg';
+			$file_path =  base_url('' . 'assets/home/dummy.pdf');
+			$file_name = time() . '.pdf';
 			$file_url = force_download($file_name, file_get_contents($file_path));
 			echo $file_url;
 			exit;
@@ -185,12 +192,13 @@ class HomeController extends CI_Controller
 
 	public function contact_enquiry()
 	{
-		//print_r($this->input->post('checkedServiceValues')); exit;
+		//print_r($this->input->post()); exit;
 		$data = array(
 			'name' => $this->input->post('name'),
 			'email' => $this->input->post('email'),
 			'mobile' => $this->input->post('mobile'),
 			'subject' => $this->input->post('subject'),
+			'coupon_id' => $this->input->post('copoun_id'),
 			'message' => $this->input->post('message'),
 			'services_ids' => $this->input->post('services_ids'),
 			'status' => 1,

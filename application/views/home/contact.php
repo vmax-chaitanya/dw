@@ -113,7 +113,7 @@
 				<div class="row">
 					<div class="col-xl-12">
 						<div class="contact-page__form">
-							<form action="#" id="contact-form" name="contact">
+							<form action="#" id="contact-form" name="contact" class="contact-form">
 								<div class="row">
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
@@ -125,6 +125,7 @@
 											<input type="email" placeholder="Email address" name="email">
 										</div>
 									</div>
+									
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
 											<input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
@@ -133,6 +134,20 @@
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
 											<input type="text" placeholder="Subject" name="subject">
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<div class="comment-form__select-box">
+											<select class="" name="copoun_select" id="copoun_select">
+											<option value="2">Do You Have A Copoun</option>
+											<option value="1">Yes</option>
+											<option value="2">No</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<div class="comment-form__input-box">
+											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
 										</div>
 									</div>
 								</div>
