@@ -84,5 +84,6 @@
 
     .wtsapp {
         width: 46px;
+        /* animation: rotation 2s infinite linear; */
     }
 </style>

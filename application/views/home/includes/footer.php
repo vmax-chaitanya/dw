@@ -244,6 +244,6 @@
     <div class="wtsapp">
 
         <a href="https://wa.me/+919154357401" target="_blank"> <img
-                src="<?php echo base_url(); ?>assets/images/WhatsApp.png" class="img-fluid" alt="whatsapp"> </a>
+                src="<?php echo base_url(); ?>assets/images/WhatsApp.png" class="img-fluid " alt="whatsapp"> </a>
     </div>
 </div>
