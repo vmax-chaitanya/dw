@@ -114,7 +114,7 @@
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Services</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
-                                <?php foreach ($h_services as $service): ?>
+                                <?php foreach ($f_services as $service): ?>
 
                                     <li><a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"><i
                                                 class="fa-li fa fa-spinner "></i> &nbsp;

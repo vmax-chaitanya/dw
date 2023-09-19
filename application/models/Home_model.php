@@ -112,6 +112,23 @@ class Home_model extends CI_Model {
     {
         $this->db->select('id,name');
         $this->db->where('status', '1');
+        $this->db->where('type', '1');
+        return $this->db->get('services')->result_array();
+    }
+    public function getActiveOtherServiceNames()
+    {
+        $this->db->select('id,name');
+        $this->db->where('status', '1');
+        $this->db->where('type', '2');
+        return $this->db->get('services')->result_array();
+    }
+    public function getFooterServiceNames()
+    {
+        $this->db->select('id,name');
+        $this->db->where('status', '1');
+        $this->db->where('type', '1');
+        $this->db->order_by("id", "desc");
+        $this->db->limit(6);
         return $this->db->get('services')->result_array();
     }
 

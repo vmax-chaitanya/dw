@@ -1,6 +1,8 @@
 <?php
 $this->load->helper('custom_helper');
 $h_services = $this->Home_model->getActiveServiceNames();
+$other_services = $this->Home_model->getActiveOtherServiceNames();
+$f_services = $this->Home_model->getFooterServiceNames();
 $social_media = get_social_media();
 ?>
 
@@ -191,6 +193,36 @@ $social_media = get_social_media();
                                             <div class="home-showcase__inner">
                                                 <div class="row">
                                                     <?php foreach ($h_services as $service): ?>
+                                                        <div class="col-lg-3">
+                                                            <a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"
+                                                                class="">
+                                                                <div class="home-showcase__item">
+
+                                                                    <h3 class="home-showcase__title">
+                                                                        <?php echo $service['name'] ?>
+                                                                    </h3>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    <?php endforeach; ?>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </section>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown megamenu">
+                            <a href="<?php echo base_url();?>services">Other Services </a>
+                            <ul>
+                                <li>
+                                    <section class="home-showcase">
+                                        <div class="container">
+                                            <div class="home-showcase__inner">
+                                                <div class="row">
+                                                    <?php foreach ($other_services as $service): ?>
                                                         <div class="col-lg-3">
                                                             <a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"
                                                                 class="">
