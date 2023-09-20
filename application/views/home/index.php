@@ -84,7 +84,7 @@
                                                             <?php echo $banner['description']; ?>
                                                         </h2>
 
-                                                        <a href="<?php echo base_url(); ?>services" class="thm-btn">Discover
+                                                        <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
                                                             More</a>
                                                     </div>
                                                 </div>
@@ -129,7 +129,7 @@
                             
                         </div>
                         <div class="contact-page__form mt-3">
-                                <form id="contact-form" name="contact" method="POST" class="contact-form"
+                                <form id="contact-form" name="contact" method="POST" class=""
                                     action="">
                                     <div class="row">
                                         <div class="col-xl-6">
@@ -152,20 +152,6 @@
                                                 <input type="text" placeholder="Subject" name="subject" required>
                                             </div>
                                         </div>
-                                        <div class="col-xl-6">
-										<div class="comment-form__select-box select-pad">
-											<select class="select-pad" name="copoun_select" id="copoun_select">
-											<option value="2">Do You Have A Copoun</option>
-											<option value="1">Yes</option>
-											<option value="2">No</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-xl-6">
-										<div class="comment-form__input-box">
-											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
-										</div>
-									</div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-12">
@@ -256,7 +242,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-online-shopping"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="#">Unparalleled Insights</a>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Unparalleled Insights</a>
                             </h3>
                             <p class="services-two__text">With AI's ability to analyze vast amounts of data in
                                 real-time, you gain invaluable insights into customer behavior, market trends, and
@@ -271,7 +257,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-growth"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="#">Enhanced Personalization</a>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Enhanced Personalization</a>
                             </h3>
                             <p class="services-two__text">Customers today expect personalized experiences. AI enables
                                 you to deliver tailored content, product recommendations, and communication, fostering
@@ -285,7 +271,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-webpage"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="#">Improved Efficiency</a>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Improved Efficiency</a>
                             </h3>
                             <p class="services-two__text">Repetitive manual tasks can hinder productivity. AI automates
                                 these processes, freeing up your team to focus on strategic initiatives that lead to
@@ -299,7 +285,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="#">Predictive Capabilities</a>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Predictive Capabilities</a>
                             </h3>
                             <p class="services-two__text">AI predictive analytics help you anticipate future trends and
                                 customer needs, allowing you to stay proactive and seize opportunities before your
@@ -313,7 +299,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="#">Cost Savings</a></h3>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Cost Savings</a></h3>
                             <p class="services-two__text">By streamlining processes and optimizing resources, AI helps
                                 reduce operational costs, making your business more agile and resilient.</p>
 
@@ -325,7 +311,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="#">Embracing AI in Business</a>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Embracing AI in Business</a>
                             </h3>
                             <p class="services-two__text">Get insights into the importance of adopting AI-driven
                                 solutions in today's rapidly evolving business landscape and how it can transform your
@@ -441,7 +427,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">API Inegration</a>
+                                                href="<?php echo base_url();?>services/1">API Inegration</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -457,7 +443,7 @@
                                     <div class="project-one__hover">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Advance Digital Marketing Services with AI</a>
+                                                href="<?php echo base_url();?>services/1">Advance Digital Marketing Services with AI</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -475,7 +461,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Google Ads</a>
+                                                href="<?php echo base_url();?>services/1">Google Ads</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -493,7 +479,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Advance Digital Marketing Training with AI</a>
+                                                href="<?php echo base_url();?>services/1">Advance Digital Marketing Training with AI</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -511,7 +497,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Native Marketing</a>
+                                                href="<?php echo base_url();?>services/1">Native Marketing</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -529,7 +515,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">Responsive Websites for Ecommerce and More</a>
+                                                href="<?php echo base_url();?>services/1">Responsive Websites for Ecommerce and More</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -546,7 +532,7 @@
                                     <div class="project-one__hover">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="project-details.html">SMM & SEO</a>
+                                                href="<?php echo base_url();?>services/1">SMM & SEO</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -572,7 +558,7 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/small_bussigness.jpg" alt="">
-                                <!-- <a href="#">
+                                <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a> -->
                                 <!-- <div class="blog-one__date">
@@ -581,12 +567,12 @@
                             </div>
                             <div class="blog-one__content">
                                 <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">Small Businesses</a>
+                                    <a href="javascript:void(0);">Small Businesses</a>
                                 </h3>
                                 <!-- <div class="blog-one__person">
                                     <div class="blog-one__person-img">
@@ -604,7 +590,7 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/start_up.jpg" alt="">
-                                <!-- <a href="#">
+                                <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a>
                                 <div class="blog-one__date">
@@ -613,12 +599,12 @@
                             </div>
                             <div class="blog-one__content">
                                 <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">Startups</a>
+                                    <a href="javascript:void(0);">Startups</a>
                                 </h3>
                                 <!-- <div class="blog-one__person">
                                     <div class="blog-one__person-img">
@@ -636,7 +622,7 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/ecommerce.jpg" alt="">
-                                <!-- <a href="#">
+                                <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a>
                                 <div class="blog-one__date">
@@ -645,12 +631,12 @@
                             </div>
                             <div class="blog-one__content">
                                 <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">E-commerce Businesses</a>
+                                    <a href="javascript:void(0);">E-commerce Businesses</a>
                                 </h3>
                                 <!-- <div class="blog-one__person">
                                     <div class="blog-one__person-img">
@@ -668,7 +654,7 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/b2b.jpg" alt="">
-                                <!-- <a href="#">
+                                <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a>
                                 <div class="blog-one__date">
@@ -677,12 +663,12 @@
                             </div>
                             <div class="blog-one__content">
                                 <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">B2B Companies </a>
+                                    <a href="javascript:void(0);">B2B Companies </a>
                                 </h3>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
@@ -700,7 +686,7 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/professional_services.jpg" alt="">
-                                <!-- <a href="#">
+                                <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a>
                                 <div class="blog-one__date">
@@ -709,12 +695,12 @@
                             </div>
                             <div class="blog-one__content">
                                 <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">Professional Services
+                                    <a href="javascript:void(0);">Professional Services
                                     </a>
                                 </h3>
                                 <div class="blog-one__person">
@@ -733,7 +719,7 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/local_bussigness.jpg" alt="">
-                                <!-- <a href="#">
+                                <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a>
                                 <div class="blog-one__date">
@@ -742,12 +728,12 @@
                             </div>
                             <div class="blog-one__content">
                                 <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">Enterprenuers</a>
+                                    <a href="javascript:void(0);">Enterprenuers</a>
                                 </h3>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
@@ -765,7 +751,7 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/non_profit_orginization.jpg" alt="">
-                                <!-- <a href="#">
+                                <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a>
                                 <div class="blog-one__date">
@@ -774,12 +760,12 @@
                             </div>
                             <div class="blog-one__content">
                                 <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">Banking & Finance</a>
+                                    <a href="javascript:void(0);">Banking & Finance</a>
                                 </h3>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
@@ -798,7 +784,7 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/educational.jpg" alt="">
-                                <!-- <a href="#">
+                                <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a>
                                 <div class="blog-one__date">
@@ -807,12 +793,12 @@
                             </div>
                             <div class="blog-one__content">
                                 <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">Education Institutions</a>
+                                    <a href="javascript:void(0);">Education Institutions</a>
                                 </h3>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
@@ -831,7 +817,7 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/real-estate.jpg" alt="">
-                                <!-- <a href="#">
+                                <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a>
                                 <div class="blog-one__date">
@@ -840,12 +826,12 @@
                             </div>
                             <div class="blog-one__content">
                                 <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="#"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="#"><i class="far fa-comments"></i> 02 Comments</a>
+                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
+                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title">
-                                    <a href="#">Real Estate Agencies</a>
+                                    <a href="javascript:void(0);">Real Estate Agencies</a>
                                 </h3>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
@@ -860,7 +846,7 @@
                     </div>
 
                     <!-- <div class="blog-sidebar__load-more text-center">
-                        <a href="blog.html" class="thm-btn blog-sidebar__load-more-btn">load more
+                        <a href="bjavascript:void(0);" class="thm-btn blog-sidebar__load-more-btn">load more
                             posts</a>
                     </div> -->
                 </div>
@@ -883,7 +869,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-online-shopping"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="#">Expertise</a></h3>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Expertise</a></h3>
                             <p class="services-two__text">Our team of AI experts and industry professionals brings
                                 in-depth knowledge and experience to the table, ensuring you receive top-notch solutions
                                 tailored to your business needs.</p>
@@ -896,7 +882,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-growth"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="graphic-design.html">Customization</a>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Customization</a>
                             </h3>
                             <p class="services-two__text"> We understand that each business is unique, and so are its
                                 challenges. Our AI solutions are highly customizable, ensuring a perfect fit for your
@@ -911,7 +897,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-webpage"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="digital-marketing.html">Scalability</a></h3>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Scalability</a></h3>
                             <p class="services-two__text">Whether you're a startup or an established enterprise, our
                                 AI-driven solutions are designed to scale effortlessly with your business growth,
                                 providing unmatched flexibility</p>
@@ -924,7 +910,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="social-marketing.html">Results-Driven</a></h3>
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Results-Driven</a></h3>
                             <p class="services-two__text">Your success is our ultimate goal. We measure our achievements
                                 based on the tangible results we deliver to your business, helping you achieve a
                                 significant return on your investment.</p>
@@ -937,7 +923,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="social-marketing.html">Dynamic Pricing
+                            <h3 class="services-two__title"><a href="javascript:void(0);">Dynamic Pricing
                                     Optimization </a></h3>
                             <p class="services-two__text">Stay ahead of the competition with AI-driven dynamic pricing
                                 strategies. Our algorithms analyse market dynamics, competitor pricing, and customer
@@ -952,7 +938,7 @@
                             <div class="services-two__icon">
                                 <span class="icon-front-end"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="social-marketing.html">Embracing AI in Business</a>
+                            <h3 class="services-two__title"><a href="javascript:void(0);0">Embracing AI in Business</a>
                             </h3>
                             <p class="services-two__text">Get insights into the importance of adopting AI-driven
                                 solutions in today's rapidly evolving business landscape and how it can transform your
@@ -1117,13 +1103,13 @@
                                             Brown</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1144,13 +1130,13 @@
                                             Martin</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1171,13 +1157,13 @@
                                             ford</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1198,13 +1184,13 @@
                                             hardson</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1225,13 +1211,13 @@
                                             Brown</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1252,13 +1238,13 @@
                                             Martin</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1279,13 +1265,13 @@
                                             ford</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1306,13 +1292,13 @@
                                             hardson</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1333,13 +1319,13 @@
                                             Brown</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1360,13 +1346,13 @@
                                             Martin</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1387,13 +1373,13 @@
                                             ford</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1414,13 +1400,13 @@
                                             hardson</h4>
                                         <p class="team-one__hover-title">Designer</p>
                                         <div class="team-one__social">
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-twitter"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-facebook"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-instagram"></i></a>
-                                            <a href="#"><i
+                                            <a href="javascript:void(0);"><i
                                                     class="fab fa-pinterest-p"></i></a>
                                         </div>
                                     </div>
@@ -1748,7 +1734,7 @@
                 </div>
                 <div class="financial-advice__bottom">
                     <p class="financial-advice__bottom-text">DigitalWin services
-                        built specifically for your business. <a href="<?php echo base_url(); ?>services">Find Your Services</a></p>
+                        built specifically for your business. <a href="<?php echo base_url(); ?>services/1">Find Your Services</a></p>
                 </div>
             </div>
         </section>
@@ -1770,7 +1756,7 @@
                                     <img
                                         src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-img-1.jpg"
                                         alt>
-                                    <a href="#">
+                                    <a href="javascript:void(0);">
                                         <span class="blog-one__plus"></span>
                                     </a>
                                     <div class="blog-one__date">
@@ -1779,16 +1765,16 @@
                                 </div>
                                 <div class="blog-one__content">
                                     <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="#"><i
+                                        <li><a href="javascript:void(0);"><i
                                                     class="far fa-folder-open"></i>
                                                 Business</a></li>
-                                        <li><a href="#"><i
+                                        <li><a href="javascript:void(0);"><i
                                                     class="far fa-comments"></i>
                                                 02 Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="blog-one__title">
-                                        <a href="#">Get few
+                                        <a href="javascript:void(0);">Get few
                                             solutions to hire a best candidate</a>
                                     </h3>
                                     <div class="blog-one__person">
@@ -1812,7 +1798,7 @@
                                     <img
                                         src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-img-2.jpg"
                                         alt>
-                                    <a href="#">
+                                    <a href="javascript:void(0);">
                                         <span class="blog-one__plus"></span>
                                     </a>
                                     <div class="blog-one__date">
@@ -1821,16 +1807,16 @@
                                 </div>
                                 <div class="blog-one__content">
                                     <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="#"><i
+                                        <li><a href="javascript:void(0);"><i
                                                     class="far fa-folder-open"></i>
                                                 Business</a></li>
-                                        <li><a href="#"><i
+                                        <li><a href="javascript:void(0);"><i
                                                     class="far fa-comments"></i>
                                                 02 Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="blog-one__title">
-                                        <a href="#">Bring to the
+                                        <a href="javascript:void(0);">Bring to the
                                             table win-win survival strategies</a>
                                     </h3>
                                     <div class="blog-one__person">
@@ -1854,7 +1840,7 @@
                                     <img
                                         src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-img-3.jpg"
                                         alt>
-                                    <a href="#">
+                                    <a href="javascript:void(0);">
                                         <span class="blog-one__plus"></span>
                                     </a>
                                     <div class="blog-one__date">
@@ -1863,16 +1849,16 @@
                                 </div>
                                 <div class="blog-one__content">
                                     <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="#"><i
+                                        <li><a href="javascript:void(0);"><i
                                                     class="far fa-folder-open"></i>
                                                 Business</a></li>
-                                        <li><a href="#"><i
+                                        <li><a href="javascript:void(0);"><i
                                                     class="far fa-comments"></i>
                                                 02 Comments</a>
                                         </li>
                                     </ul>
                                     <h3 class="blog-one__title">
-                                        <a href="#">Capitalize
+                                        <a href="javascript:void(0);">Capitalize
                                             on low hanging fruit to identify a</a>
                                     </h3>
                                     <div class="blog-one__person">
@@ -1929,7 +1915,7 @@
             <div class="search-popup__overlay search-toggler"></div>
           
             <div class="search-popup__content">
-                <form action="#">
+                <form action="javascript:void(0);">
                     <label for="search" class="sr-only">search here</label>
                     <input type="text" id="search" placeholder="Search Here..." />
                     <button type="submit" aria-label="search submit"

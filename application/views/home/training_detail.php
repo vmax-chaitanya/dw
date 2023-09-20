@@ -460,7 +460,7 @@
                                     alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="#">Fimlor Experience</a>
                                     </h3>
                                 </div>
                             </div>
@@ -474,7 +474,7 @@
                                     alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="#">Fimlor Experience</a>
                                     </h3>
                                 </div>
                             </div>
@@ -488,7 +488,7 @@
                                     alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
+                                    <h3 class="project-one__title"><a href="#">Fimlor Experience</a>
                                     </h3>
                                 </div>
                             </div>

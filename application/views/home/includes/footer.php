@@ -119,7 +119,7 @@
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <?php foreach ($f_services as $service): ?>
 
-                                    <li><a href="<?php echo base_url(); ?>service-detail/<?php echo $service['id'] ?>"><i
+                                    <li><a href="<?php echo base_url(); ?>service-detail/1/<?php echo $service['id'] ?>"><i
                                                 class="fa-li fa fa-spinner "></i> &nbsp;
                                             <?php echo $service['name'] ?>
                                         </a></li>

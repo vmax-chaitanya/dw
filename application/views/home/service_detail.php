@@ -213,9 +213,9 @@
                             <div class="services-two__icon">
                                 <span class="icon-online-shopping"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="website-development.html"><?php echo $service['name']; ?></a></h3>
+                            <h3 class="services-two__title"><a href="javascript:void(0);"><?php echo $service['name']; ?></a></h3>
                             <p class="services-two__text"><?php echo $service['description']; ?></p>
-                            <a class="services-two__arrow" href="website-development.html"></a>
+                            <a class="services-two__arrow" href="javascript:void(0);"></a>
                         </div>
                     </div>
                     <?php endforeach; ?>
@@ -244,9 +244,9 @@
                             <div class="services-two__icon">
                                 <span class="icon-online-shopping"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="website-development.html"><?php echo $service['name']; ?></a></h3>
+                            <h3 class="services-two__title"><a href="javascript:void(0);"><?php echo $service['name']; ?></a></h3>
                             <p class="services-two__text"><?php echo $service['description']; ?></p>
-                            <a class="services-two__arrow" href="website-development.html"></a>
+                            <a class="services-two__arrow" href="javascript:void(0);"></a>
                         </div>
                     </div>
                     <?php endforeach; ?>
@@ -275,9 +275,9 @@
                             <div class="services-two__icon">
                                 <span class="icon-online-shopping"></span>
                             </div>
-                            <h3 class="services-two__title"><a href="website-development.html"><?php echo $service['name']; ?></a></h3>
+                            <h3 class="services-two__title"><a href="javascript:void(0);"><?php echo $service['name']; ?></a></h3>
                             <p class="services-two__text"><?php echo $service['description']; ?></p>
-                            <a class="services-two__arrow" href="website-development.html"></a>
+                            <a class="services-two__arrow" href="javascript:void(0);"></a>
                         </div>
                     </div>
                     <?php endforeach; ?>
@@ -351,7 +351,7 @@
                                     alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url();?>service-detail/<?php echo $service['id'];?>"><?php echo $service['name']; ?></a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url();?>service-detail/<?php echo $service['type'];?>/<?php echo $service['id'];?>"><?php echo $service['name']; ?></a>
                                     </h3>
                                 </div>
                             </div>
