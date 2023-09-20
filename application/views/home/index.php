@@ -57,40 +57,40 @@
 
                     <?php $i = 1;
                     foreach ($banners as $banner): ?>
-                                    <div class="swiper-slide">
-                                        <div class="image-layer"
-                                            style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
-                                        </div>
-                                        <!-- /.image-layer -->
-                                        <div class="main-slider-border"></div>
-                                        <div class="main-slider-border main-slider-border-two"></div>
-                                        <div class="main-slider-border main-slider-border-three"></div>
-                                        <div class="main-slider-border main-slider-border-four"></div>
-                                        <div class="main-slider-border main-slider-border-five"></div>
-                                        <div class="main-slider-border main-slider-border-six"></div>
+                                                <div class="swiper-slide">
+                                                    <div class="image-layer"
+                                                        style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
+                                                    </div>
+                                                    <!-- /.image-layer -->
+                                                    <div class="main-slider-border"></div>
+                                                    <div class="main-slider-border main-slider-border-two"></div>
+                                                    <div class="main-slider-border main-slider-border-three"></div>
+                                                    <div class="main-slider-border main-slider-border-four"></div>
+                                                    <div class="main-slider-border main-slider-border-five"></div>
+                                                    <div class="main-slider-border main-slider-border-six"></div>
 
-                                        <div class="main-slider-shape-1"></div>
-                                        <div class="main-slider-shape-2"></div>
-                                        <div class="main-slider-shape-3"></div>
+                                                    <div class="main-slider-shape-1"></div>
+                                                    <div class="main-slider-shape-2"></div>
+                                                    <div class="main-slider-shape-3"></div>
 
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-lg-12">
-                                                    <div class="main-slider__content">
-                                                        <p>
-                                                            <?php echo $banner['name']; ?>
-                                                        </p>
-                                                        <h2>
-                                                            <?php echo $banner['description']; ?>
-                                                        </h2>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="main-slider__content">
+                                                                    <p>
+                                                                        <?php echo $banner['name']; ?>
+                                                                    </p>
+                                                                    <h2>
+                                                                        <?php echo $banner['description']; ?>
+                                                                    </h2>
 
-                                                        <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
-                                                            More</a>
+                                                                    <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
+                                                                        More</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
                     <?php endforeach; ?>
 
                 </div>
@@ -129,42 +129,56 @@
                             
                         </div>
                         <div class="contact-page__form mt-3">
-                                <form id="contact-form" name="contact" method="POST" class=""
-                                    action="">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Your name" name="name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Email address" name="email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="mobile" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Subject" name="subject" required>
-                                            </div>
+                        <form action="#" id="contact-form" name="contact" class="contact-form">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="comment-form__input-box">
+                                            <input type="text" placeholder="Your name" name="name">
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box">
-                                                <textarea name="message" placeholder="Write a message"></textarea>
-                                            </div>
-                                            <input type="hidden" name="services_ids"
-                                                value="<?php echo $this->uri->segment(2); ?>">
+                                    <div class="col-xl-6">
+                                        <div class="comment-form__input-box">
+                                            <input type="email" placeholder="Email address" name="email">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-xl-6">
+                                        <div class="comment-form__input-box">
+                                            <input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="comment-form__input-box">
+                                            <input type="text" placeholder="Subject" name="subject">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="comment-form__input-box" >
+                                            <select  name="copoun_select" id="copoun_select" style="display: block !important;">
+                                            <option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
+                                            <option value="1">Yes</option>
+                                            <option value="2">No</option>
+                                            </select>
                                             
-                                            <button type="submit" class="thm-btn comment-form__btn">Submit</button>
                                         </div>
                                     </div>
-                                </form>
+                                    <div class="col-xl-6">
+                                        <div class="comment-form__input-box">
+                                            <input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="comment-form__input-box">
+                                            <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
+                                        </div>
+                                        <button type="submit" class="thm-btn comment-form__btn">send
+                                            a message</button>
+                                    </div>
+                                </div>
+                            </form>
                             </div>
                     </div>
                     <div class="col-xl-6">
@@ -427,7 +441,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="<?php echo base_url();?>services/1">API Inegration</a>
+                                                href="<?php echo base_url(); ?>service-detail/2/10">API Inegration</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -443,7 +457,7 @@
                                     <div class="project-one__hover">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="<?php echo base_url();?>services/1">Advance Digital Marketing Services with AI</a>
+                                                href="#">Advance Digital Marketing Services with AI</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -461,7 +475,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="<?php echo base_url();?>services/1">Google Ads</a>
+                                                href="<?php echo base_url(); ?>service-detail/2/7">Google Ads</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -479,7 +493,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="<?php echo base_url();?>services/1">Advance Digital Marketing Training with AI</a>
+                                                href="#">Advance Digital Marketing Training with AI</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -497,7 +511,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="<?php echo base_url();?>services/1">Native Marketing</a>
+                                                href="service-detail/2/13">Native Marketing</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -515,7 +529,7 @@
                                         class="project-one__hover project-one__hover-pl-40">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="<?php echo base_url();?>services/1">Responsive Websites for Ecommerce and More</a>
+                                                href="#">Responsive Websites for Ecommerce and More</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -532,7 +546,7 @@
                                     <div class="project-one__hover">
                                         <p class="project-one__tagline">Service</p>
                                         <h3 class="project-one__title"><a
-                                                href="<?php echo base_url();?>services/1">SMM & SEO</a>
+                                                href="<?php echo base_url(); ?>service-detail/2/6">SEO</a>
                                         </h3>
                                     </div>
                                 </div>

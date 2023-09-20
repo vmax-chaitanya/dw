@@ -188,7 +188,7 @@
         <!--About Page End-->
 
         <!--Counter Two Start-->
-        <section class="counter-two about-page-counter-two pt-3">
+        <!-- <section class="counter-two about-page-counter-two pt-3">
             <div class="container">
                 <div class="counter-two__inner wow fadeInUp" data-wow-delay="100ms" data-wow-duration="2500ms">
                     <div class="counter-two-shape1"></div>
@@ -230,7 +230,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--Counter Two End-->
 
         <!--DigitalWin Ready Two-->

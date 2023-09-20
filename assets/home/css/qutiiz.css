@@ -61,6 +61,7 @@ a:hover,
 a:focus,
 a:visited {
   text-decoration: none;
+  /* cursor:context-menu; */
 }
 
 ::placeholder {
@@ -485,7 +486,7 @@ ul {
 .stricky-header .main-menu__list,
 .stricky-header .main-menu__list ul {
   margin: 0;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 10px;
   list-style-type: none;
   align-items: center;
   display: none;
@@ -1551,7 +1552,7 @@ ul {
   transition-delay: 1000ms;
   transition: transform 2000ms ease, opacity 2000ms ease;
   font-size: 130px;
-  line-height: 100px;
+  line-height: 120px;
   text-transform: uppercase;
   font-weight: 400;
   z-index: 30;

@@ -102,8 +102,8 @@
                 <div class="section-title text-center">
 
                     <h2 class="section-title__title">Explore Our Programs</h2>
-                    <span class="section-title__tagline">Short Term / Long Term Programs For Students And Working
-                        Professionals</span>
+                    <!-- <span class="section-title__tagline">Short Term / Long Term Programs For Students And Working
+                        Professionals</span> -->
                 </div>
                 <div class="row filter-layout">
                     <?php $i = 1;

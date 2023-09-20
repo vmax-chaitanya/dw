@@ -74,18 +74,41 @@
     }
 </style>
 <style>
-    .fix-items {
-        position: fixed;
-        left: 35px;
-        bottom: 26px;
-        z-index: 1;
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 80px;
+    /* background-color: green; Customize the background color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: spin 3s infinite linear; /* Add spin animation */
+    z-index: 9999;
+}
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
     }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
-    .wtsapp {
-        width: 46px;
-        /* animation: rotation 2s infinite linear; */
-    }
+.whatsapp-button img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.9s ease-in-out;
+}
+
+.whatsapp-button:hover img {
+    transform: rotate(-360deg);
+}
+
 </style>
 <style>
     .select-pad{

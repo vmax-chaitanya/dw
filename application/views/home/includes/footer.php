@@ -86,6 +86,11 @@
                                 class="fab fa-pinterest-p"></i></a>
                         <a target="__blank" href="<?php echo $social_media['youtube']; ?>"><i
                                 class="fab fa-youtube"></i></a>
+
+                        <!-- <a target="__blank" href="<?php echo $social_media['youtube']; ?>"><i
+                        class="fab fa-pinterest-p"></i></a> -->
+                        <!-- <a target="__blank" href="<?php echo $social_media['youtube']; ?>"><i
+                        class="fab fa-linkedin"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -100,18 +105,17 @@
             <div class="site-footer__middle-inner">
                 <div class="row">
 
-                    <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                    <!-- <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Quick Links</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
-                                <!-- <li><a href="services.html">What We
-                                                Offer</a></li> -->
+                               
                                 <li><a href="#"><i class="fa-li fa fa-spinner "></i> &nbsp; Support</a></li>
 
 
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="footer-widget__column footer-widget__explore clearfix">
@@ -119,8 +123,22 @@
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <?php foreach ($f_services as $service): ?>
 
-                                    <li><a href="<?php echo base_url(); ?>service-detail/1/<?php echo $service['id'] ?>"><i
-                                                class="fa-li fa fa-spinner "></i> &nbsp;
+                                    <li><a href="<?php echo base_url(); ?>service-detail/1/<?php echo $service['id'] ?>"><span class="icon-draw-check-mark"></span> &nbsp;
+                                            <?php echo $service['name'] ?>
+                                        </a></li>
+                                <?php endforeach; ?>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="footer-widget__column footer-widget__explore clearfix">
+                            <h3 class="footer-widget__title">Other Services</h3>
+                            <ul class="footer-widget__explore-list list-unstyled clearfix">
+                                <?php foreach ($f_other_services as $service): ?>
+
+                                    <li><a href="<?php echo base_url(); ?>service-detail/2/<?php echo $service['id'] ?>"><span class="icon-draw-check-mark"></span> &nbsp;
                                             <?php echo $service['name'] ?>
                                         </a></li>
                                 <?php endforeach; ?>
@@ -135,12 +153,12 @@
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <!-- <li><a href="services.html">What We
                                                 Offer</a></li> -->
-                                <li><a href="#"><i class="fa-li fa fa-spinner "></i> &nbsp; Certified course in
+                                <li><a href="#"><span class="icon-draw-check-mark"></span> &nbsp; Certified course in
                                         digital marketing.</a></li>
 
-                                <li><a href="#"><i class="fa-li fa fa-spinner "></i> &nbsp; Diploma in digital
+                                <li><a href="#"><span class="icon-draw-check-mark"></span> &nbsp; Diploma in digital
                                         marketing.</a></li>
-                                <li><a href="#"><i class="fa-li fa fa-spinner " style="padding-right:5px"></i> &nbsp;
+                                <li><a href="#"><span class="icon-draw-check-mark"></span> &nbsp;
                                         Advanced digital
                                         marketing with AI.</a></li>
                             </ul>
@@ -241,13 +259,8 @@
     </div>
 </footer>
 
-<div class="fix-items d-flex align-items-center">
-    <!--<div class="demo">-->
-    <!--	<a href="#demo" class="btn-demo">Book a Demo</a>-->
-    <!--</div>-->
-    <div class="wtsapp">
-
-        <a href="https://wa.me/+919154357401" target="_blank"> <img
-                src="<?php echo base_url(); ?>assets/images/WhatsApp.png" class="img-fluid " alt="whatsapp"> </a>
-    </div>
+<div class="whatsapp-button">
+    <a href="https://wa.me/+919154357401" target="_blank">
+        <img src="<?php echo base_url(); ?>assets/images/WhatsApp.png" alt="WhatsApp">
+    </a>
 </div>

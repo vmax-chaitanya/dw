@@ -22,15 +22,17 @@
         .text-align li {
             text-align: left;
         }
-        .about-page__img img{
+
+        .about-page__img img {
             object-fit: cover !important;
         }
+
         p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    text-align: justify;
-    /* line-height: 26px; */
-}
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: justify;
+            /* line-height: 26px; */
+        }
     </style>
 </head>
 
@@ -63,16 +65,18 @@
             <div class="container">
                 <div class="page-header__inner">
                     <!-- <ul class="thm-breadcrumb list-unstyled">
-                        <li><a href="<?php echo base_url();?>">Home</a></li>
+                        <li><a href="<?php echo base_url(); ?>">Home</a></li>
                         <li class="active">service</li>
                     </ul> -->
-                    <h2> <?php echo $services_detail['banner_text']; ?></h2>
+                    <h2>
+                        <?php echo $services_detail['banner_text']; ?>
+                    </h2>
                 </div>
             </div>
         </section>
         <!--Page Header End-->
         <!--Service Details Start-->
-        <section class="service-details pt-5 pb-0">
+        <section class="service-details pt-3 pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 col-lg-5">
@@ -89,53 +93,58 @@
                                 </ul>
                             </div>
                             <div class="contact-page__form mt-3">
-                                <form id="contact-form" name="contact" method="POST" class=""
-                                    action="">
+                                <form action="#" id="contact-form" name="contact" class="contact-form">
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Your name" name="name" required>
+                                                <input type="text" placeholder="Your name" name="name">
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Email address" name="email" required>
+                                                <input type="email" placeholder="Email address" name="email">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Phone number" name="mobile"
+                                                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="mobile" required>
+                                                <input type="text" placeholder="Subject" name="subject">
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Subject" name="subject" required>
+                                                <select name="copoun_select" id="copoun_select"
+                                                    style="display: block !important;">
+                                                    <option style="color:#726d7b !important" value="">Do You Have A
+                                                        Copoun</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
-										<div class="comment-form__input-box" style="padding:15px 0px 15px 0px !important">
-											<select class="select-pad" name="copoun_select" id="copoun_select">
-											<option value="2">Do You Have A Copoun</option>
-											<option value="1">Yes</option>
-											<option value="2">No</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-xl-6">
-										<div class="comment-form__input-box">
-											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
-										</div>
-									</div>
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Enter Copoun" name="copoun_id"
+                                                    id="copoun_id">
+                                            </div>
+                                        </div>
                                     </div>
+                                    
                                     <div class="row">
                                         <div class="col-xl-12">
                                             <div class="comment-form__input-box">
-                                                <textarea name="message" placeholder="Write a message"></textarea>
+                                                <textarea name="message" placeholder="Write a message"
+                                                    style="display: block !important;"></textarea>
                                             </div>
-                                            <input type="hidden" name="services_ids"
-                                                value="<?php echo $this->uri->segment(2); ?>">
-                                            
-                                            <button type="submit" class="thm-btn comment-form__btn">Submit</button>
+                                            <button type="submit" class="thm-btn comment-form__btn">send
+                                                a message</button>
                                         </div>
                                     </div>
                                 </form>
@@ -196,106 +205,130 @@
             </div>
         </section>
 
-        <?php if(count($services_module1) > 0):?>
-        <!--Services Two Start-->
-        <section class="services-two pt-5 pb-0">
-            <div class="container">
-            <div class="section-title text-center">
-                        <span class="section-title__tagline"><?php echo isset($services_detail['module_quote_1']) ?  $services_detail['module_quote_1'] : "Quote"; ?></span>
-                        <h2 class="section-title__title"> <?php echo isset($services_detail['module_name_1']) ?  $services_detail['module_name_1'] : "Heading"; ?></h2>
+        <?php if (count($services_module1) > 0): ?>
+            <!--Services Two Start-->
+            <section class="services-two pt-0 pb-0">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <span class="section-title__tagline">
+                            <?php echo isset($services_detail['module_quote_1']) ? $services_detail['module_quote_1'] : "Quote"; ?>
+                        </span>
+                        <h2 class="section-title__title">
+                            <?php echo isset($services_detail['module_name_1']) ? $services_detail['module_name_1'] : "Heading"; ?>
+                        </h2>
                     </div>
-                <div class="row">
-                    <?php $i = 1;
-                            foreach ($services_module1 as $service): ?>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
-                        <!--Services Two Single-->
-                        <div class="services-two__single">
-                            <div class="services-two__icon">
-                                <span class="icon-online-shopping"></span>
+                    <div class="row">
+                        <?php $i = 1;
+                        foreach ($services_module1 as $service): ?>
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
+                                <!--Services Two Single-->
+                                <div class="services-two__single">
+                                    <div class="services-two__icon">
+                                        <span class="icon-online-shopping"></span>
+                                    </div>
+                                    <h3 class="services-two__title"><a href="javascript:void(0);">
+                                            <?php echo $service['name']; ?>
+                                        </a></h3>
+                                    <p class="services-two__text">
+                                        <?php echo $service['description']; ?>
+                                    </p>
+                                    <a class="services-two__arrow" href="javascript:void(0);"></a>
+                                </div>
                             </div>
-                            <h3 class="services-two__title"><a href="javascript:void(0);"><?php echo $service['name']; ?></a></h3>
-                            <p class="services-two__text"><?php echo $service['description']; ?></p>
-                            <a class="services-two__arrow" href="javascript:void(0);"></a>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
-                    <?php endforeach; ?>
-                </div>
-              
-            </div>
-        </section>
-        <!--Services Two End-->
-        <?php endif;?>
 
-        <?php if(count($services_module2) > 0):?>
-        <!--Services Two Start-->
-        <section class="services-two pt-5 pb-0">
-            <div class="container">
-            <div class="section-title text-center">
-			<span class="section-title__tagline"><?php echo isset($services_detail['module_quote_2']) ?  $services_detail['module_quote_2'] : "Quote"; ?></span>
-                        <h2 class="section-title__title"> <?php echo isset($services_detail['module_name_2']) ?  $services_detail['module_name_2'] : "Heading"; ?></h2>
-                    </div>
-              
-                <div class="row">
-                    <?php $i = 1;
-                            foreach ($services_module2 as $service): ?>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
-                        <!--Services Two Single-->
-                        <div class="services-two__single">
-                            <div class="services-two__icon">
-                                <span class="icon-online-shopping"></span>
-                            </div>
-                            <h3 class="services-two__title"><a href="javascript:void(0);"><?php echo $service['name']; ?></a></h3>
-                            <p class="services-two__text"><?php echo $service['description']; ?></p>
-                            <a class="services-two__arrow" href="javascript:void(0);"></a>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
                 </div>
-            </div>
-        </section>
-        <!--Services Two End-->
-        <?php endif;?>
+            </section>
+            <!--Services Two End-->
+        <?php endif; ?>
 
-		
-        <?php if(count($services_module3) > 0):?>
-        <!--Services Two Start-->
-        <section class="services-two pt-5 pb-0  ">
-            <div class="container">
-            <div class="section-title text-center">
-			<span class="section-title__tagline"><?php echo isset($services_detail['module_quote_3']) ?  $services_detail['module_quote_3'] : "Quote"; ?></span>
-                        <h2 class="section-title__title"> <?php echo isset($services_detail['module_name_3']) ?  $services_detail['module_name_3'] : "Heading"; ?></h2>
+        <?php if (count($services_module2) > 0): ?>
+            <!--Services Two Start-->
+            <section class="services-two pt-3 pb-0">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <span class="section-title__tagline">
+                            <?php echo isset($services_detail['module_quote_2']) ? $services_detail['module_quote_2'] : "Quote"; ?>
+                        </span>
+                        <h2 class="section-title__title">
+                            <?php echo isset($services_detail['module_name_2']) ? $services_detail['module_name_2'] : "Heading"; ?>
+                        </h2>
                     </div>
-              
-                <div class="row">
-                    <?php $i = 1;
-                            foreach ($services_module3 as $service): ?>
-                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
-                        <!--Services Two Single-->
-                        <div class="services-two__single">
-                            <div class="services-two__icon">
-                                <span class="icon-online-shopping"></span>
+
+                    <div class="row">
+                        <?php $i = 1;
+                        foreach ($services_module2 as $service): ?>
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
+                                <!--Services Two Single-->
+                                <div class="services-two__single">
+                                    <div class="services-two__icon">
+                                        <span class="icon-online-shopping"></span>
+                                    </div>
+                                    <h3 class="services-two__title"><a href="javascript:void(0);">
+                                            <?php echo $service['name']; ?>
+                                        </a></h3>
+                                    <p class="services-two__text">
+                                        <?php echo $service['description']; ?>
+                                    </p>
+                                    <a class="services-two__arrow" href="javascript:void(0);"></a>
+                                </div>
                             </div>
-                            <h3 class="services-two__title"><a href="javascript:void(0);"><?php echo $service['name']; ?></a></h3>
-                            <p class="services-two__text"><?php echo $service['description']; ?></p>
-                            <a class="services-two__arrow" href="javascript:void(0);"></a>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
-                    <?php endforeach; ?>
                 </div>
-            </div>
-        </section>
-        <!--Services Two End-->
-        <?php endif;?>
+            </section>
+            <!--Services Two End-->
+        <?php endif; ?>
+
+
+        <?php if (count($services_module3) > 0): ?>
+            <!--Services Two Start-->
+            <section class="services-two pt-3 pb-0  ">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <span class="section-title__tagline">
+                            <?php echo isset($services_detail['module_quote_3']) ? $services_detail['module_quote_3'] : "Quote"; ?>
+                        </span>
+                        <h2 class="section-title__title">
+                            <?php echo isset($services_detail['module_name_3']) ? $services_detail['module_name_3'] : "Heading"; ?>
+                        </h2>
+                    </div>
+
+                    <div class="row">
+                        <?php $i = 1;
+                        foreach ($services_module3 as $service): ?>
+                            <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
+                                <!--Services Two Single-->
+                                <div class="services-two__single">
+                                    <div class="services-two__icon">
+                                        <span class="icon-online-shopping"></span>
+                                    </div>
+                                    <h3 class="services-two__title"><a href="javascript:void(0);">
+                                            <?php echo $service['name']; ?>
+                                        </a></h3>
+                                    <p class="services-two__text">
+                                        <?php echo $service['description']; ?>
+                                    </p>
+                                    <a class="services-two__arrow" href="javascript:void(0);"></a>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </section>
+            <!--Services Two End-->
+        <?php endif; ?>
 
 
         <?php if (count($service_faqs) > 0) { ?>
 
             <!--FAQ Page Start-->
-            <section class="faq-page pt-5 pb-0">
+            <section class="faq-page pt-3 pb-0">
                 <div class="container">
                     <div class="section-title text-center">
-                        <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
-                            experts</span>
+                        <!-- <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
+                            experts</span> -->
                         <h2 class="section-title__title">Faqs</h2>
                         <div class="row" style="text-align:left">
                             <?php $i = 1;
@@ -330,34 +363,36 @@
             <!--FAQ Page End-->
         <?php } ?>
 
-        
+
         <!--Similar Work Start-->
-        <section class="similar-work pt-5 pb-0">
+        <section class="similar-work pt-3 pb-0">
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">recent Service</span> -->
-                    <h2 class="section-title__title">similar Service</h2>
+                    <h2 class="section-title__title">Other Service</h2>
                 </div>
                 <div class="row">
-                <?php $i = 1;
-                       foreach ($services as $key=>$service): 
-                       if($key < 3):?>
-                    <div class="col-xl-4 col-lg-4">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                
-                                <img src="<?php echo base_url('' . $service['image']); ?>"
-                                    alt="">
-                                <div class="project-one__hover">
-                                    <p class="project-one__tagline">service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url();?>service-detail/<?php echo $service['type'];?>/<?php echo $service['id'];?>"><?php echo $service['name']; ?></a>
-                                    </h3>
+                    <?php $i = 1;
+                    foreach ($services as $key => $service):
+                        if ($key < 3): ?>
+                            <div class="col-xl-4 col-lg-4">
+                                <!--Portfolio One Single-->
+                                <div class="project-one__single">
+                                    <div class="project-one__img">
+
+                                        <img src="<?php echo base_url('' . $service['image']); ?>" alt="">
+                                        <div class="project-one__hover">
+                                            <p class="project-one__tagline">service</p>
+                                            <h3 class="project-one__title"><a
+                                                    href="<?php echo base_url(); ?>service-detail/<?php echo $service['type']; ?>/<?php echo $service['id']; ?>">
+                                                    <?php echo $service['name']; ?>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                   <?php endif; endforeach;?>
+                        <?php endif; endforeach; ?>
                 </div>
             </div>
         </section>

@@ -208,7 +208,7 @@ class HomeController extends CI_Controller
 		$result = $this->contact_model->create_contact($data);
 		if ($result) {
 
-			echo "Thanks for Inserting";
+			echo "Thank you for your message. We will get in touch with you shortly";
 			exit;
 		} else {
 			echo "Error inserting data.";

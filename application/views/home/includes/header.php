@@ -3,18 +3,19 @@ $this->load->helper('custom_helper');
 $h_services = $this->Home_model->getActiveServiceNames();
 $other_services = $this->Home_model->getActiveOtherServiceNames();
 $f_services = $this->Home_model->getFooterServiceNames();
+$f_other_services = $this->Home_model->getFooterOtherServiceNames();
 $social_media = get_social_media();
 ?>
 
 <header class="main-header clearfix">
     <marquee style="color:white">
-        India's First CMMi Level 5 & ISO (9000:2015) Certified Digital Marketing Services Company
+        India's First CMMi Level 5 & ISO (9001:2015) Certified Digital Marketing Services Company
     </marquee>
     <nav class="main-menu clearfix">
         <div class="main-menu-wrapper clearfix">
             <div class="main-menu-wrapper__left">
                 <div class="main-menu-wrapper__logo pt-0 ">
-                    <a href="<?php echo base_url(); ?>"><img height="80" width="180"
+                    <a href="<?php echo base_url(); ?>"><img height="100" width="250"
                             src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
                 </div>
                 <div class="main-menu-wrapper__main-menu">
@@ -179,7 +180,7 @@ $social_media = get_social_media();
                         <li class="dropdown ">
                             <a href="<?php echo base_url(); ?>about">About Us</a>
                             <ul>
-                                <li><a href="<?php echo base_url(); ?>why-only-we">Who Only We</a></li>
+                                <li><a href="<?php echo base_url(); ?>why-only-we">Why Only We</a></li>
                                 <li><a href="<?php echo base_url(); ?>why-digital-marketing">Why Digital Marketing</a></li>
                                 <li><a href="#">Gallery</a></li>
                             </ul>

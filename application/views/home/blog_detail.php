@@ -111,41 +111,56 @@
                                 </ul>
                             </div>
                             <div class="contact-page__form mt-3">
-                                <form id="contact-form" name="contact" method="POST" class="" action="">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Your name" name="name" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Email address" name="email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="mobile" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Subject" name="subject" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box">
-                                                <textarea name="message" placeholder="Write a message"></textarea>
-                                            </div>
-                                            <input type="hidden" name="services_ids"
-                                                value="<?php echo $this->uri->segment(2); ?>">
-
-                                            <button type="submit" class="thm-btn comment-form__btn">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
+                            <form action="#" id="contact-form" name="contact" class="contact-form">
+								<div class="row">
+									<div class="col-xl-6">
+										<div class="comment-form__input-box">
+											<input type="text" placeholder="Your name" name="name">
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<div class="comment-form__input-box">
+											<input type="email" placeholder="Email address" name="email">
+										</div>
+									</div>
+									
+									<div class="col-xl-6">
+										<div class="comment-form__input-box">
+											<input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<div class="comment-form__input-box">
+											<input type="text" placeholder="Subject" name="subject">
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<div class="comment-form__input-box" >
+											<select  name="copoun_select" id="copoun_select" style="display: block !important;">
+											<option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
+											<option value="1">Yes</option>
+											<option value="2">No</option>
+											</select>
+											
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<div class="comment-form__input-box">
+											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-xl-12">
+										<div class="comment-form__input-box">
+											<textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
+										</div>
+										<button type="submit" class="thm-btn comment-form__btn">send
+											a message</button>
+									</div>
+								</div>
+							</form>
                             </div>
 
                         </div>

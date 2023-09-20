@@ -72,26 +72,28 @@
                     },
                     minlength: 10,
                     maxlength: 10
-                }
+                },
+                message: "required"
             },
             messages: {
                 name: "Enter Name",
                 subject: "Enter Subject",
                 mobile: {
                     required: "Enter Mobile Number",
-                    minlength: "Valid Mobile Number",
-                    maxlength: "Valid Mobile Number",
+                    minlength: "Enter Valid  Number",
+                    maxlength: "Enter Valid  Number",
                 },
                 copoun_select: "Please select an option",
-                coupon_id: {
+                copoun_id: {
                     required: "Coupon is required when 'Yes' is selected",
                     minlength: "Coupon must have exactly 10 characters",
-                    maxlength: "Coupon must have exactly 10 characters",
+                    maxlength: "Coupon must have exactly 10 characters"
                 },
-                email: "Enter email address"
+                email: "Enter email address",
+                message: "Please write a message"
             },
             submitHandler: function (form) {
-          
+
                 var services_ids = $("input[name='service[]']:checked").map(function () {
                     return this.value;
                 }).get();
@@ -101,7 +103,7 @@
 
                 $.ajax({
                     method: "POST",
-                    url: "<?php echo base_url('contact-enquiry'); ?>", 
+                    url: "<?php echo base_url('contact-enquiry'); ?>",
                     data: formData,
                     success: function (response) {
                         //alert(response);
@@ -109,9 +111,10 @@
                         $('#exampleModal').modal('hide');
                         $('#contact-form')[0].reset();
                         $('.contact-form')[0].reset();
-                        toastr.success('Successfully Updated');
+                        //alert("hi");
+                        toastr.success('Thank you for your message. We will get in touch with you shortly');
                         this.reset();
-                     
+
                     }
                 });
             }
@@ -228,38 +231,56 @@
         });
     });
 
-/////thisis for brouchure download////
+    /////thisis for brouchure download////
     $(document).ready(function () {
-        
+
         $('.ajax-form').submit(function (e) {
             e.preventDefault();
             // alert("hi");
             if ($form.valid()) {
-            $.ajax({
-                type: 'POST',
-                url: $(this).attr('action'),
-                data: $(this).serialize(),
-                dataType: 'text', // Set the expected data type
-                success: function (response) {
+                $.ajax({
+                    type: 'POST',
+                    url: $(this).attr('action'),
+                    data: $(this).serialize(),
+                    dataType: 'text', // Set the expected data type
+                    success: function (response) {
 
-                    $('#brouchure')[0].reset();
-                  //  window.location.href = response; // The response contains the file URL
-                    toastr.success('File Downloaded Successfully');
+                        $('#brouchure')[0].reset();
+                        //  window.location.href = response; // The response contains the file URL
+                        toastr.success('File Downloaded Successfully');
 
-                    // Close the modal
-                    $('#exampleModal').modal('hide');
+                        // Close the modal
+                        $('#exampleModal').modal('hide');
 
-                    // Reset the form (if needed)
-                    $('#brouchure')[0].reset();
+                        // Reset the form (if needed)
+                        $('#brouchure')[0].reset();
 
-                    // Redirect to the downloaded file
-                    window.location.href = response; // The response contains the file URL
-                },
-                error: function (error) {
-                    console.log('Error:', error);
-                }
-            });
-        }
+                        // Redirect to the downloaded file
+                        window.location.href = response; // The response contains the file URL
+                    },
+                    error: function (error) {
+                        console.log('Error:', error);
+                    }
+                });
+            }
         });
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the input element by its name attribute
+        var nameInput = document.querySelector("input[name='name']");
+
+        // Add an input event listener to the name input field
+        nameInput.addEventListener("input", function () {
+            // Remove any non-alphabet characters (including numbers)
+            this.value = this.value.replace(/[^a-zA-Z\s]/g, '');
+        });
+    });
+</script>
+<!-- <script>
+    document.querySelector('.whatsapp-button a').addEventListener('click', function() {
+        // Track the WhatsApp button click using Google Analytics or other analytics tools
+        ga('send', 'event', 'WhatsApp', 'Click');
+    });
+</script> -->

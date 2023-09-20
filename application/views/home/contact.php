@@ -92,7 +92,9 @@
 								<a href="tel:919154357401" class="contact-info__phone">+91
 									9154357401</a>
 								<a href="tel:919154357402" class="contact-info__phone">+91
-									9154357402</a>
+									9154357404</a>
+								<a href="tel:040-2704708" class="contact-info__phone">
+								040-2704708</a>
 								
 
 							</h4>
@@ -137,12 +139,13 @@
 										</div>
 									</div>
 									<div class="col-xl-6">
-										<div class="comment-form__select-box">
-											<select class="" name="copoun_select" id="copoun_select">
-											<option value="2">Do You Have A Copoun</option>
+										<div class="comment-form__input-box" >
+											<select  name="copoun_select" id="copoun_select" style="display: block !important;">
+											<option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
 											<option value="1">Yes</option>
 											<option value="2">No</option>
 											</select>
+											
 										</div>
 									</div>
 									<div class="col-xl-6">
@@ -169,7 +172,7 @@
 								<div class="row">
 									<div class="col-xl-12">
 										<div class="comment-form__input-box">
-											<textarea name="message" placeholder="Write a message"></textarea>
+											<textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
 										</div>
 										<button type="submit" class="thm-btn comment-form__btn">send
 											a message</button>

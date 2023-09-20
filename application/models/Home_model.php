@@ -138,6 +138,15 @@ class Home_model extends CI_Model {
         $this->db->limit(6);
         return $this->db->get('services')->result_array();
     }
+    public function getFooterOtherServiceNames()
+    {
+        $this->db->select('id,name');
+        $this->db->where('status', '1');
+        $this->db->where('type', '2');
+        $this->db->order_by("id", "desc");
+        $this->db->limit(6);
+        return $this->db->get('services')->result_array();
+    }
 
     // public function getActiveBlog()
     // {
