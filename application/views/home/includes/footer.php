@@ -74,7 +74,7 @@
                 <div class="site-footer__top-right">
                     <div class="site-footer__top-right-social">
 
-                        <a href="<?php echo $social_media['facebook']; ?>"><i class="fab fa-facebook"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['facebook']; ?>"><i class="fab fa-facebook"></i></a>
 
                         <a target="__blank" href="<?php echo $social_media['instagram']; ?>"><i
                                 class="fab fa-instagram"></i></a>

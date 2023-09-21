@@ -238,7 +238,11 @@
                 required: true,
                 email: true // Validate email format
             },
-            mobile1: "required",
+            mobile1: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 10
+                },
             subject1: "required"
         },
         messages: {
@@ -247,7 +251,11 @@
                 required: "Please enter your email address",
                 email: "Please enter a valid email address"
             },
-            mobile1: "Please enter your phone number",
+            mobile1: {
+                    required: "Enter Mobile Number",
+                    minlength: "Enter Valid  Number",
+                    maxlength: "Enter Valid  Number",
+                },
             subject1: "Please enter a subject"
         },
         submitHandler: function (form) {

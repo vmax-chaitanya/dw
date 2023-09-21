@@ -177,7 +177,7 @@
 										<div class="comment-form__input-box">
 											<textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
 										</div>
-										<button type="submit" class="thm-btn comment-form__btn">send
+										<button type="submit" class="thm-btn comment-form__btn mt-3">send
 											a message</button>
 									</div>
 								</div>
