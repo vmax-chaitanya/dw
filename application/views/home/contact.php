@@ -94,8 +94,8 @@
 								<a href="tel:919154357402" class="contact-info__phone">+91
 									9154357404</a>
 								<a href="tel:040-2704708" class="contact-info__phone">
-								040-2704708</a>
-								
+									040-2704708</a>
+
 
 							</h4>
 						</div>
@@ -127,7 +127,7 @@
 											<input type="email" placeholder="Email address" name="email">
 										</div>
 									</div>
-									
+
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
 											<input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
@@ -139,18 +139,18 @@
 										</div>
 									</div>
 									<div class="col-xl-6">
-										<div class="comment-form__input-box" >
-											<select  name="copoun_select" id="copoun_select" style="display: block !important;">
-											<option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
-											<option value="1">Yes</option>
-											<option value="2">No</option>
+										<div class="comment-form__input-box">
+											<select name="copoun_select" id="copoun_select" style="display: block !important;">
+												<option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
+												<option value="1">Yes</option>
+												<option value="2">No</option>
 											</select>
-											
+
 										</div>
 									</div>
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
-											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
+											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id">
 										</div>
 									</div>
 								</div>
@@ -158,11 +158,14 @@
 									<div class="col-xl-12">
 										<div class="comment-form__input-box">
 											<div class="row">
+												<div class="col-xl-6" style="">
+													<input type="checkbox" id="select-all" name="select-all">
+													<label for="select-all" style="display:inline">Select All</label><br>
+												</div>
 												<?php foreach ($services as $service) : ?>
 													<div class="col-xl-6" style="">
-														<input type="checkbox" id="service_<?php echo $service['id'] ?>" name="service[]" value="<?php echo $service['id'] ?>">
+														<input type="checkbox" class="service-checkbox" id="service_<?php echo $service['id'] ?>" name="service[]" value="<?php echo $service['id'] ?>">
 														<label for="service_<?php echo $service['id'] ?>" style="display:inline"><?php echo $service['name'] ?></label><br>
-
 													</div>
 												<?php endforeach; ?>
 											</div>

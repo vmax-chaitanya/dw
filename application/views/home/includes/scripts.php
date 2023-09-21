@@ -185,86 +185,97 @@
 
 </script>
 <script>
-    $(function () {
-        $("form[name='brouchuredd']").validate({
-            rules: {
-                name: "required",
-                subject: "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-                mobile: {
-                    required: true,
-                    minlength: 10,
-                    maxlength: 10
-                }
+    // $(function () {
+    //     $("form[name='brouchuredd']").validate({
+    //         rules: {
+    //             name: "required",
+    //             subject: "required",
+    //             email: {
+    //                 required: true,
+    //                 email: true
+    //             },
+    //             mobile: {
+    //                 required: true,
+    //                 minlength: 10,
+    //                 maxlength: 10
+    //             }
 
-            },
-            messages: {
-                name: "Please Enter Name",
-                subject: "Please Enter Subject",
-                mobile: {
-                    required: "Please Enter Mobile Number",
-                    minlength: "Please Enter 10 digit valid Mobile Number",
-                    maxlength: "Please Enter 10 digit valid Mobile Number",
-                },
+    //         },
+    //         messages: {
+    //             name: "Please Enter Name",
+    //             subject: "Please Enter Subject",
+    //             mobile: {
+    //                 required: "Please Enter Mobile Number",
+    //                 minlength: "Please Enter 10 digit valid Mobile Number",
+    //                 maxlength: "Please Enter 10 digit valid Mobile Number",
+    //             },
 
-                email: "Please Enter a valid email address"
-            },
-            submitHandler: function (form) {
-                var formData = $(form).serializeArray();
-                $.ajax({
-                    type: 'POST',
-                    url: $(this).attr('action'),
-                    data: $(this).serialize(),
-                    dataType: 'text', // Set the expected data type
-                    success: function (response) {
-                        // Initiate the file download
-                        window.location.href = response; // The response contains the file URL
-                    },
-                    error: function (error) {
-                        console.log('Error:', error);
-                    }
-                });
-            }
-        });
-    });
+    //             email: "Please Enter a valid email address"
+    //         },
+    //         submitHandler: function (form) {
+    //             var formData = $(form).serializeArray();
+    //             $.ajax({
+    //                 type: 'POST',
+    //                 url: $(this).attr('action'),
+    //                 data: $(this).serialize(),
+    //                 dataType: 'text', // Set the expected data type
+    //                 success: function (response) {
+    //                     // Initiate the file download
+    //                     window.location.href = response; // The response contains the file URL
+    //                 },
+    //                 error: function (error) {
+    //                     console.log('Error:', error);
+    //                 }
+    //             });
+    //         }
+    //     });
+    // });
 
     /////thisis for brouchure download////
     $(document).ready(function () {
-
-        $('.ajax-form').submit(function (e) {
-            e.preventDefault();
-            // alert("hi");
-            if ($form.valid()) {
-                $.ajax({
-                    type: 'POST',
-                    url: $(this).attr('action'),
-                    data: $(this).serialize(),
-                    dataType: 'text', // Set the expected data type
-                    success: function (response) {
-
-                        $('#brouchure')[0].reset();
-                        //  window.location.href = response; // The response contains the file URL
-                        toastr.success('File Downloaded Successfully');
-
-                        // Close the modal
-                        $('#exampleModal').modal('hide');
-
-                        // Reset the form (if needed)
-                        $('#brouchure')[0].reset();
-
-                        // Redirect to the downloaded file
-                        window.location.href = response; // The response contains the file URL
-                    },
-                    error: function (error) {
-                        console.log('Error:', error);
-                    }
-                });
-            }
-        });
+    // Initialize form validation
+    $("#brouchure").validate({
+        rules: {
+            name1: "required",
+            email1: {
+                required: true,
+                email: true // Validate email format
+            },
+            mobile1: "required",
+            subject1: "required"
+            // message1: "required"
+        },
+        messages: {
+            name1: "Please enter your name",
+            email1: {
+                required: "Please enter your email address",
+                email: "Please enter a valid email address"
+            },
+            mobile1: "Please enter your phone number",
+            subject1: "Please enter a subject"
+            // message1: "Please enter a message"
+        },
+        submitHandler: function (form) {
+            // Handle the form submission via AJAX here
+            $.ajax({
+                type: 'POST',
+                url: $(form).attr('action'),
+                data: $(form).serialize(),
+                dataType: 'text',
+                success: function (response) {
+                    // Handle the success response here
+                    window.location.href = response;
+                    $(form)[0].reset();
+                    toastr.success('Broucher downloaded successfully');
+                    // You can add further actions here if needed
+                },
+                error: function (error) {
+                    console.log('Error:', error);
+                }
+            });
+        }
     });
+});
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -278,9 +289,21 @@
         });
     });
 </script>
-<!-- <script>
-    document.querySelector('.whatsapp-button a').addEventListener('click', function() {
-        // Track the WhatsApp button click using Google Analytics or other analytics tools
-        ga('send', 'event', 'WhatsApp', 'Click');
+//////select all checkboxez//
+<script>
+    $(document).ready(function () {
+        // Check or uncheck all checkboxes when "Select All" is clicked
+        $("#select-all").click(function () {
+            $(".service-checkbox").prop('checked', $(this).prop('checked'));
+        });
+
+        // Check or uncheck "Select All" when any service checkbox is clicked
+        $(".service-checkbox").click(function () {
+            if ($(".service-checkbox:checked").length === $(".service-checkbox").length) {
+                $("#select-all").prop('checked', true);
+            } else {
+                $("#select-all").prop('checked', false);
+            }
+        });
     });
-</script> -->
+</script>

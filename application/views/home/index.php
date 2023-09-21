@@ -18,12 +18,13 @@
             border-bottom-left-radius: 0px;
             border-bottom-right-radius: 25px;
         }
-        .p{
-  text-align: center;
-  max-width: 220px;
-  word-wrap: break-word;
-  word-break: break-all;
-}
+
+        .p {
+            text-align: center;
+            max-width: 220px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
     </style>
 </head>
 
@@ -56,41 +57,40 @@
                 <div class="swiper-wrapper">
 
                     <?php $i = 1;
-                    foreach ($banners as $banner): ?>
-                                                <div class="swiper-slide">
-                                                    <div class="image-layer"
-                                                        style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
-                                                    </div>
-                                                    <!-- /.image-layer -->
-                                                    <div class="main-slider-border"></div>
-                                                    <div class="main-slider-border main-slider-border-two"></div>
-                                                    <div class="main-slider-border main-slider-border-three"></div>
-                                                    <div class="main-slider-border main-slider-border-four"></div>
-                                                    <div class="main-slider-border main-slider-border-five"></div>
-                                                    <div class="main-slider-border main-slider-border-six"></div>
+                    foreach ($banners as $banner) : ?>
+                        <div class="swiper-slide">
+                            <div class="image-layer" style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
+                            </div>
+                            <!-- /.image-layer -->
+                            <div class="main-slider-border"></div>
+                            <div class="main-slider-border main-slider-border-two"></div>
+                            <div class="main-slider-border main-slider-border-three"></div>
+                            <div class="main-slider-border main-slider-border-four"></div>
+                            <div class="main-slider-border main-slider-border-five"></div>
+                            <div class="main-slider-border main-slider-border-six"></div>
 
-                                                    <div class="main-slider-shape-1"></div>
-                                                    <div class="main-slider-shape-2"></div>
-                                                    <div class="main-slider-shape-3"></div>
+                            <div class="main-slider-shape-1"></div>
+                            <div class="main-slider-shape-2"></div>
+                            <div class="main-slider-shape-3"></div>
 
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-lg-12">
-                                                                <div class="main-slider__content">
-                                                                    <p>
-                                                                        <?php echo $banner['name']; ?>
-                                                                    </p>
-                                                                    <h2>
-                                                                        <?php echo $banner['description']; ?>
-                                                                    </h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="main-slider__content">
+                                            <p>
+                                                <?php echo $banner['name']; ?>
+                                            </p>
+                                            <h2>
+                                                <?php echo $banner['description']; ?>
+                                            </h2>
 
-                                                                    <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
-                                                                        More</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <?php endforeach; ?>
 
                 </div>
@@ -108,14 +108,13 @@
         </section>
         <!--Main Slider End-->
 
-        
+
         <!--Get To Know Start-->
         <section class="get-to-know pt-5 pb-0">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
-                        <div class="get-to-know__left wow slideInLeft" data-wow-delay="100ms"
-                            data-wow-duration="2500ms">
+                        <div class="get-to-know__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                             <div class="get-to-know__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images.jpg" alt>
                                 <div class="get-to-know__video-link">
@@ -126,10 +125,11 @@
                                     </a>
                                 </div>
                             </div>
-                            
+
                         </div>
+                        <div class="get-to-know__left wow slideInLeft pr-0" data-wow-delay="100ms" data-wow-duration="2500ms">
                         <div class="contact-page__form mt-3">
-                        <form action="#" id="contact-form" name="contact" class="contact-form">
+                            <form action="#" id="contact-form" name="contact" class="contact-form">
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
@@ -141,7 +141,7 @@
                                             <input type="email" placeholder="Email address" name="email">
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
                                             <input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
@@ -153,22 +153,22 @@
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
-                                        <div class="comment-form__input-box" >
-                                            <select  name="copoun_select" id="copoun_select" style="display: block !important;">
-                                            <option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
-                                            <option value="1">Yes</option>
-                                            <option value="2">No</option>
+                                        <div class="comment-form__input-box">
+                                            <select name="copoun_select" id="copoun_select" style="display: block !important;">
+                                                <option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
+                                                <option value="1">Yes</option>
+                                                <option value="2">No</option>
                                             </select>
-                                            
+
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
+                                            <input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id">
                                         </div>
                                     </div>
                                 </div>
-                              
+
                                 <div class="row">
                                     <div class="col-xl-12">
                                         <div class="comment-form__input-box">
@@ -179,7 +179,8 @@
                                     </div>
                                 </div>
                             </form>
-                            </div>
+                        </div>
+                        </div>
                     </div>
                     <div class="col-xl-6">
                         <div class="get-to-know__right">
@@ -405,15 +406,15 @@
             </section> -->
         <!--Brand One End-->
 
-         <!--Project One Start-->
-         <section class="project-one pt-5 pb-0">
-                <div class="container">
-                    <div class="section-title text-center">
-                        <span class="section-title__tagline">Services</span>
-                        <h2 class="section-title__title">work showcase</h2>
-                    </div>
-                    <div class="row">
-                        <!-- <div class="col-xl-12">
+        <!--Project One Start-->
+        <section class="project-one pt-5 pb-0">
+            <div class="container">
+                <div class="section-title text-center">
+                    <span class="section-title__tagline">Services</span>
+                    <h2 class="section-title__title">work showcase</h2>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-xl-12">
                             <ul
                                 class="project-filter style1 post-filter has-dynamic-filters-counter list-unstyled">
                                 <li data-filter=".filter-item" class="active"><span
@@ -427,140 +428,108 @@
                                         class="filter-text last-pd-none">Apps</span></li>
                             </ul>
                         </div> -->
+                </div>
+                <div class="row filter-layout masonary-layout">
+                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
+                        <!--Portfolio One Single-->
+                        <div class="project-one__single">
+                            <div class="project-one__img">
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/api.jpg" alt>
+                                <div class="project-one__hover project-one__hover-pl-40">
+                                    <p class="project-one__tagline">Service</p>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>service-detail/2/10">API Inegration</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row filter-layout masonary-layout">
-                        <div
-                            class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
-                            <!--Portfolio One Single-->
-                            <div class="project-one__single">
-                                <div class="project-one__img">
-                                    <img
-                                        src="<?php echo base_url(); ?>assets/home/images/showcase/api.jpg"
-                                        alt>
-                                    <div
-                                        class="project-one__hover project-one__hover-pl-40">
-                                        <p class="project-one__tagline">Service</p>
-                                        <h3 class="project-one__title"><a
-                                                href="<?php echo base_url(); ?>service-detail/2/10">API Inegration</a>
-                                        </h3>
-                                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 filter-item bra app web">
+                        <!--Portfolio One Single-->
+                        <div class="project-one__single">
+                            <div class="project-one__img">
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/ai.jpg" alt>
+                                <div class="project-one__hover">
+                                    <p class="project-one__tagline">Service</p>
+                                    <h3 class="project-one__title"><a href="#">Advance Digital Marketing Services with AI</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 filter-item bra app web">
-                            <!--Portfolio One Single-->
-                            <div class="project-one__single">
-                                <div class="project-one__img">
-                                    <img
-                                        src="<?php echo base_url(); ?>assets/home/images/showcase/ai.jpg"
-                                        alt>
-                                    <div class="project-one__hover">
-                                        <p class="project-one__tagline">Service</p>
-                                        <h3 class="project-one__title"><a
-                                                href="#">Advance Digital Marketing Services with AI</a>
-                                        </h3>
-                                    </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra web">
+                        <!--Portfolio One Single-->
+                        <div class="project-one__single">
+                            <div class="project-one__img">
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/google_ads.jpg" alt>
+                                <div class="project-one__hover project-one__hover-pl-40">
+                                    <p class="project-one__tagline">Service</p>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>service-detail/2/7">Google Ads</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="col-xl-3 col-lg-6 col-md-6 filter-item bra web">
-                            <!--Portfolio One Single-->
-                            <div class="project-one__single">
-                                <div class="project-one__img">
-                                <img
-                                        src="<?php echo base_url(); ?>assets/home/images/showcase/google_ads.jpg"
-                                        alt>
-                                    <div
-                                        class="project-one__hover project-one__hover-pl-40">
-                                        <p class="project-one__tagline">Service</p>
-                                        <h3 class="project-one__title"><a
-                                                href="<?php echo base_url(); ?>service-detail/2/7">Google Ads</a>
-                                        </h3>
-                                    </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
+                        <!--Portfolio One Single-->
+                        <div class="project-one__single">
+                            <div class="project-one__img">
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/training.jpg" alt>
+                                <div class="project-one__hover project-one__hover-pl-40">
+                                    <p class="project-one__tagline">Service</p>
+                                    <h3 class="project-one__title"><a href="#">Advance Digital Marketing Training with AI</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
-                            <!--Portfolio One Single-->
-                            <div class="project-one__single">
-                                <div class="project-one__img">
-                                <img
-                                        src="<?php echo base_url(); ?>assets/home/images/showcase/training.jpg"
-                                        alt>
-                                    <div
-                                        class="project-one__hover project-one__hover-pl-40">
-                                        <p class="project-one__tagline">Service</p>
-                                        <h3 class="project-one__title"><a
-                                                href="#">Advance Digital Marketing Training with AI</a>
-                                        </h3>
-                                    </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra web">
+                        <!--Portfolio One Single-->
+                        <div class="project-one__single">
+                            <div class="project-one__img">
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/native_ads.jpg" alt>
+                                <div class="project-one__hover project-one__hover-pl-40">
+                                    <p class="project-one__tagline">Service</p>
+                                    <h3 class="project-one__title"><a href="service-detail/2/13">Native Marketing</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="col-xl-3 col-lg-6 col-md-6 filter-item bra web">
-                            <!--Portfolio One Single-->
-                            <div class="project-one__single">
-                                <div class="project-one__img">
-                                    <img
-                                        src="<?php echo base_url(); ?>assets/home/images/showcase/native_ads.jpg"
-                                        alt>
-                                    <div
-                                        class="project-one__hover project-one__hover-pl-40">
-                                        <p class="project-one__tagline">Service</p>
-                                        <h3 class="project-one__title"><a
-                                                href="service-detail/2/13">Native Marketing</a>
-                                        </h3>
-                                    </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 filter-item app photo">
+                        <!--Portfolio One Single-->
+                        <div class="project-one__single">
+                            <div class="project-one__img">
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/ecommerce.jpg" alt>
+                                <div class="project-one__hover project-one__hover-pl-40">
+                                    <p class="project-one__tagline">Service</p>
+                                    <h3 class="project-one__title"><a href="#">Responsive Websites for Ecommerce and More</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            class="col-xl-3 col-lg-6 col-md-6 filter-item app photo">
-                            <!--Portfolio One Single-->
-                            <div class="project-one__single">
-                                <div class="project-one__img">
-                                    <img
-                                        src="<?php echo base_url(); ?>assets/home/images/showcase/ecommerce.jpg"
-                                        alt>
-                                    <div
-                                        class="project-one__hover project-one__hover-pl-40">
-                                        <p class="project-one__tagline">Service</p>
-                                        <h3 class="project-one__title"><a
-                                                href="#">Responsive Websites for Ecommerce and More</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="col-xl-6 col-lg-6 col-md-6 filter-item app photo">
-                            <!--Portfolio One Single-->
-                            <div class="project-one__single">
-                                <div class="project-one__img">
-                                    <img
-                                        src="<?php echo base_url(); ?>assets/home/images/showcase/seo.jpg"
-                                        alt>
-                                    <div class="project-one__hover">
-                                        <p class="project-one__tagline">Service</p>
-                                        <h3 class="project-one__title"><a
-                                                href="<?php echo base_url(); ?>service-detail/2/6">SEO</a>
-                                        </h3>
-                                    </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 filter-item app photo">
+                        <!--Portfolio One Single-->
+                        <div class="project-one__single">
+                            <div class="project-one__img">
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/seo.jpg" alt>
+                                <div class="project-one__hover">
+                                    <p class="project-one__tagline">Service</p>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>service-detail/2/6">SEO</a>
+                                    </h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!--Project One End-->
+            </div>
+        </section>
+        <!--Project One End-->
 
         <!--Blog Page Start-->
         <section class="blog-one blog-one__blog-page pt-5 pb-0">
             <div class="container">
-            <div class="section-title text-center">
+                <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">our team members</span> -->
                     <h2 class="section-title__title">Driving success for diverse clients through innovation
 
@@ -1013,13 +982,12 @@
         <!--Counter One End-->
 
         <!--Why Choose One Start-->
-        <section class="why-choose-one pt-5 pb-3 mt-1" style="" >
+        <section class="why-choose-one pt-5 pb-3 mt-1" style="">
             <div class="container">
 
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
-                        <div class="why-choose-one__left wow fadeInLeft" data-wow-delay="100ms"
-                            data-wow-duration="2500ms">
+                        <div class="why-choose-one__left wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                             <div class="why-choose-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images3.jpg" alt>
                             </div>
@@ -1453,16 +1421,14 @@
                     <div class="testimonial-one__carousel owl-theme owl-carousel">
                         <!--Testimonial One Single-->
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" >I'm thrilled with the results
+                            <p class="testimonial-one__text">I'm thrilled with the results
                                 from this digital marketing agency. Their team's in-depth knowledge and innovative
                                 strategies helped us reach a broader audience and boost conversions.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt
-                                        width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
-                                            alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -1474,16 +1440,14 @@
                         </div>
 
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" >Efficient and knowledgeable
+                            <p class="testimonial-one__text">Efficient and knowledgeable
                                 team! Their expertise in SEO and social media marketing played a crucial role in
                                 elevating our brand visibility and driving more customers to our website.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt
-                                        width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
-                                            alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -1493,16 +1457,14 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" >I am extremely satisfied with
+                            <p class="testimonial-one__text">I am extremely satisfied with
                                 the services provided by DigitalWin Digital Marketing. They have implemented successful SEO
                                 strategies that have improved my website's organic rankings and traffic.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt
-                                        width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
-                                            alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -1512,16 +1474,14 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" >DigitalWin has exceeded my
+                            <p class="testimonial-one__text">DigitalWin has exceeded my
                                 expectations with their outstanding services. Their team's deep knowledge of the digital
                                 landscape has helped me stay ahead of the competition.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg " alt
-                                        width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg " alt width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
-                                            alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -1531,16 +1491,14 @@
                             </div>
                         </div>
                         <div class="testimonial-one__single">
-                            <p class="testimonial-one__text" >DigitalWin has been an
+                            <p class="testimonial-one__text">DigitalWin has been an
                                 invaluable asset to my business. Their expertise in search engine optimization has
                                 significantly improved my website's visibility and organic rankings.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt
-                                        width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png"
-                                            alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -1565,8 +1523,7 @@
         <!--DigitalWin Ready Start-->
         <section class="qutiiz-ready">
             <div class="qutiiz-ready-bg-box">
-                <div class="qutiiz-ready-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
-                    style="background-image: url(<?php echo base_url(); ?>assets/home/images/home_images/bg.jpg">
+                <div class="qutiiz-ready-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%" style="background-image: url(<?php echo base_url(); ?>assets/home/images/home_images/bg.jpg">
                 </div>
             </div>
             <div class="container">
@@ -1583,8 +1540,7 @@
 
         <!--Financial Advice Start-->
         <section class="financial-advice">
-            <div class="financial-advice-bg"
-                style="background-image: url(<?php echo base_url(); ?>assets/home/images/shapes/financial-advice-shape.png)">
+            <div class="financial-advice-bg" style="background-image: url(<?php echo base_url(); ?>assets/home/images/shapes/financial-advice-shape.png)">
             </div>
             <div class="container">
                 <div class="financial-advice__tab-box tabs-box">
@@ -1601,8 +1557,8 @@
                         <div class="tab" id="business">
                             <div class="tabs-content__inner">
                                 <div class="row">
-                                <div class="col-xl-3">
-                                <image src="<?php echo base_url('' . $social_media['mission_image']); ?>"  height="150px" width="150px" class="" alt="" />
+                                    <div class="col-xl-3">
+                                        <image src="<?php echo base_url('' . $social_media['mission_image']); ?>" height="150px" width="150px" class="" alt="" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -1639,7 +1595,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" ><?php echo $social_media['mission']; ?></p>
+                                            <p class="about-page__right-text-2"><?php echo $social_media['mission']; ?></p>
                                         </div>
                                     </div>
 
@@ -1651,7 +1607,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                    <image src="<?php echo base_url('' . $social_media['vision_image']); ?>"  height="150px" width="150px" class="" alt="" />
+                                        <image src="<?php echo base_url('' . $social_media['vision_image']); ?>" height="150px" width="150px" class="" alt="" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -1688,7 +1644,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" ><?php echo $social_media['vision']; ?></p>
+                                            <p class="about-page__right-text-2"><?php echo $social_media['vision']; ?></p>
                                         </div>
                                     </div>
 
@@ -1699,9 +1655,9 @@
                         <div class="tab " id="soltution">
                             <div class="tabs-content__inner">
                                 <div class="row">
-                                <div class="col-xl-3">
-                                    <image src="<?php echo base_url('' . $social_media['value_image']); ?>"  height="150px" width="150px" class="" alt="" />
-                                </div>
+                                    <div class="col-xl-3">
+                                        <image src="<?php echo base_url('' . $social_media['value_image']); ?>" height="150px" width="150px" class="" alt="" />
+                                    </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
                                             <!-- <ul
@@ -1737,7 +1693,7 @@
                                                         </div>
                                                     </li>
                                                 </ul> -->
-                                            <p class="about-page__right-text-2" ><?php echo $social_media['value']; ?></p>
+                                            <p class="about-page__right-text-2"><?php echo $social_media['value']; ?></p>
                                         </div>
                                     </div>
 

@@ -12,29 +12,29 @@
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Your name" name="name" required>
+                                    <input type="text" placeholder="Your name" name="name1" required>
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="email" placeholder="Email address" name="email" required>
+                                    <input type="email" placeholder="Email address" name="email1" required>
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Phone number" name="mobile" required>
+                                    <input type="text" placeholder="Phone number" name="mobile1" required>
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Subject" name="subject" required>
+                                    <input type="text" placeholder="Subject" name="subject1" required>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="comment-form__input-box">
-                                    <textarea name="message" placeholder="Write a message"></textarea>
+                                    <textarea name="message1" placeholder="Write a message"></textarea>
                                 </div>
                                 <!-- <input type="hidden" name="services_ids" value="<?php echo $this->uri->segment(2); ?>"> -->
 

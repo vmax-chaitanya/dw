@@ -165,10 +165,11 @@ class HomeController extends CI_Controller
 	{
 //print_r($this->input->post()); exit;
 		$data = array(
-			'name' => $this->input->post('name'),
-			'email' => $this->input->post('email'),
-			'mobile' => $this->input->post('mobile'),
-			'message' => $this->input->post('message'),
+			'name' => $this->input->post('name1'),
+			'email' => $this->input->post('email1'),
+			'mobile' => $this->input->post('mobile1'),
+			'message' => $this->input->post('message1'),
+			'subject' => $this->input->post('subject1'),
 			'services_ids' => $this->input->post('services_ids'),
 			'status' => 1,
 			'created_at' => date("Y-m-d H:i:s")
