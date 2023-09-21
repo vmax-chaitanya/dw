@@ -15,8 +15,7 @@ $social_media = get_social_media();
         <div class="main-menu-wrapper clearfix">
             <div class="main-menu-wrapper__left">
                 <div class="main-menu-wrapper__logo pt-0 ">
-                    <a href="<?php echo base_url(); ?>"><img height="100" width="250"
-                            src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
+                    <a href="<?php echo base_url(); ?>"><img height="100" width="250" src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
                 </div>
                 <div class="main-menu-wrapper__main-menu">
                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -186,23 +185,19 @@ $social_media = get_social_media();
                             </ul>
                         </li>
                         <li class="dropdown megamenu">
-                            <a href="<?php echo base_url();?>services/1">Services </a>
+                            <a href="<?php echo base_url(); ?>services/1">Services </a>
                             <ul>
                                 <li>
                                     <section class="home-showcase">
                                         <div class="container">
                                             <div class="home-showcase__inner">
                                                 <div class="row">
-                                                    <?php foreach ($h_services as $service): ?>
+                                                    <?php foreach ($h_services as $service) : ?>
                                                         <div class="col-lg-3">
-                                                            <a href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['id'] ?>"
-                                                                class="">
-                                                                <div class="home-showcase__item">
-
-                                                                    <h3 class="home-showcase__title">
-                                                                        <?php echo $service['name'] ?>
-                                                                    </h3>
-                                                                </div>
+                                                            <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['id'] ?>">
+                                                                <h3 class="home-showcase__title">
+                                                                    <?php echo $service['name'] ?>
+                                                                </h3>
                                                             </a>
                                                         </div>
                                                     <?php endforeach; ?>
@@ -216,23 +211,19 @@ $social_media = get_social_media();
                             </ul>
                         </li>
                         <li class="dropdown megamenu">
-                            <a href="<?php echo base_url();?>services/2">Other Services </a>
+                            <a href="<?php echo base_url(); ?>services/2">Other Services </a>
                             <ul>
                                 <li>
                                     <section class="home-showcase">
                                         <div class="container">
                                             <div class="home-showcase__inner">
                                                 <div class="row">
-                                                    <?php foreach ($other_services as $service): ?>
+                                                    <?php foreach ($other_services as $service) : ?>
                                                         <div class="col-lg-3">
-                                                            <a href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['id'] ?>"
-                                                                class="">
-                                                                <div class="home-showcase__item">
-
-                                                                    <h3 class="home-showcase__title">
-                                                                        <?php echo $service['name'] ?>
-                                                                    </h3>
-                                                                </div>
+                                                            <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['id'] ?>">
+                                                                <h3 class="home-showcase__title">
+                                                                    <?php echo $service['name'] ?>
+                                                                </h3>
                                                             </a>
                                                         </div>
                                                     <?php endforeach; ?>
@@ -248,7 +239,7 @@ $social_media = get_social_media();
                         <li><a href="<?php echo base_url(); ?>blogs">Blogs</a></li>
                         <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
 
-                       
+
 
 
                     </ul>

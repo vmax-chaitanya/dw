@@ -5,10 +5,8 @@
 </title>
 <!-- favicons Icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
-<link rel="icon" type="image/png" sizes="32x32"
-    href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
-<link rel="icon" type="image/png" sizes="16x16"
-    href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
 <link rel="manifest" href="<?php echo base_url(); ?>assets/home/images/favicons/site.webmanifest" />
 <meta name="description" content="DigitalWin HTML Template For Business" />
 
@@ -16,21 +14,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-<link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 
-<link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/animate/animate.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/animate/custom-animate.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/fontawesome/css/all.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/jarallax/jarallax.css" />
-<link rel="stylesheet"
-    href="<?php echo base_url(); ?>assets/home/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/nouislider/nouislider.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/nouislider/nouislider.pips.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/odometer/odometer.min.css" />
@@ -42,8 +35,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/owl-carousel/owl.carousel.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/owl-carousel/owl.theme.default.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/bxslider/jquery.bxslider.css" />
-<link rel="stylesheet"
-    href="<?php echo base_url(); ?>assets/home/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/bootstrap-select/css/bootstrap-select.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/vegas/vegas.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/jquery-ui/jquery-ui.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/timepicker/timePicker.css" />
@@ -61,10 +53,10 @@
     }
 </style>
 <style>
-     .home-showcase__item:hover {
+    .home-showcase__item:hover {
         background-color: var(--qutiiz-base);
-        color: var(--qutiiz-white);
-  border-radius: 20px;
+        color: var(--qutiiz-white) !important;
+        border-radius: 20px;
 
     }
 
@@ -72,46 +64,51 @@
         padding: 10px;
         color: var(--qutiiz-white);
     }
+
+    .hover-white:hover {
+    color: white !important;
+}
 </style>
 <style>
-  .whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    width: 60px;
-    height: 80px;
-    /* background-color: green; Customize the background color */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    animation: spin 3s infinite linear; /* Add spin animation */
-    z-index: 9999;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        width: 60px;
+        height: 80px;
+        /* background-color: green; Customize the background color */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        animation: spin 3s infinite linear;
+        /* Add spin animation */
+        z-index: 9999;
     }
-    100% {
-        transform: rotate(360deg);
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
-}
 
-.whatsapp-button img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.9s ease-in-out;
-}
+    .whatsapp-button img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.9s ease-in-out;
+    }
 
-.whatsapp-button:hover img {
-    transform: rotate(-360deg);
-}
-
+    .whatsapp-button:hover img {
+        transform: rotate(-360deg);
+    }
 </style>
 <style>
-    .select-pad{
-    padding: 2px 0px 15px 0px !important;
-}
+    .select-pad {
+        padding: 2px 0px 15px 0px !important;
+    }
 </style>
