@@ -5,8 +5,7 @@
 <script src="<?php echo base_url(); ?>assets/home/vendors/jarallax/jarallax.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/home/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/home/vendors/jquery-appear/jquery.appear.min.js"></script>
-<script
-    src="<?php echo base_url(); ?>assets/home/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/home/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/home/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/home/vendors/jquery-validate/jquery.validate.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/home/vendors/nouislider/nouislider.min.js"></script>
@@ -26,9 +25,7 @@
 
 <!-- template js -->
 <script src="<?php echo base_url(); ?>assets/home/js/qutiiz.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
-    integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
 <script>
     toastr.options = {
@@ -48,10 +45,9 @@
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     }
-
 </script>
 <script>
-    $(function () {
+    $(function() {
         $("form[name='contact']").validate({
             rules: {
                 name: "required",
@@ -67,7 +63,7 @@
                 },
                 copoun_select: "required",
                 copoun_id: {
-                    required: function (element) {
+                    required: function(element) {
                         return $("#copoun_select").val() == "1";
                     },
                     minlength: 10,
@@ -92,20 +88,23 @@
                 email: "Enter email address",
                 message: "Please write a message"
             },
-            submitHandler: function (form) {
+            submitHandler: function(form) {
 
-                var services_ids = $("input[name='service[]']:checked").map(function () {
+                var services_ids = $("input[name='service[]']:checked").map(function() {
                     return this.value;
                 }).get();
 
                 var formData = $(form).serializeArray();
-                formData.push({ name: "services_ids", value: services_ids });
+                formData.push({
+                    name: "services_ids",
+                    value: services_ids
+                });
 
                 $.ajax({
                     method: "POST",
                     url: "<?php echo base_url('contact-enquiry'); ?>",
                     data: formData,
-                    success: function (response) {
+                    success: function(response) {
                         //alert(response);
                         // $("#exampleModalLabel").modal("hide");
                         $('#exampleModal').modal('hide');
@@ -122,8 +121,8 @@
     });
 </script>
 <script>
-    $(document).ready(function () {
-        $("#showFormButton").click(function () {
+    $(document).ready(function() {
+        $("#showFormButton").click(function() {
             $("#myModal").modal("show");
         });
     });
@@ -131,20 +130,19 @@
 
 
 <script>
-
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
 
         var accordionItems = document.querySelectorAll(".accrodion");
 
 
-        accordionItems.forEach(function (item) {
+        accordionItems.forEach(function(item) {
 
             var title = item.querySelector(".accrodion-title1");
 
             var content = item.querySelector(".accrodion-content");
 
 
-            title.addEventListener("click", function () {
+            title.addEventListener("click", function() {
 
                 if (item.classList.contains("active")) {
 
@@ -156,7 +154,7 @@
 
                     // Close all other accordion items
 
-                    accordionItems.forEach(function (otherItem) {
+                    accordionItems.forEach(function(otherItem) {
 
                         if (otherItem !== item && otherItem.classList.contains("active")) {
 
@@ -182,7 +180,6 @@
         });
 
     });
-
 </script>
 <script>
     // $(function () {
@@ -243,7 +240,6 @@
             },
             mobile1: "required",
             subject1: "required"
-            // message1: "required"
         },
         messages: {
             name1: "Please enter your name",
@@ -253,7 +249,6 @@
             },
             mobile1: "Please enter your phone number",
             subject1: "Please enter a subject"
-            // message1: "Please enter a message"
         },
         submitHandler: function (form) {
             // Handle the form submission via AJAX here
@@ -263,11 +258,19 @@
                 data: $(form).serialize(),
                 dataType: 'text',
                 success: function (response) {
-                    // Handle the success response here
-                    window.location.href = response;
-                    $(form)[0].reset();
-                    toastr.success('Broucher downloaded successfully');
-                    // You can add further actions here if needed
+                  
+                    if (response) {
+                        // Force the browser to download the file
+                        var link = document.createElement('a');
+                        link.href = response;
+                        link.download = 'Brochure.pdf';
+                        link.click();
+                        toastr.success('Succesfully Downloaded');
+                        $('#brouchure')[0].reset();
+                        $('#exampleModal').modal('hide');
+                    } else {
+                        toastr.error('Error downloading PDF');
+                    }
                 },
                 error: function (error) {
                     console.log('Error:', error);
@@ -276,29 +279,40 @@
         }
     });
 });
+
 </script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         // Get the input element by its name attribute
         var nameInput = document.querySelector("input[name='name']");
 
         // Add an input event listener to the name input field
-        nameInput.addEventListener("input", function () {
+        nameInput.addEventListener("input", function() {
+            // Remove any non-alphabet characters (including numbers)
+            this.value = this.value.replace(/[^a-zA-Z\s]/g, '');
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the input element by its name attribute
+        var nameInput = document.querySelector("input[name='name1']");
+
+        // Add an input event listener to the name input field
+        nameInput.addEventListener("input", function() {
             // Remove any non-alphabet characters (including numbers)
             this.value = this.value.replace(/[^a-zA-Z\s]/g, '');
         });
     });
 </script>
-//////select all checkboxez//
+<!-- //////select all checkboxez// -->
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         // Check or uncheck all checkboxes when "Select All" is clicked
-        $("#select-all").click(function () {
+        $("#select-all").click(function() {
             $(".service-checkbox").prop('checked', $(this).prop('checked'));
         });
 
         // Check or uncheck "Select All" when any service checkbox is clicked
-        $(".service-checkbox").click(function () {
+        $(".service-checkbox").click(function() {
             if ($(".service-checkbox:checked").length === $(".service-checkbox").length) {
                 $("#select-all").prop('checked', true);
             } else {

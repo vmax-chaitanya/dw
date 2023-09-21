@@ -8008,14 +8008,18 @@ select,
 }
 
 .about-page__img:hover:before {
-  -webkit-animation: circle 0.75s;
-  animation: circle 0.75s;
+  /* -webkit-animation: circle 0.75s;
+  animation: circle 0.75s; */
+  opacity: 0; /* Remove the white overlay on hover */
 }
 
 .about-page__img img {
   width: 100%;
   mix-blend-mode: luminosity;
   border-radius: var(--qutiiz-bdr-radius);
+}
+.about-page__img:hover img {
+  mix-blend-mode: initial; /* Reset mix-blend-mode on hover */
 }
 
 .about-page__founded {

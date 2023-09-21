@@ -22,7 +22,7 @@
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Phone number" name="mobile1" required>
+                                    <input type="text" placeholder="Phone number" name="mobile1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
                                 </div>
                             </div>
                             <div class="col-xl-6">

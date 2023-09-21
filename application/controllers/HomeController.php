@@ -102,7 +102,7 @@ class HomeController extends CI_Controller
 		$data['services'] = $this->Home_model->getActiveOtherServices();
 		$this->load->view('home/services', $data);
 	}
-	public function service_detail($type,$service_id)
+	public function service_detail($type, $service_id)
 	{
 
 		$data['page_title'] = "Home || Digital win ||";
@@ -120,7 +120,7 @@ class HomeController extends CI_Controller
 
 		$this->load->view('home/service_detail', $data);
 	}
-	
+
 
 	public function training()
 	{
@@ -158,12 +158,12 @@ class HomeController extends CI_Controller
 
 		$data['page_title'] = "Blogs Details || Digital win ||";
 		$data['blog'] = $this->Home_model->get_blog_by_id($blog_id);
-	
+
 		$this->load->view('home/blog_detail', $data);
 	}
 	public function training_enquiry()
 	{
-//print_r($this->input->post()); exit;
+		//print_r($this->input->post()); exit;
 		$data = array(
 			'name' => $this->input->post('name1'),
 			'email' => $this->input->post('email1'),
@@ -178,12 +178,11 @@ class HomeController extends CI_Controller
 		$result = $this->contact_model->create_contact($data);
 		if ($result) {
 
-			$this->load->helper('download');
-			$file_path =  base_url('' . 'assets/home/dummy.pdf');
-			$file_name = time() . '.pdf';
-			$file_url = force_download($file_name, file_get_contents($file_path));
-			echo $file_url;
-			exit;
+		
+			   $pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
+
+				echo $pdfFilePath;
+		
 		} else {
 			echo "Error inserting data.";
 			exit;
