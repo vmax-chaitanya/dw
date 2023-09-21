@@ -63,6 +63,7 @@
     .home-showcase__item:hover>h3 {
         padding: 10px;
         color: var(--qutiiz-white);
+        text-align: left;
     }
 
     .hover-white:hover {
