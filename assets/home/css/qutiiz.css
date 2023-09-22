@@ -4701,10 +4701,12 @@ ul {
 }
 
 .footer-widget__about-contact li .text p {
-  font-size: 15px;
+  font-size: 14px;
   color: #a09baa;
   font-weight: 500;
   margin: 0;
+  text-align: justify;
+  word-spacing: 0px;
 }
 
 .footer-widget__links {
