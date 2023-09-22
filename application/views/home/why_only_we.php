@@ -231,7 +231,7 @@
 
 
 
-                            <h3 class="services-two__title">Cost-Effective Solutions
+                            <h3 class="services-two__title">Cost-Effective Solutions </h3>
 
                                 <p class="about-page__right-text-2" style="">
                                     We understand that budget constraints are a reality for most businesses. That's why
