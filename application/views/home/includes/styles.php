@@ -113,3 +113,25 @@
         padding: 2px 0px 15px 0px !important;
     }
 </style>
+<style>
+    .service-details__sidebar-service {
+    /* Add your sidebar styles here */
+    /* For example: */
+    max-height: 700px; /* Set a fixed height for the sidebar */
+    overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
+}
+
+/* Style for the sidebar list items */
+.service-details__sidebar-service-list li {
+    /* Add your list item styles here */
+    /* For example: */
+    margin: 5px 0;
+}
+
+/* Style for the current item */
+.service-details__sidebar-service-list .current {
+    /* Add styles for the current item here */
+    /* For example: */
+    font-weight: bold;
+}
+</style>

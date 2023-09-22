@@ -6904,6 +6904,10 @@ ul {
   border-radius: var(--qutiiz-bdr-radius);
 }
 
+.blog-details__img:hover img {
+  mix-blend-mode: initial; /* Reset mix-blend-mode to 'initial' for color display */
+}
+
 .blog-details__date-box {
   position: absolute;
   bottom: 0;

@@ -450,7 +450,7 @@
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/ai.jpg" alt>
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="#">Advance Digital Marketing Services with AI</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url();?>services/1">Advance Digital Marketing Services with AI</a>
                                     </h3>
                                 </div>
                             </div>
@@ -502,7 +502,7 @@
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/ecommerce.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="#">Responsive Websites for Ecommerce and More</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url();?>service-detail/1/26">Responsive Websites for Ecommerce and More</a>
                                     </h3>
                                 </div>
                             </div>
