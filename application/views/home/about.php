@@ -279,39 +279,7 @@
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
-                                            <!-- <ul
-                                                    class="list-unstyled tabs-content__points">
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>Highest Success
-                                                                Rates</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>we grow
-                                                                businesses</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                </ul> -->
+                                           
                                             <p class="about-page__right-text-2" ><?php echo $social_media['mission']; ?></p>
                                         </div>
                                     </div>
@@ -328,39 +296,7 @@
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
-                                            <!-- <ul
-                                                    class="list-unstyled tabs-content__points">
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>Highest Success
-                                                                Rates</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>we grow
-                                                                businesses</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                </ul> -->
+                                          
                                             <p class="about-page__right-text-2" ><?php echo $social_media['vision']; ?></p>
                                         </div>
                                     </div>
@@ -377,39 +313,7 @@
                                 </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
-                                            <!-- <ul
-                                                    class="list-unstyled tabs-content__points">
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>Highest Success
-                                                                Rates</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>we grow
-                                                                businesses</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                </ul> -->
+                                           
                                             <p class="about-page__right-text-2" ><?php echo $social_media['value']; ?></p>
                                         </div>
                                     </div>
@@ -421,7 +325,7 @@
                 </div>
                 <div class="financial-advice__bottom">
                     <p class="financial-advice__bottom-text">DigitalWin services
-                        built specifically for your business. <a href="<?php echo base_url();?>about">Find Your Solution</a></p>
+                        built specifically for your business. <a href="<?php echo base_url();?>services/1">Find Your Solution</a></p>
                 </div>
             </div>
         </section>

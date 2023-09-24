@@ -66,8 +66,8 @@
                     required: function(element) {
                         return $("#copoun_select").val() == "1";
                     },
-                    minlength: 10,
-                    maxlength: 10
+                    minlength: 9,
+                    maxlength: 9
                 },
                 message: "required"
             },
@@ -82,8 +82,8 @@
                 copoun_select: "Please select an option",
                 copoun_id: {
                     required: "Coupon is required when 'Yes' is selected",
-                    minlength: "Coupon must have exactly 10 characters",
-                    maxlength: "Coupon must have exactly 10 characters"
+                    minlength: "Coupon must have exactly 9 characters",
+                    maxlength: "Coupon must have exactly 9 characters"
                 },
                 email: "Enter email address",
                 message: "Please write a message"
@@ -326,6 +326,15 @@
             } else {
                 $("#select-all").prop('checked', false);
             }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        // Add an event listener to the modal when it's hidden (closed)
+        $('#exampleModal').on('hidden.bs.modal', function (e) {
+            // Reset the form fields
+            $('#brouchure')[0].reset();
         });
     });
 </script>

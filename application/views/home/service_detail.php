@@ -373,7 +373,7 @@
                 </div>
                 <div class="row">
                     <?php $i = 1;
-                    foreach ($services as $key => $service):
+                    foreach ($upcoming_services as $key => $service):
                         if ($key < 3): ?>
                             <div class="col-xl-4 col-lg-4">
                                 <!--Portfolio One Single-->
