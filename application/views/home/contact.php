@@ -150,7 +150,7 @@
 									</div>
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
-											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id">
+											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
 										</div>
 									</div>
 								</div>

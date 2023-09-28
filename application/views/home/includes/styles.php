@@ -134,4 +134,7 @@
     /* For example: */
     font-weight: bold;
 }
+.disabled-input {
+        cursor: no-drop; /* Change the cursor to a pointer */
+    }
 </style>

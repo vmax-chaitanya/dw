@@ -85,7 +85,7 @@
                                 <ul class="service-details__sidebar-service-list list-unstyled">
                                     <?php $i = 1;
                                     foreach ($services as $service): ?>
-                                        <li <?php echo ($service['id'] == $this->uri->segment(3)) ? "class='current'" : "class=''"; ?>><a
+                                        <li <?php echo ($service['service_url'] == $this->uri->segment(3)) ? "class='current'" : "class=''"; ?>><a
                                                 href="<?php echo base_url(); ?>service-detail/<?php echo $service['type']; ?>/<?php echo $service['service_url']; ?>">
                                                 <?php echo $service['name']; ?> <span class="icon-right-arrow"></span>
                                             </a></li>

@@ -193,6 +193,7 @@ class HomeController extends CI_Controller
 
 	public function contact_enquiry()
 	{
+		$this->load->library('email');
 		//print_r($this->input->post()); exit;
 		$data = array(
 			'name' => $this->input->post('name'),
@@ -208,7 +209,19 @@ class HomeController extends CI_Controller
 
 		$result = $this->contact_model->create_contact($data);
 		if ($result) {
-
+			// Configure your email settings
+			$this->load->library('email',$config);
+			$config['protocol'] = 'sendmail';
+			$config['mailpath'] = '/usr/sbin/sendmail';
+			$config['mailtype'] = 'html';
+			$config['charset'] = 'iso-8859-1';
+			$config['wordwrap'] = TRUE; 
+			$this->email->initialize($config);
+			$this->email->from('your_email@example.com', 'DigitalWin');
+			$this->email->to('chaitanyakadali3@gmail.com');
+			$this->email->subject('Contact Form Submission');
+			$this->email->message('Thank you for your message. We will get in touch with you shortly');
+			$this->email->send();
 			echo "Thank you for your message. We will get in touch with you shortly";
 			exit;
 		} else {

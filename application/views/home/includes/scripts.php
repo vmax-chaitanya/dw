@@ -338,3 +338,16 @@
         });
     });
 </script>
+<script>
+    $(document).ready(function () {
+        $("#copoun_id").prop("disabled", true).addClass("disabled-input"); 
+        $("#copoun_select").change(function () {
+            if ($(this).val() === "1") {
+                $("#copoun_id").prop("disabled", false).removeClass("disabled-input"); // Enable the input field and add the class
+            } else {
+                $("#copoun_id").prop("disabled", true).addClass("disabled-input"); // Disable the input field and remove the class
+                $("#copoun_id").val("");
+            }
+        });
+    });
+</script>
