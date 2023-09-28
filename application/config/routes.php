@@ -64,7 +64,7 @@ $route['contact'] = 'HomeController/contact';
 $route['blog'] = 'HomeController/blog';
 $route['faq'] = 'HomeController/faq';
 $route['services/(:num)'] = 'HomeController/services/$1';
-$route['service-detail/(:num)/(:num)'] = 'HomeController/service_detail/$1/$2';
+$route['service-detail/(:num)/(:any)'] = 'HomeController/service_detail/$1/$2';
 
 $route['training'] = 'HomeController/training';
 $route['training-enquiry'] = 'HomeController/training_enquiry';

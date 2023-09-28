@@ -80,6 +80,7 @@ class Services extends CI_Controller
             $data = array(
                 'type' => $this->input->post('type'),
                 'name' => $this->input->post('name'),
+                'service_url' => str_replace(' ', '-', strtolower($this->input->post('name'))),
                 'description' => $this->input->post('description'),
                 'description_new' => $this->input->post('description_new'),
                 'status' => $this->input->post('status'),
@@ -172,6 +173,7 @@ class Services extends CI_Controller
             $data = array(
                 'name' => $this->input->post('name'),
                 'type' => $this->input->post('type'),
+                'service_url' => str_replace(' ', '-', strtolower($this->input->post('name'))),
 
                 'description' => $this->input->post('description'),
                 'description_new' => $this->input->post('description_new'),

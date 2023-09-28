@@ -193,8 +193,8 @@ $social_media = get_social_media();
                                             <div class="home-showcase__inner">
                                                 <div class="row">
                                                     <?php foreach ($h_services as $service) : ?>
-                                                        <div class="col-lg-3">
-                                                            <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['id'] ?>">
+                                                        <div class="col-md-3">
+                                                            <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
                                                                 <h3 class="home-showcase__title">
                                                                     <?php echo $service['name'] ?>
                                                                 </h3>
@@ -220,7 +220,7 @@ $social_media = get_social_media();
                                                 <div class="row">
                                                     <?php foreach ($other_services as $service) : ?>
                                                         <div class="col-lg-3">
-                                                            <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['id'] ?>">
+                                                            <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
                                                                 <h3 class="home-showcase__title">
                                                                     <?php echo $service['name'] ?>
                                                                 </h3>
