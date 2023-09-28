@@ -180,8 +180,8 @@
             <section class="faq-page">
                 <div class="container">
                     <div class="section-title text-center">
-                        <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
-                            experts</span>
+                        <!-- <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
+                            experts</span> -->
                         <h2 class="section-title__title">Key Highlites</h2>
                         <div class="row">
                             <?php $i = 1;
@@ -218,9 +218,9 @@
             <section class="faq-page">
                 <div class="container">
                     <div class="section-title text-center">
-                        <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
-                            experts</span>
-                        <h2 class="section-title__title">Faqs</h2>
+                        <!-- <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
+                            experts</span> -->
+                        <h2 class="section-title__title">Curriculums</h2>
                         <div class="row" style="text-align:left">
                             <?php $i = 1;
                             foreach ($curriculums as $curriculum): ?>
@@ -254,189 +254,8 @@
             <!--FAQ Page End-->
         <?php } ?>
 
-        <!--About Page Start-->
-        <section class="about-page" style="padding-bottom: 10px !important;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="about-page__left">
-                            <div class="about-page__img">
-                                <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
-                            </div>
-                            <!-- <div class="about-page__founded">
-                                <h5>Founded <br> in 2014</h5>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="about-page__right">
-                            <div class="section-title text-left">
-                                <!-- <span class="section-title__tagline">read about us</span> -->
-                                <h2 class="section-title__title">
-                                    <?php echo $training['name']; ?>
-                                </h2>
-                            </div>
-                            <!-- <p class="about-page__right-text-1">We’re committed to delivering the best digital marketing
-                                for your businesses</p> -->
-                            <p class="about-page__right-text-2">
-                                <?php echo $training['description']; ?>
-                            </p>
-                            <div class="about-page__points-box">
-                                <ul class="list-unstyled about-page__points">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Develop a vision statement</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Grow your customer base</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="list-unstyled about-page__points about-page__points-two">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Increase your monthly sales</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Beat your competition</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--About Page End-->
-        <!--Project Details Start-->
-        <section class="project-details">
-            <div class="container">
-                <!-- <div class="row">
-                    <div class="col-xl-12">
-                        <div class="project-details__img">
-                            <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
-                        </div>
-                    </div>
-                </div> -->
-                <div class="project-details__content">
-                    <div class="row">
-                        <div class="col-xl-7 col-lg-7">
-                            <div class="project-details__content-left">
+ 
 
-                                <ul class="list-unstyled project-details__points">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-increment"></span>
-                                        </div>
-                                        <div class="text">
-                                            <h4>Attract and retain quality high paying customers</h4>
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                when an unknown printer took a galley of type and scrambled it to make a
-                                                type specimen book has survived not only five centuries.</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-checking"></span>
-                                        </div>
-                                        <div class="text">
-                                            <h4>Strong business plan requires experience</h4>
-                                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the
-                                                when an unknown printer took a galley of type and scrambled it to make a
-                                                type specimen book has survived not only five centuries.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-lg-5">
-                            <div class="contact-page__form">
-                                <form
-                                    action="https://qutiiz-html.vercel.app/main-html/<?php echo base_url(); ?>assets/home/inc/sendemail.php"
-                                    class="comment-one__form contact-form-validated" novalidate="novalidate">
-                                    <div class="row">
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Your name" name="name">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Email address" name="email">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-6">
-                                            <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Subject" name="subject">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div class="comment-form__input-box">
-                                                <textarea name="message" placeholder="Write a message"></textarea>
-                                            </div>
-                                            <button type="submit" class="thm-btn comment-form__btn">Download
-                                                Brochure</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="row">
-                    <div class="col-xl-12">
-                        <div class="project-details__pagination-box">
-                            <ul class="project-details__pagination list-unstyled">
-                                <li class="next">
-                                    <p class="project-details__pagination-sub-title">Previous project</p>
-                                    <a href="#" aria-label="Previous">
-                                        <span class="project-details__pagination-title">Filmor Experience</span>
-                                        <i class="icon-right-arrow"></i>
-                                    </a>
-                                </li>
-                                <li class="count"><a href="#"></a></li>
-                                <li class="count"><a href="#"></a></li>
-                                <li class="count"><a href="#"></a></li>
-                                <li class="count"><a href="#"></a></li>
-                                <li class="previous">
-                                    <p class="project-details__pagination-sub-title">next project</p>
-                                    <a href="#" aria-label="Next">
-                                        <span class="project-details__pagination-title">Filmor Experience</span>
-                                        <i class="icon-right-arrow"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-        <!--Project Details End-->
 
 
 
