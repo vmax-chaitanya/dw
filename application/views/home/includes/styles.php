@@ -5,8 +5,10 @@
 </title>
 <!-- favicons Icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
+<link rel="icon" type="image/png" sizes="32x32"
+    href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
+<link rel="icon" type="image/png" sizes="16x16"
+    href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
 <link rel="manifest" href="<?php echo base_url(); ?>assets/home/images/favicons/site.webmanifest" />
 <meta name="description" content="DigitalWin HTML Template For Business" />
 
@@ -14,16 +16,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
+    rel="stylesheet">
 
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/animate/animate.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/animate/custom-animate.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/fontawesome/css/all.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/jarallax/jarallax.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+<link rel="stylesheet"
+    href="<?php echo base_url(); ?>assets/home/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/nouislider/nouislider.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/nouislider/nouislider.pips.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/odometer/odometer.min.css" />
@@ -35,7 +42,8 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/owl-carousel/owl.carousel.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/owl-carousel/owl.theme.default.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/bxslider/jquery.bxslider.css" />
-<link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+<link rel="stylesheet"
+    href="<?php echo base_url(); ?>assets/home/vendors/bootstrap-select/css/bootstrap-select.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/vegas/vegas.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/jquery-ui/jquery-ui.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/timepicker/timePicker.css" />
@@ -43,7 +51,9 @@
 <!-- template styles -->
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/css/qutiiz.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/css/qutiiz-responsive.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+    integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
     .error {
@@ -67,8 +77,8 @@
     }
 
     .hover-white:hover {
-    color: white !important;
-}
+        color: white !important;
+    }
 </style>
 <style>
     .whatsapp-button {
@@ -115,26 +125,201 @@
 </style>
 <style>
     .service-details__sidebar-service {
-    /* Add your sidebar styles here */
-    /* For example: */
-    max-height: 700px; /* Set a fixed height for the sidebar */
-    overflow-y: auto; /* Enable vertical scrolling when content exceeds the height */
-}
+        /* Add your sidebar styles here */
+        /* For example: */
+        max-height: 700px;
+        /* Set a fixed height for the sidebar */
+        overflow-y: auto;
+        /* Enable vertical scrolling when content exceeds the height */
+    }
 
-/* Style for the sidebar list items */
-.service-details__sidebar-service-list li {
-    /* Add your list item styles here */
-    /* For example: */
-    margin: 5px 0;
-}
+    /* Style for the sidebar list items */
+    .service-details__sidebar-service-list li {
+        /* Add your list item styles here */
+        /* For example: */
+        margin: 5px 0;
+    }
 
-/* Style for the current item */
-.service-details__sidebar-service-list .current {
-    /* Add styles for the current item here */
-    /* For example: */
-    font-weight: bold;
-}
-.disabled-input {
-        cursor: no-drop; /* Change the cursor to a pointer */
+    /* Style for the current item */
+    .service-details__sidebar-service-list .current {
+        /* Add styles for the current item here */
+        /* For example: */
+        font-weight: bold;
+    }
+
+    .disabled-input {
+        cursor: no-drop;
+        /* Change the cursor to a pointer */
     }
 </style>
+<style>
+   .sticky-icon {
+    z-index: 9999;
+    position: fixed;
+    top: 25%;
+    right: 0%;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky-icon a {
+    transform: translate(185px, 0px);
+    border-radius: 50px 0px 0px 50px;
+    text-align: left;
+    margin: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2px;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    transition: all 0.8s;
+}
+
+.sticky-icon a:hover {
+    color: #FFF;
+    transform: translate(180px, 0px);
+}
+
+.sticky-icon a:hover i {
+    transform: rotate(360deg);
+}
+
+.Facebook {
+    background-color: #2C80D3;
+    color: #FFF;
+}
+
+.Youtube {
+    background-color: #fa0910;
+    color: #FFF;
+}
+
+.Twitter {
+    background-color: #53c5ff;
+    color: #FFF;
+}
+
+.Instagram {
+    background-color: #FD1D1D;
+    color: #FFF;
+}
+
+.Google {
+    background-color: #d34836;
+    color: #FFF;
+}
+
+.LinkedIn {
+    background-color: #0077B5;
+    color: #FFF;
+}
+
+.Quora {
+    background-color: #A82400;
+    color: #FFF;
+}
+
+.Pinterest {
+    background-color: #BD081C;
+    color: #FFF;
+}
+
+.sticky-icon a i {
+    background-color: #FFF;
+    height: 30px;
+    width: 30px;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+
+.sticky-icon a i.fa-facebook-f {
+    background-color: #FFF;
+    color: #2C80D3;
+}
+
+.sticky-icon a i.fa-google-plus-g {
+    background-color: #FFF;
+    color: #d34836;
+}
+
+.sticky-icon a i.fa-instagram {
+    background-color: #FFF;
+    color: #FD1D1D;
+}
+
+.sticky-icon a i.fa-youtube {
+    background-color: #FFF;
+    color: #fa0910;
+}
+
+.sticky-icon a i.fa-twitter {
+    background-color: #FFF;
+    color: #53c5ff;
+}
+
+.sticky-icon a i.fa-linkedin {
+    background-color: #FFF;
+    color: #0077B5;
+}
+
+.sticky-icon a i.fa-quora {
+    background-color: #FFF;
+    color: #A82400;
+}
+
+.sticky-icon a i.fa-pinterest {
+    background-color: #FFF;
+    color: #BD081C;
+}
+
+    /* .fas fa-shopping-cart {
+        background-color: #FFF;
+    }
+
+    #myBtn {
+        height: 50px;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        text-align: center;
+        padding: 10px;
+        text-align: center;
+        line-height: 40px;
+        border: none;
+        outline: none;
+        background-color: #1e88e5;
+        color: white;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .fa-arrow-circle-up {
+        font-size: 30px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    } */
+</style>
+
+<!--Start Sticky Icon-->
+<div class="sticky-icon">
+    <a href="https://www.facebook.com/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
+    
+    <!-- <a href="https://aboutme.google.com/u/0/?referer=gplus" class="Google"><i class="fab fa-google-plus-g"> </i> Google + </a> -->
+    <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
+    <!-- <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a> -->
+    <a href="https://www.linkedin.com/" class="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn </a>
+    <a href="https://www.quora.com/" class="Quora"><i class="fab fa-quora"></i> Quora </a>
+    <a href="https://www.pinterest.com/" class="Pinterest"><i class="fab fa-pinterest"></i> Pinterest </a>
+    <a href="https://www.instagram.com/?hl=en" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+
+</div>
+<!--End Sticky Icon-->

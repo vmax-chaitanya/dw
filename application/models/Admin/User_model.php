@@ -7,6 +7,7 @@ class User_model extends CI_Model {
         // Check if the provided username or email exists in the database
         $this->db->where('username', $username_email);
         $this->db->or_where('email', $username_email);
+        $this->db->or_where('mobile_number', $username_email);
         $query = $this->db->get('users');
       
         if ($query->num_rows() === 1) {
