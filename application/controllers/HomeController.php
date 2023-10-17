@@ -104,17 +104,18 @@ class HomeController extends CI_Controller
 	}
 	public function service_detail($type, $service_id)
 	{
-
+// echo $service_id; exit;
 		$data['page_title'] = "Home || Digital win ||";
 		$data['services_detail'] = $this->Home_model->get_service_by_id($service_id);
+		$service_primary_id = 	 $data['services_detail']['id']; 
 		$module = 1;
-		$data['services_module1'] = $this->Home_model->services_types($service_id, $module);
+		$data['services_module1'] = $this->Home_model->services_types($service_primary_id, $module);
 		$module = 2;
-		$data['services_module2'] = $this->Home_model->services_types($service_id, $module);
+		$data['services_module2'] = $this->Home_model->services_types($service_primary_id, $module);
 		$module = 3;
-		$data['services_module3'] = $this->Home_model->services_types($service_id, $module);
+		$data['services_module3'] = $this->Home_model->services_types($service_primary_id, $module);
 
-		$data['service_faqs'] = $this->Home_model->getActiveServiceFaq($service_id);
+		$data['service_faqs'] = $this->Home_model->getActiveServiceFaq($service_primary_id);
 		//echo "<pre>"; print_r($data['services_types']); exit;
 		$data['services'] = $this->Home_model->getActiveServices($type);
 		$data['upcoming_services'] = $this->Home_model->getUpcomingServices($service_id, 5,$type);

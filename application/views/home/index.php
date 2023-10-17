@@ -6,6 +6,14 @@
 <head>
 
     <?php include("includes/styles.php"); ?>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NNTM2J82');</script>
+<!-- End Google Tag Manager -->
+
     <style>
         .blog-one__date {
             position: absolute;
@@ -29,6 +37,11 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNTM2J82"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <?php include("includes/preloader.php"); ?>
     <!-- /.preloader -->
     <div class="page-wrapper">
@@ -58,39 +71,39 @@
 
                     <?php $i = 1;
                     foreach ($banners as $banner): ?>
-                                <div class="swiper-slide">
-                                    <div class="image-layer" style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
-                                    </div>
-                                    <!-- /.image-layer -->
-                                    <div class="main-slider-border"></div>
-                                    <div class="main-slider-border main-slider-border-two"></div>
-                                    <div class="main-slider-border main-slider-border-three"></div>
-                                    <div class="main-slider-border main-slider-border-four"></div>
-                                    <div class="main-slider-border main-slider-border-five"></div>
-                                    <div class="main-slider-border main-slider-border-six"></div>
+                                            <div class="swiper-slide">
+                                                <div class="image-layer" style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
+                                                </div>
+                                                <!-- /.image-layer -->
+                                                <div class="main-slider-border"></div>
+                                                <div class="main-slider-border main-slider-border-two"></div>
+                                                <div class="main-slider-border main-slider-border-three"></div>
+                                                <div class="main-slider-border main-slider-border-four"></div>
+                                                <div class="main-slider-border main-slider-border-five"></div>
+                                                <div class="main-slider-border main-slider-border-six"></div>
 
-                                    <div class="main-slider-shape-1"></div>
-                                    <div class="main-slider-shape-2"></div>
-                                    <div class="main-slider-shape-3"></div>
+                                                <div class="main-slider-shape-1"></div>
+                                                <div class="main-slider-shape-2"></div>
+                                                <div class="main-slider-shape-3"></div>
 
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="main-slider__content">
-                                                    <p>
-                                                        <?php echo $banner['name']; ?>
-                                                    </p>
-                                                    <h2>
-                                                        <?php echo $banner['description']; ?>
-                                                    </h2>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="main-slider__content">
+                                                                <p>
+                                                                    <?php echo $banner['name']; ?>
+                                                                </p>
+                                                                <h2>
+                                                                    <?php echo $banner['description']; ?>
+                                                                </h2>
 
-                                                    <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
-                                                        More</a>
+                                                                <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
+                                                                    More</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
                     <?php endforeach; ?>
 
                 </div>
@@ -455,7 +468,7 @@
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/api.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>service-detail/2/10">API Inegration</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>2/api-integration">API Inegration</a>
                                     </h3>
                                 </div>
                             </div>
@@ -481,7 +494,7 @@
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/google_ads.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>service-detail/2/7">Google Ads</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>2/google-ads">Google Ads</a>
                                     </h3>
                                 </div>
                             </div>
@@ -507,7 +520,7 @@
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/native_ads.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="service-detail/2/13">Native Marketing</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>2/native-marketing">Native Marketing</a>
                                     </h3>
                                 </div>
                             </div>
@@ -520,7 +533,7 @@
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/ecommerce.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>service-detail/1/26">Responsive Websites for Ecommerce and More</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>1/responsive-website-design">Responsive Websites for Ecommerce and More</a>
                                     </h3>
                                 </div>
                             </div>
@@ -533,7 +546,7 @@
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/seo.jpg" alt>
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>service-detail/2/6">SEO</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>2/search-engine-optimization">SEO</a>
                                     </h3>
                                 </div>
                             </div>

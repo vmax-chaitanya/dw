@@ -1,10 +1,54 @@
 <meta charset="UTF-8" />
+<meta name="description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, and PPC
+">
+<meta name="keywords"
+    content="digital marketing company in hyderabad, digital marketing agency in hyderabad, digital marketing services in hyderabad, seo services in hyderabad, smo services in hyderabad, ppc analyst, google ads services, e-commerce digital marketing services, app marketing agency, graphic designing services, web designing, web development, graphic design company, logo design hyderabad, digital marketing companies in hyderabad, digitalwin business agency">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>
-    <?php echo $page_title; ?>
+    Digital Marketing Agency in Hyderabad | DigitalWin Business
 </title>
+
+
+
+
+<meta name="google-site-verification" content="1gRjPjvKnKSv3uRyjFsV3faLSqPIdr04ocZTfOdrK9A" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MMT68X3EL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-4MMT68X3EL');
+</script>
+<script>
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '6935422259854837');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=6935422259854837&ev=PageView&noscript=1" /></noscript>
+
+
+
+
+
+
+
 <!-- favicons Icons -->
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
+<link rel="canonical" href="https://digitalwinbusinessagency.com/" />
+
 <link rel="icon" type="image/png" sizes="32x32"
     href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
 <link rel="icon" type="image/png" sizes="16x16"
@@ -153,141 +197,143 @@
     }
 </style>
 <style>
-   .sticky-icon {
-    z-index: 9999;
-    position: fixed;
-    top: 25%;
-    right: 0%;
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-}
+    .sticky-icon {
+        z-index: 9999;
+        position: fixed;
+        top: 25%;
+        right: 0%;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+    }
 
-.sticky-icon a {
-    transform: translate(185px, 0px);
-    border-radius: 50px 0px 0px 50px;
-    text-align: left;
-    margin: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 2px;
-    font-size: 15px;
-    font-family: 'Oswald', sans-serif;
-    transition: all 0.8s;
-}
+    .sticky-icon a {
+        transform: translate(185px, 0px);
+        border-radius: 50px 0px 0px 50px;
+        text-align: left;
+        margin: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 2px;
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+        transition: all 0.8s;
+    }
 
-.sticky-icon a:hover {
-    color: #FFF;
-    transform: translate(180px, 0px);
-}
+    .sticky-icon a:hover {
+        color: #FFF;
+        transform: translate(180px, 0px);
+    }
 
-.sticky-icon a:hover i {
-    transform: rotate(360deg);
-}
+    .sticky-icon a:hover i {
+        transform: rotate(360deg);
+    }
 
-.Facebook {
-    background-color: #2C80D3;
-    color: #FFF;
-}
+    .Facebook {
+        background-color: #2C80D3;
+        color: #FFF;
+    }
 
-.Youtube {
-    background-color: #fa0910;
-    color: #FFF;
-}
+    .Youtube {
+        background-color: #fa0910;
+        color: #FFF;
+    }
 
-.Twitter {
-    background-color: #53c5ff;
-    color: #FFF;
-}
+    .Twitter {
+        background-color: #53c5ff;
+        color: #FFF;
+    }
 
-.Instagram {
-    background-color: #FD1D1D;
-    color: #FFF;
-}
+    .Instagram {
+        background-color: #FD1D1D;
+        color: #FFF;
+    }
 
-.Google {
-    background-color: #d34836;
-    color: #FFF;
-}
+    .Google {
+        background-color: #d34836;
+        color: #FFF;
+    }
 
-.LinkedIn {
-    background-color: #0077B5;
-    color: #FFF;
-}
+    .LinkedIn {
+        background-color: #0077B5;
+        color: #FFF;
+    }
 
-.Quora {
-    background-color: #A82400;
-    color: #FFF;
-}
+    .Quora {
+        background-color: #A82400;
+        color: #FFF;
+    }
 
-.Pinterest {
-    background-color: #BD081C;
-    color: #FFF;
-}
+    .Pinterest {
+        background-color: #BD081C;
+        color: #FFF;
+    }
 
-.sticky-icon a i {
-    background-color: #FFF;
-    height: 30px;
-    width: 30px;
-    color: #000;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    margin-right: 20px;
-    transition: all 0.5s;
-}
+    .sticky-icon a i {
+        background-color: #FFF;
+        height: 30px;
+        width: 30px;
+        color: #000;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        margin-right: 20px;
+        transition: all 0.5s;
+    }
 
-.sticky-icon a i.fa-facebook-f {
-    background-color: #FFF;
-    color: #2C80D3;
-}
+    .sticky-icon a i.fa-facebook-f {
+        background-color: #FFF;
+        color: #2C80D3;
+    }
 
-.sticky-icon a i.fa-google-plus-g {
-    background-color: #FFF;
-    color: #d34836;
-}
+    .sticky-icon a i.fa-google-plus-g {
+        background-color: #FFF;
+        color: #d34836;
+    }
 
-.sticky-icon a i.fa-instagram {
-    background-color: #FFF;
-    color: #FD1D1D;
-}
+    .sticky-icon a i.fa-instagram {
+        background-color: #FFF;
+        color: #FD1D1D;
+    }
 
-.sticky-icon a i.fa-youtube {
-    background-color: #FFF;
-    color: #fa0910;
-}
+    .sticky-icon a i.fa-youtube {
+        background-color: #FFF;
+        color: #fa0910;
+    }
 
-.sticky-icon a i.fa-twitter {
-    background-color: #FFF;
-    color: #53c5ff;
-}
+    .sticky-icon a i.fa-twitter {
+        background-color: #FFF;
+        color: #53c5ff;
+    }
 
-.sticky-icon a i.fa-linkedin {
-    background-color: #FFF;
-    color: #0077B5;
-}
+    .sticky-icon a i.fa-linkedin {
+        background-color: #FFF;
+        color: #0077B5;
+    }
 
-.sticky-icon a i.fa-quora {
-    background-color: #FFF;
-    color: #A82400;
-}
+    .sticky-icon a i.fa-quora {
+        background-color: #FFF;
+        color: #A82400;
+    }
 
-.sticky-icon a i.fa-pinterest {
-    background-color: #FFF;
-    color: #BD081C;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+    .sticky-icon a i.fa-pinterest {
+        background-color: #FFF;
+        color: #BD081C;
+    }
 
-.spin {
-  animation: spin 2s linear infinite;
-}
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .spin {
+        animation: spin 2s linear infinite;
+    }
 
     /* .fas fa-shopping-cart {
         background-color: #FFF;
@@ -320,18 +366,25 @@
         background-color: #555;
     } */
 </style>
+<?php
+$this->load->helper('custom_helper');
+$h_services = $this->Home_model->getActiveServiceNames();
+$other_services = $this->Home_model->getActiveOtherServiceNames();
+$f_services = $this->Home_model->getFooterServiceNames();
+$f_other_services = $this->Home_model->getFooterOtherServiceNames();
+$social_media = get_social_media();
+?>
 
 <!--Start Sticky Icon-->
 <div class="sticky-icon">
-    <a href="https://www.facebook.com/" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
-    
-    <!-- <a href="https://aboutme.google.com/u/0/?referer=gplus" class="Google"><i class="fab fa-google-plus-g"> </i> Google + </a> -->
-    <a href="https://www.youtube.com/" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
+    <a href="<?php echo $social_media['facebook']; ?>" target="__blank" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
+    <a href="<?php echo $social_media['instagram']; ?>" target="__blank" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+    <a href="<?php echo $social_media['linkedin']; ?>" target="__blank" class="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn </a>
+    <a href="<?php echo $social_media['quora']; ?>" target="__blank" class="Quora"><i class="fab fa-quora"></i> Quora </a>
+    <a href="<?php echo $social_media['pinterest']; ?>" target="__blank" class="Pinterest"><i class="fab fa-pinterest"></i> Pinterest </a>
+    <a href="<?php echo $social_media['youtube']; ?>" target="__blank" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
     <!-- <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a> -->
-    <a href="https://www.linkedin.com/" class="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn </a>
-    <a href="https://www.quora.com/" class="Quora"><i class="fab fa-quora"></i> Quora </a>
-    <a href="https://www.pinterest.com/" class="Pinterest"><i class="fab fa-pinterest"></i> Pinterest </a>
-    <a href="https://www.instagram.com/?hl=en" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
+   
 
 </div>
 <!--End Sticky Icon-->

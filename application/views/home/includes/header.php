@@ -1,12 +1,3 @@
-<?php
-$this->load->helper('custom_helper');
-$h_services = $this->Home_model->getActiveServiceNames();
-$other_services = $this->Home_model->getActiveOtherServiceNames();
-$f_services = $this->Home_model->getFooterServiceNames();
-$f_other_services = $this->Home_model->getFooterOtherServiceNames();
-$social_media = get_social_media();
-?>
-
 <header class="main-header clearfix">
     <marquee style="color:white">
         India's First CMMi Level 5 & ISO (9001:2015) Certified Digital Marketing Services Company
@@ -52,7 +43,7 @@ $social_media = get_social_media();
                                                     <?php foreach ($h_services as $service): ?>
                                                         <div class="col-md-3">
                                                             <a class="home-showcase__item hover-white"
-                                                                href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
+                                                                href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
                                                                 <h3 class="home-showcase__title">
                                                                     <?php echo $service['name'] ?>
                                                                 </h3>
@@ -79,7 +70,7 @@ $social_media = get_social_media();
                                                     <?php foreach ($other_services as $service): ?>
                                                         <div class="col-lg-3">
                                                             <a class="home-showcase__item hover-white"
-                                                                href="<?php echo base_url(); ?>service-detail/<?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
+                                                                href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
                                                                 <h3 class="home-showcase__title">
                                                                     <?php echo $service['name'] ?>
                                                                 </h3>

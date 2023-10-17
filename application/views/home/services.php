@@ -115,7 +115,7 @@
                                     <img src="<?php echo base_url('' . $service['image']); ?>" alt="">
                                     <div class="project-one__hover">
                                         <!-- <p class="project-one__tagline">Graphic</p> -->
-                                        <h3 class="project-one__title"><a href="<?php echo base_url();?>service-detail/<?php echo $service['type'];?>/<?php echo $service['service_url'];?>">
+                                        <h3 class="project-one__title"><a href="<?php echo base_url();?><?php echo $service['type'];?>/<?php echo $service['service_url'];?>">
                                                 <?php echo $service['name']; ?>
                                             </a>
                                         </h3>

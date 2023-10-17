@@ -123,7 +123,7 @@
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <?php foreach ($f_services as $service): ?>
 
-                                    <li><a href="<?php echo base_url(); ?>service-detail/1/<?php echo $service['service_url'] ?>"><span class="icon-draw-check-mark"></span> &nbsp;
+                                    <li><a href="<?php echo base_url(); ?>1/<?php echo $service['service_url'] ?>"><span class="icon-draw-check-mark"></span> &nbsp;
                                             <?php echo $service['name'] ?>
                                         </a></li>
                                 <?php endforeach; ?>
@@ -138,7 +138,7 @@
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <?php foreach ($f_other_services as $service): ?>
 
-                                    <li><a href="<?php echo base_url(); ?>service-detail/2/<?php echo $service['service_url'] ?>"><span class="icon-draw-check-mark"></span> &nbsp;
+                                    <li><a href="<?php echo base_url(); ?>2/<?php echo $service['service_url'] ?>"><span class="icon-draw-check-mark"></span> &nbsp;
                                             <?php echo $service['name'] ?>
                                         </a></li>
                                 <?php endforeach; ?>
