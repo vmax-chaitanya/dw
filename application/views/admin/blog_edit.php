@@ -128,6 +128,40 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Meta Name</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="meta_name" rows="6"  ><?php echo $service['meta_name']; ?></textarea>
+                                                        <?php echo form_error('meta_name', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Meta Description</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="meta_description" rows="6"  ><?php echo $service['meta_description']; ?></textarea>
+                                                        <?php echo form_error('meta_description', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Meta Keywords</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="meta_keywords" rows="6"  ><?php echo $service['meta_keywords']; ?></textarea>
+                                                        <?php echo form_error('meta_keywords', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="row">
                                             <div class="col-md-9"></div>
                                             <div class="col-md-3">

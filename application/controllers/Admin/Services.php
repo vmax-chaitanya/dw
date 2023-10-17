@@ -95,6 +95,11 @@ class Services extends CI_Controller
                 'module_name_3' => $this->input->post('module_name_3'),
                 'module_quote_3' => $this->input->post('module_quote_3'),
 
+                'meta_name' => $this->input->post('meta_name'),
+                'meta_description' => $this->input->post('meta_description'),
+                'meta_keywords' => $this->input->post('meta_keywords'),
+
+
                 'icon' => $icon,
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace this with the actual created_by user ID
@@ -190,6 +195,10 @@ class Services extends CI_Controller
                 'module_name_3' => $this->input->post('module_name_3'),
                 'module_quote_3' => $this->input->post('module_quote_3'),
 
+                'meta_name' => $this->input->post('meta_name'),
+                'meta_description' => $this->input->post('meta_description'),
+                'meta_keywords' => $this->input->post('meta_keywords'),
+                
                 'icon' => $icon,
                 'created_at' => time(),
                 'created_by' => '2'// Replace this with the actual created_by user ID

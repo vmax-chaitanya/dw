@@ -62,6 +62,11 @@ class Blog extends CI_Controller
                 'status' => $this->input->post('status'),
                 'image' => $image_name, // Replace with the file path or URL of the image
                 'banner_image' => $banner_image, // Replace with the file path or URL of the image
+
+                'meta_name' => $this->input->post('meta_name'),
+                'meta_description' => $this->input->post('meta_description'),
+                'meta_keywords' => $this->input->post('meta_keywords'),
+
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace with the actual user ID who created the blog
             );
@@ -125,7 +130,11 @@ class Blog extends CI_Controller
                 'status' => $this->input->post('status'),
                 'image' => $image_name, // Replace with the file path or URL of the image
                 'banner_image' => $banner_image, // Replace with the file path or URL of the image
-
+                
+                'meta_name' => $this->input->post('meta_name'),
+                'meta_description' => $this->input->post('meta_description'),
+                'meta_keywords' => $this->input->post('meta_keywords'),
+                
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace with the actual user ID who updated the blog
             );
