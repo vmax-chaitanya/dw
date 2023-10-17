@@ -96,6 +96,14 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label">Banner Image</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" class="form-control" name="banner_image" required>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <!-- <div class="col-md-6">
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Created By</label>

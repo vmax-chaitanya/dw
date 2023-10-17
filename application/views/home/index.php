@@ -57,40 +57,40 @@
                 <div class="swiper-wrapper">
 
                     <?php $i = 1;
-                    foreach ($banners as $banner) : ?>
-                        <div class="swiper-slide">
-                            <div class="image-layer" style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
-                            </div>
-                            <!-- /.image-layer -->
-                            <div class="main-slider-border"></div>
-                            <div class="main-slider-border main-slider-border-two"></div>
-                            <div class="main-slider-border main-slider-border-three"></div>
-                            <div class="main-slider-border main-slider-border-four"></div>
-                            <div class="main-slider-border main-slider-border-five"></div>
-                            <div class="main-slider-border main-slider-border-six"></div>
+                    foreach ($banners as $banner): ?>
+                                <div class="swiper-slide">
+                                    <div class="image-layer" style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
+                                    </div>
+                                    <!-- /.image-layer -->
+                                    <div class="main-slider-border"></div>
+                                    <div class="main-slider-border main-slider-border-two"></div>
+                                    <div class="main-slider-border main-slider-border-three"></div>
+                                    <div class="main-slider-border main-slider-border-four"></div>
+                                    <div class="main-slider-border main-slider-border-five"></div>
+                                    <div class="main-slider-border main-slider-border-six"></div>
 
-                            <div class="main-slider-shape-1"></div>
-                            <div class="main-slider-shape-2"></div>
-                            <div class="main-slider-shape-3"></div>
+                                    <div class="main-slider-shape-1"></div>
+                                    <div class="main-slider-shape-2"></div>
+                                    <div class="main-slider-shape-3"></div>
 
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="main-slider__content">
-                                            <p>
-                                                <?php echo $banner['name']; ?>
-                                            </p>
-                                            <h2>
-                                                <?php echo $banner['description']; ?>
-                                            </h2>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="main-slider__content">
+                                                    <p>
+                                                        <?php echo $banner['name']; ?>
+                                                    </p>
+                                                    <h2>
+                                                        <?php echo $banner['description']; ?>
+                                                    </h2>
 
-                                            <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
-                                                More</a>
+                                                    <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
+                                                        More</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
                     <?php endforeach; ?>
 
                 </div>
@@ -194,7 +194,7 @@
                             <p class="get-to-know__text-1">We’re committed
                                 to delivering the best digital marketing for
                                 your businesses</p>
-                            <p class="get-to-know__text-2" style="padding-top: 20px; "><b>Expertise:
+                            <p class="get-to-know__text-2" ><b>Expertise:
                                 </b> Our team of AI experts and industry professionals brings in-depth knowledge and
                                 experience to the table, ensuring you receive top-notch solutions tailored to your
                                 business needs.</p>
@@ -206,9 +206,7 @@
 
                             <p class="get-to-know__text-2" style="padding-top: 20px; ">
                                 <b>AI- Result Driven:</b> Your success is our ultimate goal. We measure our achievements
-                                based on the tangible results we deliver to your business, helping you achieve a
-                                significant return on your investment.
-
+                                based on the tangible results we deliver to your business.
                             </p>
                             <div class="get-to-know__progress">
                                 <div class="get-to-know__progress-single">
@@ -216,6 +214,26 @@
                                     <div class="bar">
                                         <div class="bar-inner count-bar" data-percent="85.5%">
                                             <div class="count-text">85.5%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="get-to-know__progress">
+                                <div class="get-to-know__progress-single">
+                                    <h4 class="get-to-know__progress-title">AI Driven Digital Marketing Services</h4>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="90%">
+                                            <div class="count-text">90%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="get-to-know__progress">
+                                <div class="get-to-know__progress-single">
+                                    <h4 class="get-to-know__progress-title">Ensured Quality</h4>
+                                    <div class="bar">
+                                        <div class="bar-inner count-bar" data-percent="99%">
+                                            <div class="count-text">99%</div>
                                         </div>
                                     </div>
                                 </div>
@@ -450,7 +468,7 @@
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/ai.jpg" alt>
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url();?>services/1">Advance Digital Marketing Services with AI</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/1">Advance Digital Marketing Services with AI</a>
                                     </h3>
                                 </div>
                             </div>
@@ -502,7 +520,7 @@
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/ecommerce.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url();?>service-detail/1/26">Responsive Websites for Ecommerce and More</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>service-detail/1/26">Responsive Websites for Ecommerce and More</a>
                                     </h3>
                                 </div>
                             </div>
@@ -849,7 +867,7 @@
                     <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
                         <!--Services Two Single-->
                         <div class="services-two__single">
-                            <div class="services-two__icon">
+                            <div class="services-two__icon" style="text-align:center">
                                 <span class="icon-online-shopping"></span>
                             </div>
                             <h3 class="services-two__title"><a href="javascript:void(0);">Expertise</a></h3>

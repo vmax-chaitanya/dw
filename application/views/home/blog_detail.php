@@ -29,7 +29,7 @@
         <!--Page Header Start-->
         <section class="page-header">
             <div class="page-header-bg"
-                style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/blog_banner.jpg)">
+                style="background-image: url(<?php echo base_url('' . $blog['banner_image']); ?>)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -93,17 +93,17 @@
                                 <h3 class="sidebar__title">Latest Posts</h3>
                                 <ul class="sidebar__post-list list-unstyled">
                                     <?php $i = 100;
-                                    foreach ($blogs as $blog): ?>
+                                    foreach ($blogs as $blogs): ?>
                                         <li>
                                             <div class="sidebar__post-image">
-                                                <img src="<?php echo base_url('' . $blog['image']); ?>"
+                                                <img src="<?php echo base_url('' . $blogs['image']); ?>"
                                                     alt="">
                                             </div>
                                             <div class="sidebar__post-content">
                                                 <h3>
                                                     <!-- <span class="sidebar__post-content-meta"><i
                                                         class="far fa-comments"></i>02 Comments</span> -->
-                                                    <a href="<?php echo base_url();?>blog-detail/<?php echo $blog['id']; ?>"><?php echo $blog['title']; ?></a>
+                                                    <a href="<?php echo base_url();?>blog-detail/<?php echo $blogs['id']; ?>"><?php echo $blogs['title']; ?></a>
                                                 </h3>
                                             </div>
                                         </li>

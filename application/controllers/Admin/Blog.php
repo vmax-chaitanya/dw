@@ -46,12 +46,22 @@ class Blog extends CI_Controller
             }else{
                 $image_name  = $this->input->post('old_image');
             }
+            if (!empty($_FILES['banner_image']['name'])) {
+
+                $temp = $_FILES['banner_image']['tmp_name'];
+                $name = $_FILES['banner_image']['name'];
+                $fileName = time() . $name;
+                $path = "./assets/images/blog_banner/$fileName";
+                $banner_image = '/assets/images/blog_banner/' . $fileName;
+                $a = move_uploaded_file($temp, $path);
+            }
             $data = array(
                 'title' => $this->input->post('title'),
                 'about' => $this->input->post('about'),
                 'description' => $this->input->post('description'),
                 'status' => $this->input->post('status'),
                 'image' => $image_name, // Replace with the file path or URL of the image
+                'banner_image' => $banner_image, // Replace with the file path or URL of the image
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace with the actual user ID who created the blog
             );
@@ -97,12 +107,25 @@ class Blog extends CI_Controller
             }else{
                 $image_name  = $this->input->post('old_image');
             }
+            if (!empty($_FILES['banner_image']['name'])) {
+
+                $temp = $_FILES['banner_image']['tmp_name'];
+                $name = $_FILES['banner_image']['name'];
+                $fileName = time() . $name;
+                $path = "./assets/images/blog_banner/$fileName";
+                $banner_image = '/assets/images/blog_banner/' . $fileName;
+                $a = move_uploaded_file($temp, $path);
+            }else{
+                $banner_image  = $this->input->post('old_banner_image');
+            }
             $data = array(
                 'title' => $this->input->post('title'),
                 'about' => $this->input->post('about'),
                 'description' => $this->input->post('description'),
                 'status' => $this->input->post('status'),
                 'image' => $image_name, // Replace with the file path or URL of the image
+                'banner_image' => $banner_image, // Replace with the file path or URL of the image
+
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace with the actual user ID who updated the blog
             );

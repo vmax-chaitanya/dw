@@ -159,7 +159,7 @@ class HomeController extends CI_Controller
 
 		$data['page_title'] = "Blogs Details || Digital win ||";
 		$data['blog'] = $this->Home_model->get_blog_by_id($blog_id);
-
+// echo $this->db->last_query(); exit;
 		$this->load->view('home/blog_detail', $data);
 	}
 	public function training_enquiry()

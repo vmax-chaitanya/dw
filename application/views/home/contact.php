@@ -91,6 +91,8 @@
 								</a>
 								<a href="tel:919154357401" class="contact-info__phone">+91
 									9154357401</a>
+									<a href="tel:919154357402" class="contact-info__phone">+91
+									9154357402</a>
 								<a href="tel:919154357402" class="contact-info__phone">+91
 									9154357404</a>
 								<a href="tel:040-2704708" class="contact-info__phone">

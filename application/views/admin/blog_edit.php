@@ -77,7 +77,23 @@
                                                         <?php endif; ?>
                                                     </div>
                                                 </div>
-                                            </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 col-form-label">Banner Image</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="file" class="form-control" name="banner_image"
+                                                                required>
+                                                            <?php if ($blog['banner_image']): ?>
+                                                                <img src="<?php echo base_url('' . $blog['banner_image']); ?>"
+                                                                    alt="Blog Image" width="150">
+                                                            <?php else: ?>
+                                                                No Image
+                                                            <?php endif; ?>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                          
                                             <!-- <div class="col-md-6">
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Created By</label>
@@ -93,8 +109,8 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">About</label>
                                                     <div class="col-sm-10">
-                                                        <textarea class="form-control" name="about" rows="4"
-                                                        ><?php echo $blog['about']; ?></textarea>
+                                                        <textarea class="form-control" name="about"
+                                                            rows="4"><?php echo $blog['about']; ?></textarea>
                                                         <?php echo form_error('about', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
@@ -106,7 +122,7 @@
                                                     <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-10">
                                                         <textarea class="form-control" name="description" rows="4"
-                                                        id="editor"><?php echo $blog['description']; ?></textarea>
+                                                            id="editor"><?php echo $blog['description']; ?></textarea>
                                                         <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
@@ -115,12 +131,16 @@
                                         <div class="row">
                                             <div class="col-md-9"></div>
                                             <div class="col-md-3">
-                                            <input type="hidden" class="form-control" name="old_image" value="<?php echo $blog['image']; ?>">
+                                                <input type="hidden" class="form-control" name="old_image"
+                                                    value="<?php echo $blog['image']; ?>">
+                                                <input type="hidden" class="form-control" name="old_banner_image"
+                                                    value="<?php echo $blog['banner_image']; ?>">
                                                 <button type="submit" class="btn btn-success mr-2">Update</button>
                                                 <a href="<?php echo site_url('admin/blog'); ?>"
                                                     class="btn btn-light">Cancel</a>
                                             </div>
                                         </div>
+
                                     </form>
 
                                 </div>

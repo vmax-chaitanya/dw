@@ -276,6 +276,18 @@
     background-color: #FFF;
     color: #BD081C;
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 2s linear infinite;
+}
 
     /* .fas fa-shopping-cart {
         background-color: #FFF;

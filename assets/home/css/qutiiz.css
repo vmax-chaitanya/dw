@@ -2596,7 +2596,7 @@ ul {
 .get-to-know__video-link {
   position: absolute;
   bottom: 0;
-  right: 280px;
+  right: 215px !important; 
 }
 
 .get-to-know__video-icon {
@@ -2677,7 +2677,7 @@ ul {
   color: var(--qutiiz-base);
   margin: 0;
   line-height: 36px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   text-align: justify;
 }
 
@@ -5003,6 +5003,7 @@ ul {
 .services-two__icon {
   position: relative;
   display: inline-block;
+  padding-left: 120px;
 }
 
 .services-two__icon:before {
@@ -5040,6 +5041,7 @@ ul {
   line-height: 29px;
   margin-top: 16px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .services-two__title a {
@@ -5057,7 +5059,7 @@ ul {
   margin: 0;
   line-height: 26px;
   padding-bottom: 9px;
-  text-align: justify;
+  text-align: center;
   word-spacing: 4px;
 }
 
