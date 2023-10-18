@@ -33,7 +33,7 @@
                                     <h4 class="card-title">Data table</h4>
                                 </div>
                                 <div class="col-md-2 ms-auto">
-                                    <a href="<?php echo base_url(); ?>admin/blog/add" class="w-100 btn btn-primary">Create</a>
+                                    <a href="<?php echo base_url(); ?>admin/static_pages_seo/add" class="w-100 btn btn-primary">Create</a>
                                 </div>
                             </div>
                             <!-- <a class="nav-link dropdown-toggle bg-primary" id="actionDropdown" href="#" data-toggle="dropdown">
@@ -53,11 +53,11 @@
                                                     <th>ID</th>
                                                     <th>Page ID</th>
                                                     <th>Meta Name</th>
-                                                    <th>Meta Description</th>
-                                                    <th>Meta Keywords</th>
+                                                    <!-- <th>Meta Description</th>
+                                                    <th>Meta Keywords</th> -->
                                                     <th>Status</th>
                                                     <th>Created At</th>
-                                                    <th>Created By</th>
+                                                    <!-- <th>Created By</th> -->
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
@@ -67,8 +67,8 @@
                                                         <td><?php echo $record['id']; ?></td>
                                                         <td><?php echo $record['page_id']; ?></td>
                                                         <td><?php echo $record['meta_name']; ?></td>
-                                                        <td><?php echo $record['meta_description']; ?></td>
-                                                        <td><?php echo $record['meta_keywords']; ?></td>
+                                                        <!-- <td><?php echo $record['meta_description']; ?></td>
+                                                        <td><?php echo $record['meta_keywords']; ?></td> -->
                                                         <td>
                                                             <?php if ($record['status'] == '1') : ?>
                                                                 <label class="badge badge-success">Active</label>
@@ -79,7 +79,7 @@
                                                             <?php endif; ?>
                                                         </td>
                                                         <td><?php echo $record['created_at']; ?></td>
-                                                        <td><?php echo $record['created_by']; ?></td>
+                                                        <!-- <td><?php echo $record['created_by']; ?></td> -->
                                                         <td>
                                                             <a href="<?php echo base_url('admin/static_pages_seo/edit/' . $record['id']); ?>" class="btn btn-outline-primary">Edit</a>
                                                             <a href="<?php echo base_url('admin/static_pages_seo/delete/' . $record['id']); ?>" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>

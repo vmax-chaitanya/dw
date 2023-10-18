@@ -197,9 +197,10 @@ $route['admin/training_curriculum/update/(:num)'] = 'Admin/TrainingCurriculum/up
 $route['admin/training_curriculum/delete/(:num)'] = 'Admin/TrainingCurriculum/delete/$1';
 
 
-$route['static_pages_seo'] = 'StaticPagesSeo/index';  // List all SEO records
-$route['static_pages_seo/create'] = 'StaticPagesSeo/create';  // Create a new SEO record
-$route['static_pages_seo/edit/(:num)'] = 'StaticPagesSeo/edit/$1';  // Edit an SEO record
-$route['static_pages_seo/delete/(:num)'] = 'StaticPagesSeo/delete/$1';  // Delete an SEO record
+$route['admin/static_pages_seo'] = 'Admin/StaticPagesSeo/index';  // List all SEO records
+$route['admin/static_pages_seo/add'] = 'Admin/StaticPagesSeo/add';  // Create a new SEO record
+$route['admin/static_pages_seo/create'] = 'Admin/StaticPagesSeo/create';  // Create a new SEO record
+$route['admin/static_pages_seo/edit/(:num)'] = 'Admin/StaticPagesSeo/edit/$1';  // Edit an SEO record
+$route['admin/static_pages_seo/delete/(:num)'] = 'Admin/StaticPagesSeo/delete/$1';  // Delete an SEO record
 
 ///////admin////////

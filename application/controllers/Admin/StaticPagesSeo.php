@@ -7,14 +7,20 @@ class StaticPagesSeo extends CI_Controller
     {
         parent::__construct();
         // Load the necessary model
-        $this->load->model('StaticPagesSeoModel');
+        $this->load->model('Admin/StaticPagesSeoModel');
     }
 
     public function index()
     {
         // Retrieve a list of static page SEO records and load a view to display them
         $data['seo_records'] = $this->StaticPagesSeoModel->getSeoRecords();
-        $this->load->view('static_pages_seo/list', $data);
+        $this->load->view('admin/seo_list', $data);
+    }
+    public function add()
+    {
+        // Retrieve a list of static page SEO records and load a view to display them
+        $data['seo_records'] = $this->StaticPagesSeoModel->getSeoRecords();
+        $this->load->view('admin/seo_create', $data);
     }
 
     public function create()
@@ -35,11 +41,11 @@ class StaticPagesSeo extends CI_Controller
             $this->StaticPagesSeoModel->createSeoRecord($data);
 
             // Redirect to the list page or wherever you prefer
-            redirect('static_pages_seo/index');
+            redirect('admin/static_pages_seo');
         }
 
         // Load the view for creating a new SEO record
-        $this->load->view('static_pages_seo/create');
+        // $this->load->view('static_pages_seo/create');
     }
 
     public function edit($id)
@@ -65,7 +71,7 @@ class StaticPagesSeo extends CI_Controller
 
         // Load the existing SEO record data for editing
         $data['seo_record'] = $this->StaticPagesSeoModel->getSeoRecordById($id);
-        $this->load->view('static_pages_seo/edit', $data);
+        $this->load->view('admin/seo_edit', $data);
     }
 
     public function delete($id)
