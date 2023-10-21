@@ -83,7 +83,7 @@
                                                         <label class="col-sm-3 col-form-label">Banner Image</label>
                                                         <div class="col-sm-9">
                                                             <input type="file" class="form-control" name="banner_image"
-                                                                required>
+                                                                >
                                                             <?php if ($blog['banner_image']): ?>
                                                                 <img src="<?php echo base_url('' . $blog['banner_image']); ?>"
                                                                     alt="Blog Image" width="150">
@@ -134,7 +134,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Meta Name</label>
                                                     <div class="col-sm-10">
-                                                        <textarea class="form-control" name="meta_name" rows="6"  ><?php echo $service['meta_name']; ?></textarea>
+                                                        <textarea class="form-control" name="meta_name" rows="6"  ><?php echo $blog['meta_name']; ?></textarea>
                                                         <?php echo form_error('meta_name', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
@@ -145,7 +145,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Meta Description</label>
                                                     <div class="col-sm-10">
-                                                        <textarea class="form-control" name="meta_description" rows="6"  ><?php echo $service['meta_description']; ?></textarea>
+                                                        <textarea class="form-control" name="meta_description" rows="6"  ><?php echo $blog['meta_description']; ?></textarea>
                                                         <?php echo form_error('meta_description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
@@ -156,7 +156,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Meta Keywords</label>
                                                     <div class="col-sm-10">
-                                                        <textarea class="form-control" name="meta_keywords" rows="6"  ><?php echo $service['meta_keywords']; ?></textarea>
+                                                        <textarea class="form-control" name="meta_keywords" rows="6"  ><?php echo $blog['meta_keywords']; ?></textarea>
                                                         <?php echo form_error('meta_keywords', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>

@@ -1,18 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
 <head>
 
     <?php include("includes/styles.php"); ?>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NNTM2J82');</script>
-<!-- End Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NNTM2J82');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "DigitalWin Business Agency",
+            "image": "https://digitalwinbusinessagency.com/assets/home/images/resources/logo-1.png",
+            "@id": "https://www.digitalwinbusinessagency.com/",
+            "url": "https://www.digitalwinbusinessagency.com/",
+            "telephone": "9154357401",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "MIG-161, 3rd floor, Rd Number 1, above Lenskart, opp. Sri Sri Holistic Hospital, Kukatpally Housing Board Colony, Kukatpally",
+                "addressLocality": "Hyderabad",
+                "postalCode": "500085",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 17.4887215,
+                "longitude": 78.4005263
+            },
+            "sameAs": [
+                "https://www.facebook.com/Digitalwinbusinessagency",
+                "https://www.instagram.com/digitalwinbusinessagency/?igshid=MmU2YjMzNjRlOQ%3D%3D",
+                "https://www.youtube.com/@DigitalWinBusinessAgency",
+                "https://in.pinterest.com/DigitalWinBusinessAgency1/",
+                "https://www.linkedin.com/in/digitalwin-business-agency-b73a77279/"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "DigitalWin Business Agency",
+            "alternateName": "DigitalWin",
+            "url": "https://www.digitalwinbusinessagency.com/",
+            "logo": "https://digitalwinbusinessagency.com/assets/home/images/resources/logo-1.png",
+            "sameAs": [
+                "https://www.facebook.com/Digitalwinbusinessagency",
+                "https://in.pinterest.com/DigitalWinBusinessAgency1/",
+                "https://www.instagram.com/digitalwinbusinessagency/?igshid=MmU2YjMzNjRlOQ%3D%3D",
+                "https://www.youtube.com/@DigitalWinBusinessAgency",
+                "https://www.linkedin.com/in/digitalwin-business-agency-b73a77279/"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "DigitalWin Business Agency",
+            "url": "https://www.digitalwinbusinessagency.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://digitalwinbusinessagency.com/contact{search_term_string}https://digitalwinbusinessagency.com/services/1",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '6935422259854837');
+        fbq('track', 'PageView');
+    </script>
+
+
 
     <style>
         .blog-one__date {
@@ -38,9 +133,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNTM2J82"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNTM2J82" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <?php include("includes/preloader.php"); ?>
     <!-- /.preloader -->
@@ -70,40 +164,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="swiper-wrapper">
 
                     <?php $i = 1;
-                    foreach ($banners as $banner): ?>
-                                            <div class="swiper-slide">
-                                                <div class="image-layer" style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
-                                                </div>
-                                                <!-- /.image-layer -->
-                                                <div class="main-slider-border"></div>
-                                                <div class="main-slider-border main-slider-border-two"></div>
-                                                <div class="main-slider-border main-slider-border-three"></div>
-                                                <div class="main-slider-border main-slider-border-four"></div>
-                                                <div class="main-slider-border main-slider-border-five"></div>
-                                                <div class="main-slider-border main-slider-border-six"></div>
+                    foreach ($banners as $banner) : ?>
+                        <div class="swiper-slide">
+                            <div class="image-layer" style="background-image: url(<?php echo base_url('' . $banner['image']); ?>);">
+                            </div>
+                            <!-- /.image-layer -->
+                            <div class="main-slider-border"></div>
+                            <div class="main-slider-border main-slider-border-two"></div>
+                            <div class="main-slider-border main-slider-border-three"></div>
+                            <div class="main-slider-border main-slider-border-four"></div>
+                            <div class="main-slider-border main-slider-border-five"></div>
+                            <div class="main-slider-border main-slider-border-six"></div>
 
-                                                <div class="main-slider-shape-1"></div>
-                                                <div class="main-slider-shape-2"></div>
-                                                <div class="main-slider-shape-3"></div>
+                            <div class="main-slider-shape-1"></div>
+                            <div class="main-slider-shape-2"></div>
+                            <div class="main-slider-shape-3"></div>
 
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="main-slider__content">
-                                                                <p>
-                                                                    <?php echo $banner['name']; ?>
-                                                                </p>
-                                                                <h2>
-                                                                    <?php echo $banner['description']; ?>
-                                                                </h2>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="main-slider__content">
+                                            <p>
+                                                <?php echo $banner['name']; ?>
+                                            </p>
+                                            <h2>
+                                                <?php echo $banner['description']; ?>
+                                            </h2>
 
-                                                                <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
-                                                                    More</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <?php endforeach; ?>
 
                 </div>
@@ -141,58 +235,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         </div>
                         <div class="get-to-know__left wow slideInLeft pr-0" data-wow-delay="100ms" data-wow-duration="2500ms">
-                        <div class="contact-page__form mt-3">
-                            <form action="#" id="contact-form" name="contact" class="contact-form">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Your name" name="name">
+                            <div class="contact-page__form mt-3">
+                                <form action="#" id="contact-form" name="contact" class="contact-form">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Your name" name="name">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="comment-form__input-box">
-                                            <input type="email" placeholder="Email address" name="email">
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="email" placeholder="Email address" name="email">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Subject" name="subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <select name="copoun_select" id="copoun_select" style="display: block !important;">
+                                                    <option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id">
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-xl-6">
-                                        <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box">
+                                                <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
+                                            </div>
+                                            <button type="submit" class="thm-btn comment-form__btn mt-3">send
+                                                a message</button>
                                         </div>
                                     </div>
-                                    <div class="col-xl-6">
-                                        <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Subject" name="subject">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="comment-form__input-box">
-                                            <select name="copoun_select" id="copoun_select" style="display: block !important;">
-                                                <option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
-                                                <option value="1">Yes</option>
-                                                <option value="2">No</option>
-                                            </select>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xl-12">
-                                        <div class="comment-form__input-box">
-                                            <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
-                                        </div>
-                                        <button type="submit" class="thm-btn comment-form__btn mt-3">send
-                                            a message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xl-6">
@@ -203,11 +297,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     know us</span>
                                 <h2 class="section-title__title">Why Choose DigitalWin Business Agency For Your
                                     Business?</h2>
+                                <h1 style="display:none">DigitalWin Business Agency | Digital Marketing Services in Hyderabad| Digital Marketing Agency | SEO | SMM | PPC Services<h1>
                             </div>
                             <p class="get-to-know__text-1">We’re committed
                                 to delivering the best digital marketing for
                                 your businesses</p>
-                            <p class="get-to-know__text-2" ><b>Expertise:
+                            <p class="get-to-know__text-2"><b>Expertise:
                                 </b> Our team of AI experts and industry professionals brings in-depth knowledge and
                                 experience to the table, ensuring you receive top-notch solutions tailored to your
                                 business needs.</p>
@@ -572,6 +667,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/small_bussigness.jpg" alt="">
+                               
                                 <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a> -->
@@ -585,9 +681,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
-                                <h3 class="blog-one__title">
-                                    <a href="javascript:void(0);">Small Businesses</a>
+                                <h3 class="blog-one__title" style="text-align: center !important; ">
+                                    <a href="javascript:void(0);" >Small Businesses</a>
                                 </h3>
+                                <p class="services-two__text">Unlock the digital age's possibilities for your small business. Discover how to build a great online presence, interact with customers, and increase your bottom line.</p>
                                 <!-- <div class="blog-one__person">
                                     <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -617,9 +714,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
-                                <h3 class="blog-one__title">
+                                <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Startups</a>
                                 </h3>
+                                <p class="services-two__text">Finding Your Way to Success Let's get together to talk about the essential tactics and factors that will ensure your startup has a smooth journey.</p>
                                 <!-- <div class="blog-one__person">
                                     <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -634,7 +732,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <!--Blog One Start-->
                         <div class="blog-one__single">
-                            <div class="blog-one__img">
+                            <div class="blog-one__img" style="text-align: center !important; ">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/ecommerce.jpg" alt="">
                                 <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
@@ -649,9 +747,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
-                                <h3 class="blog-one__title">
+                                <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">E-commerce Businesses</a>
                                 </h3>
+                                <p class="services-two__text">Enhancing Your Online Products Through Digital Marketing Strategies Find out how to build a strong online presence, interact with customers, and increase your revenue.</p>
                                 <!-- <div class="blog-one__person">
                                     <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -681,9 +780,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
-                                <h3 class="blog-one__title">
+                                <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">B2B Companies </a>
                                 </h3>
+                                <p class="services-two__text">Here's a complete guide to results-maximizing technologies. B2B businesses can use these technologies to improve their services and beat the competition.</p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -713,10 +813,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
-                                <h3 class="blog-one__title">
-                                    <a href="javascript:void(0);">Professional Services
+                                <h3 class="blog-one__title" style="text-align: center !important; ">
+                                    <a href="javascript:void(0);" >Professional Services
                                     </a>
                                 </h3>
+                                <p class="services-two__text">Using Digital Marketing Strategies, we can assist hospitals in maximizing the potential of the online world for healthcare.</p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -746,9 +847,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
-                                <h3 class="blog-one__title">
+                                <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Enterprenuers</a>
                                 </h3>
+                                <p class="services-two__text">Entrepreneurs are individuals with the vision, creativity, and drive to establish successful businesses. Utilize digital marketing to your advantage.</p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -778,9 +880,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
-                                <h3 class="blog-one__title">
+                                <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Banking & Finance</a>
                                 </h3>
+                                <p class="services-two__text">Utilize digital strategies and stay up to date on market developments and business prospects to expand your banking services</p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -811,9 +914,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
-                                <h3 class="blog-one__title">
+                                <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Education Institutions</a>
                                 </h3>
+                                <p class="services-two__text">Explore Your Educational Opportunities to Prepare Students for a Successful Future Implementing strategies for digital marketing</p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -844,9 +948,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
                                     </li>
                                 </ul> -->
-                                <h3 class="blog-one__title">
+                                <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Real Estate Agencies</a>
                                 </h3>
+                                <p class="services-two__text">Lead Generation Through Digital Marketing High ROI (Return on Investment)
+With the help of our team in digital marketing Strategies</p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">

@@ -72,6 +72,10 @@ $route['contact-enquiry'] = 'HomeController/contact_enquiry';
 $route['training-detail/(:num)'] = 'HomeController/training_detail/$1';
 $route['blogs'] = 'HomeController/blogs';
 $route['blog-detail/(:num)'] = 'HomeController/blog_detail/$1';
+
+$route['careers'] = 'HomeController/careers';
+$route['seo'] = 'HomeController/seo';
+
 //////////Home Controller//////
 
 ///////admin////////
@@ -201,6 +205,8 @@ $route['admin/static_pages_seo'] = 'Admin/StaticPagesSeo/index';  // List all SE
 $route['admin/static_pages_seo/add'] = 'Admin/StaticPagesSeo/add';  // Create a new SEO record
 $route['admin/static_pages_seo/create'] = 'Admin/StaticPagesSeo/create';  // Create a new SEO record
 $route['admin/static_pages_seo/edit/(:num)'] = 'Admin/StaticPagesSeo/edit/$1';  // Edit an SEO record
+$route['admin/static_pages_seo/update/(:num)'] = 'Admin/StaticPagesSeo/update/$1';
+
 $route['admin/static_pages_seo/delete/(:num)'] = 'Admin/StaticPagesSeo/delete/$1';  // Delete an SEO record
 
 ///////admin////////
