@@ -32,10 +32,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title">Horizontal Two column</h4>
-                                    <?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
-                                    <?php //echo form_open_multipart('admin/banner/create'); 
-                                    ?>
-
+                                  
                                     <form class="form-sample" method="POST" action="<?php echo site_url('admin/static_pages_seo/update/' . $seo_record['id']); ?>" enctype="multipart/form-data">
                                         <p class="card-description">SEO Details</p>
                                         <div class="row">
@@ -52,7 +49,7 @@
                                                     <label class="col-sm-3 col-form-label">Meta Description</label>
                                                     <div class="col-sm-9">
                                                         <textarea class="form-control" name="meta_description" rows="4"><?php echo $seo_record['meta_description']; ?></textarea>
-                                                        <?php echo form_error('meta_description', '<p class="text-danger">', '</p>'); ?>
+                                                        <?php //echo form_error('meta_description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -63,7 +60,7 @@
                                                     <label class="col-sm-3 col-form-label">Meta Keywords</label>
                                                     <div class="col-sm-9">
                                                         <textarea class="form-control" name="meta_keywords" rows="4"><?php echo $seo_record['meta_keywords']; ?></textarea>
-                                                        <?php echo form_error('meta_keywords', '<p class="text-danger">', '</p>'); ?>
+                                                        <?php // echo form_error('meta_keywords', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -87,7 +84,7 @@
                                                     <label class="col-sm-2 col-form-label">Page ID</label>
                                                     <div class="col-sm-10">
                                                         <input type="text" class="form-control" name="page_id" value="<?php echo $seo_record['page_id']; ?>">
-                                                        <?php echo form_error('page_id', '<p class="text-danger">', '</p>'); ?>
+                                                        <?php // echo form_error('page_id', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -96,7 +93,7 @@
                                             <div class="col-md-9"></div>
                                             <div class="col-md-3">
                                                 <button type="submit" class="btn btn-success mr-2">Update</button>
-                                                <a href="<?php echo site_url('admin/static_pages_seo'); ?>" class="btn btn-light">Cancel</a>
+                                                <a href="<?php // echo site_url('admin/static_pages_seo'); ?>" class="btn btn-light">Cancel</a>
                                             </div>
                                         </div>
                                     </form>

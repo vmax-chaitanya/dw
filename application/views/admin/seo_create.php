@@ -32,22 +32,22 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title">Horizontal Two column</h4>
-                                    <?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
-                                    <?php //echo form_open_multipart('admin/banner/create'); 
-                                    ?>
+                                
 
                                     <form class="form-sample" method="POST" action="<?php echo site_url('admin/static_pages_seo/create'); ?>" enctype="multipart/form-data">
                                         <p class="card-description">Static Pages SEO Details</p>
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group row">
-                                                    <label class="col-sm-3 col-form-label">Status</label>
+                                                    <label class="col-sm-3 col-form-label">Page </label>
                                                     <div class="col-sm-9">
-                                                        <select class="form-control" name="status" required>
-                                                            <option value="">Select Status</option>
-                                                            <option value="1">Active</option>
-                                                            <option value="2">Inactive</option>
-                                                            <option value="3">Other</option>
+                                                        <select class="form-control" name="page_id" required>
+                                                            <option value="">Select page</option>
+                                                            <option value="1">Home</option>
+                                                            <option value="2">About</option>
+                                                            <option value="3">Contact</option>
+                                                            <option value="4">Careers</option>
+                                                           
                                                         </select>
                                                     </div>
                                                 </div>
@@ -62,7 +62,7 @@
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-12">
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Meta Description</label>
                                                     <div class="col-sm-9">
@@ -70,7 +70,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                           
+                                        </div>
+                                        <div class="row">
+                                            
+                                            <div class="col-md-12">
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label">Meta Keywords</label>
                                                     <div class="col-sm-9">

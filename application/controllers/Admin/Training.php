@@ -104,6 +104,12 @@ class Training extends CI_Controller
                 'duration' => $this->input->post('duration'),
                 'brochure' => $brochure_name,
                 'status' => $this->input->post('status'),
+
+                'meta_name' => $this->input->post('meta_name'),
+                'meta_description' => $this->input->post('meta_description'),
+                'meta_keywords' => $this->input->post('meta_keywords'),
+
+
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '2' // Replace this with the actual created_by user ID
             );
@@ -209,6 +215,11 @@ class Training extends CI_Controller
                 'duration' => $this->input->post('duration'),
                 'brochure' => $brochure_name,
                 'status' => $this->input->post('status'),
+
+                'meta_name' => $this->input->post('meta_name'),
+                'meta_description' => $this->input->post('meta_description'),
+                'meta_keywords' => $this->input->post('meta_keywords'),
+                
                 'created_at' => date("Y-m-d H:i:s"),
                 'created_by' => '3' // Replace this with the actual created_by user ID
             );

@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.bootstrapdash.com/demo/libertyui/template/demo/vertical-default-light/pages/tables/data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:38:16 GMT -->
 
 <head>
     <!-- Required meta tags -->
@@ -126,7 +125,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-10">
-                                                        <textarea  class="form-control" name="description" rows="4" required  id="editor"><?php echo set_value('description'); ?></textarea>
+                                                        <textarea  class="form-control" name="description" rows="4"   id="editor"><?php echo set_value('description'); ?></textarea>
                                                         <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
@@ -137,8 +136,42 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Description 1</label>
                                                     <div class="col-sm-10">
-                                                        <textarea class="form-control" name="description_new" rows="4" required><?php echo set_value('description_new'); ?></textarea>
+                                                        <textarea class="form-control" name="description_new" rows="4" ><?php echo set_value('description_new'); ?></textarea>
                                                         <?php echo form_error('description_new', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Meta Name</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="meta_name" rows="6"  ><?php echo set_value('meta_name'); ?></textarea>
+                                                        <?php echo form_error('meta_name', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Meta Description</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="meta_description" rows="6"  ><?php echo set_value('meta_description'); ?></textarea>
+                                                        <?php echo form_error('meta_description', '<p class="text-danger">', '</p>'); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Meta Keywords</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="meta_keywords" rows="6"  ><?php echo set_value('meta_keywords'); ?></textarea>
+                                                        <?php echo form_error('meta_keywords', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>
                                             </div>

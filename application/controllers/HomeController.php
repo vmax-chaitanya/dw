@@ -104,10 +104,10 @@ class HomeController extends CI_Controller
 	}
 	public function service_detail($type, $service_id)
 	{
-// echo $service_id; exit;
+		// echo $service_id; exit;
 		$data['page_title'] = "Home || Digital win ||";
 		$data['services_detail'] = $this->Home_model->get_service_by_id($service_id);
-		$service_primary_id = 	 $data['services_detail']['id']; 
+		$service_primary_id = 	 $data['services_detail']['id'];
 		$module = 1;
 		$data['services_module1'] = $this->Home_model->services_types($service_primary_id, $module);
 		$module = 2;
@@ -118,7 +118,7 @@ class HomeController extends CI_Controller
 		$data['service_faqs'] = $this->Home_model->getActiveServiceFaq($service_primary_id);
 		//echo "<pre>"; print_r($data['services_types']); exit;
 		$data['services'] = $this->Home_model->getActiveServices($type);
-		$data['upcoming_services'] = $this->Home_model->getUpcomingServices($service_id, 5,$type);
+		$data['upcoming_services'] = $this->Home_model->getUpcomingServices($service_id, 5, $type);
 
 		$this->load->view('home/service_detail', $data);
 	}
@@ -160,7 +160,7 @@ class HomeController extends CI_Controller
 
 		$data['page_title'] = "Blogs Details || Digital win ||";
 		$data['blog'] = $this->Home_model->get_blog_by_id($blog_id);
-// echo $this->db->last_query(); exit;
+		// echo $this->db->last_query(); exit;
 		$this->load->view('home/blog_detail', $data);
 	}
 	public function training_enquiry()
@@ -180,11 +180,10 @@ class HomeController extends CI_Controller
 		$result = $this->contact_model->create_contact($data);
 		if ($result) {
 
-		
-			   $pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
 
-				echo $pdfFilePath;
-		
+			$pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
+
+			echo $pdfFilePath;
 		} else {
 			echo "Error inserting data.";
 			exit;
@@ -211,12 +210,12 @@ class HomeController extends CI_Controller
 		$result = $this->contact_model->create_contact($data);
 		if ($result) {
 			// Configure your email settings
-			$this->load->library('email',$config);
+			$this->load->library('email', $config);
 			$config['protocol'] = 'sendmail';
 			$config['mailpath'] = '/usr/sbin/sendmail';
 			$config['mailtype'] = 'html';
 			$config['charset'] = 'iso-8859-1';
-			$config['wordwrap'] = TRUE; 
+			$config['wordwrap'] = TRUE;
 			$this->email->initialize($config);
 			$this->email->from('your_email@example.com', 'DigitalWin');
 			$this->email->to('chaitanyakadali3@gmail.com');
@@ -230,5 +229,19 @@ class HomeController extends CI_Controller
 			exit;
 		}
 		exit;
+	}
+	public function seo()
+	{
+		// Load the about view
+		$data['page_title'] = "Why Only We || Digital win ||";
+
+		$this->load->view('home/seo', $data);
+	}
+	public function careers()
+	{
+		// Load the about view
+		$data['page_title'] = "Why Only We || Digital win ||";
+
+		$this->load->view('home/careers', $data);
 	}
 }

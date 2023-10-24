@@ -1,8 +1,8 @@
 <meta charset="UTF-8" />
 <meta name="description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, PPC and API Services
+<meta name="description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, PPC and API Services
 ">
-<meta name="keywords"
-    content="digital marketing company in hyderabad, digital marketing agency in hyderabad, digital marketing services in hyderabad, seo services in hyderabad, smo services in hyderabad, ppc analyst, google ads services, e-commerce digital marketing services, app marketing agency, graphic designing services, web designing, web development, graphic design company, logo design hyderabad, digital marketing companies in hyderabad, digitalwin business agency">
+<meta name="keywords" content="digital marketing company in hyderabad, digital marketing agency in hyderabad, digital marketing services in hyderabad, seo services in hyderabad, smo services in hyderabad, ppc analyst, google ads services, e-commerce digital marketing services, app marketing agency, graphic designing services, web designing, web development, graphic design company, logo design hyderabad, digital marketing companies in hyderabad, digitalwin business agency">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>
@@ -16,7 +16,10 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MMT68X3EL"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-4MMT68X3EL');
@@ -24,6 +27,29 @@
 
 <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=6935422259854837&ev=PageView&noscript=1" /></noscript>
+<script>
+    ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '6935422259854837');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=6935422259854837&ev=PageView&noscript=1" /></noscript>
 
 
 
@@ -35,10 +61,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
 <link rel="canonical" href="https://digitalwinbusinessagency.com/" />
 
-<link rel="icon" type="image/png" sizes="32x32"
-    href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
-<link rel="icon" type="image/png" sizes="16x16"
-    href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/home/images/favicons/favicon.png" />
 <link rel="manifest" href="<?php echo base_url(); ?>assets/home/images/favicons/site.webmanifest" />
 <meta name="description" content="DigitalWin HTML Template For Business" />
 
@@ -46,21 +70,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 
-<link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 
-<link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
-    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/animate/animate.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/animate/custom-animate.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/fontawesome/css/all.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/jarallax/jarallax.css" />
-<link rel="stylesheet"
-    href="<?php echo base_url(); ?>assets/home/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/nouislider/nouislider.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/nouislider/nouislider.pips.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/odometer/odometer.min.css" />
@@ -72,8 +91,7 @@
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/owl-carousel/owl.carousel.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/owl-carousel/owl.theme.default.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/bxslider/jquery.bxslider.css" />
-<link rel="stylesheet"
-    href="<?php echo base_url(); ?>assets/home/vendors/bootstrap-select/css/bootstrap-select.min.css" />
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/bootstrap-select/css/bootstrap-select.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/vegas/vegas.min.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/jquery-ui/jquery-ui.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/vendors/timepicker/timePicker.css" />
@@ -81,9 +99,7 @@
 <!-- template styles -->
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/css/qutiiz.css" />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/home/css/qutiiz-responsive.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
-    integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style>
     .error {
@@ -370,7 +386,7 @@ $social_media = get_social_media();
     <a href="<?php echo $social_media['pinterest']; ?>" target="__blank" class="Pinterest"><i class="fab fa-pinterest"></i> Pinterest </a>
     <a href="<?php echo $social_media['youtube']; ?>" target="__blank" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
     <!-- <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a> -->
-   
+
 
 </div>
 <!--End Sticky Icon-->
