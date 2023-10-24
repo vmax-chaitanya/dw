@@ -1,0 +1,3 @@
+user-agent: *
+allow: /
+sitemap: https://digitalwinbusinessagency.com/sitemap.xml

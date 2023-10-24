@@ -1,5 +1,5 @@
 <meta charset="UTF-8" />
-<meta name="description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, and PPC
+<meta name="description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, PPC and API Services
 ">
 <meta name="keywords"
     content="digital marketing company in hyderabad, digital marketing agency in hyderabad, digital marketing services in hyderabad, seo services in hyderabad, smo services in hyderabad, ppc analyst, google ads services, e-commerce digital marketing services, app marketing agency, graphic designing services, web designing, web development, graphic design company, logo design hyderabad, digital marketing companies in hyderabad, digitalwin business agency">
@@ -21,21 +21,7 @@
 
     gtag('config', 'G-4MMT68X3EL');
 </script>
-<script>
-    !function (f, b, e, v, n, t, s) {
-        if (f.fbq) return; n = f.fbq = function () {
-            n.callMethod ?
-            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-        n.queue = []; t = b.createElement(e); t.async = !0;
-        t.src = v; s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '6935422259854837');
-    fbq('track', 'PageView');
-</script>
+
 <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=6935422259854837&ev=PageView&noscript=1" /></noscript>
 
