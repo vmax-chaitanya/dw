@@ -1,15 +1,18 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Home_model extends CI_Model {
+class Home_model extends CI_Model
+{
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
         $this->load->database();
     }
 
     // Example method to get all blog entries
-    public function get_all_blogs() {
+    public function get_all_blogs()
+    {
         $this->db->select('*');
         $this->db->from('blogs');
         $this->db->where('status', '1'); // Fetch only active blogs
@@ -19,7 +22,8 @@ class Home_model extends CI_Model {
     }
 
     // Example method to get a specific blog entry by ID
-    public function get_blog_by_id($id) {
+    public function get_blog_by_id($id)
+    {
         $this->db->select('*');
         $this->db->from('blogs');
         $this->db->where('id', $id);
@@ -101,7 +105,7 @@ class Home_model extends CI_Model {
         $this->db->where('page_id', $service_id);
         return $this->db->get('faq')->result_array();
     }
-    public function services_types($service_id,$module)
+    public function services_types($service_id, $module)
     {
         $this->db->where('status', '1');
         $this->db->where('type', $module);
@@ -147,36 +151,40 @@ class Home_model extends CI_Model {
         $this->db->limit(6);
         return $this->db->get('services')->result_array();
     }
-    public function getUpcomingServices($current_service_id, $limit,$type)
-{
-    // Fetch upcoming services based on the current service's ID
-    $this->db->select('*');
-    $this->db->from('services');
-    $this->db->where('id >', $current_service_id);
-    $this->db->where('type', $type); // Filter by the type of service if needed
-    $this->db->where('status', '1'); // Filter by active status if needed
-    $this->db->order_by('id', 'ASC');
-    $this->db->limit($limit);
-    $query = $this->db->get();
-
-    $upcoming_services = $query->result_array();
-
-    // If no upcoming services found, fetch random services
-    if (count($upcoming_services) < 3) {
+    public function getUpcomingServices($current_service_id, $limit, $type)
+    {
+        // Fetch upcoming services based on the current service's ID
         $this->db->select('*');
         $this->db->from('services');
+        $this->db->where('id >', $current_service_id);
         $this->db->where('type', $type); // Filter by the type of service if needed
         $this->db->where('status', '1'); // Filter by active status if needed
-       // $this->db->order_by('RAND()'); // Get random services
+        $this->db->order_by('id', 'ASC');
         $this->db->limit($limit);
         $query = $this->db->get();
 
         $upcoming_services = $query->result_array();
+
+        // If no upcoming services found, fetch random services
+        if (count($upcoming_services) < 3) {
+            $this->db->select('*');
+            $this->db->from('services');
+            $this->db->where('type', $type); // Filter by the type of service if needed
+            $this->db->where('status', '1'); // Filter by active status if needed
+            // $this->db->order_by('RAND()'); // Get random services
+            $this->db->limit($limit);
+            $query = $this->db->get();
+
+            $upcoming_services = $query->result_array();
+        }
+
+        return $upcoming_services;
     }
-
-    return $upcoming_services;
-}
-
+    public function getActiveCareers()
+    {
+        $this->db->where('status', '1');
+        return $this->db->get('careers_jobs')->result_array();
+    }
 
     // public function getActiveBlog()
     // {

@@ -68,6 +68,7 @@ $route['(:num)/(:any)'] = 'HomeController/service_detail/$1/$2';
 
 $route['training'] = 'HomeController/training';
 $route['training-enquiry'] = 'HomeController/training_enquiry';
+$route['career-form'] = 'HomeController/career_form';
 $route['contact-enquiry'] = 'HomeController/contact_enquiry';
 $route['training-detail/(:num)'] = 'HomeController/training_detail/$1';
 $route['blogs'] = 'HomeController/blogs';

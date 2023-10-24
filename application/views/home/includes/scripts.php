@@ -182,52 +182,7 @@
     });
 </script>
 <script>
-    // $(function () {
-    //     $("form[name='brouchuredd']").validate({
-    //         rules: {
-    //             name: "required",
-    //             subject: "required",
-    //             email: {
-    //                 required: true,
-    //                 email: true
-    //             },
-    //             mobile: {
-    //                 required: true,
-    //                 minlength: 10,
-    //                 maxlength: 10
-    //             }
-
-    //         },
-    //         messages: {
-    //             name: "Please Enter Name",
-    //             subject: "Please Enter Subject",
-    //             mobile: {
-    //                 required: "Please Enter Mobile Number",
-    //                 minlength: "Please Enter 10 digit valid Mobile Number",
-    //                 maxlength: "Please Enter 10 digit valid Mobile Number",
-    //             },
-
-    //             email: "Please Enter a valid email address"
-    //         },
-    //         submitHandler: function (form) {
-    //             var formData = $(form).serializeArray();
-    //             $.ajax({
-    //                 type: 'POST',
-    //                 url: $(this).attr('action'),
-    //                 data: $(this).serialize(),
-    //                 dataType: 'text', // Set the expected data type
-    //                 success: function (response) {
-    //                     // Initiate the file download
-    //                     window.location.href = response; // The response contains the file URL
-    //                 },
-    //                 error: function (error) {
-    //                     console.log('Error:', error);
-    //                 }
-    //             });
-    //         }
-    //     });
-    // });
-
+  
     /////thisis for brouchure download////
     $(document).ready(function () {
     // Initialize form validation
@@ -347,6 +302,64 @@
             } else {
                 $("#copoun_id").prop("disabled", true).addClass("disabled-input"); // Disable the input field and remove the class
                 $("#copoun_id").val("");
+            }
+        });
+    });
+</script>
+
+<script>
+    $(function() {
+        $("form[name='careeerForm']").validate({
+            rules: {
+                career_name: "required",
+                subject: "required",
+                career_email: {
+                    required: true,
+                    email: true
+                },
+                careeer_mobile: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 10
+                },
+                career_list: "required",
+                resume: "required",
+                
+                message: "required"
+            },
+            messages: {
+                career_name: "Enter Name",
+                subject: "Enter Subject",
+                careeer_mobile: {
+                    required: "Enter Mobile Number",
+                    minlength: "Enter Valid  Number",
+                    maxlength: "Enter Valid  Number",
+                },
+                career_list: "Please select an option",
+                resume: "Please select an file",
+               
+                career_email: "Enter email address",
+                message: "Please write a message"
+            },
+            submitHandler: function(form) {
+
+                var formData = $(form).serializeArray();
+               console.log(formData);
+                $.ajax({
+                    method: "POST",
+                    url: "<?php echo base_url('career-form'); ?>",
+                    data: formData,
+                    success: function(response) {
+                        //alert(response);
+                      
+                        // $('#contact-form')[0].reset();
+                        // $('.contact-form')[0].reset();
+                        //alert("hi");
+                        toastr.success('Thank you for your message. We will get in touch with you shortly');
+                        this.reset();
+
+                    }
+                });
             }
         });
     });

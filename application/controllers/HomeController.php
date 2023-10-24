@@ -8,6 +8,7 @@ class HomeController extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('Admin/contact_model'); // Load the Contact_model
+		$this->load->model('Admin/CareerFormModel'); // Load the Contact_model
 
 		$this->load->model('Home_model');
 		$this->load->helper('download');
@@ -241,7 +242,81 @@ class HomeController extends CI_Controller
 	{
 		// Load the about view
 		$data['page_title'] = "Why Only We || Digital win ||";
-
+		$data['careers_list'] = $this->Home_model->getActiveCareers();
+		$data['careers_list_form'] = $this->Home_model->getActiveCareers();
+		// echo $this->db->last_query(); exit;
 		$this->load->view('home/careers', $data);
+	}
+	function send_email()
+    {
+		//echo "sadsd";exit;
+      
+		
+		
+		$this->load->library('email');
+
+		$config = array(
+			'protocol' => 'smtp',
+			'smtp_host' => 'digitalwinbusinessagency.com',
+			'smtp_user' => 'chaithanya@digitalwinbusinessagency.com',
+			'smtp_pass' => '~Xl1xY7dwsao4ea6V',
+			'smtp_port' => 465,
+			'smtp_crypto' => 'tls',
+			'mailtype' => 'html',
+			'charset' => 'utf-8',
+		);
+
+		$this->email->initialize($config);
+
+		$this->email->from('chaithanya@digitalwinbusinessagency.com', 'Your Name');
+		$this->email->to('chaitanyakadali3@gmail.com');
+		$this->email->subject('Email Subject');
+		$this->email->message('Email message goes here');
+
+		if ($this->email->send()) {
+			echo 'Email sent successfully.';
+		} else {
+			show_error($this->email->print_debugger());
+		}
+        $this->load->view('email_view');
+    }
+
+	public function career_form()
+	{
+		//print_r($this->input->post()); exit;
+
+		if (!empty($_FILES['resume']['name'])) {
+
+			$temp = $_FILES['resume']['tmp_name'];
+			$name = $_FILES['resume']['name'];
+			$fileName = time() . $name;
+			$path = "./assets/images/resume/$fileName";
+			$image_name = '/assets/images/resume/' . $fileName;
+			$a = move_uploaded_file($temp, $path);
+		}
+
+		$data = array(
+			'name' => $this->input->post('career_name'),
+			'email' => $this->input->post('career_email'),
+			'mobile' => $this->input->post('careeer_mobile'),
+			'career_id' => $this->input->post('career_list'),
+			'resume' => "hgjghjg",
+			'message' => $this->input->post('message'),
+			'status' => 1,
+			'created_at' => date("Y-m-d H:i:s")
+		);
+
+		$result = $this->CareerFormModel->createCareerFormSubmission($data);
+		if ($result) {
+
+
+			//$pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
+
+			echo "Success";
+		} else {
+			echo "Error inserting data.";
+			exit;
+		}
+		exit;
 	}
 }
