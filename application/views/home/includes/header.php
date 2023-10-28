@@ -6,8 +6,7 @@
         <div class="main-menu-wrapper clearfix">
             <div class="main-menu-wrapper__left">
                 <div class="main-menu-wrapper__logo pt-0 ">
-                    <a href="<?php echo base_url(); ?>"><img height="100" width="250"
-                            src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
+                    <a href="<?php echo base_url(); ?>"><img height="100" width="250" src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
                 </div>
                 <div class="main-menu-wrapper__main-menu">
                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -23,16 +22,12 @@
                                 </li>
                                 <li><a href="<?php echo base_url(); ?>why-digital-marketing">Why Digital Marketing</a>
                                 </li>
-                                <li><a href="#">Gallery</a>
-                                    <ul class="custom-sub-menu">
-                                        <!-- Add your custom sub-menu items here -->
-                                        <li><a href="#">Sub-Menu Item 1</a></li>
-                                        <li><a href="#">Sub-Menu Item 2</a></li>
-                                    </ul>
-                                </li>
+                                <li><a href="#">Gallery</a> </li>
                             </ul>
                         </li>
-                        <li class="dropdown megamenu">
+                        <li><a href="<?php echo base_url(); ?>careers">Careers</a></li>
+
+                        <!-- <li class="dropdown megamenu">
                             <a href="<?php echo base_url(); ?>services/1">Services </a>
                             <ul>
                                 <li>
@@ -40,10 +35,9 @@
                                         <div class="container">
                                             <div class="home-showcase__inner">
                                                 <div class="row">
-                                                    <?php foreach ($h_services as $service): ?>
+                                                    <?php foreach ($h_services as $service) : ?>
                                                         <div class="col-md-3">
-                                                            <a class="home-showcase__item hover-white"
-                                                                href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
+                                                            <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
                                                                 <h3 class="home-showcase__title">
                                                                     <?php echo $service['name'] ?>
                                                                 </h3>
@@ -67,10 +61,9 @@
                                         <div class="container">
                                             <div class="home-showcase__inner">
                                                 <div class="row">
-                                                    <?php foreach ($other_services as $service): ?>
+                                                    <?php foreach ($other_services as $service) : ?>
                                                         <div class="col-lg-3">
-                                                            <a class="home-showcase__item hover-white"
-                                                                href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
+                                                            <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
                                                                 <h3 class="home-showcase__title">
                                                                     <?php echo $service['name'] ?>
                                                                 </h3>
@@ -85,10 +78,27 @@
                                     </section>
                                 </li>
                             </ul>
+                        </li> -->
+                        <li class="dropdown">
+                            <a href="#">Services</a>
+                            <ul>
+                                <?php foreach ($categories as $category) : ?>
+                                    <li class=""><a href="#"><?= $category['name'] ?></a>
+                                        <ul class="">
+                                            <?php foreach ($services as $service) : ?>
+                                                <?php if ($service['type'] == $category['id']) : ?>
+                                                    <li><a href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>"><?= $service['name'] ?></a></li>
+                                                <?php endif; ?>
+                                            <?php endforeach; ?>
+                                        </ul>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
                         </li>
+
                         <li><a href="<?php echo base_url(); ?>blogs">Blogs</a></li>
                         <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
-
+                       
 
 
 

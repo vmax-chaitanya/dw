@@ -1,6 +1,6 @@
 <meta charset="UTF-8" />
 <meta name="description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, PPC and API Services
-<meta name="description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, PPC and API Services
+<meta name=" description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, PPC and API Services
 ">
 <meta name="keywords" content="digital marketing company in hyderabad, digital marketing agency in hyderabad, digital marketing services in hyderabad, seo services in hyderabad, smo services in hyderabad, ppc analyst, google ads services, e-commerce digital marketing services, app marketing agency, graphic designing services, web designing, web development, graphic design company, logo design hyderabad, digital marketing companies in hyderabad, digitalwin business agency">
 
@@ -25,8 +25,7 @@
     gtag('config', 'G-4MMT68X3EL');
 </script>
 
-<noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=6935422259854837&ev=PageView&noscript=1" /></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=6935422259854837&ev=PageView&noscript=1" /></noscript>
 <script>
     ! function(f, b, e, v, n, t, s) {
         if (f.fbq) return;
@@ -219,11 +218,14 @@
         padding: 2px;
         font-size: 15px;
         font-family: 'Oswald', sans-serif;
-        transition: all 0.8s;
+       
+        filter: grayscale(100%); /* Make the icons black and white by default */
+  transition: all 0.8s;
     }
 
     .sticky-icon a:hover {
         color: #FFF;
+        filter: grayscale(0%);
         transform: translate(180px, 0px);
     }
 
@@ -368,6 +370,72 @@
         background-color: #555;
     } */
 </style>
+<style>
+    .inner__sub-menu {
+        display: none;
+        position: absolute;
+        background-color: #d1cece;
+        list-style: none;
+        padding: 0;
+        left: 4%;
+        z-index: 999;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: 57px;
+        width: 95%;
+    }
+
+    .outer__menu-item:hover .inner__sub-menu {
+        display: block;
+    }
+
+    .inner__sub-menu li a {
+        font-size: 12px !important;
+    }
+</style>
+<style>
+    .inner__sub-menu {
+
+        position: absolute;
+
+        background-color: white;
+
+        list-style-type: none !important;
+
+        padding: 0px;
+
+        z-index: 99;
+
+        left: 15%;
+
+    }
+
+    .inner__sub-menu {
+
+        display: none;
+
+        position: absolute;
+
+        background-color: #d1cece;
+
+        list-style: none;
+
+        padding: 0;
+
+        left: 100%;
+
+        z-index: 999;
+
+        align-items: center;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        border: 57px;
+
+        width: 100%;
+
+    }
+</style>
 <?php
 $this->load->helper('custom_helper');
 $h_services = $this->Home_model->getActiveServiceNames();
@@ -375,6 +443,10 @@ $other_services = $this->Home_model->getActiveOtherServiceNames();
 $f_services = $this->Home_model->getFooterServiceNames();
 $f_other_services = $this->Home_model->getFooterOtherServiceNames();
 $social_media = get_social_media();
+
+$categories = $this->Home_model->getActiveServicesCategories();
+$services = $this->Home_model->getActiveServicesNew();
+
 ?>
 
 <!--Start Sticky Icon-->

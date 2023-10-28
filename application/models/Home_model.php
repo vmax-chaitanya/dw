@@ -45,7 +45,7 @@ class Home_model extends CI_Model
     }
     public function get_training_by_id($id)
     {
-        $this->db->where('id', $id);
+        $this->db->where('training_url', $id);
         $query = $this->db->get('training');
         return $query->row_array();
     }
@@ -180,6 +180,35 @@ class Home_model extends CI_Model
 
         return $upcoming_services;
     }
+    public function getUpcomingTraining($current_service_id, $limit)
+    {
+        // Fetch upcoming services based on the current service's ID
+        $this->db->select('*');
+        $this->db->from('training');
+        $this->db->where('id >', $current_service_id);
+     
+        $this->db->where('status', '1'); // Filter by active status if needed
+        $this->db->order_by('id', 'ASC');
+        $this->db->limit($limit);
+        $query = $this->db->get();
+
+        $upcoming_services = $query->result_array();
+
+        // If no upcoming services found, fetch random services
+        if (count($upcoming_services) < 3) {
+            $this->db->select('*');
+            $this->db->from('training');
+           
+            $this->db->where('status', '1'); // Filter by active status if needed
+            // $this->db->order_by('RAND()'); // Get random services
+            $this->db->limit($limit);
+            $query = $this->db->get();
+
+            $upcoming_services = $query->result_array();
+        }
+
+        return $upcoming_services;
+    }
     public function getActiveCareers()
     {
         $this->db->where('status', '1');
@@ -197,4 +226,14 @@ class Home_model extends CI_Model
     //     $query = $this->db->get('blogs');
     //     return $query->row_array();
     // }
+
+    public function getActiveServicesCategories()
+    {
+        return $this->db->get_where('services_categories', array('status' => '1'))->result_array();
+    }
+    public function getActiveServicesNew()
+    {
+        return $this->db->get_where('services', array('status' => '1'))->result_array();
+    }
+    
 }

@@ -57,6 +57,8 @@ class Blog extends CI_Controller
             }
             $data = array(
                 'title' => $this->input->post('title'),
+                'blog_url' => str_replace(' ', '-', strtolower(trim($this->input->post('title')))),
+
                 'about' => $this->input->post('about'),
                 'description' => $this->input->post('description'),
                 'status' => $this->input->post('status'),
@@ -125,6 +127,8 @@ class Blog extends CI_Controller
             }
             $data = array(
                 'title' => $this->input->post('title'),
+                'blog_url' => str_replace(' ', '-', strtolower(trim($this->input->post('title')))),
+
                 'about' => $this->input->post('about'),
                 'description' => $this->input->post('description'),
                 'status' => $this->input->post('status'),

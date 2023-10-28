@@ -38,7 +38,7 @@
         <!--Page Header Start-->
         <section class="page-header">
             <div class="page-header-bg"
-                style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/page-header-bg.jpg)">
+                style="background-image: url(<?php echo base_url('' . $training_detail['banner_image']); ?>)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -57,7 +57,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li class="active">training</li>
                     </ul> -->
-                    <h2>project Details</h2>
+                    <h2>Training Details</h2>
                 </div>
             </div>
         </section>
@@ -73,8 +73,8 @@
                                     <?php $i = 1;
                                     foreach ($trainings as $training): ?>
                                         <li <?php echo ($training['id'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a
-                                                href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>">
-                                                <?php echo $training['name']; ?> <span class="icon-right-arrow"></span>
+                                                href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>">
+                                                <?php echo ucwords(strtolower($training['name'])); ?> <span class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>
                                 </ul>
@@ -112,7 +112,7 @@
                                             <input type="hidden" name="services_ids"
                                                 value="<?php echo $this->uri->segment(2); ?>">
                                             <input type="hidden" name="brochure"
-                                                value=" <?php echo $training['brochure']; ?>">
+                                                value=" <?php echo $training_detail['brochure']; ?>">
                                             <button type="" class="thm-btn comment-form__btn">Download
                                                 Brochure</button>
                                         </div>
@@ -125,15 +125,15 @@
                     <div class="col-xl-8 col-lg-7">
                         <div class="service-details__right">
                             <div class="about-page__img cardimg">
-                                <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
+                                <img src="<?php echo base_url('' . $training_detail['image']); ?>" alt="">
                             </div>
                             <div class="service-details__content">
                                 <h2 class="service-details__title">
-                                    <?php echo $training['name']; ?>
+                                    <?php echo ucwords(strtolower($training_detail['name'])); ?>
                                 </h2>
 
                                 <p class="service-details__text-3">
-                                    <?php echo $training['description']; ?>
+                                    <?php echo $training_detail['description']; ?>
                                 </p>
                                 <!-- <p class="service-details__text-3">Tincidunt elit magnis nulla facilisis sagittis sapien
                                     nunc Many desktop publishing packages and web page editors amet ultrices dolores sit
@@ -255,64 +255,35 @@
         <?php } ?>
 
  
-
-
-
-
-
-
-
-
-        <!--Similar Work Start-->
-        <section class="similar-work">
+              <!--Similar Work Start-->
+              <section class="similar-work pt-3 pb-0">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="section-title__tagline">recent training</span>
-                    <h2 class="section-title__title">similar training</h2>
+                    <!-- <span class="section-title__tagline">recent Service</span> -->
+                    <h2 class="section-title__title">Other Trainings</h2>
                 </div>
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-4.jpg"
-                                    alt="">
-                                <div class="project-one__hover">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="#">Fimlor Experience</a>
-                                    </h3>
+                    <?php $i = 1;
+                    foreach ($upcoming_trainings as $key => $trainings):
+                        if ($key < 3): ?>
+                            <div class="col-xl-4 col-lg-4">
+                                <!--Portfolio One Single-->
+                                <div class="project-one__single">
+                                    <div class="project-one__img">
+
+                                        <img src="<?php echo base_url('' . $trainings['image']); ?>" alt="">
+                                        <div class="project-one__hover">
+                                            <p class="project-one__tagline">Trainings</p>
+                                            <h3 class="project-one__title"><a
+                                                    href="<?php echo base_url(); ?>training/<?php echo $trainings['training_url']; ?>">
+                                                    <?php echo $trainings['name']; ?>
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-5.jpg"
-                                    alt="">
-                                <div class="project-one__hover">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="#">Fimlor Experience</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4">
-                        <!--Portfolio One Single-->
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-6.jpg"
-                                    alt="">
-                                <div class="project-one__hover">
-                                    <p class="project-one__tagline">Graphic</p>
-                                    <h3 class="project-one__title"><a href="#">Fimlor Experience</a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <?php endif; endforeach; ?>
                 </div>
             </div>
         </section>
@@ -329,20 +300,7 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="icon-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-        <!-- /.search-popup__content -->
-    </div>
+    
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>

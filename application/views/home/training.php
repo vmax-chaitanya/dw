@@ -142,7 +142,7 @@
                             <div class="blog-one__single">
                                 <div class="blog-one__img">
                                     <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
-                                    <a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>">
+                                    <a href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>">
                                         <span class="blog-one__plus"></span>
                                     </a>
                                     <div class="blog-one__date" style="left:0px !important;right:288px !important">
@@ -160,9 +160,9 @@
                                     <!-- <p><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></p> -->
 
                                     <h3 class="blog-one__title">
-                                        <a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>"><?php echo $training['name']; ?></a>
+                                        <a href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>"><?php echo $training['name']; ?></a>
                                     </h3>
-                                    <p>Online | Classroom </p>
+                                    <!-- <p>Online | Classroom </p> -->
 
                                 </div>
                             </div>
@@ -331,20 +331,7 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="icon-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-        <!-- /.search-popup__content -->
-    </div>
+    
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>

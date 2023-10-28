@@ -70,7 +70,7 @@ $route['training'] = 'HomeController/training';
 $route['training-enquiry'] = 'HomeController/training_enquiry';
 $route['career-form'] = 'HomeController/career_form';
 $route['contact-enquiry'] = 'HomeController/contact_enquiry';
-$route['training-detail/(:num)'] = 'HomeController/training_detail/$1';
+$route['training/(:any)'] = 'HomeController/training_detail/$1';
 $route['blogs'] = 'HomeController/blogs';
 $route['blog-detail/(:num)'] = 'HomeController/blog_detail/$1';
 

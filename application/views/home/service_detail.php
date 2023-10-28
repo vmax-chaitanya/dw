@@ -84,10 +84,10 @@
                             <div class="service-details__sidebar-service">
                                 <ul class="service-details__sidebar-service-list list-unstyled">
                                     <?php $i = 1;
-                                    foreach ($services as $service): ?>
+                                    foreach ($services_menu as $service): ?>
                                         <li <?php echo ($service['service_url'] == $this->uri->segment(3)) ? "class='current'" : "class=''"; ?>><a
                                                 href="<?php echo base_url(); ?><?php echo $service['type']; ?>/<?php echo $service['service_url']; ?>">
-                                                <?php echo $service['name']; ?> <span class="icon-right-arrow"></span>
+                                                <?php echo ucwords(strtolower($service['name'])); ?> <span class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>
                                 </ul>
@@ -159,7 +159,7 @@
                             </div>
                             <div class="service-details__content">
                                 <h2 class="service-details__title">
-                                    <?php echo $services_detail['name']; ?>
+                                    <?php echo ucwords(strtolower($services_detail['name'])); ?>
                                 </h2>
 
                                 <p class="about-page__right-text-2">
@@ -409,20 +409,7 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="icon-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-        <!-- /.search-popup__content -->
-    </div>
+    
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>

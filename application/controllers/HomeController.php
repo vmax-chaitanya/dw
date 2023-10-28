@@ -105,7 +105,7 @@ class HomeController extends CI_Controller
 	}
 	public function service_detail($type, $service_id)
 	{
-		// echo $service_id; exit;
+		 //echo $type; exit;
 		$data['page_title'] = "Home || Digital win ||";
 		$data['services_detail'] = $this->Home_model->get_service_by_id($service_id);
 		$service_primary_id = 	 $data['services_detail']['id'];
@@ -118,7 +118,8 @@ class HomeController extends CI_Controller
 
 		$data['service_faqs'] = $this->Home_model->getActiveServiceFaq($service_primary_id);
 		//echo "<pre>"; print_r($data['services_types']); exit;
-		$data['services'] = $this->Home_model->getActiveServices($type);
+		$data['services_menu'] = $this->Home_model->getActiveServices($type);
+		// echo $this->db->last_query(); exit;
 		$data['upcoming_services'] = $this->Home_model->getUpcomingServices($service_id, 5, $type);
 
 		$this->load->view('home/service_detail', $data);
@@ -141,10 +142,15 @@ class HomeController extends CI_Controller
 	{
 
 		$data['page_title'] = "Home || Digital win ||";
-		$data['training'] = $this->Home_model->get_training_by_id($training_id);
-		$data['curriculums'] = $this->Home_model->getActiveCurriculum($training_id);
-		$data['key_highlites'] = $this->Home_model->getActiveKeyHighlites($training_id);
+		$data['training_detail'] = $this->Home_model->get_training_by_id($training_id);
+		//echo "hi"; exit;
+	//	 echo "<pre>"; print_r($data['training_detail']); exit;
+		$service_primary_id = 	 $data['training_detail']['id']; 
+		$data['curriculums'] = $this->Home_model->getActiveCurriculum($service_primary_id);
+		$data['key_highlites'] = $this->Home_model->getActiveKeyHighlites($service_primary_id);
 		$data['trainings'] = $this->Home_model->getActiveTraining();
+		$data['upcoming_trainings'] = $this->Home_model->getUpcomingTraining($service_primary_id, 5);
+
 		$this->load->view('home/training_detail', $data);
 	}
 	public function blogs()
@@ -240,6 +246,7 @@ class HomeController extends CI_Controller
 	}
 	public function careers()
 	{
+		//echo "hi"; exit;
 		// Load the about view
 		$data['page_title'] = "Why Only We || Digital win ||";
 		$data['careers_list'] = $this->Home_model->getActiveCareers();

@@ -96,6 +96,8 @@ class Training extends CI_Controller
 
             $data = array(
                 'name' => $this->input->post('name'),
+                'training_url' => str_replace(' ', '-', strtolower(trim($this->input->post('name')))),
+
                 'description' => $this->input->post('description'),
                 'description_new' => $this->input->post('description_new'),
                 'image' => $image_name,
@@ -201,11 +203,12 @@ class Training extends CI_Controller
                 $a = move_uploaded_file($temp, $path);
             }else{
                 $banner_image = $this->input->post('old_banner_image');
-
             }
 
             $data = array(
                 'name' => $this->input->post('name'),
+                'training_url' => str_replace(' ', '-', strtolower(trim($this->input->post('name')))),
+
                 'description' => $this->input->post('description'),
                 'description_new' => $this->input->post('description_new'),
 

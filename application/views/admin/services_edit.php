@@ -46,8 +46,9 @@
                                                     <div class="col-sm-9">
                                                         <select class="form-control" name="type" required>
                                                             <option value="">Select Type</option>
-                                                            <option value="1" <?php echo ($service['type'] == '1') ? 'selected' : ''; ?>>Services</option>
-                                                            <option value="2" <?php echo ($service['type'] == '2') ? 'selected' : ''; ?>>Other Services</option>
+                                                            <?php foreach ($categories as $row) : ?>
+                                                                <option value="<?php echo $row['id'];?>" <?php if($row['id'] == $service['type']){ echo "selected";}?>><?php echo $row['name'];?></option>
+                                                            <?php endforeach; ?>
                                                           
                                                         </select>
                                                         <?php echo form_error('type', '<p class="text-danger">', '</p>'); ?>
