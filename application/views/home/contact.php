@@ -160,12 +160,12 @@
 									<div class="col-xl-12">
 										<div class="comment-form__input-box">
 											<div class="row">
-												<div class="col-xl-6" style="">
+												<div class="col-xl-6" >
 													<input type="checkbox" id="select-all" name="select-all">
 													<label for="select-all" style="display:inline">Select All</label><br>
 												</div>
 												<?php foreach ($services as $service) : ?>
-													<div class="col-xl-6" style="">
+													<div class="col-xl-6" >
 														<input type="checkbox" class="service-checkbox" id="service_<?php echo $service['id'] ?>" name="service[]" value="<?php echo $service['id'] ?>">
 														<label for="service_<?php echo $service['id'] ?>" style="display:inline"><?php echo $service['name'] ?></label><br>
 													</div>
