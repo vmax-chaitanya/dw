@@ -6,7 +6,8 @@
         <div class="main-menu-wrapper clearfix">
             <div class="main-menu-wrapper__left">
                 <div class="main-menu-wrapper__logo pt-0 ">
-                    <a href="<?php echo base_url(); ?>"><img height="100" width="250" src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
+                    <a href="<?php echo base_url(); ?>"><img height="100" width="250"
+                            src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png"></a>
                 </div>
                 <div class="main-menu-wrapper__main-menu">
                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
@@ -35,7 +36,7 @@
                                         <div class="container">
                                             <div class="home-showcase__inner">
                                                 <div class="row">
-                                                    <?php foreach ($h_services as $service) : ?>
+                                                    <?php foreach ($h_services as $service): ?>
                                                         <div class="col-md-3">
                                                             <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
                                                                 <h3 class="home-showcase__title">
@@ -61,7 +62,7 @@
                                         <div class="container">
                                             <div class="home-showcase__inner">
                                                 <div class="row">
-                                                    <?php foreach ($other_services as $service) : ?>
+                                                    <?php foreach ($other_services as $service): ?>
                                                         <div class="col-lg-3">
                                                             <a class="home-showcase__item hover-white" href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
                                                                 <h3 class="home-showcase__title">
@@ -82,12 +83,17 @@
                         <li class="dropdown">
                             <a href="#">Services</a>
                             <ul>
-                                <?php foreach ($categories as $category) : ?>
-                                    <li class=""><a href="#"><?= $category['name'] ?></a>
+                                <?php foreach ($categories as $category): ?>
+                                    <li class=""><a href="#">
+                                            <?= $category['name'] ?>
+                                        </a>
                                         <ul class="">
-                                            <?php foreach ($services as $service) : ?>
-                                                <?php if ($service['type'] == $category['id']) : ?>
-                                                    <li><a href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>"><?= $service['name'] ?></a></li>
+                                            <?php foreach ($services as $service): ?>
+                                                <?php if ($service['type'] == $category['id']): ?>
+                                                    <li><a
+                                                            href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
+                                                            <?= $service['name'] ?>
+                                                        </a></li>
                                                 <?php endif; ?>
                                             <?php endforeach; ?>
                                         </ul>
@@ -95,10 +101,18 @@
                                 <?php endforeach; ?>
                             </ul>
                         </li>
+                        <li class="dropdown ">
+                            <a href="<?php echo base_url(); ?>about">Trainings</a>
+                            <ul>
+                                <?php foreach ($h_training as $training): ?>
+                                    <li><a href="<?php echo base_url();?>training/<?php echo $training['training_url'];?>"><?php echo $training['name'];?></a> </li>
+                                <?php endforeach; ?>
 
+                            </ul>
+                        </li>
                         <li><a href="<?php echo base_url(); ?>blogs">Blogs</a></li>
                         <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
-                       
+
 
 
 

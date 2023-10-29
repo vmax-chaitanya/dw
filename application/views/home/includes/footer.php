@@ -8,7 +8,8 @@
             </div>
             <div class="modal-body">
                 <div class="contact-page__form mt-3">
-                    <form id="brouchure" name="brouchure" method="POST" class="" action="<?php echo base_url('training-enquiry'); ?>">
+                    <form id="brouchure" name="brouchure" method="POST" class=""
+                        action="<?php echo base_url('training-enquiry'); ?>">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
@@ -22,7 +23,8 @@
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Phone number" name="mobile1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                    <input type="text" placeholder="Phone number" name="mobile1" required
+                                        onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
                                 </div>
                             </div>
                             <div class="col-xl-6">
@@ -74,7 +76,8 @@
                 <div class="site-footer__top-right">
                     <div class="site-footer__top-right-social">
 
-                        <a target="__blank" href="<?php echo $social_media['facebook']; ?>"><i class="fab fa-facebook"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['facebook']; ?>"><i
+                                class="fab fa-facebook"></i></a>
 
                         <a target="__blank" href="<?php echo $social_media['instagram']; ?>"><i
                                 class="fab fa-instagram"></i></a>
@@ -105,17 +108,24 @@
             <div class="site-footer__middle-inner">
                 <div class="row">
 
-                    <!-- <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Quick Links</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
-                               
-                                <li><a href="#"><i class="fa-li fa fa-spinner "></i> &nbsp; Support</a></li>
-
+                             
+                                    <li><a href="<?php echo base_url(); ?>gallery"><span
+                                                class="icon-draw-check-mark"></span> &nbsp;
+                                            Gallery
+                                        </a></li>
+                                        <li><a href="<?php echo base_url(); ?>careers"><span
+                                                class="icon-draw-check-mark"></span> &nbsp;
+                                            Careers
+                                        </a></li>
+                            
 
                             </ul>
                         </div>
-                    </div> -->
+                    </div>
 
                     <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="footer-widget__column footer-widget__explore clearfix">
@@ -123,7 +133,8 @@
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
                                 <?php foreach ($f_services as $service): ?>
 
-                                    <li><a href="<?php echo base_url(); ?>1/<?php echo $service['service_url'] ?>"><span class="icon-draw-check-mark"></span> &nbsp;
+                                    <li><a href="<?php echo base_url(); ?>1/<?php echo $service['service_url'] ?>"><span
+                                                class="icon-draw-check-mark"></span> &nbsp;
                                             <?php echo $service['name'] ?>
                                         </a></li>
                                 <?php endforeach; ?>
@@ -132,7 +143,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                    <!-- <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Other Services</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
@@ -146,21 +157,20 @@
 
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Training</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
-                                <!-- <li><a href="services.html">What We
-                                                Offer</a></li> -->
-                                <li><a href="#"><span class="icon-draw-check-mark"></span> &nbsp; Certified course in
-                                        digital marketing.</a></li>
+                                <?php foreach ($f_training as $train): ?>
 
-                                <li><a href="#"><span class="icon-draw-check-mark"></span> &nbsp; Diploma in digital
-                                        marketing.</a></li>
-                                <li><a href="#"><span class="icon-draw-check-mark"></span> &nbsp;
-                                        Advanced digital
-                                        marketing with AI.</a></li>
+                                    <li><a href="<?php echo base_url();?>training/<?php echo $train['training_url'];?>"><span
+                                                class="icon-draw-check-mark"></span> &nbsp;
+                                            <?php echo $train['name'] ?>
+                                        </a></li>
+                                <?php endforeach; ?>
+
+
                             </ul>
                         </div>
                     </div>

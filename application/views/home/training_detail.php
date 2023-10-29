@@ -72,9 +72,10 @@
                                 <ul class="service-details__sidebar-service-list list-unstyled">
                                     <?php $i = 1;
                                     foreach ($trainings as $training): ?>
-                                        <li <?php echo ($training['id'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a
+                                        <li <?php echo ($training['training_url'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a
                                                 href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>">
-                                                <?php echo ucwords(strtolower($training['name'])); ?> <span class="icon-right-arrow"></span>
+                                                <?php echo ucwords(strtolower($training['name'])); ?> <span
+                                                    class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>
                                 </ul>
@@ -107,7 +108,7 @@
                                     <div class="row">
                                         <div class="col-xl-12">
                                             <div class="comment-form__input-box">
-                                                <textarea name="message" placeholder="Write a message"></textarea>
+                                                <textarea name="message" placeholder="Write a message"   style="display: block !important;"></textarea>
                                             </div>
                                             <input type="hidden" name="services_ids"
                                                 value="<?php echo $this->uri->segment(2); ?>">
@@ -254,9 +255,9 @@
             <!--FAQ Page End-->
         <?php } ?>
 
- 
-              <!--Similar Work Start-->
-              <section class="similar-work pt-3 pb-0">
+
+        <!--Similar Work Start-->
+        <section class="similar-work pt-3 pb-0">
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">recent Service</span> -->
@@ -300,7 +301,7 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    
+
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>

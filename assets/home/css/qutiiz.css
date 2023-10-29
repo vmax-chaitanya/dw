@@ -7508,7 +7508,7 @@ select,
 .service-details {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 40px 0 0px;
 }
 
 .service-details__sidebar {
@@ -8251,7 +8251,7 @@ select,
   position: relative;
   display: block;
   background-color: #f6f4f9;
-  padding: 120px 0 0;
+  padding: 40px 0 20px;
 }
 
 .faq-page__single {

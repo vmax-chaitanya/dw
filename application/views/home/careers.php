@@ -48,7 +48,7 @@
         <!--Page Header End-->
 
         <!--About Page Start-->
-        <section class="about-page " style="padding: 20px 0px 10px 0px !important;">
+        <section class="about-page " style="padding: 20px 0px 30px 0px !important;">
             <div class="container">
                 <div class="row">
 
@@ -82,6 +82,8 @@
                     <div class="col-xl-6">
                         <div class="about-page__left">
                             <div class="contact-page__form mt-3">
+                            <h2 class="section-title__title pb-5 ">Careers Form</h2>
+
                                 <form action="#" id="career-form" name="careeerForm" class="career-form" enctype="multipart/form-data">
                                     <div class="row">
                                         <div class="col-xl-6">

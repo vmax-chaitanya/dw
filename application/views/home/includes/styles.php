@@ -438,12 +438,15 @@
 </style>
 <?php
 $this->load->helper('custom_helper');
-$h_services = $this->Home_model->getActiveServiceNames();
-$other_services = $this->Home_model->getActiveOtherServiceNames();
+// $h_services = $this->Home_model->getActiveServiceNames();
+// $other_services = $this->Home_model->getActiveOtherServiceNames();
 $f_services = $this->Home_model->getFooterServiceNames();
-$f_other_services = $this->Home_model->getFooterOtherServiceNames();
-$social_media = get_social_media();
 
+$h_training = $this->Home_model->getHeaderTrainingNames();
+$f_training = $this->Home_model->getFooterTrainingNames();
+
+// $f_other_services = $this->Home_model->getFooterOtherServiceNames();
+$social_media = get_social_media();
 $categories = $this->Home_model->getActiveServicesCategories();
 $services = $this->Home_model->getActiveServicesNew();
 

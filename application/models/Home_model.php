@@ -235,5 +235,24 @@ class Home_model extends CI_Model
     {
         return $this->db->get_where('services', array('status' => '1'))->result_array();
     }
-    
+    public function getActiveTrainings()
+    {
+        return $this->db->get_where('training', array('status' => '1'))->result_array();
+    }
+    public function getHeaderTrainingNames()
+    {
+        $this->db->select('id,name,training_url');
+        $this->db->where('status', '1');
+        $this->db->order_by("id", "desc");
+        $this->db->limit(6);
+        return $this->db->get('training')->result_array();
+    }
+    public function getFooterTrainingNames()
+    {
+        $this->db->select('id,name,training_url');
+        $this->db->where('status', '1');
+         $this->db->order_by("id", "desc");
+        $this->db->limit(6);
+        return $this->db->get('training')->result_array();
+    }
 }
