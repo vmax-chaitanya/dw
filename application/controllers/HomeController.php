@@ -89,11 +89,11 @@ class HomeController extends CI_Controller
 		$this->load->view('home/faq', $data);
 	}
 
-	public function services($type)
+	public function services()
 	{
 		// Load the services view
 		$data['page_title'] = "Home || Digital win ||";
-		$data['services'] = $this->Home_model->getActiveServices($type);
+		$data['services'] = $this->Home_model->getActiveServices($type = null);
 		$this->load->view('home/services', $data);
 	}
 	public function other_services()
@@ -103,12 +103,13 @@ class HomeController extends CI_Controller
 		$data['services'] = $this->Home_model->getActiveOtherServices();
 		$this->load->view('home/services', $data);
 	}
-	public function service_detail($type, $service_id)
+	public function service_detail($service_id)
 	{
-		 //echo $type; exit;
+		 //echo $service_id; exit;
 		$data['page_title'] = "Home || Digital win ||";
 		$data['services_detail'] = $this->Home_model->get_service_by_id($service_id);
 		$service_primary_id = 	 $data['services_detail']['id'];
+	    $type = 	 $data['services_detail']['type']; 
 		$module = 1;
 		$data['services_module1'] = $this->Home_model->services_types($service_primary_id, $module);
 		$module = 2;

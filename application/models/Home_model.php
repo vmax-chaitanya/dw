@@ -82,7 +82,7 @@ class Home_model extends CI_Model
     }
     public function getActiveServices($type)
     {
-        $this->db->where('type', $type);
+         $this->db->where('type', $type);
         $this->db->where('status', '1');
         return $this->db->get('services')->result_array();
     }

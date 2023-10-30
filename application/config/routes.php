@@ -63,8 +63,8 @@ $route['why-digital-marketing'] = 'HomeController/why_digital_marketing';
 $route['contact'] = 'HomeController/contact';
 $route['blog'] = 'HomeController/blog';
 $route['faq'] = 'HomeController/faq';
-$route['services/(:num)'] = 'HomeController/services/$1';
-$route['(:num)/(:any)'] = 'HomeController/service_detail/$1/$2';
+$route['services'] = 'HomeController/services';
+$route['services/(:any)'] = 'HomeController/service_detail/$1/$2';
 
 $route['training'] = 'HomeController/training';
 $route['training-enquiry'] = 'HomeController/training_enquiry';

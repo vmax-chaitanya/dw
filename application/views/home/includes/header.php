@@ -23,7 +23,7 @@
                                 </li>
                                 <li><a href="<?php echo base_url(); ?>why-digital-marketing">Why Digital Marketing</a>
                                 </li>
-                                <li><a href="#">Gallery</a> </li>
+                                <!-- <li><a href="#">Gallery</a> </li> -->
                             </ul>
                         </li>
                         <li><a href="<?php echo base_url(); ?>careers">Careers</a></li>
@@ -81,7 +81,7 @@
                             </ul>
                         </li> -->
                         <li class="dropdown">
-                            <a href="#">Services</a>
+                            <a href="<?php echo base_url(); ?>services"">Services</a>
                             <ul>
                                 <?php foreach ($categories as $category): ?>
                                     <li class=""><a href="#">
@@ -91,7 +91,7 @@
                                             <?php foreach ($services as $service): ?>
                                                 <?php if ($service['type'] == $category['id']): ?>
                                                     <li><a
-                                                            href="<?php echo base_url(); ?><?php echo $service['type'] ?>/<?php echo $service['service_url'] ?>">
+                                                            href="<?php echo base_url(); ?>services/<?php echo $service['service_url'] ?>">
                                                             <?= $service['name'] ?>
                                                         </a></li>
                                                 <?php endif; ?>
@@ -102,7 +102,7 @@
                             </ul>
                         </li>
                         <li class="dropdown ">
-                            <a href="<?php echo base_url(); ?>about">Trainings</a>
+                            <a href="<?php echo base_url(); ?>training">Trainings</a>
                             <ul>
                                 <?php foreach ($h_training as $training): ?>
                                     <li><a href="<?php echo base_url();?>training/<?php echo $training['training_url'];?>"><?php echo $training['name'];?></a> </li>

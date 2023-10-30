@@ -85,8 +85,8 @@
                                 <ul class="service-details__sidebar-service-list list-unstyled">
                                     <?php $i = 1;
                                     foreach ($services_menu as $service): ?>
-                                        <li <?php echo ($service['service_url'] == $this->uri->segment(3)) ? "class='current'" : "class=''"; ?>><a
-                                                href="<?php echo base_url(); ?><?php echo $service['type']; ?>/<?php echo $service['service_url']; ?>">
+                                        <li <?php echo ($service['service_url'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a
+                                                href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">
                                                 <?php echo ucwords(strtolower($service['name'])); ?> <span class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>
@@ -384,7 +384,7 @@
                                         <div class="project-one__hover">
                                             <p class="project-one__tagline">service</p>
                                             <h3 class="project-one__title"><a
-                                                    href="<?php echo base_url(); ?><?php echo $service['type']; ?>/<?php echo $service['service_url']; ?>">
+                                                    href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">
                                                     <?php echo $service['name']; ?>
                                                 </a>
                                             </h3>
