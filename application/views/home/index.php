@@ -601,7 +601,7 @@
                             <div class="project-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/training.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
-                                    <p class="project-one__tagline">Service</p>
+                                    <p class="project-one__tagline">Trainig</p>
                                     <h3 class="project-one__title"><a href="<?php echo base_url(); ?>training/advanced-digital-marketing-with-ai">Advance Digital Marketing Training with AI</a>
                                     </h3>
                                 </div>

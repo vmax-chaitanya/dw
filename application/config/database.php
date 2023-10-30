@@ -80,9 +80,9 @@ $db['default'] = array(
 	'password' => '',
 	'database' => 'dw',
 
-	// 'username' => 'unv_future_live',
-	// 'password' => 'unv_future_live',
-	// 'database' => 'dw',
+	// 'username' => 'digitalwinbusiness',
+	// 'password' => '36tw!P7fLsdqujfT',
+	// 'database' => 'digitalwinbusiness_website',
 
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

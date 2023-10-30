@@ -22,7 +22,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/why_1.jpg)">
+            <div class="page-header-bg" style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/banner_careers.jpg)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -60,7 +60,7 @@
                                 <h2 class="section-title__title">Are you looking for an amazing opportunity? Learn about our company</h2>
                             </div>
                             <div class="about-page__img cardimg">
-                                <img src="" alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/careers.jpg" alt="">
                             </div>
                             <p class="about-page__right-text-2"> DigitalWin Business Agency is continuously looking for qualified professionals to join its ever-expanding talent pool and help the firm thrive. The business is an equal opportunity employer dedicated to tailoring employment to the skills of those seeking innovative career possibilities in Hyderabad.</p>
 

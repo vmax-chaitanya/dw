@@ -369,7 +369,7 @@
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">recent Service</span> -->
-                    <h2 class="section-title__title">Other Service</h2>
+                    <h2 class="section-title__title">Other Services</h2>
                 </div>
                 <div class="row">
                     <?php $i = 1;
