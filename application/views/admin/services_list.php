@@ -100,57 +100,7 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="table-responsive">
-                                        <table id="order-listing" class="table order-listing">
-                                            <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Description</th>
-                                                    <th>Image</th>
-                                                    <th>Status</th>
-                                                    <th>Actions</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php $i = 1;
-                                                foreach ($other_services as $service) : ?>
-                                                    <tr>
-                                                        <td><?php echo $i++; ?></td>
-                                                        <td><?php echo $service['name']; ?></td>
-                                                        <td><?php echo $service['description']; ?></td>
-                                                        <td>
-                                                            <?php if ($service['image']) : ?>
-                                                                <img src="<?php echo base_url('' . $service['image']); ?>" alt="Service Image" width="150">
-                                                            <?php else : ?>
-                                                                No Image
-                                                            <?php endif; ?>
-                                                        </td>
-                                                        <td>
-                                                            <?php if ($service['status'] == '1') : ?>
-                                                                <label class="badge badge-success">Active</label>
-                                                            <?php elseif ($service['status'] == '2') : ?>
-                                                                <label class="badge badge-danger">Inactive</label>
-                                                            <?php else : ?>
-                                                                <label class="badge badge-info">Other</label>
-                                                            <?php endif; ?>
-                                                        </td>
-                                                        <td>
-                                                        <a href="<?php echo base_url('admin/faq?service_id=' . $service['id']); ?>" class="btn btn-outline-secondary">Add Faqs </a>
-                                                        <a href="<?php echo base_url('admin/services_cards/' . $service['id']); ?>" class="btn btn-outline-secondary">Add Service Cards</a>
-
-                                                        <a href="<?php echo base_url('admin/services/edit/' . $service['id']); ?>" class="btn btn-outline-primary">Edit</a>
-                                                            <a href="<?php echo base_url('admin/services/delete/' . $service['id']); ?>" class="btn btn-outline-danger" onclick="return confirm('Are you sure you want to delete this service?')">Delete</a>
-                                                        </td>
-                                                    </tr>
-                                                <?php endforeach; ?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>

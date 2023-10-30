@@ -17,9 +17,9 @@ class Services extends CI_Controller
     public function index()
     {
         $type ="1";
-        $data['services'] = $this->services_model->get_all_services($type);
-        $type ="2";
-        $data['other_services'] = $this->services_model->get_all_services($type);
+        $data['services'] = $this->services_model->get_all_services();
+        // $type ="2";
+        // $data['other_services'] = $this->services_model->get_all_services($type);
         $this->load->view('admin/services_list', $data);
     }
 

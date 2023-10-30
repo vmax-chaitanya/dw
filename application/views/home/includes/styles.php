@@ -206,6 +206,7 @@
         width: 220px;
         display: flex;
         flex-direction: column;
+        
     }
 
     .sticky-icon a {

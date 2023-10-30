@@ -54,9 +54,13 @@
 
                     <div class="col-xl-6">
                         <div class="about-page__right">
+                            
                             <div class="section-title text-left">
                                 <span class="section-title__tagline">Careers</span>
                                 <h2 class="section-title__title">Are you looking for an amazing opportunity? Learn about our company</h2>
+                            </div>
+                            <div class="about-page__img cardimg">
+                                <img src="" alt="">
                             </div>
                             <p class="about-page__right-text-2"> DigitalWin Business Agency is continuously looking for qualified professionals to join its ever-expanding talent pool and help the firm thrive. The business is an equal opportunity employer dedicated to tailoring employment to the skills of those seeking innovative career possibilities in Hyderabad.</p>
 
@@ -82,7 +86,7 @@
                     <div class="col-xl-6">
                         <div class="about-page__left">
                             <div class="contact-page__form mt-3">
-                            <h2 class="section-title__title pb-5 ">Careers Form</h2>
+                                <h2 class="section-title__title pb-5 ">Careers Form</h2>
 
                                 <form action="#" id="career-form" name="careeerForm" class="career-form" enctype="multipart/form-data">
                                     <div class="row">
@@ -160,7 +164,7 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    
+
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>

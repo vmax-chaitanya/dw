@@ -7,87 +7,105 @@
 
     <?php include("includes/styles.php"); ?>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NNTM2J82');</script>
-<!-- End Google Tag Manager -->
-	<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "DigitalWin Business Agency",
-  "image": "https://digitalwinbusinessagency.com/assets/home/images/resources/logo-1.png",
-  "@id": "https://www.digitalwinbusinessagency.com/",
-  "url": "https://www.digitalwinbusinessagency.com/",
-  "telephone": "9154357401",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "MIG-161, 3rd floor, Rd Number 1, above Lenskart, opp. Sri Sri Holistic Hospital, Kukatpally Housing Board Colony, Kukatpally",
-    "addressLocality": "Hyderabad",
-    "postalCode": "500085",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 17.4887215,
-    "longitude": 78.4005263
-  } ,
-  "sameAs": [
-    "https://www.facebook.com/Digitalwinbusinessagency",
-    "https://www.instagram.com/digitalwinbusinessagency/?igshid=MmU2YjMzNjRlOQ%3D%3D",
-    "https://www.youtube.com/@DigitalWinBusinessAgency",
-    "https://in.pinterest.com/DigitalWinBusinessAgency1/",
-    "https://www.linkedin.com/in/digitalwin-business-agency-b73a77279/"
-  ] 
-}
-</script>
-	<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "DigitalWin Business Agency",
-  "alternateName": "DigitalWin",
-  "url": "https://www.digitalwinbusinessagency.com/",
-  "logo": "https://digitalwinbusinessagency.com/assets/home/images/resources/logo-1.png",
-  "sameAs": [
-    "https://www.facebook.com/Digitalwinbusinessagency",
-    "https://in.pinterest.com/DigitalWinBusinessAgency1/",
-    "https://www.instagram.com/digitalwinbusinessagency/?igshid=MmU2YjMzNjRlOQ%3D%3D",
-    "https://www.youtube.com/@DigitalWinBusinessAgency",
-    "https://www.linkedin.com/in/digitalwin-business-agency-b73a77279/"
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "DigitalWin Business Agency",
-  "url": "https://www.digitalwinbusinessagency.com/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://digitalwinbusinessagency.com/contact{search_term_string}https://digitalwinbusinessagency.com/services/1",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-<script>
-    !function (f, b, e, v, n, t, s) {
-        if (f.fbq) return; n = f.fbq = function () {
-            n.callMethod ?
-            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-        n.queue = []; t = b.createElement(e); t.async = !0;
-        t.src = v; s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '6935422259854837');
-    fbq('track', 'PageView');
-</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NNTM2J82');
+    </script>
+    <!-- End Google Tag Manager -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "DigitalWin Business Agency",
+            "image": "https://digitalwinbusinessagency.com/assets/home/images/resources/logo-1.png",
+            "@id": "https://www.digitalwinbusinessagency.com/",
+            "url": "https://www.digitalwinbusinessagency.com/",
+            "telephone": "9154357401",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "MIG-161, 3rd floor, Rd Number 1, above Lenskart, opp. Sri Sri Holistic Hospital, Kukatpally Housing Board Colony, Kukatpally",
+                "addressLocality": "Hyderabad",
+                "postalCode": "500085",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 17.4887215,
+                "longitude": 78.4005263
+            },
+            "sameAs": [
+                "https://www.facebook.com/Digitalwinbusinessagency",
+                "https://www.instagram.com/digitalwinbusinessagency/?igshid=MmU2YjMzNjRlOQ%3D%3D",
+                "https://www.youtube.com/@DigitalWinBusinessAgency",
+                "https://in.pinterest.com/DigitalWinBusinessAgency1/",
+                "https://www.linkedin.com/in/digitalwin-business-agency-b73a77279/"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "DigitalWin Business Agency",
+            "alternateName": "DigitalWin",
+            "url": "https://www.digitalwinbusinessagency.com/",
+            "logo": "https://digitalwinbusinessagency.com/assets/home/images/resources/logo-1.png",
+            "sameAs": [
+                "https://www.facebook.com/Digitalwinbusinessagency",
+                "https://in.pinterest.com/DigitalWinBusinessAgency1/",
+                "https://www.instagram.com/digitalwinbusinessagency/?igshid=MmU2YjMzNjRlOQ%3D%3D",
+                "https://www.youtube.com/@DigitalWinBusinessAgency",
+                "https://www.linkedin.com/in/digitalwin-business-agency-b73a77279/"
+            ]
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "DigitalWin Business Agency",
+            "url": "https://www.digitalwinbusinessagency.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://digitalwinbusinessagency.com/contact{search_term_string}https://digitalwinbusinessagency.com/services/1",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '6935422259854837');
+        fbq('track', 'PageView');
+    </script>
 
 
 
@@ -279,7 +297,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     know us</span>
                                 <h2 class="section-title__title">Why Choose DigitalWin Business Agency For Your
                                     Business?</h2>
-                                    <h1 style="display:none">DigitalWin Business Agency | Digital Marketing Services in Hyderabad| Digital Marketing Agency | SEO | SMM | PPC Services<h1>
+                                <h1 style="display:none">DigitalWin Business Agency | Digital Marketing Services in Hyderabad| Digital Marketing Agency | SEO | SMM | PPC Services<h1>
                             </div>
                             <p class="get-to-know__text-1">We’re committed
                                 to delivering the best digital marketing for
@@ -584,7 +602,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/training.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url();?>training/advanced-digital-marketing-with-ai">Advance Digital Marketing Training with AI</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>training/advanced-digital-marketing-with-ai">Advance Digital Marketing Training with AI</a>
                                     </h3>
                                 </div>
                             </div>
@@ -649,7 +667,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/small_bussigness.jpg" alt="">
-                               
+
                                 <!-- <a href="javascript:void(0);">
                                     <span class="blog-one__plus"></span>
                                 </a> -->
@@ -664,9 +682,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
-                                    <a href="javascript:void(0);" >Small Businesses</a>
+                                    <a href="javascript:void(0);">Small Businesses</a>
                                 </h3>
-                                <p class="services-two__text">Unlock the digital age's possibilities for your small business. Discover how to build a great online presence, interact with customers, and increase your bottom line.</p>
+                                <p class="services-two__text">We provide digital marketing services tailored to the unique needs of small businesses, helping them establish a strong online presence, reach their target audience, and compete effectively in the digital landscape.</p>
                                 <!-- <div class="blog-one__person">
                                     <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -699,7 +717,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Startups</a>
                                 </h3>
-                                <p class="services-two__text">Finding Your Way to Success Let's get together to talk about the essential tactics and factors that will ensure your startup has a smooth journey.</p>
+                                <p class="services-two__text"> For startups, navigating the complexities of digital marketing can be overwhelming. Our expert team crafts customized strategies to build brand awareness, drive traffic, and generate leads, ensuring a solid foundation for growth.</p>
                                 <!-- <div class="blog-one__person">
                                     <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -732,7 +750,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">E-commerce Businesses</a>
                                 </h3>
-                                <p class="services-two__text">Enhancing Your Online Products Through Digital Marketing Strategies Find out how to build a strong online presence, interact with customers, and increase your revenue.</p>
+                                <p class="services-two__text">In the highly competitive e-commerce industry, our digital marketing services drive traffic, optimize conversions, and enhance customer experiences, resulting in increased sales and repeat business.
+                                </p>
                                 <!-- <div class="blog-one__person">
                                     <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -765,7 +784,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">B2B Companies </a>
                                 </h3>
-                                <p class="services-two__text">Here's a complete guide to results-maximizing technologies. B2B businesses can use these technologies to improve their services and beat the competition.</p>
+                                <p class="services-two__text">With our specialized B2B digital marketing solutions, we connect businesses with their ideal clients through targeted campaigns, lead generation, and nurturing strategies, fostering long-term partnerships.
+                                </p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -796,10 +816,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                     </li>
                                 </ul> -->
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
-                                    <a href="javascript:void(0);" >Professional Services
+                                    <a href="javascript:void(0);">Professional Services
                                     </a>
                                 </h3>
-                                <p class="services-two__text">Using Digital Marketing Strategies, we can assist hospitals in maximizing the potential of the online world for healthcare.</p>
+                                <p class="services-two__text">We understand the unique marketing challenges faced by professional service providers. Our services aim to showcase expertise, build credibility, and attract high-quality leads to grow their client base.
+                                </p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -832,7 +853,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Enterprenuers</a>
                                 </h3>
-                                <p class="services-two__text">Entrepreneurs are individuals with the vision, creativity, and drive to establish successful businesses. Utilize digital marketing to your advantage.</p>
+                                <p class="services-two__text">Local businesses thrive on local visibility. Our location-based digital marketing strategies ensure that they remain visible to their target audience, driving foot traffic and increasing local brand awareness.
+                                </p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -865,7 +887,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Banking & Finance</a>
                                 </h3>
-                                <p class="services-two__text">Utilize digital strategies and stay up to date on market developments and business prospects to expand your banking services</p>
+                                <p class="services-two__text">Our digital marketing services for nonprofits focus on increasing awareness, attracting donors, and mobilizing support for their meaningful causes, ultimately driving positive social impact.
+                                </p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -899,7 +922,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Education Institutions</a>
                                 </h3>
-                                <p class="services-two__text">Explore Your Educational Opportunities to Prepare Students for a Successful Future Implementing strategies for digital marketing</p>
+                                <p class="services-two__text">Education providers benefit from our digital marketing expertise to reach prospective students, engage with parents, and build a strong online reputation that reflects their institution's quality.
+                                </p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -933,8 +957,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Real Estate Agencies</a>
                                 </h3>
-                                <p class="services-two__text">Lead Generation Through Digital Marketing High ROI (Return on Investment)
-With the help of our team in digital marketing Strategies</p>
+                                <p class="services-two__text"> In the competitive real estate market, our digital marketing strategies help agencies stand out, generate leads, and showcase property listings to potential buyers, driving business growth.
+                                </p>
                                 <div class="blog-one__person">
                                     <!-- <div class="blog-one__person-img">
                                         <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
@@ -1101,7 +1125,7 @@ With the help of our team in digital marketing Strategies</p>
         <!--Counter One End-->
 
         <!--Why Choose One Start-->
-        <section class="why-choose-one pt-5 pb-3 mt-1" >
+        <section class="why-choose-one pt-5 pb-3 mt-1">
             <div class="container">
 
                 <div class="row">
