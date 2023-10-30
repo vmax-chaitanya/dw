@@ -545,7 +545,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/api.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>2/api-integration">API Inegration</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/api-integration">API Inegration</a>
                                     </h3>
                                 </div>
                             </div>
@@ -558,7 +558,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/ai.jpg" alt>
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/1">Advance Digital Marketing Services with AI</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services">Advance Digital Marketing Services with AI</a>
                                     </h3>
                                 </div>
                             </div>
@@ -571,7 +571,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/google_ads.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>2/google-ads">Google Ads</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/google-ads">Google Ads</a>
                                     </h3>
                                 </div>
                             </div>
@@ -584,7 +584,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/training.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="#">Advance Digital Marketing Training with AI</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url();?>training/advanced-digital-marketing-with-ai">Advance Digital Marketing Training with AI</a>
                                     </h3>
                                 </div>
                             </div>
@@ -597,7 +597,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/native_ads.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>2/native-marketing">Native Marketing</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/native-marketing">Native Marketing</a>
                                     </h3>
                                 </div>
                             </div>
@@ -610,7 +610,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/ecommerce.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>1/responsive-website-design">Responsive Websites for Ecommerce and More</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/responsive-website-design">Responsive Websites for Ecommerce and More</a>
                                     </h3>
                                 </div>
                             </div>
@@ -623,7 +623,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/seo.jpg" alt>
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Service</p>
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>2/search-engine-optimization">SEO</a>
+                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/search-engine-optimization">SEO</a>
                                     </h3>
                                 </div>
                             </div>
