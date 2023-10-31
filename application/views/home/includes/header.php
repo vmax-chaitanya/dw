@@ -92,7 +92,7 @@
                                                 <?php if ($service['type'] == $category['id']): ?>
                                                     <li><a
                                                             href="<?php echo base_url(); ?>services/<?php echo $service['service_url'] ?>">
-                                                            <?= $service['name'] ?>
+                                                            <?= ucfirst(strtolower($service['name'])) ?>
                                                         </a></li>
                                                 <?php endif; ?>
                                             <?php endforeach; ?>
@@ -105,7 +105,7 @@
                             <a href="<?php echo base_url(); ?>training">Trainings</a>
                             <ul>
                                 <?php foreach ($h_training as $training): ?>
-                                    <li><a href="<?php echo base_url();?>training/<?php echo $training['training_url'];?>"><?php echo $training['name'];?></a> </li>
+                                    <li><a href="<?php echo base_url();?>training/<?php echo $training['training_url'];?>"><?php echo ucfirst(strtolower($training['name']));?></a> </li>
                                 <?php endforeach; ?>
 
                             </ul>

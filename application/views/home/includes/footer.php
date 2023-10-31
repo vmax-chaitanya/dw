@@ -8,8 +8,7 @@
             </div>
             <div class="modal-body">
                 <div class="contact-page__form mt-3">
-                    <form id="brouchure" name="brouchure" method="POST" class=""
-                        action="<?php echo base_url('training-enquiry'); ?>">
+                    <form id="brouchure" name="brouchure" method="POST" class="" action="<?php echo base_url('training-enquiry'); ?>">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
@@ -23,8 +22,7 @@
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Phone number" name="mobile1" required
-                                        onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                    <input type="text" placeholder="Phone number" name="mobile1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
                                 </div>
                             </div>
                             <div class="col-xl-6">
@@ -60,14 +58,11 @@
             <div class="site-footer__top-inner">
                 <div class="site-footer__top-left">
                     <div class="site-footer__top-logo">
-                        <a href="<?php echo base_url(); ?>"><img
-                                src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png" alt height="80"
-                                width="180" style="margin-top: -30px;"></a>
+                        <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url(); ?>assets/home/images/resources/logo-1.png" alt height="80" width="180" style="margin-top: -30px;"></a>
                     </div>
                     <div class="site-footer__top-title-box">
                         <h3 class="site-footer__top-title">Let's
-                            work together - <button style="padding: left 20px; background-color:#9232b2" type="button"
-                                class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            work together - <button style="padding: left 20px; background-color:#9232b2" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Download Brouchure
                             </button></h3>
 
@@ -76,19 +71,13 @@
                 <div class="site-footer__top-right">
                     <div class="site-footer__top-right-social">
 
-                        <a target="__blank" href="<?php echo $social_media['facebook']; ?>"><i
-                                class="fab fa-facebook"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['facebook']; ?>"><i class="fab fa-facebook"></i></a>
 
-                        <a target="__blank" href="<?php echo $social_media['instagram']; ?>"><i
-                                class="fab fa-instagram"></i></a>
-                        <a target="__blank" href="<?php echo $social_media['linkedin']; ?>"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a target="__blank" href="<?php echo $social_media['quora']; ?>"><i
-                                class="fab fa-quora"></i></a>
-                        <a target="__blank" href="<?php echo $social_media['pinterest']; ?>"><i
-                                class="fab fa-pinterest-p"></i></a>
-                        <a target="__blank" href="<?php echo $social_media['youtube']; ?>"><i
-                                class="fab fa-youtube"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['instagram']; ?>"><i class="fab fa-instagram"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['linkedin']; ?>"><i class="fab fa-linkedin"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['quora']; ?>"><i class="fab fa-quora"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['pinterest']; ?>"><i class="fab fa-pinterest-p"></i></a>
+                        <a target="__blank" href="<?php echo $social_media['youtube']; ?>"><i class="fab fa-youtube"></i></a>
 
                         <!-- <a target="__blank" href="<?php echo $social_media['youtube']; ?>"><i
                         class="fab fa-pinterest-p"></i></a> -->
@@ -101,27 +90,24 @@
     </div>
 
     <div class="site-footer__middle">
-        <div class="site-footer-shape"
-            style="background-image: url(<?php echo base_url(); ?>assets/home/images/shapes/site-footer-shape.png)">
+        <div class="site-footer-shape" style="background-image: url(<?php echo base_url(); ?>assets/home/images/shapes/site-footer-shape.png)">
         </div>
         <div class="container">
             <div class="site-footer__middle-inner">
                 <div class="row">
 
-                <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Quick Links</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
-                             
-                                    <li><a href="<?php echo base_url(); ?>gallery"><span
-                                                class="icon-draw-check-mark"></span> &nbsp;
-                                            Gallery
-                                        </a></li>
-                                        <li><a href="<?php echo base_url(); ?>careers"><span
-                                                class="icon-draw-check-mark"></span> &nbsp;
-                                            Careers
-                                        </a></li>
-                            
+
+                                <li><a href="#"><span class="icon-draw-check-mark"></span> &nbsp;
+                                        Gallery
+                                    </a></li>
+                                <li><a href="<?php echo base_url(); ?>careers"><span class="icon-draw-check-mark"></span> &nbsp;
+                                        Careers
+                                    </a></li>
+
 
                             </ul>
                         </div>
@@ -131,10 +117,9 @@
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Services</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
-                                <?php foreach ($f_services as $service): ?>
+                                <?php foreach ($f_services as $service) : ?>
 
-                                    <li><a href="<?php echo base_url(); ?>1/<?php echo $service['service_url'] ?>"><span
-                                                class="icon-draw-check-mark"></span> &nbsp;
+                                    <li><a href="<?php echo base_url(); ?>1/<?php echo $service['service_url'] ?>"><span class="icon-draw-check-mark"></span> &nbsp;
                                             <?php echo $service['name'] ?>
                                         </a></li>
                                 <?php endforeach; ?>
@@ -147,10 +132,10 @@
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Other Services</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
-                                <?php foreach ($f_other_services as $service): ?>
+                                <?php foreach ($f_other_services as $service) : ?>
 
                                     <li><a href="<?php echo base_url(); ?>2/<?php echo $service['service_url'] ?>"><span class="icon-draw-check-mark"></span> &nbsp;
-                                            <?php echo $service['name'] ?>
+                                            <?php echo ucfirst(strtolower($service['name'])) ?>
                                         </a></li>
                                 <?php endforeach; ?>
 
@@ -162,11 +147,10 @@
                         <div class="footer-widget__column footer-widget__explore clearfix">
                             <h3 class="footer-widget__title">Training</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
-                                <?php foreach ($f_training as $train): ?>
+                                <?php foreach ($f_training as $train) : ?>
 
-                                    <li><a href="<?php echo base_url();?>training/<?php echo $train['training_url'];?>"><span
-                                                class="icon-draw-check-mark"></span> &nbsp;
-                                            <?php echo $train['name'] ?>
+                                    <li><a href="<?php echo base_url(); ?>training/<?php echo $train['training_url']; ?>"><span class="icon-draw-check-mark"></span> &nbsp;
+                                            <?php echo ucfirst(strtolower($train['name'])) ?>
                                         </a></li>
                                 <?php endforeach; ?>
 

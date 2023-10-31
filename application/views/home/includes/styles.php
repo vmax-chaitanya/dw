@@ -199,7 +199,7 @@
 </style>
 <style>
     .sticky-icon {
-        z-index: 9999;
+        z-index: 99;
         position: fixed;
         top: 25%;
         right: 0%;

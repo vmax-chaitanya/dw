@@ -385,7 +385,7 @@
                                             <p class="project-one__tagline">service</p>
                                             <h3 class="project-one__title"><a
                                                     href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">
-                                                    <?php echo $service['name']; ?>
+                                                    <?php echo ucfirst(strtolower($service['name'])); ?>
                                                 </a>
                                             </h3>
                                         </div>

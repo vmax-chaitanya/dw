@@ -80,7 +80,13 @@ class HomeController extends CI_Controller
 
 	//     $this->load->view('home/blog',$data);
 	// }
+	public function gallery()
+	{
+		// Load the FAQ view
+		$data['page_title'] = "Gallery || Digital win ||";
 
+		$this->load->view('home/gallery', $data);
+	}
 	public function faq()
 	{
 		// Load the FAQ view
@@ -105,11 +111,11 @@ class HomeController extends CI_Controller
 	}
 	public function service_detail($service_id)
 	{
-		 //echo $service_id; exit;
+		//echo $service_id; exit;
 		$data['page_title'] = "Home || Digital win ||";
 		$data['services_detail'] = $this->Home_model->get_service_by_id($service_id);
 		$service_primary_id = 	 $data['services_detail']['id'];
-	    $type = 	 $data['services_detail']['type']; 
+		$type = 	 $data['services_detail']['type'];
 		$module = 1;
 		$data['services_module1'] = $this->Home_model->services_types($service_primary_id, $module);
 		$module = 2;
@@ -145,8 +151,8 @@ class HomeController extends CI_Controller
 		$data['page_title'] = "Home || Digital win ||";
 		$data['training_detail'] = $this->Home_model->get_training_by_id($training_id);
 		//echo "hi"; exit;
-	//	 echo "<pre>"; print_r($data['training_detail']); exit;
-		$service_primary_id = 	 $data['training_detail']['id']; 
+		//	 echo "<pre>"; print_r($data['training_detail']); exit;
+		$service_primary_id = 	 $data['training_detail']['id'];
 		$data['curriculums'] = $this->Home_model->getActiveCurriculum($service_primary_id);
 		$data['key_highlites'] = $this->Home_model->getActiveKeyHighlites($service_primary_id);
 		$data['trainings'] = $this->Home_model->getActiveTraining();
@@ -256,19 +262,17 @@ class HomeController extends CI_Controller
 		$this->load->view('home/careers', $data);
 	}
 	function send_email()
-    {
-		//echo "sadsd";exit;
-      
-		
-		
+	{
 		$this->load->library('email');
 
+		// Load sensitive data from configuration or environment variables
 		$config = array(
 			'protocol' => 'smtp',
-			'smtp_host' => 'digitalwinbusinessagency.com',
+			'smtp_host' => 'mail.rdsindia.com',
 			'smtp_user' => 'chaithanya@digitalwinbusinessagency.com',
 			'smtp_pass' => '~Xl1xY7dwsao4ea6V',
 			'smtp_port' => 465,
+			'smtp_debug' => 2,
 			'smtp_crypto' => 'tls',
 			'mailtype' => 'html',
 			'charset' => 'utf-8',
@@ -281,13 +285,20 @@ class HomeController extends CI_Controller
 		$this->email->subject('Email Subject');
 		$this->email->message('Email message goes here');
 
-		if ($this->email->send()) {
-			echo 'Email sent successfully.';
-		} else {
-			show_error($this->email->print_debugger());
+		try {
+			if ($this->email->send()) {
+				echo 'Email sent successfully.';
+			} else {
+				show_error($this->email->print_debugger());
+			}
+		} catch (Exception $e) {
+			echo 'Email could not be sent. Error: ' . $e->getMessage();
 		}
-        $this->load->view('email_view');
-    }
+
+		// Load the appropriate view to display a response to the user
+		$this->load->view('email_view');
+	}
+
 
 	public function career_form()
 	{

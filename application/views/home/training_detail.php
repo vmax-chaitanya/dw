@@ -277,7 +277,7 @@
                                             <p class="project-one__tagline">Trainings</p>
                                             <h3 class="project-one__title"><a
                                                     href="<?php echo base_url(); ?>training/<?php echo $trainings['training_url']; ?>">
-                                                    <?php echo $trainings['name']; ?>
+                                                    <?php echo ucfirst(strtolower($trainings['name'])); ?>
                                                 </a>
                                             </h3>
                                         </div>

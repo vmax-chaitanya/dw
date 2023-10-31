@@ -160,7 +160,7 @@
                                     <!-- <p><a href="#"><i class="fa fa-calendar"></i> <?php echo $training['duration']; ?></a></p> -->
 
                                     <h3 class="blog-one__title">
-                                        <a href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>"><?php echo $training['name']; ?></a>
+                                        <a href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>"><?php echo ucfirst(strtolower($training['name'])); ?></a>
                                     </h3>
                                     <!-- <p>Online | Classroom </p> -->
 
