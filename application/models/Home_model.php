@@ -157,7 +157,7 @@ class Home_model extends CI_Model
         $this->db->select('*');
         $this->db->from('services');
         $this->db->where('id >', $current_service_id);
-        $this->db->where('type', $type); // Filter by the type of service if needed
+        // $this->db->where('type', $type); // Filter by the type of service if needed
         $this->db->where('status', '1'); // Filter by active status if needed
         $this->db->order_by('id', 'ASC');
         $this->db->limit($limit);
@@ -169,13 +169,13 @@ class Home_model extends CI_Model
         if (count($upcoming_services) < 3) {
             $this->db->select('*');
             $this->db->from('services');
-            $this->db->where('type', $type); // Filter by the type of service if needed
+            // $this->db->where('type', $type); // Filter by the type of service if needed
             $this->db->where('status', '1'); // Filter by active status if needed
             // $this->db->order_by('RAND()'); // Get random services
             $this->db->limit($limit);
             $query = $this->db->get();
 
-            $upcoming_services = $query->result_array();
+            $upcoming_services = $query->result_array();    
         }
 
         return $upcoming_services;

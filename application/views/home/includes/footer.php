@@ -150,7 +150,7 @@
                                 <?php foreach ($f_training as $train) : ?>
 
                                     <li><a href="<?php echo base_url(); ?>training/<?php echo $train['training_url']; ?>"><span class="icon-draw-check-mark"></span> &nbsp;
-                                            <?php echo ucfirst(strtolower($train['name'])) ?>
+                                            <?php echo ucwords(strtolower($train['name'])) ?>
                                         </a></li>
                                 <?php endforeach; ?>
 

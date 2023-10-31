@@ -216,13 +216,13 @@
         <?php if (count($curriculums) > 0) { ?>
 
             <!--FAQ Page Start-->
-            <section class="faq-page">
+            <section class="faq-page " style="padding-top: 10px !important;">
                 <div class="container">
                     <div class="section-title text-center">
                         <!-- <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
                             experts</span> -->
                         <h2 class="section-title__title">Curriculums</h2>
-                        <div class="row" style="text-align:left">
+                        <div class="row" style="text-align:left; padding-top:30px !important">
                             <?php $i = 1;
                             foreach ($curriculums as $curriculum): ?>
                                 <div class="col-xl-6 col-lg-6 mt-2 mb-2">
@@ -257,7 +257,7 @@
 
 
         <!--Similar Work Start-->
-        <section class="similar-work pt-3 pb-0">
+        <section class="similar-work pt-5 pb-0">
             <div class="container">
                 <div class="section-title text-center">
                     <!-- <span class="section-title__tagline">recent Service</span> -->

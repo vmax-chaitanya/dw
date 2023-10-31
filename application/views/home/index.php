@@ -191,7 +191,7 @@
                                                 <?php echo $banner['description']; ?>
                                             </h2>
 
-                                            <a href="<?php echo base_url(); ?>services/1" class="thm-btn">Discover
+                                            <a href="<?php echo base_url(); ?>services" class="thm-btn">Discover
                                                 More</a>
                                         </div>
                                     </div>
@@ -601,7 +601,7 @@
                             <div class="project-one__img">
                                 <img src="<?php echo base_url(); ?>assets/home/images/showcase/training.jpg" alt>
                                 <div class="project-one__hover project-one__hover-pl-40">
-                                    <p class="project-one__tagline">Trainig</p>
+                                    <p class="project-one__tagline">Training</p>
                                     <h3 class="project-one__title"><a href="<?php echo base_url(); ?>training/advanced-digital-marketing-with-ai">Advance Digital Marketing Training with AI</a>
                                     </h3>
                                 </div>
@@ -1847,7 +1847,7 @@
                 </div>
                 <div class="financial-advice__bottom">
                     <p class="financial-advice__bottom-text">DigitalWin services
-                        built specifically for your business. <a href="<?php echo base_url(); ?>services/1">Find Your Services</a></p>
+                        built specifically for your business. <a href="<?php echo base_url(); ?>services">Find Your Services</a></p>
                 </div>
             </div>
         </section>

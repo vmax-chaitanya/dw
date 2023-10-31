@@ -127,8 +127,8 @@ class HomeController extends CI_Controller
 		//echo "<pre>"; print_r($data['services_types']); exit;
 		$data['services_menu'] = $this->Home_model->getActiveServices($type);
 		// echo $this->db->last_query(); exit;
-		$data['upcoming_services'] = $this->Home_model->getUpcomingServices($service_id, 5, $type);
-
+		$data['upcoming_services'] = $this->Home_model->getUpcomingServices($service_primary_id, 5, $type);
+// echo $this->db->last_query(); exit;
 		$this->load->view('home/service_detail', $data);
 	}
 

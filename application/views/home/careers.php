@@ -83,8 +83,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-6">
-                        <div class="about-page__left">
+                    <div class="col-xl-6 " style="padding-top: 200px !important;">
+                        <!-- <div class="about-page__left"> -->
                             <div class="contact-page__form mt-3">
                                 <h2 class="section-title__title pb-5 ">Careers Form</h2>
 
@@ -97,7 +97,7 @@
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Email address" name="career_email">
+                                                <input type="email" placeholder="Email address" name="career_email" required>
                                             </div>
                                         </div>
 
@@ -145,7 +145,7 @@
                             <!-- <div class="about-page__founded">
                                 <h5>Founded <br> in 2014</h5>
                             </div> -->
-                        </div>
+                        <!--  </div> -->
                     </div>
                 </div>
             </div>

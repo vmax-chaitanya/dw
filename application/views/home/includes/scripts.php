@@ -336,7 +336,7 @@
                     maxlength: "Enter Valid  Number",
                 },
                 career_list: "Please select an option",
-                resume: "Please select an file",
+                resume: "",
                
                 career_email: "Enter email address",
                 message: "Please write a message"
