@@ -128,7 +128,7 @@ class HomeController extends CI_Controller
 		$data['services_menu'] = $this->Home_model->getActiveServices($type);
 		// echo $this->db->last_query(); exit;
 		$data['upcoming_services'] = $this->Home_model->getUpcomingServices($service_primary_id, 5, $type);
-// echo $this->db->last_query(); exit;
+		// echo $this->db->last_query(); exit;
 		$this->load->view('home/service_detail', $data);
 	}
 
@@ -223,19 +223,8 @@ class HomeController extends CI_Controller
 
 		$result = $this->contact_model->create_contact($data);
 		if ($result) {
-			// Configure your email settings
-			$this->load->library('email', $config);
-			$config['protocol'] = 'sendmail';
-			$config['mailpath'] = '/usr/sbin/sendmail';
-			$config['mailtype'] = 'html';
-			$config['charset'] = 'iso-8859-1';
-			$config['wordwrap'] = TRUE;
-			$this->email->initialize($config);
-			$this->email->from('your_email@example.com', 'DigitalWin');
-			$this->email->to('chaitanyakadali3@gmail.com');
-			$this->email->subject('Contact Form Submission');
-			$this->email->message('Thank you for your message. We will get in touch with you shortly');
-			$this->email->send();
+			$subject ="Contact form details";
+			$this->send_email_contact_form($result,$subject);
 			echo "Thank you for your message. We will get in touch with you shortly";
 			exit;
 		} else {
@@ -298,6 +287,131 @@ class HomeController extends CI_Controller
 		// Load the appropriate view to display a response to the user
 		$this->load->view('email_view');
 	}
+
+	public function send_email_contact_form($message,$subject)
+	{
+		//echo "fg"; exit;
+		print_r($message); exit();
+		$this->load->library('Phpmailer');
+		$body = "
+		<table border='1'>
+			<tr>
+				<th>Field</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>{$message['name']}</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>{$message['email']}</td>
+			</tr>
+			<tr>
+				<td>Mobile</td>
+				<td>{$message['mobile']}</td>
+			</tr>
+			<tr>
+				<td>Subject</td>
+				<td>{$message['subject']}</td>
+			</tr>
+			<tr>
+				<td>Coupon ID</td>
+				<td>{$message['coupon_id']}</td>
+			</tr>
+			<tr>
+				<td>Message</td>
+				<td>{$message['message']}</td>
+			</tr>
+			<tr>
+				<td>Services IDs</td>
+				<td>{$message['services_ids']}</td>
+			</tr>
+			<tr>
+				<td>Status</td>
+				<td>{$message['status']}</td>
+			</tr>
+			<tr>
+				<td>Created At</td>
+				<td>{$message['created_at']}</td>
+			</tr>
+		</table>
+		";
+		$smtp_host = "mail.rdsindia.com";
+		$smtp_user = "info@digitalwinbusinessagency.com";
+		$smtp_password = "digitalwin@123";
+		$smtp_port = 25;
+
+		$mail_from = "info@digitalwinbusinessagency.com";
+		$mail_from_name = "Digital Marketing Agency";
+
+		$mail_to = "chaitanyakadali3@gmail.com";
+		$mail_to_name = "Chaitanya";
+
+		$body = $subject;
+
+		$this->phpmailer->IsSMTP();
+		$this->phpmailer->Host = $smtp_host;
+		$this->phpmailer->SMTPDebug = 1;
+		$this->phpmailer->SMTPAuth = true;
+		$this->phpmailer->Port = $smtp_port;
+		$this->phpmailer->Username = $smtp_user;
+		$this->phpmailer->Password = $smtp_password;
+		$this->phpmailer->SetFrom($mail_from, $mail_from_name);
+		$this->phpmailer->AddReplyTo($mail_from, $mail_from_name);
+		$this->phpmailer->Subject = $subject;
+		$this->phpmailer->MsgHTML($body);
+		$address = $mail_to;
+		$this->phpmailer->AddAddress($address, $mail_to_name);
+
+		if (!$this->phpmailer->Send()) {
+			echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
+		} else {
+			echo "Message sent!";
+		}
+	}
+
+	// public function sendEmail()
+	// {
+	// 	//echo "fg"; exit;
+	// 	$this->load->library('Phpmailer');
+
+	// 	$smtp_host = "mail.rdsindia.com";
+	// 	$smtp_user = "info@digitalwinbusinessagency.com";
+	// 	$smtp_password = "digitalwin@123";
+	// 	$smtp_port = 25;
+
+	// 	$mail_from = "info@digitalwinbusinessagency.com";
+	// 	$mail_from_name = "Digital Marketing Agency";
+
+	// 	$mail_to = "chaitanyakadali3@gmail.com";
+	// 	$mail_to_name = "RDS Support";
+
+	// 	$body = 'Test';
+
+	// 	$this->phpmailer->IsSMTP();
+	// 	$this->phpmailer->Host = $smtp_host;
+	// 	$this->phpmailer->SMTPDebug = 1;
+	// 	$this->phpmailer->SMTPAuth = true;
+	// 	$this->phpmailer->Port = $smtp_port;
+	// 	$this->phpmailer->Username = $smtp_user;
+	// 	$this->phpmailer->Password = $smtp_password;
+
+	// 	$this->phpmailer->SetFrom($mail_from, $mail_from_name);
+	// 	$this->phpmailer->AddReplyTo($mail_from, $mail_from_name);
+
+	// 	$this->phpmailer->Subject = "PHPMailer Test Subject via smtp, basic with authentication";
+	// 	$this->phpmailer->MsgHTML($body);
+
+	// 	$address = $mail_to;
+	// 	$this->phpmailer->AddAddress($address, $mail_to_name);
+
+	// 	if (!$this->phpmailer->Send()) {
+	// 		echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
+	// 	} else {
+	// 		echo "Message sent!";
+	// 	}
+	// }
 
 
 	public function career_form()

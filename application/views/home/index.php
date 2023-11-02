@@ -72,18 +72,18 @@
         }
     </script>
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "WebSite",
-            "name": "DigitalWin Business Agency",
-            "url": "https://www.digitalwinbusinessagency.com/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://digitalwinbusinessagency.com/contact{search_term_string}https://digitalwinbusinessagency.com/services/1",
-                "query-input": "required name=search_term_string"
-            }
-        }
-    </script>
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "DigitalWin Business Agency",
+  "url": "https://digitalwinbusinessagency.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://digitalwinbusinessagency.com/services{search_term_string}https://digitalwinbusinessagency.com/contact",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
     <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
