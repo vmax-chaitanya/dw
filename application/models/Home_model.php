@@ -255,4 +255,17 @@ class Home_model extends CI_Model
         $this->db->limit(6);
         return $this->db->get('training')->result_array();
     }
+    public function get_contact_by_id($id)
+    {
+        $this->db->where('id', $id);
+        $query = $this->db->get('contact');
+        return $query->row_array();
+    }
+    public function get_service_names($id)
+    {
+        $this->db->select('name');
+        $this->db->where('id', $id);
+        $query = $this->db->get('services');
+        return $query->row_array();
+    }
 }

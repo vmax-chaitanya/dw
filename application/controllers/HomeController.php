@@ -13,6 +13,7 @@ class HomeController extends CI_Controller
 		$this->load->model('Home_model');
 		$this->load->helper('download');
 		$this->load->library('form_validation');
+		date_default_timezone_set('Asia/Calcutta');
 	}
 	public function index()
 	{
@@ -128,7 +129,7 @@ class HomeController extends CI_Controller
 		$data['services_menu'] = $this->Home_model->getActiveServices($type);
 		// echo $this->db->last_query(); exit;
 		$data['upcoming_services'] = $this->Home_model->getUpcomingServices($service_primary_id, 5, $type);
-		// echo $this->db->last_query(); exit;
+// echo $this->db->last_query(); exit;
 		$this->load->view('home/service_detail', $data);
 	}
 
@@ -207,7 +208,6 @@ class HomeController extends CI_Controller
 
 	public function contact_enquiry()
 	{
-		$this->load->library('email');
 		//print_r($this->input->post()); exit;
 		$data = array(
 			'name' => $this->input->post('name'),
@@ -222,9 +222,22 @@ class HomeController extends CI_Controller
 		);
 
 		$result = $this->contact_model->create_contact($data);
+		
+		$contact_id = $this->db->insert_id();
+		$data_contact = $this->contact_model->get_contact_by_id($contact_id);
+		$services_ids = explode(',', $data_contact['services_ids']);
+		$service_name_array = array();
+		foreach ($services_ids as $service_id) {
+			$service_data = $this->Home_model->get_service_names($service_id);
+			if (!empty($service_data['name'])) {
+				$service_name_array[] = $service_data['name'];
+			}
+		}
+		 $services_names = implode(', ', $service_name_array);
+		
 		if ($result) {
 			$subject ="Contact form details";
-			$this->send_email_contact_form($result,$subject);
+			$this->send_email_contact_form($data_contact,$services_names,$subject);
 			echo "Thank you for your message. We will get in touch with you shortly";
 			exit;
 		} else {
@@ -287,14 +300,102 @@ class HomeController extends CI_Controller
 		// Load the appropriate view to display a response to the user
 		$this->load->view('email_view');
 	}
-
-	public function send_email_contact_form($message,$subject)
+	public function sendEmail()
 	{
 		//echo "fg"; exit;
-		print_r($message); exit();
 		$this->load->library('Phpmailer');
-		$body = "
-		<table border='1'>
+
+		$smtp_host = "mail.rdsindia.com";
+		$smtp_user = "info@digitalwinbusinessagency.com";
+		$smtp_password = "digitalwin@123";
+		$smtp_port = 25;
+
+		$mail_from = "info@digitalwinbusinessagency.com";
+		$mail_from_name = "Digital Marketing Agency";
+
+		$mail_to = "chaitanyakadali3@gmail.com";
+		$mail_to_name = "RDS Support";
+$body = "
+    <table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
+        <thead>
+            <tr style='background-color: #f2f2f2;'>
+                <th style='padding: 10px;'>Field</th>
+                <th style='padding: 10px;'>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style='padding: 10px;'>Name</td>
+                <td style='padding: 10px;'>chaitanya</td>
+            </tr>
+            <tr>
+                <td style='padding: 10px;'>Email</td>
+                <td style='padding: 10px;'>fddddddd@gmail.com</td>
+            </tr>
+            <tr>
+                <td style='padding: 10px;'>Mobile</td>
+                <td style='padding: 10px;'>7799348370</td>
+            </tr>
+            <tr>
+                <td style='padding: 10px;'>Subject</td>
+                <td style='padding: 10px;'>sdfs fg dfgdfg</td>
+            </tr>
+            <tr>
+                <td style='padding: 10px;'>Coupon ID</td>
+                <td style='padding: 10px;'>dfgdf gdfghd</td>
+            </tr>
+            <tr>
+                <td style='padding: 10px;'>Message</td>
+                <td style='padding: 10px;'>dfgd fgd fgd</td>
+            </tr>
+            <tr>
+                <td style='padding: 10px;'>Services IDs</td>
+                <td style='padding: 10px;'>1</td>
+            </tr>
+            <tr>
+                <td style='padding: 10px;'>Status</td>
+                <td style='padding: 10px;'>dfse fdf sdfs</td>
+            </tr>
+            <tr>
+                <td style='padding: 10px;'>Created At</td>
+                <td style='padding: 10px;'>12:</td>
+            </tr>
+        </tbody>
+    </table>
+";
+
+		//$body = 'Test';
+
+		$this->phpmailer->IsSMTP();
+		$this->phpmailer->Host = $smtp_host;
+		$this->phpmailer->SMTPDebug = 1;
+		$this->phpmailer->SMTPAuth = true;
+		$this->phpmailer->Port = $smtp_port;
+		$this->phpmailer->Username = $smtp_user;
+		$this->phpmailer->Password = $smtp_password;
+
+		$this->phpmailer->SetFrom($mail_from, $mail_from_name);
+		$this->phpmailer->AddReplyTo($mail_from, $mail_from_name);
+
+		$this->phpmailer->Subject = "PHPMailer Test Subject via smtp, basic with authentication";
+		$this->phpmailer->MsgHTML($body);
+
+		$address = $mail_to;
+		$this->phpmailer->AddAddress($address, $mail_to_name);
+
+		if (!$this->phpmailer->Send()) {
+			echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
+		} else {
+			echo "Message sent!";
+		}
+	}
+	public function send_email_contact_form($message,$services_names,$subject)
+	{
+		//echo "fg"; exit;
+	//	print_r($message); exit();
+		$this->load->library('Phpmailer');
+		$message_body = "
+		 <table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
 			<tr>
 				<th>Field</th>
 				<th>Value</th>
@@ -324,15 +425,12 @@ class HomeController extends CI_Controller
 				<td>{$message['message']}</td>
 			</tr>
 			<tr>
-				<td>Services IDs</td>
-				<td>{$message['services_ids']}</td>
+				<td>Services </td>
+				<td>{$services_names}</td>
 			</tr>
+			
 			<tr>
-				<td>Status</td>
-				<td>{$message['status']}</td>
-			</tr>
-			<tr>
-				<td>Created At</td>
+				<td>Received At</td>
 				<td>{$message['created_at']}</td>
 			</tr>
 		</table>
@@ -348,7 +446,7 @@ class HomeController extends CI_Controller
 		$mail_to = "chaitanyakadali3@gmail.com";
 		$mail_to_name = "Chaitanya";
 
-		$body = $subject;
+		$body = $message_body;
 
 		$this->phpmailer->IsSMTP();
 		$this->phpmailer->Host = $smtp_host;
@@ -361,57 +459,18 @@ class HomeController extends CI_Controller
 		$this->phpmailer->AddReplyTo($mail_from, $mail_from_name);
 		$this->phpmailer->Subject = $subject;
 		$this->phpmailer->MsgHTML($body);
-		$address = $mail_to;
-		$this->phpmailer->AddAddress($address, $mail_to_name);
-
+		//$address = $mail_to;
+		$this->phpmailer->AddAddress($mail_to, $mail_to_name);
+		$this->phpmailer->AddAddress('suresh6k@gmail.com', "Suresh");
 		if (!$this->phpmailer->Send()) {
 			echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
 		} else {
 			echo "Message sent!";
 		}
+		return true;
 	}
 
-	// public function sendEmail()
-	// {
-	// 	//echo "fg"; exit;
-	// 	$this->load->library('Phpmailer');
 
-	// 	$smtp_host = "mail.rdsindia.com";
-	// 	$smtp_user = "info@digitalwinbusinessagency.com";
-	// 	$smtp_password = "digitalwin@123";
-	// 	$smtp_port = 25;
-
-	// 	$mail_from = "info@digitalwinbusinessagency.com";
-	// 	$mail_from_name = "Digital Marketing Agency";
-
-	// 	$mail_to = "chaitanyakadali3@gmail.com";
-	// 	$mail_to_name = "RDS Support";
-
-	// 	$body = 'Test';
-
-	// 	$this->phpmailer->IsSMTP();
-	// 	$this->phpmailer->Host = $smtp_host;
-	// 	$this->phpmailer->SMTPDebug = 1;
-	// 	$this->phpmailer->SMTPAuth = true;
-	// 	$this->phpmailer->Port = $smtp_port;
-	// 	$this->phpmailer->Username = $smtp_user;
-	// 	$this->phpmailer->Password = $smtp_password;
-
-	// 	$this->phpmailer->SetFrom($mail_from, $mail_from_name);
-	// 	$this->phpmailer->AddReplyTo($mail_from, $mail_from_name);
-
-	// 	$this->phpmailer->Subject = "PHPMailer Test Subject via smtp, basic with authentication";
-	// 	$this->phpmailer->MsgHTML($body);
-
-	// 	$address = $mail_to;
-	// 	$this->phpmailer->AddAddress($address, $mail_to_name);
-
-	// 	if (!$this->phpmailer->Send()) {
-	// 		echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
-	// 	} else {
-	// 		echo "Message sent!";
-	// 	}
-	// }
 
 
 	public function career_form()
