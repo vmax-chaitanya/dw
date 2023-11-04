@@ -1,7 +1,5 @@
 <meta charset="UTF-8" />
-<meta name="description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, PPC and API Services
-<meta name=" description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, PPC and API Services
-">
+<meta name="description" content="DigitalWin Business Agency is the best digital marketing agency in Hyderabad. We provide digital marketing services such as SMM, SEO, SEM, PPC and API Services" />
 <meta name="keywords" content="digital marketing company in hyderabad, digital marketing agency in hyderabad, digital marketing services in hyderabad, seo services in hyderabad, smo services in hyderabad, ppc analyst, google ads services, e-commerce digital marketing services, app marketing agency, graphic designing services, web designing, web development, graphic design company, logo design hyderabad, digital marketing companies in hyderabad, digitalwin business agency">
 <meta name="facebook-domain-verification" content="gopzcud8n0uo2g0cqcekp1a7e7fhff" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -200,28 +198,27 @@
 <style>
     .sticky-icon {
         z-index: 99;
-        position: fixed;
-        top: 25%;
-        right: 0%;
-        width: 220px;
-        display: flex;
-        flex-direction: column;
+    position: fixed;
+    top: 25%;
+    right: 0%;
+    width: 38px;
+    display: flex;
+    flex-direction: column;
         
     }
 
     .sticky-icon a {
-        transform: translate(185px, 0px);
         border-radius: 50px 0px 0px 50px;
-        text-align: left;
-        margin: 2px;
-        text-decoration: none;
-        text-transform: uppercase;
-        padding: 2px;
-        font-size: 15px;
-        font-family: 'Oswald', sans-serif;
-       
-        filter: grayscale(100%); /* Make the icons black and white by default */
-  transition: all 0.8s;
+    text-align: left;
+    margin: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2px;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    filter: grayscale(100%);
+    transition: all 0.8s;
+    width: 35px;
     }
 
     .sticky-icon a:hover {
@@ -455,12 +452,12 @@ $services = $this->Home_model->getActiveServicesNew();
 
 <!--Start Sticky Icon-->
 <div class="sticky-icon">
-    <a href="<?php echo $social_media['facebook']; ?>" target="__blank" class="Facebook"><i class="fab fa-facebook-f"> </i> Facebook </a>
-    <a href="<?php echo $social_media['instagram']; ?>" target="__blank" class="Instagram"><i class="fab fa-instagram"></i> Instagram </a>
-    <a href="<?php echo $social_media['linkedin']; ?>" target="__blank" class="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn </a>
-    <a href="<?php echo $social_media['quora']; ?>" target="__blank" class="Quora"><i class="fab fa-quora"></i> Quora </a>
-    <a href="<?php echo $social_media['pinterest']; ?>" target="__blank" class="Pinterest"><i class="fab fa-pinterest"></i> Pinterest </a>
-    <a href="<?php echo $social_media['youtube']; ?>" target="__blank" class="Youtube"><i class="fab fa-youtube"></i> Youtube </a>
+    <a href="<?php echo $social_media['facebook']; ?>" target="__blank" class="Facebook"><i class="fab fa-facebook-f"> </i>  </a>
+    <a href="<?php echo $social_media['instagram']; ?>" target="__blank" class="Instagram"><i class="fab fa-instagram"></i>  </a>
+    <a href="<?php echo $social_media['linkedin']; ?>" target="__blank" class="LinkedIn"><i class="fab fa-linkedin"></i>  </a>
+    <a href="<?php echo $social_media['quora']; ?>" target="__blank" class="Quora"><i class="fab fa-quora"></i>  </a>
+    <a href="<?php echo $social_media['pinterest']; ?>" target="__blank" class="Pinterest"><i class="fab fa-pinterest"></i>  </a>
+    <a href="<?php echo $social_media['youtube']; ?>" target="__blank" class="Youtube"><i class="fab fa-youtube"></i>  </a>
     <!-- <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a> -->
 
 
