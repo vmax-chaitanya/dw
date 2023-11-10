@@ -85,7 +85,7 @@
                     minlength: "Coupon must have exactly 9 characters",
                     maxlength: "Coupon must have exactly 9 characters"
                 },
-                email: "Enter email address",
+                email: "Enter Valid Email Address",
                 message: "Please write a message"
             },
             submitHandler: function(form) {
@@ -323,7 +323,10 @@
                     maxlength: 10
                 },
                 career_list: "required",
-                resume: "required",
+                resume: {
+                    required: true,
+                    accept: "application/pdf,application/msword"
+                },
                 
                 message: "required"
             },
@@ -338,29 +341,28 @@
                 career_list: "Please select an option",
                 resume: "",
                
-                career_email: "Enter email address",
+                career_email: "Enter Valid Email Address",
                 message: "Please write a message"
             },
             submitHandler: function(form) {
+      var formData = new FormData(form);
 
-                var formData = $(form).serializeArray();
-               console.log(formData);
-                $.ajax({
-                    method: "POST",
-                    url: "<?php echo base_url('career-form'); ?>",
-                    data: formData,
-                    success: function(response) {
-                        //alert(response);
-                      
-                        // $('#contact-form')[0].reset();
-                        // $('.contact-form')[0].reset();
-                        //alert("hi");
-                        toastr.success('Thank you for your message. We will get in touch with you shortly');
-                        this.reset();
+      // Add any additional fields or data to the FormData if needed
+      formData.append('otherField', 'otherValue');
 
-                    }
-                });
-            }
+      $.ajax({
+        method: "POST",
+        url: "<?php echo base_url('career-form'); ?>",
+        data: formData,
+        contentType: false,
+        processData: false, // These two options are important for file uploads
+        success: function(response) {
+          // Handle the response
+          toastr.success('Thank you for your message. We will get in touch with you shortly');
+          form.reset();
+        }
+      });
+    }
         });
     });
 </script>

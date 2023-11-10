@@ -74,14 +74,14 @@
                                     <h3 class="blog-one__title">
                                         <a href="<?php echo base_url();?>blog-detail/<?php echo $blog['id']; ?>"> <?php echo $blog['title']; ?></a>
                                     </h3>
-                                    <div class="blog-one__person">
+                                    <!-- <div class="blog-one__person">
                                         <div class="blog-one__person-img">
                                             <img src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-person-img-1.jpg" alt="">
                                         </div>
                                         <div class="blog-one__person-content">
                                             <p>by Suresh</p>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>

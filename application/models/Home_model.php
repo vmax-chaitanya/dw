@@ -268,4 +268,11 @@ class Home_model extends CI_Model
         $query = $this->db->get('services');
         return $query->row_array();
     }
+    public function getCareerById($id)
+    {
+        $this->db->where('career_form.id', $id);
+        $this->db->join('careers_jobs', 'careers_jobs.id = career_form.career_id', 'inner');
+        $query = $this->db->get('career_form');
+        return $query->row_array();
+    }
 }

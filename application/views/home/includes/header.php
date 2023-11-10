@@ -26,7 +26,6 @@
                                 <!-- <li><a href="#">Gallery</a> </li> -->
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url(); ?>careers">Careers</a></li>
 
                         <!-- <li class="dropdown megamenu">
                             <a href="<?php echo base_url(); ?>services/1">Services </a>
@@ -84,34 +83,37 @@
                             <a href="<?php echo base_url(); ?>services"">Services</a>
                             <ul>
                                 <?php foreach ($categories as $category): ?>
-                                    <li class=""><a href="#">
-                                            <?= $category['name'] ?>
-                                        </a>
-                                        <ul class="">
-                                            <?php foreach ($services as $service): ?>
-                                                <?php if ($service['type'] == $category['id']): ?>
-                                                    <li><a
-                                                            href="<?php echo base_url(); ?>services/<?php echo $service['service_url'] ?>">
-                                                            <?= ucfirst(strtolower($service['name'])) ?>
-                                                        </a></li>
-                                                <?php endif; ?>
-                                            <?php endforeach; ?>
-                                        </ul>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </li>
-                        <li class="dropdown ">
-                            <a href="<?php echo base_url(); ?>training">Trainings</a>
-                            <ul>
-                                <?php foreach ($h_training as $training): ?>
-                                    <li><a href="<?php echo base_url();?>training/<?php echo $training['training_url'];?>"><?php echo ucfirst(strtolower($training['name']));?></a> </li>
-                                <?php endforeach; ?>
+                                    <li class=""><a href=" #">
+                                    <?= $category['name'] ?>
+                                </a>
+                                <ul class="">
+                                    <?php foreach ($services as $service): ?>
+                                        <?php if ($service['type'] == $category['id']): ?>
+                                            <li><a href="<?php echo base_url(); ?>services/<?php echo $service['service_url'] ?>">
+                                                    <?= ucfirst(strtolower($service['name'])) ?>
+                                                </a></li>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                    </li>
+                    <li class="dropdown ">
+                        <a href="<?php echo base_url(); ?>training">Trainings</a>
+                        <ul>
+                            <?php foreach ($h_training as $training): ?>
+                                <li><a href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>">
+                                        <?php echo ucfirst(strtolower($training['name'])); ?>
+                                    </a> </li>
+                            <?php endforeach; ?>
 
-                            </ul>
-                        </li>
-                        <li><a href="<?php echo base_url(); ?>blogs">Blogs</a></li>
-                        <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="<?php echo base_url(); ?>careers">Careers</a></li>
+
+                    <li><a href="<?php echo base_url(); ?>blogs">Blogs</a></li>
+                    <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
 
 
 

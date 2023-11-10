@@ -193,8 +193,14 @@ class HomeController extends CI_Controller
 		);
 
 		$result = $this->contact_model->create_contact($data);
+		$contact_id = $this->db->insert_id();
+		$data_contact = $this->contact_model->get_contact_by_id($contact_id);
+
 		if ($result) {
 
+			//$services_names = "";
+			$subject ="Contact form details";
+			$this->send_email_contact_form($data_contact,$services_names = null,$subject);
 
 			$pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
 
@@ -465,7 +471,7 @@ $body = "
 		if (!$this->phpmailer->Send()) {
 			echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
 		} else {
-			echo "Message sent!";
+			//echo "Message sent!";
 		}
 		return true;
 	}
@@ -492,18 +498,20 @@ $body = "
 			'email' => $this->input->post('career_email'),
 			'mobile' => $this->input->post('careeer_mobile'),
 			'career_id' => $this->input->post('career_list'),
-			'resume' => "hgjghjg",
+			'resume' => $image_name,
 			'message' => $this->input->post('message'),
 			'status' => 1,
 			'created_at' => date("Y-m-d H:i:s")
 		);
 
 		$result = $this->CareerFormModel->createCareerFormSubmission($data);
+		$id = $this->db->insert_id();
+		$data_contact = $this->Home_model->getCareerById($id);
+
+		print_r($data_contact); exit;
 		if ($result) {
-
-
-			//$pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
-
+			$subject ="Careers form details";
+			$this->send_email_career_form($data_contact,$subject);
 			echo "Success";
 		} else {
 			echo "Error inserting data.";

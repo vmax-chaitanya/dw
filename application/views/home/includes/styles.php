@@ -208,7 +208,7 @@
     }
 
     .sticky-icon a {
-        border-radius: 50px 0px 0px 50px;
+    border-radius: 50px 0px 0px 50px;
     text-align: left;
     margin: 2px;
     text-decoration: none;
@@ -224,7 +224,7 @@
     .sticky-icon a:hover {
         color: #FFF;
         filter: grayscale(0%);
-        transform: translate(180px, 0px);
+        /* transform: translate(180px, 0px); */
     }
 
     .sticky-icon a:hover i {

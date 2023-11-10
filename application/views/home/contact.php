@@ -95,8 +95,8 @@
 									9154357402</a>
 								<a href="tel:919154357402" class="contact-info__phone">+91
 									9154357404</a>
-								<a href="tel:040-2704708" class="contact-info__phone">
-									040-2704708</a>
+								<a href="tel040-42704708" class="contact-info__phone">
+								040-42704708</a>
 
 
 							</h4>

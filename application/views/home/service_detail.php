@@ -30,7 +30,7 @@
         p {
             margin-top: 0;
             margin-bottom: 1rem;
-            text-align: justify;
+            text-align: center;
             /* line-height: 26px; */
         }
     </style>

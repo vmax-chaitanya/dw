@@ -4707,7 +4707,7 @@ ul {
   font-weight: 500;
   margin: 0;
   text-align: justify;
-  word-spacing: 0px;
+  word-spacing: -1px;
 }
 
 .footer-widget__links {
