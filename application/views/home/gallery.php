@@ -8,15 +8,8 @@
 
 <head>
     <?php include("includes/styles.php"); ?>
-    <!-- Include Fancybox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-    <!-- Include Fancybox JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
-    <!-- Include Fancybox Buttons and Thumbs Plugins -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox-buttons.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox-thumbs.min.js"></script>
 
 </head>
 
@@ -65,39 +58,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 pt-5">
-                        <div class="about-page__left">
-                            <div class="about-page__img">
-                                <a data-fancybox="gallery" data-fancybox-zoom="true" data-fancybox-autoplay="true" data-fancybox-thumbs="true" href="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="">
-                                </a>
-
-                            </div>
-
+                        <div class="about-page__img">
+                            <a data-fancybox="about-gallery" data-caption="Image 1" href="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg">
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="Image 1">
+                            </a>
                         </div>
                     </div>
                     <div class="col-xl-4 pt-5">
-                        <div class="about-page__left">
-                            <div class="about-page__img">
-                                <a data-fancybox="gallery" data-fancybox-zoom="true" data-fancybox-autoplay="true" data-fancybox-thumbs="true" href="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="">
-                                </a>
-
-                            </div>
-
+                        <div class="about-page__img">
+                            <a data-fancybox="about-gallery" data-caption="Image 1" href="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg">
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="Image 1">
+                            </a>
                         </div>
                     </div>
+
                     <div class="col-xl-4 pt-5">
-                        <div class="about-page__left">
-                            <div class="about-page__img">
-                                <a data-fancybox="gallery" data-fancybox-zoom="true" data-fancybox-autoplay="true" data-fancybox-thumbs="true" href="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="">
-                                </a>
-
-                            </div>
-
+                        <div class="about-page__img">
+                            <a data-fancybox="about-gallery" data-caption="Image 1" href="http://localhost/dw/assets/home/images/home_images/home_images.jpg">
+                                <img src="http://localhost/dw/assets/home/images/home_images/home_images.jpg" alt="Image 1">
+                            </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -117,21 +98,8 @@
 
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            $("[data-fancybox]").fancybox({
-                buttons: [
-                    "zoom",
-                    "slideShow",
-                    "fullScreen",
-                    "download",
-                    "thumbs",
-                    "close"
-                ],
-            });
-        });
-    </script>
 
 </body>
 

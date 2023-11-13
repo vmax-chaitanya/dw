@@ -85,7 +85,7 @@ class HomeController extends CI_Controller
 	{
 		// Load the FAQ view
 		$data['page_title'] = "Gallery || Digital win ||";
-
+		$data['GalleryItems'] = $this->Home_model->getActiveGallery();
 		$this->load->view('home/gallery', $data);
 	}
 	public function faq()

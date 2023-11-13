@@ -338,10 +338,10 @@
                             </div>
                             <div class="get-to-know__progress">
                                 <div class="get-to-know__progress-single">
-                                    <h4 class="get-to-know__progress-title">Ensured Quality</h4>
+                                    <h4 class="get-to-know__progress-title">High Returns on Investment</h4>
                                     <div class="bar">
-                                        <div class="bar-inner count-bar" data-percent="99%">
-                                            <div class="count-text">99%</div>
+                                        <div class="bar-inner count-bar" data-percent="100%">
+                                            <div class="count-text">100%</div>
                                         </div>
                                     </div>
                                 </div>

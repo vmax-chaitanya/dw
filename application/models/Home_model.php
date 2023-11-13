@@ -275,4 +275,10 @@ class Home_model extends CI_Model
         $query = $this->db->get('career_form');
         return $query->row_array();
     }
+    public function getActiveGallery()
+    {
+        $this->db->where('type', '1');
+        $this->db->where('status', '1');
+        return $this->db->get('gallery')->result_array();
+    }
 }
