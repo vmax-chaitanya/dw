@@ -8,6 +8,17 @@
 
 <head>
     <?php include("includes/styles.php"); ?>
+    <style>
+        .services-two__title {
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: uppercase; 
+            line-height: 29px;
+            margin-top: 16px;
+            margin-bottom: 25px;
+            text-align: left !important;
+        }
+    </style>
 </head>
 
 <body>

@@ -8,6 +8,17 @@
 
 <head>
     <?php include("includes/styles.php"); ?>
+    <style>
+        .services-two__title {
+            font-size: 24px;
+            font-weight: 500;
+            text-transform: uppercase; 
+            line-height: 29px;
+            margin-top: 16px;
+            margin-bottom: 25px;
+            text-align: left !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -142,39 +153,45 @@
                             </div>
                             <!-- <p class="about-page__right-text-1">We’re committed to delivering the best digital marketing
                                 for your businesses</p> -->
-                            <p class="about-page__right-text-2" style="padding-top: 15px !important;"><b>Who We Are:</b>
+                            <h3 class="services-two__title">Who We Are:</h3>
+                            <p class="about-page__right-text-2" >
                                 At DigitalWin Business Agency, we are a team of passionate professionals who are deeply
                                 committed to the success of our clients. With years of experience and expertise in
                                 digital marketing, we have helped numerous businesses across diverse industries achieve
                                 exceptional results.</p>
-                            <p class="about-page__right-text-2" style="padding-top: 15px !important;"><b>Our
-                                    Approach:</b> We believe in a collaborative approach to digital marketing. We see
+                            <h3 class="services-two__title">Our
+                                    Approach:</h3>
+                            <p class="about-page__right-text-2" ><b></b> We believe in a collaborative approach to digital marketing. We see
                                 ourselves as your partner, working hand in hand to understand your unique business
                                 needs, goals, and challenges. By combining our expertise with your brand vision, we
                                 create a winning formula for success.</p>
-                            <p class="about-page__right-text-2" style="padding-top: 15px !important;"><b>Tailored
-                                    Strategies:</b> We understand that every business is unique, and there is no
+                                <h3 class="services-two__title">Tailored
+                                    Strategies:</h3>
+                            <p class="about-page__right-text-2" ><b></b> We understand that every business is unique, and there is no
                                 one-size- fits-all approach to digital marketing. That's why we take the time to analyze
                                 your target audience, industry landscape, and competitive advantage to develop
                                 customized strategies that align with your specific goals. Whether you are looking to
                                 increase brand awareness, drive website traffic, or boost conversions, we have the
                                 expertise to make it happen.</p>
-                            <p class="about-page__right-text-2" style="padding-top: 15px !important;"><b>Comprehensive
-                                    Services:</b> As a full-service digital marketing agency, we offer a wide range of
+                                <h3 class="services-two__title">Comprehensive
+                                    Services:</h3>
+                            <p class="about-page__right-text-2" ><b></b> As a full-service digital marketing agency, we offer a wide range of
                                 services designed to cover all aspects of your digital presence. From search engine
                                 optimization (SEO) and pay-per-click (PPC) advertising to social media marketing,
                                 content creation, and website design and development, our team of experts is
                                 well-equipped to handle all your digital marketing needs. We stay up-to-date with the
                                 latest trends and technologies to ensure that our strategies are effective and drive
                                 tangible results.</p>
-                            <p class="about-page__right-text-2" style="padding-top: 15px !important;"><b>Data-Driven
-                                    Insights:</b> We believe in the power of data. Our strategies are backed by thorough
+                                <h3 class="services-two__title">Data-Driven
+                                    Insights:</h3>
+                            <p class="about-page__right-text-2" ><b></b> We believe in the power of data. Our strategies are backed by thorough
                                 research, analytics, and data-driven insights. We monitor and measure the performance of
                                 your campaigns, providing you with comprehensive reports and transparent communication.
                                 This enables us to identify areas of improvement, make data-backed decisions, and
                                 continuously optimize your digital marketing efforts for maximum impact.</p>
-                            <p class="about-page__right-text-2" style="padding-top: 15px !important;"><b>Let's Win
-                                    Digitally:</b> Our motto, "Let's Win Digitally," embodies our commitment to your
+                                <h3 class="services-two__title">Let's Win
+                                    Digitally:</h3>
+                            <p class="about-page__right-text-2" ><b></b> Our motto, "Let's Win Digitally," embodies our commitment to your
                                 success. We are not just another digital marketing agency; we are your trusted partner
                                 in achieving extraordinary results. With our expertise, personalized strategies, and
                                 relentless pursuit of excellence, we are confident in our ability to help your business
