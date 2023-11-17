@@ -182,67 +182,65 @@
     });
 </script>
 <script>
-  
     /////thisis for brouchure download////
-    $(document).ready(function () {
-    // Initialize form validation
-    $("#brouchure").validate({
-        rules: {
-            name1: "required",
-            email1: {
-                required: true,
-                email: true // Validate email format
-            },
-            mobile1: {
+    $(document).ready(function() {
+        // Initialize form validation
+        $("#brouchure").validate({
+            rules: {
+                name1: "required",
+                email1: {
+                    required: true,
+                    email: true // Validate email format
+                },
+                mobile1: {
                     required: true,
                     minlength: 10,
                     maxlength: 10
                 },
-            subject1: "required"
-        },
-        messages: {
-            name1: "Please enter your name",
-            email1: {
-                required: "Please enter your email address",
-                email: "Please enter a valid email address"
+                subject1: "required"
             },
-            mobile1: {
+            messages: {
+                name1: "Please enter your name",
+                email1: {
+                    required: "Please enter your email address",
+                    email: "Please enter a valid email address"
+                },
+                mobile1: {
                     required: "Enter Mobile Number",
                     minlength: "Enter Valid  Number",
                     maxlength: "Enter Valid  Number",
                 },
-            subject1: "Please enter a subject"
-        },
-        submitHandler: function (form) {
-            // Handle the form submission via AJAX here
-            $.ajax({
-                type: 'POST',
-                url: $(form).attr('action'),
-                data: $(form).serialize(),
-                dataType: 'text',
-                success: function (response) {
-                  
-                    if (response) {
-                        // Force the browser to download the file
-                        var link = document.createElement('a');
-                        link.href = response;
-                        link.download = 'Brochure.pdf';
-                        link.click();
-                        toastr.success('Succesfully Downloaded');
-                        $('#brouchure')[0].reset();
-                        $('#exampleModal').modal('hide');
-                    } else {
-                        toastr.error('Error downloading PDF');
-                    }
-                },
-                error: function (error) {
-                    console.log('Error:', error);
-                }
-            });
-        }
-    });
-});
+                subject1: "Please enter a subject"
+            },
+            submitHandler: function(form) {
+                // Handle the form submission via AJAX here
+                $.ajax({
+                    type: 'POST',
+                    url: $(form).attr('action'),
+                    data: $(form).serialize(),
+                    dataType: 'text',
+                    success: function(response) {
 
+                        if (response) {
+                            // Force the browser to download the file
+                            var link = document.createElement('a');
+                            link.href = response;
+                            link.download = 'Brochure.pdf';
+                            link.click();
+                            toastr.success('Succesfully Downloaded');
+                            $('#brouchure')[0].reset();
+                            $('#exampleModal').modal('hide');
+                        } else {
+                            toastr.error('Error downloading PDF');
+                        }
+                    },
+                    error: function(error) {
+                        console.log('Error:', error);
+                    }
+                });
+            }
+        });
+    });
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -285,18 +283,18 @@
     });
 </script>
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         // Add an event listener to the modal when it's hidden (closed)
-        $('#exampleModal').on('hidden.bs.modal', function (e) {
+        $('#exampleModal').on('hidden.bs.modal', function(e) {
             // Reset the form fields
             $('#brouchure')[0].reset();
         });
     });
 </script>
 <script>
-    $(document).ready(function () {
-        $("#copoun_id").prop("disabled", true).addClass("disabled-input"); 
-        $("#copoun_select").change(function () {
+    $(document).ready(function() {
+        $("#copoun_id").prop("disabled", true).addClass("disabled-input");
+        $("#copoun_select").change(function() {
             if ($(this).val() === "1") {
                 $("#copoun_id").prop("disabled", false).removeClass("disabled-input"); // Enable the input field and add the class
             } else {
@@ -323,10 +321,7 @@
                     maxlength: 10
                 },
                 career_list: "required",
-                resume: {
-                    required: true,
-                    accept: "application/pdf,application/msword"
-                },
+                resume: "required",
                 
                 message: "required"
             },
@@ -341,7 +336,7 @@
                 career_list: "Please select an option",
                 resume: "",
                
-                career_email: "Enter Valid Email Address",
+                career_email: "Enter email address",
                 message: "Please write a message"
             },
             submitHandler: function(form) {

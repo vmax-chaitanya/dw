@@ -136,7 +136,7 @@
                                         <div class="comment-form__input-box">
                                             <input type="file" placeholder="Resume" name="resume"
                                                 style="display: block !important;"
-                                                accept="application/pdf, application/msword,.doc,.docx">
+                                                accept="application/pdf, application/msword,.doc,.docx, image/*">
                                         </div>
                                     </div>
                                     <!-- <div class="col-md-6">
