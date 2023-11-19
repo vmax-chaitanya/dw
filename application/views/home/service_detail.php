@@ -30,9 +30,14 @@
         p {
             margin-top: 0;
             margin-bottom: 1rem;
-            text-align: center;
+            text-align: left ;
             /* line-height: 26px; */
         }
+    </style>
+    <style>
+  div.my_div  p {
+    text-align: center !important;
+}
     </style>
 </head>
 
@@ -161,10 +166,11 @@
                                 <h2 class="service-details__title">
                                     <?php echo ucwords(strtolower($services_detail['name'])); ?>
                                 </h2>
-
-                                <p class="about-page__right-text-2">
+                              
+                                <p class="about-page__right-text-2" >
                                     <?php echo $services_detail['description']; ?>
                                 </p>
+                               
                                 <!-- <p class="service-details__text-3">Tincidunt elit magnis nulla facilisis sagittis sapien
                                     nunc Many desktop publishing packages and web page editors amet ultrices dolores sit
                                     ipsum velit purus aliquet massa fringilla leo orci. Sapien nunc amet ultrices.</p> -->
@@ -229,8 +235,8 @@
                                     <h3 class="services-two__title"><a href="javascript:void(0);">
                                             <?php echo $service['name']; ?>
                                         </a></h3>
-                                    <p class="services-two__text">
-                                        <?php echo $service['description']; ?>
+                                    <p class="services-two__text" style="text-align:center !important">
+                                       <div class="my_div" style="text-align:center"> <?php echo $service['description']; ?> </div>
                                     </p>
                                     <a class="services-two__arrow" href="javascript:void(0);"></a>
                                 </div>

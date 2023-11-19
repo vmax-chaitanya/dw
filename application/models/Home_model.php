@@ -86,6 +86,29 @@ class Home_model extends CI_Model
         $this->db->where('status', '1');
         return $this->db->get('services')->result_array();
     }
+    public function getActiveServicesSideMenu($type)
+{
+    $this->db->where('type', $type);
+    $this->db->where('status', '1');
+    $initialResult = $this->db->get('services')->result_array();
+
+    // Check if the initial result set has less than 10 records
+    if (count($initialResult) < 10) {
+        $additionalRecordsNeeded = 10 - count($initialResult);
+
+        // Fetch additional records without any additional conditions
+        $this->db->where('status', '1');
+        $this->db->limit($additionalRecordsNeeded);
+        $additionalResult = $this->db->get('services')->result_array();
+
+        // Merge the initial and additional results
+        $result = array_unique(array_merge($initialResult, $additionalResult), SORT_REGULAR);
+    } else {
+        $result = $initialResult;
+    }
+
+    return $result;
+}
     public function getActiveOtherServices()
     {
         $this->db->where('type', '2');
