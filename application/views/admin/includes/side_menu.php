@@ -23,7 +23,7 @@
                 <span class="badge badge-success">New</span>
             </a>
         </li>
-        <?php if ($this->session->userdata('user_id') == '1') { ?>
+        <?php if ($this->session->userdata('user_type') == '1') { ?>
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>admin/banner">
                     <i class="icon-handbag menu-icon"></i>
@@ -97,7 +97,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>admin/contact">
                     <i class="icon-handbag menu-icon"></i>
-                    <span class="menu-title">Contact form</span>
+                    <span class="menu-title">Contact form <?php echo $this->session->userdata('user_type'); ?></span>
                 </a>
             </li>
             <li class="nav-item">
@@ -106,6 +106,23 @@
                     <span class="menu-title">Careers form</span>
                 </a>
             </li>
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
+                    <i class="icon-cup menu-icon"></i>
+                    <span class="menu-title">Careers</span>
+                </a>
+                <div class="collapse" id="ui-advanced">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/1">Pending</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/2">Contacted</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/3">Accepted</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/4">Rejected</a></li>
+
+                    </ul>
+                </div>
+            </li>
+          
         <?php } ?>
         <!-- <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
