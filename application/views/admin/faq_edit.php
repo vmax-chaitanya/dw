@@ -82,7 +82,7 @@
                                             <div class="col-md-9">
                                             </div>
                                             <div class="col-md-3">
-                                            <input type="text" class="form-control" name="page_id"
+                                            <input type="hidden" class="form-control" name="page_id"
                                                             value="<?php echo $service_id; ?>" />
                                                 <button type="submit" class="btn btn-success mr-2">Update</button>
                                                 <a href="<?php echo base_url('admin/faq'); ?>"

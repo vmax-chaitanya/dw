@@ -30,17 +30,20 @@
                         <div class="card-body">
                             <div class="row mb-3">
                                 <div class="col-md-10">
-                                    <h3 class="card-title"><?php echo $training['name'];?></h3>
+                                    <h4 class="card-title">Data table</h4>
                                 </div>
-                                <div class="col-md-2 ms-auto">
-                                    <a href="<?php echo base_url(); ?>admin/key_highlights/add/<?php echo $this->uri->segment(3);?>"
-                                        class="w-100 btn btn-primary">Add</a>
-                                </div>
+                                <!-- <div class="col-md-2 ms-auto">
+                                    <a href="<?php echo base_url(); ?>admin/contact/add"
+                                        class="w-100 btn btn-primary">Create</a>
+                                </div> -->
                             </div>
+
+
+
                             <!-- <a class="nav-link dropdown-toggle bg-primary" id="actionDropdown" href="#" data-toggle="dropdown">
                                 <span class="btn">+ Create new</span>
                             </a> -->
-                            <?php if ($this->session->flashdata('success')): ?>
+                            <?php if ($this->session->flashdata('success')) : ?>
                                 <div class="alert alert-success">
                                     <?php echo $this->session->flashdata('success'); ?>
                                 </div>
@@ -52,44 +55,58 @@
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <!-- <th>Training ID</th> -->
                                                     <th>Name</th>
-                                                    <th>Description</th>
+                                                    <th>Email</th>
+                                                    <th>Mobile</th>
+                                                    <!-- <th>Message</th> -->
+
                                                     <th>Status</th>
-                                                    <th>Actions</th>
+                                                    <th>Received At</th>
+                                                    <th>Resume</th>
+                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php $i = 1;
-                                                foreach ($key_highlights as $highlight): ?>
+                                                <?php $i=1; foreach ($careers as $row) : ?>
                                                     <tr>
                                                         <td>
                                                             <?php echo $i++; ?>
                                                         </td>
+                                                        <td>
+                                                            <?php echo $row['name']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $row['email']; ?>
+                                                        </td>
+                                                        <td>
+                                                            <?php echo $row['mobile']; ?>
+                                                        </td>
                                                         <!-- <td>
-                                                            <?php echo $highlight['training_id']; ?>
+                                                            <?php echo $row['message']; ?>
                                                         </td> -->
+
                                                         <td>
-                                                            <?php echo $highlight['name']; ?>
+                                                            <?php
+                                                            if ($row['status'] == '1') {
+                                                                echo 'Active';
+                                                            } elseif ($row['status'] == '2') {
+                                                                echo 'Inactive';
+                                                            } elseif ($row['status'] == '3') {
+                                                                echo 'Delete';
+                                                            }
+                                                            ?>
                                                         </td>
                                                         <td>
-                                                            <?php echo $highlight['description']; ?>
+                                                            <?php echo $row['created_at']; ?>
                                                         </td>
                                                         <td>
-                                                            <?php if ($highlight['status'] == '1'): ?>
-                                                                <label class="badge badge-success">Active</label>
-                                                            <?php elseif ($highlight['status'] == '2'): ?>
-                                                                <label class="badge badge-danger">In-Active</label>
-                                                            <?php else: ?>
-                                                                <label class="badge badge-info">Others</label>
-                                                            <?php endif; ?>
+                                                            <a href="<?php echo base_url('' . $row['resume']); ?>" download><i class="fa fa-download" aria-hidden="true"></i> Download
+                                                            </a>
+
                                                         </td>
                                                         <td>
-                                                            <a href="<?php echo base_url('admin/key_highlights/edit/' . $highlight['id'].'/'.$this->uri->segment(3)); ?>"
-                                                                class="btn btn-outline-primary">Edit</a>
-                                                            <a href="<?php echo base_url('admin/key_highlights/delete/' . $highlight['id']); ?>"
-                                                                class="btn btn-outline-danger"
-                                                                onclick="return confirm('Are you sure you want to delete this key highlight?')">Delete</a>
+                                                            <a href="<?php echo site_url('admin/careers/view/' . $row['id']); ?>" class="btn btn-primary btn-sm">Edit</a>
+                                                            <a href="<?php echo site_url('admin/careers/delete/' . $row['id']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this contact?')">Delete</a>
                                                         </td>
                                                     </tr>
                                                 <?php endforeach; ?>

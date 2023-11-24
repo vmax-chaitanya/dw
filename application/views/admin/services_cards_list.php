@@ -30,7 +30,7 @@
                         <div class="card-body">
                             <div class="row mb-3">
                                 <div class="col-md-10">
-                                    <h4 class="card-title"><?php echo $service['name'];?></h4>
+                                    <h3 class="card-title"><?php echo $service['name'];?></h3>
                                 </div>
                                 <div class="col-md-2 ms-auto">
                                     <a href="<?php echo base_url();?>admin/services_cards/add/<?php echo $this->uri->segment(3);?>" class="w-100 btn btn-primary">Add</a>
@@ -56,7 +56,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Service ID</th>
+                                                    <!-- <th>Service ID</th> -->
                                                     <th>Name</th>
                                                     <th>Description</th>
                                                     <th>Image</th>
@@ -69,7 +69,7 @@
                                                 foreach ($service_cards_type_1 as $card) : ?>
                                                     <tr>
                                                         <td><?php echo $i++; ?></td>
-                                                        <td><?php echo $card['service_id']; ?></td>
+                                                        <!-- <td><?php echo $card['service_id']; ?></td> -->
                                                         <td><?php echo $card['name']; ?></td>
                                                         <td><?php echo $card['description']; ?></td>
                                                         <td>
@@ -108,7 +108,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Service ID</th>
+                                                    <!-- <th>Service ID</th> -->
                                                     <th>Name</th>
                                                     <th>Description</th>
                                                     <th>Image</th>
@@ -121,7 +121,7 @@
                                                 foreach ($service_cards_type_2 as $card) : ?>
                                                     <tr>
                                                         <td><?php echo $j++; ?></td>
-                                                        <td><?php echo $card['service_id']; ?></td>
+                                                        <!-- <td><?php echo $card['service_id']; ?></td> -->
                                                         <td><?php echo $card['name']; ?></td>
                                                         <td><?php echo $card['description']; ?></td>
                                                         <td>
@@ -160,7 +160,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>Service ID</th>
+                                                    <!-- <th>Service ID</th> -->
                                                     <th>Name</th>
                                                     <th>Description</th>
                                                     <th>Image</th>
@@ -173,7 +173,7 @@
                                                 foreach ($service_cards_type_3 as $card) : ?>
                                                     <tr>
                                                         <td><?php echo $k++; ?></td>
-                                                        <td><?php echo $card['service_id']; ?></td>
+                                                        <!-- <td><?php echo $card['service_id']; ?></td> -->
                                                         <td><?php echo $card['name']; ?></td>
                                                         <td><?php echo $card['description']; ?></td>
                                                         <td>

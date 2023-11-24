@@ -213,4 +213,8 @@ $route['admin/static_pages_seo/update/(:num)'] = 'Admin/StaticPagesSeo/update/$1
 
 $route['admin/static_pages_seo/delete/(:num)'] = 'Admin/StaticPagesSeo/delete/$1';  // Delete an SEO record
 
+
+
+$route['admin/careers/(:num)'] = 'Admin/Careers/index/$1';
+$route['admin/careers/view/(:num)'] = 'Admin/Careers/view/$1';
 ///////admin////////
