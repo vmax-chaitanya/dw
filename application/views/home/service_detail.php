@@ -30,14 +30,14 @@
         p {
             margin-top: 0;
             margin-bottom: 1rem;
-            text-align: left ;
+            text-align: left;
             /* line-height: 26px; */
         }
     </style>
     <style>
-  div.my_div  p {
-    text-align: center !important;
-}
+        div.my_div p {
+            text-align: center !important;
+        }
     </style>
 </head>
 
@@ -53,8 +53,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg"
-                style="background-image: url(<?php echo base_url('' . $services_detail['banner_image']); ?>)">
+            <div class="page-header-bg" style="background-image: url(<?php echo base_url('' . $services_detail['banner_image']); ?>)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -89,9 +88,8 @@
                             <div class="service-details__sidebar-service">
                                 <ul class="service-details__sidebar-service-list list-unstyled">
                                     <?php $i = 1;
-                                    foreach ($services_menu as $service): ?>
-                                        <li <?php echo ($service['service_url'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a
-                                                href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">
+                                    foreach ($services_menu as $service) : ?>
+                                        <li <?php echo ($service['service_url'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">
                                                 <?php echo ucwords(strtolower($service['name'])); ?> <span class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>
@@ -113,8 +111,7 @@
 
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="mobile"
-                                                    onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                                <input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
@@ -124,8 +121,7 @@
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <select name="copoun_select" id="copoun_select"
-                                                    style="display: block !important;">
+                                                <select name="copoun_select" id="copoun_select" style="display: block !important;">
                                                     <option style="color:#726d7b !important" value="">Do You Have A
                                                         Copoun</option>
                                                     <option value="1">Yes</option>
@@ -136,17 +132,15 @@
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Enter Copoun" name="copoun_id"
-                                                    id="copoun_id">
+                                                <input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id">
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="row">
                                         <div class="col-xl-12">
                                             <div class="comment-form__input-box">
-                                                <textarea name="message" placeholder="Write a message"
-                                                    style="display: block !important;"></textarea>
+                                                <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
                                             </div>
                                             <button type="submit" class="thm-btn comment-form__btn">send
                                                 a message</button>
@@ -166,44 +160,13 @@
                                 <h2 class="service-details__title">
                                     <?php echo ucwords(strtolower($services_detail['name'])); ?>
                                 </h2>
-                              
-                                <p class="about-page__right-text-2" >
+
+                                <p class="about-page__right-text-2">
                                     <?php echo $services_detail['description']; ?>
                                 </p>
-                               
-                                <!-- <p class="service-details__text-3">Tincidunt elit magnis nulla facilisis sagittis sapien
-                                    nunc Many desktop publishing packages and web page editors amet ultrices dolores sit
-                                    ipsum velit purus aliquet massa fringilla leo orci. Sapien nunc amet ultrices.</p> -->
-                            </div>
-                            <!-- <div class="service-details__bottom">
-                                <ul class="list-unstyled service-details__bottom-list">
-                                    <li class="service-details__bottom-single">
-                                        <div class="service-details__bottom-icon">
-                                            <span class="icon-front-end"></span>
-                                            <h4 class="service-details__bottom-title">content & Structure</h4>
-                                            <p class="service-details__bottom-text">Duis aute irure dolor in repreh
-                                                enderit nulla voluptate velit.</p>
-                                        </div>
-                                    </li>
-                                    <li class="service-details__bottom-single">
-                                        <div class="service-details__bottom-icon">
-                                            <span class="icon-investigation"></span>
-                                            <h4 class="service-details__bottom-title">Analysis & Planning</h4>
-                                            <p class="service-details__bottom-text">Duis aute irure dolor in repreh
-                                                enderit nulla voluptate velit.</p>
-                                        </div>
-                                    </li>
-                                    <li class="service-details__bottom-single">
-                                        <div class="service-details__bottom-icon">
-                                            <span class="icon-increment"></span>
-                                            <h4 class="service-details__bottom-title">Solutions & Findings</h4>
-                                            <p class="service-details__bottom-text">Duis aute irure dolor in repreh
-                                                enderit nulla voluptate velit.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div> -->
 
+
+                            </div>
 
                         </div>
                     </div>
@@ -211,7 +174,7 @@
             </div>
         </section>
 
-        <?php if (count($services_module1) > 0): ?>
+        <?php if (count($services_module1) > 0) : ?>
             <!--Services Two Start-->
             <section class="services-two pt-0 pb-0">
                 <div class="container">
@@ -225,7 +188,7 @@
                     </div>
                     <div class="row">
                         <?php $i = 1;
-                        foreach ($services_module1 as $service): ?>
+                        foreach ($services_module1 as $service) : ?>
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
                                 <!--Services Two Single-->
                                 <div class="services-two__single">
@@ -236,7 +199,7 @@
                                             <?php echo $service['name']; ?>
                                         </a></h3>
                                     <p class="services-two__text" style="text-align:center !important">
-                                       <div class="my_div" style="text-align:center"> <?php echo $service['description']; ?> </div>
+                                    <div class="my_div" style="text-align:center"> <?php echo $service['description']; ?> </div>
                                     </p>
                                     <a class="services-two__arrow" href="javascript:void(0);"></a>
                                 </div>
@@ -249,7 +212,7 @@
             <!--Services Two End-->
         <?php endif; ?>
 
-        <?php if (count($services_module2) > 0): ?>
+        <?php if (count($services_module2) > 0) : ?>
             <!--Services Two Start-->
             <section class="services-two pt-3 pb-0">
                 <div class="container">
@@ -264,7 +227,7 @@
 
                     <div class="row">
                         <?php $i = 1;
-                        foreach ($services_module2 as $service): ?>
+                        foreach ($services_module2 as $service) : ?>
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
                                 <!--Services Two Single-->
                                 <div class="services-two__single">
@@ -288,7 +251,7 @@
         <?php endif; ?>
 
 
-        <?php if (count($services_module3) > 0): ?>
+        <?php if (count($services_module3) > 0) : ?>
             <!--Services Two Start-->
             <section class="services-two pt-3 pb-0  ">
                 <div class="container">
@@ -303,7 +266,7 @@
 
                     <div class="row">
                         <?php $i = 1;
-                        foreach ($services_module3 as $service): ?>
+                        foreach ($services_module3 as $service) : ?>
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp mb-3" data-wow-delay="100ms">
                                 <!--Services Two Single-->
                                 <div class="services-two__single">
@@ -338,7 +301,7 @@
                         <h2 class="section-title__title">Faqs</h2>
                         <div class="row" style="text-align:left">
                             <?php $i = 1;
-                            foreach ($service_faqs as $faqs): ?>
+                            foreach ($service_faqs as $faqs) : ?>
                                 <div class="col-xl-6 col-lg-6 mt-2 mb-2">
                                     <div class="faq-page__single">
                                         <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion2">
@@ -379,8 +342,8 @@
                 </div>
                 <div class="row">
                     <?php $i = 1;
-                    foreach ($upcoming_services as $key => $service):
-                        if ($key < 3): ?>
+                    foreach ($upcoming_services as $key => $service) :
+                        if ($key < 3) : ?>
                             <div class="col-xl-4 col-lg-4">
                                 <!--Portfolio One Single-->
                                 <div class="project-one__single">
@@ -389,8 +352,7 @@
                                         <img src="<?php echo base_url('' . $service['image']); ?>" alt="">
                                         <div class="project-one__hover">
                                             <p class="project-one__tagline">service</p>
-                                            <h3 class="project-one__title"><a
-                                                    href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">
+                                            <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">
                                                     <?php echo ucfirst(strtolower($service['name'])); ?>
                                                 </a>
                                             </h3>
@@ -398,7 +360,8 @@
                                     </div>
                                 </div>
                             </div>
-                        <?php endif; endforeach; ?>
+                    <?php endif;
+                    endforeach; ?>
                 </div>
             </div>
         </section>
@@ -415,12 +378,9 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    
+
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>
-
-
-<!-- Mirrored from qutiiz-html.vercel.app/main-html/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:32 GMT -->
 
 </html>

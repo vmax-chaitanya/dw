@@ -7,50 +7,8 @@
     Digital Marketing Agency in Hyderabad | DigitalWin Business
 </title>
 
-
-
-
-<meta name="google-site-verification" content="1gRjPjvKnKSv3uRyjFsV3faLSqPIdr04ocZTfOdrK9A" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4MMT68X3EL"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-4MMT68X3EL');
-</script>
-
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=6935422259854837&ev=PageView&noscript=1" /></noscript>
-<script>
-    ! function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-            n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '6935422259854837');
-    fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=6935422259854837&ev=PageView&noscript=1" /></noscript>
-
-
-
-
+<?php // include("includes/seo_pages_scripts.php"); 
+?>
 
 
 
@@ -168,57 +126,54 @@
 </style>
 <style>
     .service-details__sidebar-service {
-        /* Add your sidebar styles here */
-        /* For example: */
+
         max-height: 700px;
-        /* Set a fixed height for the sidebar */
+
         overflow-y: auto;
-        /* Enable vertical scrolling when content exceeds the height */
+
     }
 
-    /* Style for the sidebar list items */
+
     .service-details__sidebar-service-list li {
-        /* Add your list item styles here */
-        /* For example: */
+
         margin: 5px 0;
     }
 
-    /* Style for the current item */
+
     .service-details__sidebar-service-list .current {
-        /* Add styles for the current item here */
-        /* For example: */
+
         font-weight: bold;
     }
 
     .disabled-input {
         cursor: no-drop;
-        /* Change the cursor to a pointer */
+
     }
 </style>
 <style>
     .sticky-icon {
         z-index: 99;
-    position: fixed;
-    top: 25%;
-    right: 0%;
-    width: 38px;
-    display: flex;
-    flex-direction: column;
-        
+        position: fixed;
+        top: 25%;
+        right: 0%;
+        width: 38px;
+        display: flex;
+        flex-direction: column;
+
     }
 
     .sticky-icon a {
-    border-radius: 50px 0px 0px 50px;
-    text-align: left;
-    margin: 2px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 2px;
-    font-size: 15px;
-    font-family: 'Oswald', sans-serif;
-    filter: grayscale(100%);
-    transition: all 0.8s;
-    width: 35px;
+        border-radius: 50px 0px 0px 50px;
+        text-align: left;
+        margin: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 2px;
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+        filter: grayscale(100%);
+        transition: all 0.8s;
+        width: 35px;
     }
 
     .sticky-icon a:hover {
@@ -452,12 +407,12 @@ $services = $this->Home_model->getActiveServicesNew();
 
 <!--Start Sticky Icon-->
 <div class="sticky-icon">
-    <a href="<?php echo $social_media['facebook']; ?>" target="__blank" class="Facebook"><i class="fab fa-facebook-f"> </i>  </a>
-    <a href="<?php echo $social_media['instagram']; ?>" target="__blank" class="Instagram"><i class="fab fa-instagram"></i>  </a>
-    <a href="<?php echo $social_media['linkedin']; ?>" target="__blank" class="LinkedIn"><i class="fab fa-linkedin"></i>  </a>
-    <a href="<?php echo $social_media['quora']; ?>" target="__blank" class="Quora"><i class="fab fa-quora"></i>  </a>
-    <a href="<?php echo $social_media['pinterest']; ?>" target="__blank" class="Pinterest"><i class="fab fa-pinterest"></i>  </a>
-    <a href="<?php echo $social_media['youtube']; ?>" target="__blank" class="Youtube"><i class="fab fa-youtube"></i>  </a>
+    <a href="<?php echo $social_media['facebook']; ?>" target="__blank" class="Facebook"><i class="fab fa-facebook-f"> </i> </a>
+    <a href="<?php echo $social_media['instagram']; ?>" target="__blank" class="Instagram"><i class="fab fa-instagram"></i> </a>
+    <a href="<?php echo $social_media['linkedin']; ?>" target="__blank" class="LinkedIn"><i class="fab fa-linkedin"></i> </a>
+    <a href="<?php echo $social_media['quora']; ?>" target="__blank" class="Quora"><i class="fab fa-quora"></i> </a>
+    <a href="<?php echo $social_media['pinterest']; ?>" target="__blank" class="Pinterest"><i class="fab fa-pinterest"></i> </a>
+    <a href="<?php echo $social_media['youtube']; ?>" target="__blank" class="Youtube"><i class="fab fa-youtube"></i> </a>
     <!-- <a href="https://twitter.com/login" class="Twitter"><i class="fab fa-twitter"> </i> Twitter </a> -->
 
 

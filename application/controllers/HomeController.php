@@ -441,7 +441,7 @@ $body = "
 			</tr>
 		</table>
 		";
-		$smtp_host = "mail.rdsindia.com";
+		$smtp_host = "localhost";
 		$smtp_user = "info@digitalwinbusinessagency.com";
 		$smtp_password = "digitalwin@123";
 		$smtp_port = 25;

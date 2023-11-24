@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
@@ -91,12 +89,12 @@
 								</a>
 								<a href="tel:919154357401" class="contact-info__phone">+91
 									9154357401</a>
-									<a href="tel:919154357402" class="contact-info__phone">+91
+								<a href="tel:919154357402" class="contact-info__phone">+91
 									9154357402</a>
 								<a href="tel:919154357402" class="contact-info__phone">+91
 									9154357404</a>
 								<a href="tel040-42704708" class="contact-info__phone">
-								040-42704708</a>
+									040-42704708</a>
 
 
 							</h4>
@@ -152,7 +150,7 @@
 									</div>
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
-											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
+											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id">
 										</div>
 									</div>
 								</div>
@@ -160,12 +158,12 @@
 									<div class="col-xl-12">
 										<div class="comment-form__input-box">
 											<div class="row">
-												<div class="col-xl-6" >
+												<div class="col-xl-6">
 													<input type="checkbox" id="select-all" name="select-all">
 													<label for="select-all" style="display:inline">Select All</label><br>
 												</div>
 												<?php foreach ($services as $service) : ?>
-													<div class="col-xl-6" >
+													<div class="col-xl-6">
 														<input type="checkbox" class="service-checkbox" id="service_<?php echo $service['id'] ?>" name="service[]" value="<?php echo $service['id'] ?>">
 														<label for="service_<?php echo $service['id'] ?>" style="display:inline"><?php echo $service['name'] ?></label><br>
 													</div>
@@ -225,7 +223,5 @@
 
 	<?php include("includes/scripts.php"); ?>
 </body>
-
-<!-- Mirrored from qutiiz-html.vercel.app/main-html/<?php echo base_url(); ?>contact by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:41 GMT -->
 
 </html>

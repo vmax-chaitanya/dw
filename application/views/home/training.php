@@ -70,8 +70,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg"
-                style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/page-header-bg.jpg)">
+            <div class="page-header-bg" style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/page-header-bg.jpg)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -96,35 +95,7 @@
         </section>
         <!--Page Header End-->
 
-        <!--Tranining Page Start-->
-        <!-- <section class="projects-page">
-            <div class="container">
-               
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">recent projects</span> 
-                    <h2 class="section-title__title">Trainings</h2>
-                </div>
-                <div class="row filter-layout">
-                <?php $i = 1;
-                foreach ($trainings as $training): ?>
-                    <div class="col-xl-4 col-lg-6 col-md-6 filter-item bra photo web">
-                        
-                        <div class="project-one__single">
-                            <div class="project-one__img">
-                                <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
-                                <div class="project-one__hover">
-                                <p class="project-one__tagline">Graphic</p> 
-                                    <h3 class="project-one__title"><a href="<?php echo base_url(); ?>training-detail/<?php echo $training['id']; ?>"><?php echo $training['name']; ?></a>
-                                    </h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </section> -->
-        <!--Tranining Page End-->
+
 
         <!--Blog Page Start-->
         <section class="blog-one blog-one__blog-page">
@@ -136,7 +107,8 @@
                         Professionals</span>
                 </div>
                 <div class="row">
-                    <?php $i = 1; foreach ($trainings as $training): ?>
+                    <?php $i = 1;
+                    foreach ($trainings as $training) : ?>
                         <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <!--Blog One Start-->
                             <div class="blog-one__single">
@@ -169,10 +141,7 @@
                         </div>
                     <?php endforeach; ?>
 
-                    <!-- <div class="blog-sidebar__load-more text-center">
-                        <a href="blog.html" class="thm-btn blog-sidebar__load-more-btn">load more
-                            posts</a>
-                    </div> -->
+
                 </div>
             </div>
         </section>
@@ -180,144 +149,127 @@
 
         <?php if (count($certification_course) > 0) { ?>
 
-        <!--Blog Page Start-->
-        <section class="blog-one blog-one__blog-page">
-            <div class="container">
-                <div class="section-title text-center">
-                    <p class="section-title__tagline">Get certified by global certification bodies and deepen your
-                        expertise</p>
-                    <h2 class="section-title__title">Certification Courses</h2>
-                </div>
-                <div class="row">
-                <?php $i = 1; foreach ($certification_course as $certification_course): ?>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="<?php echo  $i;?>00ms">
-                        <!--Blog One Start-->
-                        <div class="blog-one__single">
-                            <!-- <div class="blog-one__img">
-                                <img src="assets/images/blog/blog-page-img-1.jpg" alt="">
-                                <a href="#">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div>
-                            </div> -->
-                            <div class="blog-one__content">
-
-                                <h3 class="blog-one__title">
-                                    <a href="#"><?php echo $certification_course['name'];?></a>
-                                </h3>
-                                <div class="blog-one__person">
-                                    <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__date">
-                                        <p><?php echo $certification_course['tag'];?></p>
-                                    </div>
-                                </div>
-                                <ul class="list-unstyled blog-one__meta mt-2">
-                                    <li><a href="#"><i class="fa fa-star"></i> <?php echo $certification_course['rating'];?></a></li>
-                                    <li><a href="#"><i class="fa fa-users"></i> <?php echo $certification_course['learners'];?> Learners</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+            <!--Blog Page Start-->
+            <section class="blog-one blog-one__blog-page">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <p class="section-title__tagline">Get certified by global certification bodies and deepen your
+                            expertise</p>
+                        <h2 class="section-title__title">Certification Courses</h2>
                     </div>
-                    <?php  $i++; endforeach; ?>
-                   
+                    <div class="row">
+                        <?php $i = 1;
+                        foreach ($certification_course as $certification_course) : ?>
+
+                            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="<?php echo  $i; ?>00ms">
+                                <!--Blog One Start-->
+                                <div class="blog-one__single">
+
+                                    <div class="blog-one__content">
+
+                                        <h3 class="blog-one__title">
+                                            <a href="#"><?php echo $certification_course['name']; ?></a>
+                                        </h3>
+                                        <div class="blog-one__person">
+                                            <div class="blog-one__person-img">
+                                                <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                            </div>
+                                            <div class="blog-one__date">
+                                                <p><?php echo $certification_course['tag']; ?></p>
+                                            </div>
+                                        </div>
+                                        <ul class="list-unstyled blog-one__meta mt-2">
+                                            <li><a href="#"><i class="fa fa-star"></i> <?php echo $certification_course['rating']; ?></a></li>
+                                            <li><a href="#"><i class="fa fa-users"></i> <?php echo $certification_course['learners']; ?> Learners</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php $i++;
+                        endforeach; ?>
 
 
 
+
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!--Blog Page End-->
+            </section>
+            <!--Blog Page End-->
         <?php } ?>
         <?php if (count($tools) > 0) { ?>
 
-        <!--Start Business Growth One-->
-        <section class="business-growth-one">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
-                        experts</span>
-                    <h2 class="section-title__title">Tools You Will Master</h2>
-                </div>
-                <div class="business-growth-one__bottom">
-                    <div class="row">
-                    <?php $i = 1; foreach ($tools as $tools): ?>
+            <!--Start Business Growth One-->
+            <section class="business-growth-one">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
+                            experts</span>
+                        <h2 class="section-title__title">Tools You Will Master</h2>
+                    </div>
+                    <div class="business-growth-one__bottom">
+                        <div class="row">
+                            <?php $i = 1;
+                            foreach ($tools as $tools) : ?>
 
 
-                        <!--Start Business Growth One Single-->
-                        <div class="col-xl-3 col-lg-4 wow animated fadeInUp" data-wow-delay="0.'<?php echo  $i;?>'s">
-                            <div class="business-growth-one__single">
-                                <div class="business-growth-one__single-img">
-                                    <img src="<?php echo base_url('' . $tools['image']); ?>"
-                                        alt="" />
+                                <!--Start Business Growth One Single-->
+                                <div class="col-xl-3 col-lg-4 wow animated fadeInUp" data-wow-delay="0.'<?php echo  $i; ?>'s">
+                                    <div class="business-growth-one__single">
+                                        <div class="business-growth-one__single-img">
+                                            <img src="<?php echo base_url('' . $tools['image']); ?>" alt="" />
+                                        </div>
+
+                                    </div>
                                 </div>
+                                <!--End Business Growth One Single-->
+                            <?php $i++;
+                            endforeach; ?>
 
-                            </div>
+
                         </div>
-                        <!--End Business Growth One Single-->
-                        <?php  $i++; endforeach; ?>
-                        
-
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--End Business Growth One-->
+            </section>
+            <!--End Business Growth One-->
         <?php } ?>
         <?php if (count($certification_courses) > 0) { ?>
 
-        <!--Start Services Three-->
-        <section class="services-three">
-            <div class="container">
-                <div class="section-title text-center">
-                    <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
-                        experts</span>
-                    <h2 class="section-title__title">Certifications</h2>
-                </div>
-                <div class="row">
-                <?php $i = 1; foreach ($certification_courses as $certification_courses): ?>
-
-                    <!--Start Services Three Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms">
-                        <div class="services-three__single">
-                            <div class="services-three__single-img">
-                                <div class="services-three__single-img-inner">
-                                    <img src="<?php echo base_url('' . $certification_courses['image']); ?>"
-                                        alt="" />
-                                </div>
-                                <!-- <div class="services-three__icon">
-                                    <span class="icon-online-shopping"></span>
-                                </div> -->
-                            </div>
-                            <!-- <div class="services-three__single-content">
-                                <h2 class="services-three__title"><a href="website-development.html">Ui / Ux <br>
-                                        Creative
-                                        design</a></h2>
-                                <p class="services-three__text">Lorem ipsum dolor sit amet, consect etur adi pisicing
-                                    elit sed do dunt ut labore.</p>
-                                <a class="services-three__arrow" href="website-development.html"><span
-                                        class="icon-right-arrow"></span></a>
-                            </div> -->
-                        </div>
+            <!--Start Services Three-->
+            <section class="services-three">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
+                            experts</span>
+                        <h2 class="section-title__title">Certifications</h2>
                     </div>
-                    <!--End Services Three Single-->
+                    <div class="row">
+                        <?php $i = 1;
+                        foreach ($certification_courses as $certification_courses) : ?>
 
-                    <?php  $i++; endforeach; ?>
+                            <!--Start Services Three Single-->
+                            <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms">
+                                <div class="services-three__single">
+                                    <div class="services-three__single-img">
+                                        <div class="services-three__single-img-inner">
+                                            <img src="<?php echo base_url('' . $certification_courses['image']); ?>" alt="" />
+                                        </div>
 
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--End Services Three Single-->
+
+                        <?php $i++;
+                        endforeach; ?>
+
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!--End Services Three-->
+            </section>
+            <!--End Services Three-->
 
         <?php } ?>
-       
-
-       
 
 
         <!--Site Footer Start-->
@@ -331,12 +283,9 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    
+
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>
-
-
-<!-- Mirrored from qutiiz-html.vercel.app/main-html/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:32 GMT -->
 
 </html>

@@ -70,8 +70,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg"
-                style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/banner_services.jpg)">
+            <div class="page-header-bg" style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/banner_services.jpg)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -107,7 +106,7 @@
                 </div>
                 <div class="row filter-layout">
                     <?php $i = 1;
-                    foreach ($services as $service): ?>
+                    foreach ($services as $service) : ?>
                         <div class="col-xl-4 col-lg-6 col-md-6 filter-item bra photo web">
                             <!--Portfolio One Single-->
                             <div class="project-one__single">
@@ -115,7 +114,7 @@
                                     <img src="<?php echo base_url('' . $service['image']); ?>" alt="">
                                     <div class="project-one__hover">
                                         <!-- <p class="project-one__tagline">Graphic</p> -->
-                                        <h3 class="project-one__title"><a href="<?php echo base_url();?>services/<?php echo $service['service_url'];?>">
+                                        <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">
                                                 <?php echo ucfirst(strtolower($service['name'])); ?>
                                             </a>
                                         </h3>
@@ -129,11 +128,6 @@
         </section>
         <!--Projects Page End-->
 
-
-
-
-
-
         <!--Site Footer Start-->
         <?php include("includes/footer.php"); ?>
         <!--Site Footer End-->
@@ -145,7 +139,7 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    
+
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>

@@ -37,8 +37,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg"
-                style="background-image: url(<?php echo base_url('' . $training_detail['banner_image']); ?>)">
+            <div class="page-header-bg" style="background-image: url(<?php echo base_url('' . $training_detail['banner_image']); ?>)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -71,18 +70,15 @@
                             <div class="service-details__sidebar-service">
                                 <ul class="service-details__sidebar-service-list list-unstyled">
                                     <?php $i = 1;
-                                    foreach ($trainings as $training): ?>
-                                        <li <?php echo ($training['training_url'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a
-                                                href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>">
-                                                <?php echo ucwords(strtolower($training['name'])); ?> <span
-                                                    class="icon-right-arrow"></span>
+                                    foreach ($trainings as $training) : ?>
+                                        <li <?php echo ($training['training_url'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>">
+                                                <?php echo ucwords(strtolower($training['name'])); ?> <span class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>
                                 </ul>
                             </div>
                             <div class="contact-page__form mt-3">
-                                <form id="contact-form" name="contact" method="POST" class=""
-                                    action="<?php echo base_url('contact-insert'); ?>">
+                                <form id="contact-form" name="contact" method="POST" class="" action="<?php echo base_url('contact-insert'); ?>">
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
@@ -108,12 +104,10 @@
                                     <div class="row">
                                         <div class="col-xl-12">
                                             <div class="comment-form__input-box">
-                                                <textarea name="message" placeholder="Write a message"   style="display: block !important;"></textarea>
+                                                <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
                                             </div>
-                                            <input type="hidden" name="services_ids"
-                                                value="<?php echo $this->uri->segment(2); ?>">
-                                            <input type="hidden" name="brochure"
-                                                value=" <?php echo $training_detail['brochure']; ?>">
+                                            <input type="hidden" name="services_ids" value="<?php echo $this->uri->segment(2); ?>">
+                                            <input type="hidden" name="brochure" value=" <?php echo $training_detail['brochure']; ?>">
                                             <button type="" class="thm-btn comment-form__btn">Download
                                                 Brochure</button>
                                         </div>
@@ -136,38 +130,9 @@
                                 <p class="service-details__text-3">
                                     <?php echo $training_detail['description']; ?>
                                 </p>
-                                <!-- <p class="service-details__text-3">Tincidunt elit magnis nulla facilisis sagittis sapien
-                                    nunc Many desktop publishing packages and web page editors amet ultrices dolores sit
-                                    ipsum velit purus aliquet massa fringilla leo orci. Sapien nunc amet ultrices.</p> -->
+
                             </div>
-                            <!-- <div class="service-details__bottom">
-                                <ul class="list-unstyled service-details__bottom-list">
-                                    <li class="service-details__bottom-single">
-                                        <div class="service-details__bottom-icon">
-                                            <span class="icon-front-end"></span>
-                                            <h4 class="service-details__bottom-title">content & Structure</h4>
-                                            <p class="service-details__bottom-text">Duis aute irure dolor in repreh
-                                                enderit nulla voluptate velit.</p>
-                                        </div>
-                                    </li>
-                                    <li class="service-details__bottom-single">
-                                        <div class="service-details__bottom-icon">
-                                            <span class="icon-investigation"></span>
-                                            <h4 class="service-details__bottom-title">Analysis & Planning</h4>
-                                            <p class="service-details__bottom-text">Duis aute irure dolor in repreh
-                                                enderit nulla voluptate velit.</p>
-                                        </div>
-                                    </li>
-                                    <li class="service-details__bottom-single">
-                                        <div class="service-details__bottom-icon">
-                                            <span class="icon-increment"></span>
-                                            <h4 class="service-details__bottom-title">Solutions & Findings</h4>
-                                            <p class="service-details__bottom-text">Duis aute irure dolor in repreh
-                                                enderit nulla voluptate velit.</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div> -->
+
 
 
                         </div>
@@ -186,7 +151,7 @@
                         <h2 class="section-title__title">Key Highlites</h2>
                         <div class="row">
                             <?php $i = 1;
-                            foreach ($key_highlites as $key_highlite): ?>
+                            foreach ($key_highlites as $key_highlite) : ?>
 
                                 <div class="col-xl-4">
                                     <div class="service-details__benefits-content">
@@ -224,7 +189,7 @@
                         <h2 class="section-title__title">Curriculums</h2>
                         <div class="row" style="text-align:left; padding-top:30px !important">
                             <?php $i = 1;
-                            foreach ($curriculums as $curriculum): ?>
+                            foreach ($curriculums as $curriculum) : ?>
                                 <div class="col-xl-6 col-lg-6 mt-2 mb-2">
                                     <div class="faq-page__single">
                                         <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion2">
@@ -265,8 +230,8 @@
                 </div>
                 <div class="row">
                     <?php $i = 1;
-                    foreach ($upcoming_trainings as $key => $trainings):
-                        if ($key < 3): ?>
+                    foreach ($upcoming_trainings as $key => $trainings) :
+                        if ($key < 3) : ?>
                             <div class="col-xl-4 col-lg-4">
                                 <!--Portfolio One Single-->
                                 <div class="project-one__single">
@@ -275,8 +240,7 @@
                                         <img src="<?php echo base_url('' . $trainings['image']); ?>" alt="">
                                         <div class="project-one__hover">
                                             <p class="project-one__tagline">Trainings</p>
-                                            <h3 class="project-one__title"><a
-                                                    href="<?php echo base_url(); ?>training/<?php echo $trainings['training_url']; ?>">
+                                            <h3 class="project-one__title"><a href="<?php echo base_url(); ?>training/<?php echo $trainings['training_url']; ?>">
                                                     <?php echo ucfirst(strtolower($trainings['name'])); ?>
                                                 </a>
                                             </h3>
@@ -284,7 +248,8 @@
                                     </div>
                                 </div>
                             </div>
-                        <?php endif; endforeach; ?>
+                    <?php endif;
+                    endforeach; ?>
                 </div>
             </div>
         </section>
@@ -305,8 +270,5 @@
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>
-
-
-<!-- Mirrored from qutiiz-html.vercel.app/main-html/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:32 GMT -->
 
 </html>

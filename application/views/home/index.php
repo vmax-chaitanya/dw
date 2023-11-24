@@ -6,109 +6,8 @@
 <head>
 
     <?php include("includes/styles.php"); ?>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NNTM2J82');
-    </script>
-    <!-- End Google Tag Manager -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "DigitalWin Business Agency",
-            "image": "https://digitalwinbusinessagency.com/assets/home/images/resources/logo-1.png",
-            "@id": "https://www.digitalwinbusinessagency.com/",
-            "url": "https://www.digitalwinbusinessagency.com/",
-            "telephone": "9154357401",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "MIG-161, 3rd floor, Rd Number 1, above Lenskart, opp. Sri Sri Holistic Hospital, Kukatpally Housing Board Colony, Kukatpally",
-                "addressLocality": "Hyderabad",
-                "postalCode": "500085",
-                "addressCountry": "IN"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 17.4887215,
-                "longitude": 78.4005263
-            },
-            "sameAs": [
-                "https://www.facebook.com/Digitalwinbusinessagency",
-                "https://www.instagram.com/digitalwinbusinessagency/?igshid=MmU2YjMzNjRlOQ%3D%3D",
-                "https://www.youtube.com/@DigitalWinBusinessAgency",
-                "https://in.pinterest.com/DigitalWinBusinessAgency1/",
-                "https://www.linkedin.com/in/digitalwin-business-agency-b73a77279/"
-            ]
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "DigitalWin Business Agency",
-            "alternateName": "DigitalWin",
-            "url": "https://www.digitalwinbusinessagency.com/",
-            "logo": "https://digitalwinbusinessagency.com/assets/home/images/resources/logo-1.png",
-            "sameAs": [
-                "https://www.facebook.com/Digitalwinbusinessagency",
-                "https://in.pinterest.com/DigitalWinBusinessAgency1/",
-                "https://www.instagram.com/digitalwinbusinessagency/?igshid=MmU2YjMzNjRlOQ%3D%3D",
-                "https://www.youtube.com/@DigitalWinBusinessAgency",
-                "https://www.linkedin.com/in/digitalwin-business-agency-b73a77279/"
-            ]
-        }
-    </script>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "DigitalWin Business Agency",
-  "url": "https://digitalwinbusinessagency.com/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://digitalwinbusinessagency.com/services{search_term_string}https://digitalwinbusinessagency.com/contact",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '6935422259854837');
-        fbq('track', 'PageView');
-    </script>
-
-
-
+    <?php  //include("includes/seo_index_scripts.php"); ?>
+  
     <style>
         .blog-one__date {
             position: absolute;
@@ -346,19 +245,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="get-to-know__person">
-                                    <div class="get-to-know__person-img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/resources/get-to-know-person-img.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="get-to-know__person-content">
-                                        <h2 class="get-to-know__person-name">John
-                                            Smith</h2>
-                                        <p class="get-to-know__person-founder">CEO
-                                            & co Founder</p>
-                                    </div>
-                                </div> -->
+                          
                         </div>
                     </div>
                 </div>
@@ -465,72 +352,7 @@
         </section>
         <!--Services Two End-->
 
-        <!--Brand One Start-->
-        <!-- <section class="brand-one">
-                <div class="container">
-                    <div class="thm-swiper__slider swiper-container"
-                        data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
-                    "0": {
-                        "spaceBetween": 30,
-                        "slidesPerView": 2
-                    },
-                    "375": {
-                        "spaceBetween": 30,
-                        "slidesPerView": 2
-                    },
-                    "575": {
-                        "spaceBetween": 30,
-                        "slidesPerView": 3
-                    },
-                    "767": {
-                        "spaceBetween": 50,
-                        "slidesPerView": 4
-                    },
-                    "991": {
-                        "spaceBetween": 50,
-                        "slidesPerView": 5
-                    },
-                    "1199": {
-                        "spaceBetween": 100,
-                        "slidesPerView": 5
-                    }
-                }}'>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-1.png" alt>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-2.png" alt>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-3.png" alt>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-4.png" alt>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-5.png" alt>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-1.png" alt>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-2.png" alt>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-3.png" alt>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-4.png" alt>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="<?php echo base_url(); ?>assets/home/images/brand/brand-1-5.png" alt>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-        <!--Brand One End-->
+       
 
         <!--Project One Start-->
         <section class="project-one pt-5 pb-0">
@@ -540,20 +362,7 @@
                     <h2 class="section-title__title">work showcase</h2>
                 </div>
                 <div class="row">
-                    <!-- <div class="col-xl-12">
-                            <ul
-                                class="project-filter style1 post-filter has-dynamic-filters-counter list-unstyled">
-                                <li data-filter=".filter-item" class="active"><span
-                                        class="filter-text">All</span></li>
-                                <li data-filter=".bra"><span class="filter-text">Branding</span></li>
-                                <li data-filter=".photo"><span
-                                        class="filter-text">Photography</span></li>
-                                <li data-filter=".web"><span class="filter-text">Web
-                                        Design</span></li>
-                                <li data-filter=".app"><span
-                                        class="filter-text last-pd-none">Apps</span></li>
-                            </ul>
-                        </div> -->
+                    
                 </div>
                 <div class="row filter-layout masonary-layout">
                     <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
@@ -668,31 +477,15 @@
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/small_bussigness.jpg" alt="">
 
-                                <!-- <a href="javascript:void(0);">
-                                    <span class="blog-one__plus"></span>
-                                </a> -->
-                                <!-- <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div> -->
+                               
                             </div>
                             <div class="blog-one__content">
-                                <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+                               
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Small Businesses</a>
                                 </h3>
                                 <p class="services-two__text">We provide digital marketing services tailored to the unique needs of small businesses, helping them establish a strong online presence, reach their target audience, and compete effectively in the digital landscape.</p>
-                                <!-- <div class="blog-one__person">
-                                    <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__person-content">
-                                        <p>by Mike Hardson</p>
-                                    </div>
-                                </div> -->
+                                
                             </div>
                         </div>
                     </div>
@@ -701,31 +494,15 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/start_up.jpg" alt="">
-                                <!-- <a href="javascript:void(0);">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div> -->
+                               
                             </div>
                             <div class="blog-one__content">
-                                <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+                               
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Startups</a>
                                 </h3>
                                 <p class="services-two__text"> For startups, navigating the complexities of digital marketing can be overwhelming. Our expert team crafts customized strategies to build brand awareness, drive traffic, and generate leads, ensuring a solid foundation for growth.</p>
-                                <!-- <div class="blog-one__person">
-                                    <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__person-content">
-                                        <p>by Mike Hardson</p>
-                                    </div>
-                                </div> -->
+                                
                             </div>
                         </div>
                     </div>
@@ -734,32 +511,16 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img" style="text-align: center !important; ">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/ecommerce.jpg" alt="">
-                                <!-- <a href="javascript:void(0);">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div> -->
+                               
                             </div>
                             <div class="blog-one__content">
-                                <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+                               
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">E-commerce Businesses</a>
                                 </h3>
                                 <p class="services-two__text">In the highly competitive e-commerce industry, our digital marketing services drive traffic, optimize conversions, and enhance customer experiences, resulting in increased sales and repeat business.
                                 </p>
-                                <!-- <div class="blog-one__person">
-                                    <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__person-content">
-                                        <p>by Mike Hardson</p>
-                                    </div>
-                                </div> -->
+                               
                             </div>
                         </div>
                     </div>
@@ -768,31 +529,17 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/b2b.jpg" alt="">
-                                <!-- <a href="javascript:void(0);">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div> -->
+                              
                             </div>
                             <div class="blog-one__content">
-                                <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+                               
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">B2B Companies </a>
                                 </h3>
                                 <p class="services-two__text">With our specialized B2B digital marketing solutions, we connect businesses with their ideal clients through targeted campaigns, lead generation, and nurturing strategies, fostering long-term partnerships.
                                 </p>
                                 <div class="blog-one__person">
-                                    <!-- <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__person-content">
-                                        <p>by Mike Hardson</p>
-                                    </div> -->
+                                   
                                 </div>
                             </div>
                         </div>
@@ -802,19 +549,10 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/professional_services.jpg" alt="">
-                                <!-- <a href="javascript:void(0);">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div> -->
+                               
                             </div>
                             <div class="blog-one__content">
-                                <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+                                
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Professional Services
                                     </a>
@@ -822,12 +560,7 @@
                                 <p class="services-two__text">We understand the unique marketing challenges faced by professional service providers. Our services aim to showcase expertise, build credibility, and attract high-quality leads to grow their client base.
                                 </p>
                                 <div class="blog-one__person">
-                                    <!-- <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__person-content">
-                                        <p>by Mike Hardson</p>
-                                    </div> -->
+                                   
                                 </div>
                             </div>
                         </div>
@@ -837,31 +570,17 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/local_bussigness.jpg" alt="">
-                                <!-- <a href="javascript:void(0);">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div> -->
+                               
                             </div>
                             <div class="blog-one__content">
-                                <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+                                
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Enterprenuers</a>
                                 </h3>
                                 <p class="services-two__text">Local businesses thrive on local visibility. Our location-based digital marketing strategies ensure that they remain visible to their target audience, driving foot traffic and increasing local brand awareness.
                                 </p>
                                 <div class="blog-one__person">
-                                    <!-- <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__person-content">
-                                        <p>by Mike Hardson</p>
-                                    </div> -->
+                                   
                                 </div>
                             </div>
                         </div>
@@ -871,31 +590,17 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/non_profit_orginization.jpg" alt="">
-                                <!-- <a href="javascript:void(0);">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div> -->
+                               
                             </div>
                             <div class="blog-one__content">
-                                <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+                                
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Banking & Finance</a>
                                 </h3>
                                 <p class="services-two__text">Our digital marketing services for nonprofits focus on increasing awareness, attracting donors, and mobilizing support for their meaningful causes, ultimately driving positive social impact.
                                 </p>
                                 <div class="blog-one__person">
-                                    <!-- <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__person-content">
-                                        <p>by Mike Hardson</p>
-                                    </div> -->
+                                  
                                 </div>
                             </div>
                         </div>
@@ -906,31 +611,17 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/educational.jpg" alt="">
-                                <!-- <a href="javascript:void(0);">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div> -->
+                                
                             </div>
                             <div class="blog-one__content">
-                                <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+                                
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Education Institutions</a>
                                 </h3>
                                 <p class="services-two__text">Education providers benefit from our digital marketing expertise to reach prospective students, engage with parents, and build a strong online reputation that reflects their institution's quality.
                                 </p>
                                 <div class="blog-one__person">
-                                    <!-- <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__person-content">
-                                        <p>by Mike Hardson</p>
-                                    </div> -->
+                                   
                                 </div>
                             </div>
                         </div>
@@ -941,40 +632,23 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/real-estate.jpg" alt="">
-                                <!-- <a href="javascript:void(0);">
-                                    <span class="blog-one__plus"></span>
-                                </a>
-                                <div class="blog-one__date">
-                                    <p>25 <br> AUG</p>
-                                </div> -->
+                               
                             </div>
                             <div class="blog-one__content">
-                                <!-- <ul class="list-unstyled blog-one__meta">
-                                    <li><a href="javascript:void(0);"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="javascript:void(0);"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+                              
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Real Estate Agencies</a>
                                 </h3>
                                 <p class="services-two__text"> In the competitive real estate market, our digital marketing strategies help agencies stand out, generate leads, and showcase property listings to potential buyers, driving business growth.
                                 </p>
                                 <div class="blog-one__person">
-                                    <!-- <div class="blog-one__person-img">
-                                        <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
-                                    </div>
-                                    <div class="blog-one__person-content">
-                                        <p>by Mike Hardson</p>
-                                    </div> -->
+                                   
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- <div class="blog-sidebar__load-more text-center">
-                        <a href="bjavascript:void(0);" class="thm-btn blog-sidebar__load-more-btn">load more
-                            posts</a>
-                    </div> -->
+                  
                 </div>
             </div>
         </section>
@@ -1077,52 +751,7 @@
         </section>
         <!--Services Two End-->
 
-        <!--Counter One Start-->
-        <!-- <section class="counter-one">
-            <div class="counter-one-shape-1"></div>
-            <div class="counter-one-shape-2"></div>
-            <div class="counter-one-shape-3"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <ul class="list-unstyled counter-one__list">
-                            <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
-                                <div class="counter-one__icon">
-                                    <span class="icon-checking"></span>
-                                </div>
-                                <h3 class="odometer" data-count="98">00</h3>
-                                <p class="counter-one__text">Projects
-                                    Completed</p>
-                            </li>
-                            <li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
-                                <div class="counter-one__icon">
-                                    <span class="icon-recommend"></span>
-                                </div>
-                                <h3 class="odometer" data-count="64">00</h3>
-                                <p class="counter-one__text">Satisfied
-                                    Clients</p>
-                            </li>
-                            <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
-                                <div class="counter-one__icon">
-                                    <span class="icon-consulting"></span>
-                                </div>
-                                <h3 class="odometer" data-count="23">00</h3>
-                                <p class="counter-one__text">Expert Teams</p>
-                            </li>
-                            <li class="counter-one__single wow fadeInUp" data-wow-delay="400ms">
-                                <div class="counter-one__icon">
-                                    <span class="icon-increment"></span>
-                                </div>
-                                <h3 class="odometer" data-count="35">00</h3>
-                                <p class="counter-one__text">repeat
-                                    customers</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--Counter One End-->
+        
 
         <!--Why Choose One Start-->
         <section class="why-choose-one pt-5 pb-3 mt-1">
@@ -1201,347 +830,7 @@
         </section>
         <!--Why Choose One End-->
 
-        <!--Team One Start-->
-        <!-- <section class="team-one">
-                <div class="team-one-container">
-                    <div class="section-title text-center">
-                        <span class="section-title__tagline">our team members</span>
-                        <h2 class="section-title__title">Meet expert people</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div
-                                class="team-one__carousel owl-theme owl-carousel">
-                              
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-1.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Jessica Brown</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Jessica
-                                            Brown</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-2.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Kevin Martin</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Kevin
-                                            Martin</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-3.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Rose ford</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Rose
-                                            ford</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-4.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Mike hardson</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Mike
-                                            hardson</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-1.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Jessica Brown</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Jessica
-                                            Brown</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-2.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Kevin Martin</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Kevin
-                                            Martin</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-3.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Rose ford</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Rose
-                                            ford</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-4.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Mike hardson</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Mike
-                                            hardson</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-1.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Jessica Brown</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Jessica
-                                            Brown</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-2.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Kevin Martin</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Kevin
-                                            Martin</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-3.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Rose ford</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Rose
-                                            ford</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="team-one__single">
-                                    <div class="team-one__img">
-                                        <img
-                                            src="<?php echo base_url(); ?>assets/home/images/team/team-one-img-4.jpg"
-                                            alt>
-                                    </div>
-                                    <div class="team-one__content">
-                                        <h4 class="team-one__name">Mike hardson</h4>
-                                        <p class="team-one__title">Designer</p>
-                                    </div>
-                                    <div class="team-one__hover">
-                                        <h4 class="team-one__hover-name">Mike
-                                            hardson</h4>
-                                        <p class="team-one__hover-title">Designer</p>
-                                        <div class="team-one__social">
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-twitter"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-facebook"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-instagram"></i></a>
-                                            <a href="javascript:void(0);"><i
-                                                    class="fab fa-pinterest-p"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-        <!--Team One End-->
+       
 
         <!--Testimonial One Start-->
         <section class="testimonial-one pt-5">
@@ -1705,39 +994,7 @@
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
-                                            <!-- <ul
-                                                    class="list-unstyled tabs-content__points">
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>Highest Success
-                                                                Rates</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>we grow
-                                                                businesses</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                </ul> -->
+                                           
                                             <p class="about-page__right-text-2"><?php echo $social_media['mission']; ?></p>
                                         </div>
                                     </div>
@@ -1754,39 +1011,7 @@
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
-                                            <!-- <ul
-                                                    class="list-unstyled tabs-content__points">
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>Highest Success
-                                                                Rates</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>we grow
-                                                                businesses</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                </ul> -->
+                                            
                                             <p class="about-page__right-text-2"><?php echo $social_media['vision']; ?></p>
                                         </div>
                                     </div>
@@ -1803,39 +1028,7 @@
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
-                                            <!-- <ul
-                                                    class="list-unstyled tabs-content__points">
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>Highest Success
-                                                                Rates</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="icon">
-                                                            <span
-                                                                class="icon-draw-check-mark"></span>
-                                                        </div>
-                                                        <div class="text">
-                                                            <h4>we grow
-                                                                businesses</h4>
-                                                            <p>Lorem nibh vel
-                                                                velit a aliqu.
-                                                                Aenean so tudin,
-                                                                lorem is text
-                                                                quis bibendum.</p>
-                                                        </div>
-                                                    </li>
-                                                </ul> -->
+                                           
                                             <p class="about-page__right-text-2"><?php echo $social_media['value']; ?></p>
                                         </div>
                                     </div>
@@ -1854,143 +1047,6 @@
         <!--Financial Advice End-->
 
 
-        <!-- <section class="blog-one">
-                <div class="container">
-                    <div class="section-title text-center">
-                        <span class="section-title__tagline">our blog posts</span>
-                        <h2 class="section-title__title">News & Articles</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp"
-                            data-wow-delay="100ms">
-                            
-                            <div class="blog-one__single">
-                                <div class="blog-one__img">
-                                    <img
-                                        src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-img-1.jpg"
-                                        alt>
-                                    <a href="javascript:void(0);">
-                                        <span class="blog-one__plus"></span>
-                                    </a>
-                                    <div class="blog-one__date">
-                                        <p>25 <br> AUG</p>
-                                    </div>
-                                </div>
-                                <div class="blog-one__content">
-                                    <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="javascript:void(0);"><i
-                                                    class="far fa-folder-open"></i>
-                                                Business</a></li>
-                                        <li><a href="javascript:void(0);"><i
-                                                    class="far fa-comments"></i>
-                                                02 Comments</a>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-one__title">
-                                        <a href="javascript:void(0);">Get few
-                                            solutions to hire a best candidate</a>
-                                    </h3>
-                                    <div class="blog-one__person">
-                                        <div class="blog-one__person-img">
-                                            <img
-                                                src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-person-img-1.jpg"
-                                                alt>
-                                        </div>
-                                        <div class="blog-one__person-content">
-                                            <p>by Mike Hardson</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp"
-                            data-wow-delay="200ms">
-                            
-                            <div class="blog-one__single">
-                                <div class="blog-one__img">
-                                    <img
-                                        src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-img-2.jpg"
-                                        alt>
-                                    <a href="javascript:void(0);">
-                                        <span class="blog-one__plus"></span>
-                                    </a>
-                                    <div class="blog-one__date">
-                                        <p>25 <br> AUG</p>
-                                    </div>
-                                </div>
-                                <div class="blog-one__content">
-                                    <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="javascript:void(0);"><i
-                                                    class="far fa-folder-open"></i>
-                                                Business</a></li>
-                                        <li><a href="javascript:void(0);"><i
-                                                    class="far fa-comments"></i>
-                                                02 Comments</a>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-one__title">
-                                        <a href="javascript:void(0);">Bring to the
-                                            table win-win survival strategies</a>
-                                    </h3>
-                                    <div class="blog-one__person">
-                                        <div class="blog-one__person-img">
-                                            <img
-                                                src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-person-img-1.jpg"
-                                                alt>
-                                        </div>
-                                        <div class="blog-one__person-content">
-                                            <p>by Mike Hardson</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp"
-                            data-wow-delay="300ms">
-                            
-                            <div class="blog-one__single">
-                                <div class="blog-one__img">
-                                    <img
-                                        src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-img-3.jpg"
-                                        alt>
-                                    <a href="javascript:void(0);">
-                                        <span class="blog-one__plus"></span>
-                                    </a>
-                                    <div class="blog-one__date">
-                                        <p>25 <br> AUG</p>
-                                    </div>
-                                </div>
-                                <div class="blog-one__content">
-                                    <ul class="list-unstyled blog-one__meta">
-                                        <li><a href="javascript:void(0);"><i
-                                                    class="far fa-folder-open"></i>
-                                                Business</a></li>
-                                        <li><a href="javascript:void(0);"><i
-                                                    class="far fa-comments"></i>
-                                                02 Comments</a>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-one__title">
-                                        <a href="javascript:void(0);">Capitalize
-                                            on low hanging fruit to identify a</a>
-                                    </h3>
-                                    <div class="blog-one__person">
-                                        <div class="blog-one__person-img">
-                                            <img
-                                                src="<?php echo base_url(); ?>assets/home/images/blog/blog-one-person-img-1.jpg"
-                                                alt>
-                                        </div>
-                                        <div class="blog-one__person-content">
-                                            <p>by Mike Hardson</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-        <!--Blog One End-->
 
         <!--CTA One Start-->
         <section class="cta-one">
@@ -2024,22 +1080,7 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    <!-- <div class="search-popup">
-            <div class="search-popup__overlay search-toggler"></div>
-          
-            <div class="search-popup__content">
-                <form action="javascript:void(0);">
-                    <label for="search" class="sr-only">search here</label>
-                    <input type="text" id="search" placeholder="Search Here..." />
-                    <button type="submit" aria-label="search submit"
-                        class="thm-btn">
-                        <i class="icon-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div>
-           
-        </div> -->
-    <!-- /.search-popup -->
+   
 
     <?php include("includes/scripts.php"); ?>
 </body>
