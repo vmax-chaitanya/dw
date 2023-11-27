@@ -101,7 +101,7 @@
                             <h3 class="footer-widget__title">Quick Links</h3>
                             <ul class="footer-widget__explore-list list-unstyled clearfix">
 
-                                <li><a href="#"><span class="icon-draw-check-mark"></span> &nbsp;
+                                <li><a href="<?php echo base_url(); ?>gallery"><span class="icon-draw-check-mark"></span> &nbsp;
                                         Gallery
                                     </a></li>
                                 <li><a href="<?php echo base_url(); ?>careers"><span class="icon-draw-check-mark"></span> &nbsp;
@@ -176,7 +176,7 @@
                                         <i class="fas fa-envelope"></i>
                                     </div>
                                     <div class="text">
-                                        <a href="mailto:info@digitalwinbusinessagency">info@digitalwinbusinessagency</a>
+                                        <a href="mailto:info@digitalwinbusinessagency">info@digitalwinbusinessagency.com</a>
                                     </div>
                                 </li>
                                 <li>
@@ -184,8 +184,8 @@
                                         <i class="fas fa-map-marker-alt"></i>
                                     </div>
                                     <div class="text">
-                                        <p>DigitalWin BUSINESS
-                                            AGENCY PVT LTD.,
+                                        <p>DigitalWin Business
+                                            Agency Pvt Ltd.,
                                             MIG-161, 3rd Floor,
                                             Above Lenskart, Opp Sri
                                             Sri Holistic Hospital,

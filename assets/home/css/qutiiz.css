@@ -4677,7 +4677,8 @@ ul {
 .footer-widget__about-contact li {
   position: relative;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  margin-bottom: 15px;
 }
 
 .footer-widget__about-contact li .icon i {
@@ -8434,7 +8435,7 @@ select,
   background-color: #f6f4f9;
   border-radius: var(--qutiiz-bdr-radius);
   text-align: center;
-  padding: 50px 35px 41px;
+  padding: 50px 14px 41px;
   margin-bottom: 30px;
 }
 

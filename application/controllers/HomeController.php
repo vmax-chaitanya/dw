@@ -565,7 +565,7 @@ class HomeController extends CI_Controller
 		$mail_from_name = "Digital Marketing Agency";
 
 		$mail_to = "chaitanyakadali3@gmail.com";
-		$mail_to_name = "Chaitanya";
+		$mail_to_name = "Chaitanya"; 
 
 		$body = $message_body;
 
