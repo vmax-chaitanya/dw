@@ -55,7 +55,7 @@
                                                     <label class="col-sm-3 col-form-label">Type</label>
                                                     <div class="col-sm-9">
                                                         <select class="form-control" name="type">
-                                                            <option value="">Select</option>
+                                                            <!-- <option value="">Select</option> -->
                                                             <option value="1" <?php echo ($gallery_item['type'] == '1') ? 'selected' : ''; ?>>Gallery</option>
                                                             <option value="2" <?php echo ($gallery_item['type'] == '2') ? 'selected' : ''; ?>>Client Logos</option>
                                                             <option value="3" <?php echo ($gallery_item['type'] == '3') ? 'selected' : ''; ?>>Tools Images</option>
@@ -71,7 +71,7 @@
                                                     <label class="col-sm-3 col-form-label">Status</label>
                                                     <div class="col-sm-9">
                                                         <select class="form-control" name="status">
-                                                            <option value="">Select</option>
+                                                            <!-- <option value="">Select</option> -->
                                                             <option value="1" <?php echo ($gallery_item['status'] == '1') ? 'selected' : ''; ?>>Active</option>
                                                             <option value="2" <?php echo ($gallery_item['status'] == '2') ? 'selected' : ''; ?>>In-Active</option>
                                                             <option value="3" <?php echo ($gallery_item['status'] == '3') ? 'selected' : ''; ?>>Other</option>
@@ -103,7 +103,7 @@
                                                     <label class="col-sm-2 col-form-label">Description</label>
                                                     <div class="col-sm-10">
                                                         <textarea class="form-control" name="description" rows="4"
-                                                            required><?php echo set_value('description', $gallery_item['description']); ?></textarea>
+                                                            ><?php echo set_value('description', $gallery_item['description']); ?></textarea>
                                                         <?php echo form_error('description', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>

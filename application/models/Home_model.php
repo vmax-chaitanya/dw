@@ -41,6 +41,7 @@ class Home_model extends CI_Model
     public function getActiveTraining()
     {
         $this->db->where('status', '1');
+        $this->db->order_by('sort_order', 'ASC');
         return $this->db->get('training')->result_array();
     }
     public function get_training_by_id($id)
@@ -266,15 +267,15 @@ class Home_model extends CI_Model
     {
         $this->db->select('id,name,training_url');
         $this->db->where('status', '1');
-        $this->db->order_by("id", "desc");
-        $this->db->limit(6);
+        $this->db->order_by('sort_order', 'ASC');
+        // $this->db->limit(6);
         return $this->db->get('training')->result_array();
     }
     public function getFooterTrainingNames()
     {
         $this->db->select('id,name,training_url');
         $this->db->where('status', '1');
-         $this->db->order_by("id", "desc");
+         $this->db->order_by("sort_order", "ASC");
         $this->db->limit(6);
         return $this->db->get('training')->result_array();
     }

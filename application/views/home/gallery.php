@@ -57,28 +57,17 @@
         <section class="about-page" style="padding-top: 0px !important;">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 pt-5">
-                        <div class="about-page__img">
-                            <a data-fancybox="about-gallery" data-caption="Image 1" href="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="Image 1">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 pt-5">
-                        <div class="about-page__img">
-                            <a data-fancybox="about-gallery" data-caption="Image 1" href="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="Image 1">
-                            </a>
-                        </div>
-                    </div>
 
+                <?php   foreach ($GalleryItems as $val): ?>
                     <div class="col-xl-4 pt-5">
                         <div class="about-page__img">
-                            <a data-fancybox="about-gallery" data-caption="Image 1" href="http://localhost/dw/assets/home/images/home_images/home_images.jpg">
-                                <img src="http://localhost/dw/assets/home/images/home_images/home_images.jpg" alt="Image 1">
+                            <a data-fancybox="about-gallery" data-caption="Image 1" href="<?php echo base_url('' . $val['image']); ?>">
+                                <img src="<?php echo base_url('' . $val['image']); ?>" alt="Image 1">
                             </a>
                         </div>
                     </div>
+                    <?php endforeach; ?>
+                    
                 </div>
             </div>
         </section>

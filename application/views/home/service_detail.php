@@ -275,7 +275,7 @@
                                             <?php echo $service['name']; ?>
                                         </a></h3>
                                     <p class="services-two__text">
-                                        <?php echo $service['description']; ?>
+                                    <div class="my_div" style="text-align:center">  <?php echo $service['description']; ?> </div>
                                     </p>
                                     <a class="services-two__arrow" href="javascript:void(0);"></a>
                                 </div>
@@ -314,7 +314,7 @@
                                             <?php echo $service['name']; ?>
                                         </a></h3>
                                     <p class="services-two__text">
-                                        <?php echo $service['description']; ?>
+                                    <div class="my_div" style="text-align:center">  <?php echo $service['description']; ?> </div>
                                     </p>
                                     <a class="services-two__arrow" href="javascript:void(0);"></a>
                                 </div>
