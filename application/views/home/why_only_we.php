@@ -12,7 +12,7 @@
         .services-two__title {
             font-size: 24px;
             font-weight: 500;
-            text-transform: uppercase; 
+            text-transform: uppercase;
             line-height: 29px;
             margin-top: 16px;
             margin-bottom: 25px;
@@ -59,91 +59,12 @@
         <!--Page Header End-->
 
 
-        <!--About Page Start-->
-        <!-- <section class="about-page pt-5" style="padding-bottom: 10px !important;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <div class="about-page__left">
-                            <div class="about-page__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/about/about image.jpg" alt="">
-                            </div>
-                            <div class="about-page__founded">
-                                <h5>Founded <br> in 2014</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <div class="about-page__right">
-                            <div class="section-title text-left">
-                                <span class="section-title__tagline"> about us</span>
-                                <h2 class="section-title__title">get to know about DigitalWin agency solutions</h2>
-                            </div>
-                            <p class="about-page__right-text-1">We’re committed to delivering the best digital marketing
-                                for your businesses</p>
-                            <p class="about-page__right-text-2">Welcome to DigitalWin Business Agency, the digital
-                                marketing agency dedicated to helping businesses thrive and achieve remarkable success
-                                in the ever-evolving online landscape. Our mission is to empower our clients to conquer
-                                the digital realm and achieve their business goals through strategic and innovative
-                                digital marketing solutions.</p>
-                            <div class="about-page__points-box">
-                                <ul class="list-unstyled about-page__points">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Develop a vision statement</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Grow your customer base</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="list-unstyled about-page__points about-page__points-two">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Increase your monthly sales</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-draw-check-mark"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>Beat your competition</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!--About Page End-->
+
         <!--About Page Start-->
         <section class="about-page" style="padding-top: 0px !important;">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="col-xl-6">
-                        <div class="about-page__left">
-                            <div class="about-page__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="">
-                            </div>
-                            <div class="about-page__founded">
-                                <h5>Founded <br> in 2014</h5>
-                            </div>
-                        </div>
-                    </div> -->
+
                     <div class="col-xl-12">
                         <div class="about-page__right">
                             <div class="section-title text-left">

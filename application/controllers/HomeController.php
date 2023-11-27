@@ -198,9 +198,9 @@ class HomeController extends CI_Controller
 
 		if ($result) {
 
-			//$services_names = "";
+			$services_names = "-";
 			$subject ="Contact form details";
-			$this->send_email_contact_form($data_contact,$services_names = null,$subject);
+			$this->send_email_contact_form($data_contact,$services_names,$subject);
 
 			$pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
 
@@ -269,136 +269,136 @@ class HomeController extends CI_Controller
 		// echo $this->db->last_query(); exit;
 		$this->load->view('home/careers', $data);
 	}
-	function send_email()
-	{
-		$this->load->library('email');
+	// function send_email()
+	// {
+	// 	$this->load->library('email');
 
-		// Load sensitive data from configuration or environment variables
-		$config = array(
-			'protocol' => 'smtp',
-			'smtp_host' => 'mail.rdsindia.com',
-			'smtp_user' => 'chaithanya@digitalwinbusinessagency.com',
-			'smtp_pass' => '~Xl1xY7dwsao4ea6V',
-			'smtp_port' => 465,
-			'smtp_debug' => 2,
-			'smtp_crypto' => 'tls',
-			'mailtype' => 'html',
-			'charset' => 'utf-8',
-		);
+	// 	// Load sensitive data from configuration or environment variables
+	// 	$config = array(
+	// 		'protocol' => 'smtp',
+	// 		'smtp_host' => 'mail.rdsindia.com',
+	// 		'smtp_user' => 'chaithanya@digitalwinbusinessagency.com',
+	// 		'smtp_pass' => '~Xl1xY7dwsao4ea6V',
+	// 		'smtp_port' => 465,
+	// 		'smtp_debug' => 2,
+	// 		'smtp_crypto' => 'tls',
+	// 		'mailtype' => 'html',
+	// 		'charset' => 'utf-8',
+	// 	);
 
-		$this->email->initialize($config);
+	// 	$this->email->initialize($config);
 
-		$this->email->from('chaithanya@digitalwinbusinessagency.com', 'Your Name');
-		$this->email->to('chaitanyakadali3@gmail.com');
-		$this->email->subject('Email Subject');
-		$this->email->message('Email message goes here');
+	// 	$this->email->from('chaithanya@digitalwinbusinessagency.com', 'Your Name');
+	// 	$this->email->to('chaitanyakadali3@gmail.com');
+	// 	$this->email->subject('Email Subject');
+	// 	$this->email->message('Email message goes here');
 
-		try {
-			if ($this->email->send()) {
-				echo 'Email sent successfully.';
-			} else {
-				show_error($this->email->print_debugger());
-			}
-		} catch (Exception $e) {
-			echo 'Email could not be sent. Error: ' . $e->getMessage();
-		}
+	// 	try {
+	// 		if ($this->email->send()) {
+	// 			echo 'Email sent successfully.';
+	// 		} else {
+	// 			show_error($this->email->print_debugger());
+	// 		}
+	// 	} catch (Exception $e) {
+	// 		echo 'Email could not be sent. Error: ' . $e->getMessage();
+	// 	}
 
-		// Load the appropriate view to display a response to the user
-		$this->load->view('email_view');
-	}
-	public function sendEmail()
-	{
-		//echo "fg"; exit;
-		$this->load->library('Phpmailer');
+	// 	// Load the appropriate view to display a response to the user
+	// 	$this->load->view('email_view');
+	// }
+// 	public function sendEmail()
+// 	{
+// 		//echo "fg"; exit;
+// 		$this->load->library('Phpmailer');
 
-		$smtp_host = "mail.rdsindia.com";
-		$smtp_user = "info@digitalwinbusinessagency.com";
-		$smtp_password = "digitalwin@123";
-		$smtp_port = 25;
+// 		$smtp_host = "mail.rdsindia.com";
+// 		$smtp_user = "info@digitalwinbusinessagency.com";
+// 		$smtp_password = "digitalwin@123";
+// 		$smtp_port = 25;
 
-		$mail_from = "info@digitalwinbusinessagency.com";
-		$mail_from_name = "Digital Marketing Agency";
+// 		$mail_from = "info@digitalwinbusinessagency.com";
+// 		$mail_from_name = "Digital Marketing Agency";
 
-		$mail_to = "chaitanyakadali3@gmail.com";
-		$mail_to_name = "RDS Support";
-$body = "
-    <table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
-        <thead>
-            <tr style='background-color: #f2f2f2;'>
-                <th style='padding: 10px;'>Field</th>
-                <th style='padding: 10px;'>Value</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td style='padding: 10px;'>Name</td>
-                <td style='padding: 10px;'>chaitanya</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px;'>Email</td>
-                <td style='padding: 10px;'>fddddddd@gmail.com</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px;'>Mobile</td>
-                <td style='padding: 10px;'>7799348370</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px;'>Subject</td>
-                <td style='padding: 10px;'>sdfs fg dfgdfg</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px;'>Coupon ID</td>
-                <td style='padding: 10px;'>dfgdf gdfghd</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px;'>Message</td>
-                <td style='padding: 10px;'>dfgd fgd fgd</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px;'>Services IDs</td>
-                <td style='padding: 10px;'>1</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px;'>Status</td>
-                <td style='padding: 10px;'>dfse fdf sdfs</td>
-            </tr>
-            <tr>
-                <td style='padding: 10px;'>Created At</td>
-                <td style='padding: 10px;'>12:</td>
-            </tr>
-        </tbody>
-    </table>
-";
+// 		$mail_to = "chaitanyakadali3@gmail.com";
+// 		$mail_to_name = "RDS Support";
+// $body = "
+//     <table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
+//         <thead>
+//             <tr style='background-color: #f2f2f2;'>
+//                 <th style='padding: 10px;'>Field</th>
+//                 <th style='padding: 10px;'>Value</th>
+//             </tr>
+//         </thead>
+//         <tbody>
+//             <tr>
+//                 <td style='padding: 10px;'>Name</td>
+//                 <td style='padding: 10px;'>chaitanya</td>
+//             </tr>
+//             <tr>
+//                 <td style='padding: 10px;'>Email</td>
+//                 <td style='padding: 10px;'>fddddddd@gmail.com</td>
+//             </tr>
+//             <tr>
+//                 <td style='padding: 10px;'>Mobile</td>
+//                 <td style='padding: 10px;'>7799348370</td>
+//             </tr>
+//             <tr>
+//                 <td style='padding: 10px;'>Subject</td>
+//                 <td style='padding: 10px;'>sdfs fg dfgdfg</td>
+//             </tr>
+//             <tr>
+//                 <td style='padding: 10px;'>Coupon ID</td>
+//                 <td style='padding: 10px;'>dfgdf gdfghd</td>
+//             </tr>
+//             <tr>
+//                 <td style='padding: 10px;'>Message</td>
+//                 <td style='padding: 10px;'>dfgd fgd fgd</td>
+//             </tr>
+//             <tr>
+//                 <td style='padding: 10px;'>Services IDs</td>
+//                 <td style='padding: 10px;'>1</td>
+//             </tr>
+//             <tr>
+//                 <td style='padding: 10px;'>Status</td>
+//                 <td style='padding: 10px;'>dfse fdf sdfs</td>
+//             </tr>
+//             <tr>
+//                 <td style='padding: 10px;'>Created At</td>
+//                 <td style='padding: 10px;'>12:</td>
+//             </tr>
+//         </tbody>
+//     </table>
+// ";
 
-		//$body = 'Test';
+// 		//$body = 'Test';
 
-		$this->phpmailer->IsSMTP();
-		$this->phpmailer->Host = $smtp_host;
-		$this->phpmailer->SMTPDebug = 1;
-		$this->phpmailer->SMTPAuth = true;
-		$this->phpmailer->Port = $smtp_port;
-		$this->phpmailer->Username = $smtp_user;
-		$this->phpmailer->Password = $smtp_password;
+// 		$this->phpmailer->IsSMTP();
+// 		$this->phpmailer->Host = $smtp_host;
+// 		$this->phpmailer->SMTPDebug = 1;
+// 		$this->phpmailer->SMTPAuth = true;
+// 		$this->phpmailer->Port = $smtp_port;
+// 		$this->phpmailer->Username = $smtp_user;
+// 		$this->phpmailer->Password = $smtp_password;
 
-		$this->phpmailer->SetFrom($mail_from, $mail_from_name);
-		$this->phpmailer->AddReplyTo($mail_from, $mail_from_name);
+// 		$this->phpmailer->SetFrom($mail_from, $mail_from_name);
+// 		$this->phpmailer->AddReplyTo($mail_from, $mail_from_name);
 
-		$this->phpmailer->Subject = "PHPMailer Test Subject via smtp, basic with authentication";
-		$this->phpmailer->MsgHTML($body);
+// 		$this->phpmailer->Subject = "PHPMailer Test Subject via smtp, basic with authentication";
+// 		$this->phpmailer->MsgHTML($body);
 
-		$address = $mail_to;
-		$this->phpmailer->AddAddress($address, $mail_to_name);
+// 		$address = $mail_to;
+// 		$this->phpmailer->AddAddress($address, $mail_to_name);
 
-		if (!$this->phpmailer->Send()) {
-			echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
-		} else {
-			echo "Message sent!";
-		}
-	}
+// 		if (!$this->phpmailer->Send()) {
+// 			echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
+// 		} else {
+// 			echo "Message sent!";
+// 		}
+// 	}
 	public function send_email_contact_form($message,$services_names,$subject)
 	{
 		//echo "fg"; exit;
-	//	print_r($message); exit();
+		//	print_r($message); exit();
 		$this->load->library('Phpmailer');
 		$message_body = "
 		 <table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
@@ -441,7 +441,7 @@ $body = "
 			</tr>
 		</table>
 		";
-		$smtp_host = "mail.rdsindia.com";
+		$smtp_host = "localhost";
 		$smtp_user = "info@digitalwinbusinessagency.com";
 		$smtp_password = "digitalwin@123";
 		$smtp_port = 25;
@@ -508,7 +508,7 @@ $body = "
 		$id = $this->db->insert_id();
 		$data_contact = $this->Home_model->getCareerById($id);
 
-		print_r($data_contact); exit;
+		//print_r($data_contact); exit;
 		if ($result) {
 			$subject ="Careers form details";
 			$this->send_email_career_form($data_contact,$subject);
@@ -518,5 +518,76 @@ $body = "
 			exit;
 		}
 		exit;
+	}
+	public function send_email_career_form($message,$subject)
+	{
+		//echo "fg"; exit;
+		//	print_r($message); exit();
+		$this->load->library('Phpmailer');
+		$message_body = "
+		 <table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
+			<tr>
+				<th>Field</th>
+				<th>Value</th>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>{$message['name']}</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>{$message['email']}</td>
+			</tr>
+			<tr>
+				<td>Mobile</td>
+				<td>{$message['mobile']}</td>
+			</tr>
+			<tr>
+				<td>Applied For</td>
+				<td>{$message['poisition']}</td>
+			</tr>
+			<tr>
+				<td>Message</td>
+				<td>{$message['message']}</td>
+			</tr>
+			<tr>
+				<td>Received At</td>
+				<td>{$message['created_at']}</td>
+			</tr>
+		</table>
+		";
+		$smtp_host = "localhost";
+		$smtp_user = "info@digitalwinbusinessagency.com";
+		$smtp_password = "digitalwin@123";
+		$smtp_port = 25;
+
+		$mail_from = "info@digitalwinbusinessagency.com";
+		$mail_from_name = "Digital Marketing Agency";
+
+		$mail_to = "chaitanyakadali3@gmail.com";
+		$mail_to_name = "Chaitanya";
+
+		$body = $message_body;
+
+		$this->phpmailer->IsSMTP();
+		$this->phpmailer->Host = $smtp_host;
+		$this->phpmailer->SMTPDebug = 1;
+		$this->phpmailer->SMTPAuth = true;
+		$this->phpmailer->Port = $smtp_port;
+		$this->phpmailer->Username = $smtp_user;
+		$this->phpmailer->Password = $smtp_password;
+		$this->phpmailer->SetFrom($mail_from, $mail_from_name);
+		$this->phpmailer->AddReplyTo($mail_from, $mail_from_name);
+		$this->phpmailer->Subject = $subject;
+		$this->phpmailer->MsgHTML($body);
+		//$address = $mail_to;
+		$this->phpmailer->AddAddress($mail_to, $mail_to_name);
+		$this->phpmailer->AddAddress('suresh6k@gmail.com', "Suresh");
+		if (!$this->phpmailer->Send()) {
+			echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
+		} else {
+			//echo "Message sent!";
+		}
+		return true;
 	}
 }

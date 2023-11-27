@@ -30,7 +30,7 @@
                         <div class="card-body">
                             <div class="row mb-3">
                                 <div class="col-md-10">
-                                    <h4 class="card-title">Data table</h4>
+                                <h3 class="card-title"><?php echo $training['name'];?></h3>a
                                 </div>
                                 <div class="col-md-2 ms-auto">
                                     <a href="<?php echo base_url(); ?>admin/training_curriculum/add/<?php echo $training_id;?>" class="w-100 btn btn-primary">Add</a>

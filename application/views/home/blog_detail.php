@@ -2,8 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from qutiiz-html.vercel.app/main-html/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:40 GMT -->
-<!-- Added by HTTrack -->
+
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
@@ -28,8 +27,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg"
-                style="background-image: url(<?php echo base_url('' . $blog['banner_image']); ?>)">
+            <div class="page-header-bg" style="background-image: url(<?php echo base_url('' . $blog['banner_image']); ?>)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -69,13 +67,7 @@
                                 </div>
                             </div>
                             <div class="blog-details__content">
-                                <!-- <ul class="list-unstyled blog-details__meta">
-                                    <li><a href="blog-details.html"><i class="far fa-user-circle"></i> Mike Hardson</a>
-                                    </li>
-                                    <li><a href="blog-details.html"><i class="far fa-folder-open"></i> Business</a></li>
-                                    <li><a href="blog-details.html"><i class="far fa-comments"></i> 02 Comments</a>
-                                    </li>
-                                </ul> -->
+
                                 <h3 class="blog-details__title">
                                     <?php echo $blog['title']; ?>
                                 </h3>
@@ -93,17 +85,15 @@
                                 <h3 class="sidebar__title">Latest Posts</h3>
                                 <ul class="sidebar__post-list list-unstyled">
                                     <?php $i = 100;
-                                    foreach ($blogs as $blogs): ?>
+                                    foreach ($blogs as $blogs) : ?>
                                         <li>
                                             <div class="sidebar__post-image">
-                                                <img src="<?php echo base_url('' . $blogs['image']); ?>"
-                                                    alt="">
+                                                <img src="<?php echo base_url('' . $blogs['image']); ?>" alt="">
                                             </div>
                                             <div class="sidebar__post-content">
                                                 <h3>
-                                                    <!-- <span class="sidebar__post-content-meta"><i
-                                                        class="far fa-comments"></i>02 Comments</span> -->
-                                                    <a href="<?php echo base_url();?>blog-detail/<?php echo $blogs['id']; ?>"><?php echo $blogs['title']; ?></a>
+
+                                                    <a href="<?php echo base_url(); ?>blog-detail/<?php echo $blogs['id']; ?>"><?php echo $blogs['title']; ?></a>
                                                 </h3>
                                             </div>
                                         </li>
@@ -111,56 +101,56 @@
                                 </ul>
                             </div>
                             <div class="contact-page__form mt-3">
-                            <form action="#" id="contact-form" name="contact" class="contact-form">
-								<div class="row">
-									<div class="col-xl-6">
-										<div class="comment-form__input-box">
-											<input type="text" placeholder="Your name" name="name">
-										</div>
-									</div>
-									<div class="col-xl-6">
-										<div class="comment-form__input-box">
-											<input type="email" placeholder="Email address" name="email">
-										</div>
-									</div>
-									
-									<div class="col-xl-6">
-										<div class="comment-form__input-box">
-											<input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
-										</div>
-									</div>
-									<div class="col-xl-6">
-										<div class="comment-form__input-box">
-											<input type="text" placeholder="Subject" name="subject">
-										</div>
-									</div>
-									<div class="col-xl-6">
-										<div class="comment-form__input-box" >
-											<select  name="copoun_select" id="copoun_select" style="display: block !important;">
-											<option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
-											<option value="1">Yes</option>
-											<option value="2">No</option>
-											</select>
-											
-										</div>
-									</div>
-									<div class="col-xl-6">
-										<div class="comment-form__input-box">
-											<input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id" >
-										</div>
-									</div>
-								</div>
-								
-								<div class="row">
-									<div class="col-xl-12">
-										<div class="comment-form__input-box">
-											<textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
-										</div>
-										<button type="submit" class="thm-btn comment-form__btn mt-3">send
-											a message</button>
-									</div>
-								</div>
-							</form>
+                                <form action="#" id="contact-form" name="contact" class="contact-form">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Your name" name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="email" placeholder="Email address" name="email">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Subject" name="subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <select name="copoun_select" id="copoun_select" style="display: block !important;">
+                                                    <option style="color:#726d7b !important" value="">Do You Have A Copoun</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="comment-form__input-box">
+                                                <input type="text" placeholder="Enter Copoun" name="copoun_id" id="copoun_id">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="comment-form__input-box">
+                                                <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
+                                            </div>
+                                            <button type="submit" class="thm-btn comment-form__btn mt-3">send
+                                                a message</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
 
                         </div>
@@ -174,21 +164,11 @@
         <section class="about-page" style="padding-top: 0px !important;">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="col-xl-6">
-                        <div class="about-page__left">
-                            <div class="about-page__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/about-page-img.jpg" alt="">
-                            </div>
-                            <div class="about-page__founded">
-                                <h5>Founded <br> in 2014</h5>
-                            </div>
-                        </div>
-                    </div> -->
+
                     <div class="col-xl-12">
                         <div class="about-page__right">
                             <div class="section-title text-left">
-                                <!-- <span class="section-title__tagline"> about us</span> -->
-                                <!-- <h2 class="section-title__title">get to know about DigitalWin agency solutions</h2> -->
+
                             </div>
 
                             <p class="about-page__right-text-2" style="padding-top: 15px !important;">
@@ -213,12 +193,9 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    
+
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>
-
-
-<!-- Mirrored from qutiiz-html.vercel.app/main-html/blog-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:40 GMT -->
 
 </html>

@@ -7,6 +7,8 @@ class KeyHighlights extends CI_Controller
         if (!$this->session->userdata('user_id')) {
             redirect('admin/login'); // Redirect to login page
         }
+        $this->load->model('Admin/training_model');
+
         $this->load->model('Admin/key_highlights_model');
         $this->load->library('form_validation');
     }
@@ -14,6 +16,8 @@ class KeyHighlights extends CI_Controller
     public function index($training_id)
     {
         $data['key_highlights'] = $this->key_highlights_model->get_all_key_highlights($training_id);
+        $data['training'] = $this->training_model->get_training_by_id($training_id);
+        //print_r($data['training']); exit;
         $this->load->view('admin/key_highlights_list', $data);
     }
 

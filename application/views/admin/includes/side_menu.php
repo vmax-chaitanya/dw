@@ -1,6 +1,6 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
-                <ul class="nav">
-                    <!-- <li class="nav-item nav-profile">
+    <ul class="nav">
+        <!-- <li class="nav-item nav-profile">
                         <div class="nav-link">
                             <div class="profile-image">
                                 <img src="images/faces/face10.jpg" alt="image" />
@@ -16,87 +16,115 @@
                             </div>
                         </div>
                     </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <i class="icon-menu menu-icon"></i>
-                            <span class="menu-title">Dashboard</span>
-                            <span class="badge badge-success">New</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/banner">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Banners</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/blog">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Blogs</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/gallery">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Gallery</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/services">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Services</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/training">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Training</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/certification_courses">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Certification Courses</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/faq">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">FAQs</span>
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/key_highlights">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">
+                <i class="icon-menu menu-icon"></i>
+                <span class="menu-title">Dashboard</span>
+                <span class="badge badge-success">New</span>
+            </a>
+        </li>
+        <?php if ($this->session->userdata('user_type') == '1') { ?>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/banner">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Banners</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/blog">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Blogs</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/gallery">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Gallery</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/services">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Services</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/training">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Training</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/certification_courses">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Certification Courses</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/faq">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">FAQs</span>
+                </a>
+            </li>
+            <!-- <li class="nav-item">
+                        <a class="nav-link" href="<?php echo base_url(); ?>admin/key_highlights">
                             <i class="icon-handbag menu-icon"></i>
                             <span class="menu-title">Key Highlites</span>
                         </a>
                     </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/testimonials">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Testmonials</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/address">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Address</span>
-                        </a>
-                    </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/testimonials">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Testmonials</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/address">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Address</span>
+                </a>
+            </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/contact">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Contact form</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url();?>admin/social_media/add">
-                            <i class="icon-handbag menu-icon"></i>
-                            <span class="menu-title">Social media</span>
-                        </a>
-                    </li>
-                    <!-- <li class="nav-item">
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/social_media/add">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Social media</span>
+                </a>
+            </li>
+        <?php } else { ?>
+
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/contact">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Contact form <?php echo $this->session->userdata('user_type'); ?></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/1">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Careers form</span>
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
+                    <i class="icon-cup menu-icon"></i>
+                    <span class="menu-title">Careers</span>
+                </a>
+                <div class="collapse" id="ui-advanced">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/1">Pending</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/2">Contacted</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/3">Accepted</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/4">Rejected</a></li>
+
+                    </ul>
+                </div>
+            </li>
+          
+        <?php } ?>
+        <!-- <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
                             <i class="icon-check menu-icon"></i>
                             <span class="menu-title">Page Layouts</span>
@@ -319,19 +347,19 @@
                             <span class="menu-title">Todo List</span>
                         </a>
                     </li> -->
-                    <li class="nav-item">
+        <!-- <li class="nav-item">
                         <a class="nav-link" href="apps/gallery.html">
                             <i class="icon-picture menu-icon"></i>
                             <span class="menu-title">Gallery</span>
                         </a>
-                    </li>
-                    <!-- <li class="nav-item nav-doc">
+                    </li> -->
+        <!-- <li class="nav-item nav-doc">
                         <a class="nav-link bg-primary" href="https://www.bootstrapdash.com/demo/libertyui/docs/documentation.html">
                             <i class="icon-magnet menu-icon"></i>
                             <span class="menu-title">Documentation</span>
                         </a>
                     </li> -->
-                    <!-- <li class="mt-4 nav-item nav-progress">
+        <!-- <li class="mt-4 nav-item nav-progress">
                         <h6 class="nav-progress-heading mt-4 font-weight-normal">
                             Today's Sales
                             <span class="nav-progress-sub-heading">
@@ -351,5 +379,5 @@
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </li> -->
-                </ul>
-            </nav>
+    </ul>
+</nav>

@@ -55,7 +55,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Title</th>
-                                                    <th>Type</th>
+                                                    <!-- <th>Type</th> -->
                                                     <th>Image</th>
                                                     <th>Description</th>
                                                     <th>Status</th>
@@ -72,9 +72,9 @@
                                                         <td>
                                                             <?php echo $item['title']; ?>
                                                         </td>
-                                                        <td>
+                                                        <!-- <td>
                                                             <?php echo $item['type']; ?>
-                                                        </td>
+                                                        </td> -->
                                                         <td>
                                                             <?php if ($item['image']): ?>
                                                                 <img src="<?php echo base_url('' . $item['image']); ?>"
@@ -120,7 +120,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Title</th>
-                                                    <th>Type</th>
+                                                    <!-- <th>Type</th> -->
                                                     <th>Image</th>
                                                     <th>Description</th>
                                                     <th>Status</th>
@@ -137,9 +137,9 @@
                                                         <td>
                                                             <?php echo $item['title']; ?>
                                                         </td>
-                                                        <td>
+                                                        <!-- <td>
                                                             <?php echo $item['type']; ?>
-                                                        </td>
+                                                        </td> -->
                                                         <td>
                                                             <?php if ($item['image']): ?>
                                                                 <img src="<?php echo base_url('' . $item['image']); ?>"
@@ -185,7 +185,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Title</th>
-                                                    <th>Type</th>
+                                                    <!-- <th>Type</th> -->
                                                     <th>Image</th>
                                                     <th>Description</th>
                                                     <th>Status</th>
@@ -202,9 +202,9 @@
                                                         <td>
                                                             <?php echo $item['title']; ?>
                                                         </td>
-                                                        <td>
+                                                        <!-- <td>
                                                             <?php echo $item['type']; ?>
-                                                        </td>
+                                                        </td> -->
                                                         <td>
                                                             <?php if ($item['image']): ?>
                                                                 <img src="<?php echo base_url('' . $item['image']); ?>"
@@ -250,7 +250,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Title</th>
-                                                    <th>Type</th>
+                                                    <!-- <th>Type</th> -->
                                                     <th>Image</th>
                                                     <th>Description</th>
                                                     <th>Status</th>
@@ -267,9 +267,9 @@
                                                         <td>
                                                             <?php echo $item['title']; ?>
                                                         </td>
-                                                        <td>
+                                                        <!-- <td>
                                                             <?php echo $item['type']; ?>
-                                                        </td>
+                                                        </td> -->
                                                         <td>
                                                             <?php if ($item['image']): ?>
                                                                 <img src="<?php echo base_url('' . $item['image']); ?>"

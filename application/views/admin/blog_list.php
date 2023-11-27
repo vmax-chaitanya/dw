@@ -57,7 +57,7 @@
                                                     <th>Status</th>
                                                     <th>Image</th>
                                                     <th>Created At</th>
-                                                    <th>Created By</th>
+                                                    <!-- <th>Created By</th> -->
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>
@@ -94,9 +94,9 @@
                                                         <td>
                                                             <?php echo $blog['created_at']; ?>
                                                         </td>
-                                                        <td>
+                                                        <!-- <td>
                                                             <?php echo $blog['created_by']; ?>
-                                                        </td>
+                                                        </td> -->
                                                         <td>
                                                             <a href="<?php echo base_url('admin/blog/edit/' . $blog['id']); ?>"
                                                                 class="btn btn-outline-primary">Edit</a>

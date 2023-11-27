@@ -10,6 +10,8 @@ class TrainingCurriculum extends CI_Controller
             redirect('admin/login'); // Redirect to login page
         }
         $this->load->model('Admin/training_curriculum_model');
+        $this->load->model('Admin/training_model');
+
         $this->load->library('form_validation');
     }
 
@@ -17,6 +19,8 @@ class TrainingCurriculum extends CI_Controller
     {
         $data['training_id'] = $training_id;
         $data['curriculums'] = $this->training_curriculum_model->get_curriculum_by_training($training_id);
+        $data['training'] = $this->training_model->get_training_by_id($training_id);
+
         $this->load->view('admin/training_curriculum_list', $data);
     }
 

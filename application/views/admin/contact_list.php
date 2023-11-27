@@ -58,10 +58,10 @@
                                                     <th>Name</th>
                                                     <th>Email</th>
                                                     <th>Mobile</th>
-                                                    <th>Message</th>
-                                                    <th>Services IDs</th>
+                                                    <!-- <th>Message</th> -->
+                                                    <!-- <th>Services IDs</th> -->
                                                     <th>Status</th>
-                                                    <th>Created At</th>
+                                                    <th>Received At</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -80,12 +80,12 @@
                                                         <td>
                                                             <?php echo $contact['mobile']; ?>
                                                         </td>
-                                                        <td>
+                                                        <!-- <td>
                                                             <?php echo $contact['message']; ?>
-                                                        </td>
-                                                        <td>
+                                                        </td> -->
+                                                        <!-- <td>
                                                             <?php echo $contact['services_ids']; ?>
-                                                        </td>
+                                                        </td> -->
                                                         <td>
                                                             <?php
                                                             if ($contact['status'] == '1') {

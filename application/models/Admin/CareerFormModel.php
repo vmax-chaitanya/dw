@@ -1,14 +1,20 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class CareerFormModel extends CI_Model
 {
-    public function getCareerFormSubmissions()
+    public function getCareerFormSubmissions($status)
     {
-        return $this->db->get('career_form')->result_array();
+        $this->db->select('*');
+        $this->db->from('career_form');
+        $this->db->join('careers_jobs', 'careers_jobs.id = career_form.career_id', 'inner');
+        $this->db->where('career_form.status',$status);
+        $query = $this->db->get();
+
+        return $query->result_array();
     }
 
-    public function getCareerFormSubmissionById($id)
+    public function get_by_id($id)
     {
         return $this->db->get_where('career_form', array('id' => $id))->row_array();
     }

@@ -23,8 +23,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg"
-                style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/page-header-bg.jpg)">
+            <div class="page-header-bg" style="background-image: url(<?php echo base_url(); ?>assets/home/images/backgrounds/page-header-bg.jpg)">
             </div>
             <div class="page-header-border"></div>
             <div class="page-header-border page-header-border-two"></div>
@@ -163,9 +162,7 @@
                         </div>
                         <div class="col-xl-5 col-lg-5">
                             <div class="contact-page__form">
-                                <form
-                                    action="https://qutiiz-html.vercel.app/main-html/<?php echo base_url(); ?>assets/home/inc/sendemail.php"
-                                    class="comment-one__form contact-form-validated" novalidate="novalidate">
+                                <form action="https://qutiiz-html.vercel.app/main-html/<?php echo base_url(); ?>assets/home/inc/sendemail.php" class="comment-one__form contact-form-validated" novalidate="novalidate">
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
@@ -202,33 +199,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="row">
-                    <div class="col-xl-12">
-                        <div class="project-details__pagination-box">
-                            <ul class="project-details__pagination list-unstyled">
-                                <li class="next">
-                                    <p class="project-details__pagination-sub-title">Previous project</p>
-                                    <a href="#" aria-label="Previous">
-                                        <span class="project-details__pagination-title">Filmor Experience</span>
-                                        <i class="icon-right-arrow"></i>
-                                    </a>
-                                </li>
-                                <li class="count"><a href="#"></a></li>
-                                <li class="count"><a href="#"></a></li>
-                                <li class="count"><a href="#"></a></li>
-                                <li class="count"><a href="#"></a></li>
-                                <li class="previous">
-                                    <p class="project-details__pagination-sub-title">next project</p>
-                                    <a href="#" aria-label="Next">
-                                        <span class="project-details__pagination-title">Filmor Experience</span>
-                                        <i class="icon-right-arrow"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
         <!--Project Details End-->
@@ -251,8 +221,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-4.jpg"
-                                    alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-4.jpg" alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
                                     <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
@@ -265,8 +234,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-5.jpg"
-                                    alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-5.jpg" alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
                                     <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
@@ -279,8 +247,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-6.jpg"
-                                    alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/resources/project-page-img-6.jpg" alt="">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Graphic</p>
                                     <h3 class="project-one__title"><a href="project-details.html">Fimlor Experience</a>
@@ -305,12 +272,9 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-    
+
     <!-- /.search-popup -->
     <?php include("includes/scripts.php"); ?>
 </body>
-
-
-<!-- Mirrored from qutiiz-html.vercel.app/main-html/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jul 2023 07:24:32 GMT -->
 
 </html>

@@ -67,8 +67,13 @@
                                                         <td><?php echo $i++; ?></td>
                                                         <td><?php echo $banner['name']; ?></td>
                                                         <td><?php echo $banner['description']; ?></td>
-
-                                                        <td><?php echo $banner['type']; ?></td>
+                                                        <td>
+                                                             <?php if ($banner['type'] == '1') : ?>
+                                                                <span class="badge badge-primary">Home</span>
+                                                            <?php else : ?>
+                                                                <span class="badge badge-secondary">Other</span>
+                                                            <?php endif; ?>
+                                                            </td>
                                                         <td>
                                                             <?php if ($banner['image']) : ?>
                                                                 <img src="<?php echo base_url('' . $banner['image']); ?>" alt="Banner Image" width="150">
