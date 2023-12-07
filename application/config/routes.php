@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 //////////////////////Home Controller//////
 $route['default_controller'] = 'HomeController';
-$route['404_override'] = '';
+$route['404_override'] = 'HomeController/custom_404';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['about'] = 'HomeController/about';
@@ -71,6 +71,7 @@ $route['sendEmail'] = 'HomeController/sendEmail';
 
 $route['training'] = 'HomeController/training';
 $route['training-enquiry'] = 'HomeController/training_enquiry';
+$route['popup-enquiry'] = 'HomeController/popup_enquiry';
 $route['career-form'] = 'HomeController/career_form';
 $route['contact-enquiry'] = 'HomeController/contact_enquiry';
 $route['training/(:any)'] = 'HomeController/training_detail/$1';

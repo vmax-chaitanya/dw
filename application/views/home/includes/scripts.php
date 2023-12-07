@@ -243,6 +243,67 @@
     });
 </script>
 <script>
+    /////thisis for brouchure download////
+    $(document).ready(function() {
+        // Initialize form validation
+        $("#Trainingbrouchure").validate({
+            rules: {
+                name1: "required",
+                email1: {
+                    required: true,
+                    email: true // Validate email format
+                },
+                mobile1: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 10
+                },
+                subject1: "required"
+            },
+            messages: {
+                name1: "Please enter your name",
+                email1: {
+                    required: "Please enter your email address",
+                    email: "Please enter a valid email address"
+                },
+                mobile1: {
+                    required: "Enter Mobile Number",
+                    minlength: "Enter Valid  Number",
+                    maxlength: "Enter Valid  Number",
+                },
+                subject1: "Please enter a subject"
+            },
+            submitHandler: function(form) {
+                // Handle the form submission via AJAX here
+                $.ajax({
+                    type: 'POST',
+                    url: $(form).attr('action'),
+                    data: $(form).serialize(),
+                    dataType: 'text',
+                    success: function(response) {
+
+                        if (response) {
+                            // Force the browser to download the file
+                            var link = document.createElement('a');
+                            link.href = response;
+                            link.download = 'Brochure.pdf';
+                            link.click();
+                            toastr.success('Succesfully Downloaded');
+                            $('#brouchure')[0].reset();
+                            $('#exampleModal').modal('hide');
+                        } else {
+                            toastr.error('Error downloading PDF');
+                        }
+                    },
+                    error: function(error) {
+                        console.log('Error:', error);
+                    }
+                });
+            }
+        });
+    });
+</script>
+<script>
     document.addEventListener("DOMContentLoaded", function() {
         // Get the input element by its name attribute
         var nameInput = document.querySelector("input[name='name']");

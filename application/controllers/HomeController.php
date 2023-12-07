@@ -33,6 +33,11 @@ class HomeController extends CI_Controller
 
 		$this->load->view('home/about', $data);
 	}
+	public function custom_404()
+    {
+        $this->output->set_status_header('404');
+        $this->load->view('home/404');
+    }
 	public function privacy_policy()
 	{
 		// Load the about view
@@ -178,7 +183,7 @@ class HomeController extends CI_Controller
 		// echo $this->db->last_query(); exit;
 		$this->load->view('home/blog_detail', $data);
 	}
-	public function training_enquiry()
+	public function popup_enquiry()
 	{
 		//print_r($this->input->post()); exit;
 		$data = array(
@@ -199,10 +204,46 @@ class HomeController extends CI_Controller
 		if ($result) {
 
 			$services_names = "-";
-			$subject ="Contact form details";
+			$subject ="Quick form details";
 			$this->send_email_contact_form($data_contact,$services_names,$subject);
 
 			$pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
+
+			echo $pdfFilePath;
+		} else {
+			echo "Error inserting data.";
+			exit;
+		}
+		exit;
+	}
+
+	public function training_enquiry()
+	{
+		//print_r($this->input->post()); exit;
+		$data = array(
+			'name' => $this->input->post('name1'),
+			'email' => $this->input->post('email1'),
+			'mobile' => $this->input->post('mobile1'),
+			'message' => $this->input->post('message1'),
+			'subject' => $this->input->post('subject1'),
+			//'services_ids' => $this->input->post('services_ids'),
+			'status' => 1,
+			'created_at' => date("Y-m-d H:i:s")
+		);
+
+		$result = $this->contact_model->create_contact($data);
+		$contact_id = $this->db->insert_id();
+		$data_contact = $this->contact_model->get_contact_by_id($contact_id);
+
+		if ($result) {
+
+
+			$data['training_detail'] = $this->Home_model->get_training_by_id($this->input->post('training_url'));
+			$services_names = $data['training_detail']['name'];
+			$subject ="Training form details";
+			$this->send_email_contact_form($data_contact,$services_names,$subject);
+		
+		 	$pdfFilePath =  base_url('' . $data['training_detail']['brochure']); 
 
 			echo $pdfFilePath;
 		} else {

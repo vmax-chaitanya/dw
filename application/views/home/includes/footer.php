@@ -8,7 +8,7 @@
             </div>
             <div class="modal-body">
                 <div class="contact-page__form mt-3">
-                    <form id="brouchure" name="brouchure" method="POST" class="" action="<?php echo base_url('training-enquiry'); ?>">
+                    <form id="brouchure" name="brouchure" method="POST" class="" action="<?php echo base_url('popup-enquiry'); ?>">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">

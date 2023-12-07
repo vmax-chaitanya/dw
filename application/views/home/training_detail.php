@@ -78,38 +78,37 @@
                                 </ul>
                             </div>
                             <div class="contact-page__form mt-3">
-                                <form id="contact-form" name="contact" method="POST" class="" action="<?php echo base_url('contact-insert'); ?>">
+                                <form id="Trainingbrouchure" name="Trainingbrouchure" method="POST" class="" action="<?php echo base_url('training-enquiry'); ?>">
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Your name" name="name">
+                                                <input type="text" placeholder="Your name" name="name1" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Email address" name="email">
+                                                <input type="email" placeholder="Email address" name="email1" required>
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="mobile">
+                                                <input type="text" placeholder="Phone number" name="mobile1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Subject" name="subject">
+                                                <input type="text" placeholder="Subject" name="subject1" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-xl-12">
                                             <div class="comment-form__input-box">
-                                                <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
+                                                <textarea name="message1" placeholder="Write a message"></textarea>
                                             </div>
-                                            <input type="hidden" name="services_ids" value="<?php echo $this->uri->segment(2); ?>">
-                                            <input type="hidden" name="brochure" value=" <?php echo $training_detail['brochure']; ?>">
-                                            <button type="" class="thm-btn comment-form__btn">Download
-                                                Brochure</button>
+                                            <input type="hidden" name="training_url" value="<?php echo $this->uri->segment(2); ?>">
+
+                                            <button type="submit" class="thm-btn comment-form__btn ajax-form">Submit</button>
                                         </div>
                                     </div>
                                 </form>
