@@ -180,8 +180,8 @@
                                             <div class="comment-form__input-box">
                                                 <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
                                             </div>
-                                            <button type="submit" class="thm-btn comment-form__btn mt-3">send
-                                                a message</button>
+                                            <button type="submit" class="thm-btn comment-form__btn mt-3"><span class="button-text">Send a message</span>
+        								<span class="loading-indicator"></span></button>
                                         </div>
                                     </div>
                                 </form>

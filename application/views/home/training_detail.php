@@ -108,7 +108,8 @@
                                             </div>
                                             <input type="hidden" name="training_url" value="<?php echo $this->uri->segment(2); ?>">
 
-                                            <button type="submit" class="thm-btn comment-form__btn ajax-form">Submit</button>
+                                            <button type="submit" class="thm-btn comment-form__btn ajax-form"><span class="button-text">Download Brouchure</span>
+        								<span class="loading-indicator"></span></button>
                                         </div>
                                     </div>
                                 </form>

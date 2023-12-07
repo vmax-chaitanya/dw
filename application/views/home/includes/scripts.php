@@ -90,6 +90,10 @@
             },
             submitHandler: function(form) {
 
+                // Show loading indicator
+                $(".button-text").hide();
+                $(".loading-indicator").show();
+
                 var services_ids = $("input[name='service[]']:checked").map(function() {
                     return this.value;
                 }).get();
@@ -105,8 +109,11 @@
                     url: "<?php echo base_url('contact-enquiry'); ?>",
                     data: formData,
                     success: function(response) {
-                        //alert(response);
-                        // $("#exampleModalLabel").modal("hide");
+
+                        // Hide loading indicator
+                        $(".loading-indicator").hide();
+                        $(".button-text").show();
+
                         $('#exampleModal').modal('hide');
                         $('#contact-form')[0].reset();
                         $('.contact-form')[0].reset();
@@ -213,7 +220,11 @@
                 subject1: "Please enter a subject"
             },
             submitHandler: function(form) {
-                // Handle the form submission via AJAX here
+
+                // Show loading indicator
+                $(".button-text").hide();
+                $(".loading-indicator").show();
+
                 $.ajax({
                     type: 'POST',
                     url: $(form).attr('action'),
@@ -233,9 +244,16 @@
                         } else {
                             toastr.error('Error downloading PDF');
                         }
+                        // Hide loading indicator
+                        $(".loading-indicator").hide();
+                        $(".button-text").show();
+
                     },
                     error: function(error) {
                         console.log('Error:', error);
+                        // Hide loading indicator
+                        $(".loading-indicator").hide();
+                        $(".button-text").show();
                     }
                 });
             }
@@ -274,13 +292,17 @@
                 subject1: "Please enter a subject"
             },
             submitHandler: function(form) {
-                // Handle the form submission via AJAX here
+                // Show loading indicator
+                $(".button-text").hide();
+                $(".loading-indicator").show();
+
                 $.ajax({
                     type: 'POST',
                     url: $(form).attr('action'),
                     data: $(form).serialize(),
                     dataType: 'text',
                     success: function(response) {
+
 
                         if (response) {
                             // Force the browser to download the file
@@ -294,9 +316,16 @@
                         } else {
                             toastr.error('Error downloading PDF');
                         }
+
+                        // Hide loading indicator
+                        $(".loading-indicator").hide();
+                        $(".button-text").show();
                     },
                     error: function(error) {
                         console.log('Error:', error);
+                        // Hide loading indicator
+                        $(".loading-indicator").hide();
+                        $(".button-text").show();
                     }
                 });
             }
@@ -383,7 +412,7 @@
                 },
                 career_list: "required",
                 resume: "required",
-                
+
                 message: "required"
             },
             messages: {
@@ -396,29 +425,29 @@
                 },
                 career_list: "Please select an option",
                 resume: "",
-               
+
                 career_email: "Enter email address",
                 message: "Please write a message"
             },
             submitHandler: function(form) {
-      var formData = new FormData(form);
+                var formData = new FormData(form);
 
-      // Add any additional fields or data to the FormData if needed
-      formData.append('otherField', 'otherValue');
+                // Add any additional fields or data to the FormData if needed
+                formData.append('otherField', 'otherValue');
 
-      $.ajax({
-        method: "POST",
-        url: "<?php echo base_url('career-form'); ?>",
-        data: formData,
-        contentType: false,
-        processData: false, // These two options are important for file uploads
-        success: function(response) {
-          // Handle the response
-          toastr.success('Thank you for your message. We will get in touch with you shortly');
-          form.reset();
-        }
-      });
-    }
+                $.ajax({
+                    method: "POST",
+                    url: "<?php echo base_url('career-form'); ?>",
+                    data: formData,
+                    contentType: false,
+                    processData: false, // These two options are important for file uploads
+                    success: function(response) {
+                        // Handle the response
+                        toastr.success('Thank you for your message. We will get in touch with you shortly');
+                        form.reset();
+                    }
+                });
+            }
         });
     });
 </script>

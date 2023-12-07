@@ -389,6 +389,30 @@
 
     }
 </style>
+<!-- Add these styles for the loading indicator -->
+<style>
+    .loading-indicator {
+        display: none;
+        margin-left: 10px; /* Adjust the margin as needed */
+    }
+
+    .loading-indicator::after {
+        content: " ";
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        border: 0.2em solid #ccc;
+        border-top: 0.2em solid #333;
+        animation: spin 1s linear infinite;
+        margin-top: -0.75em;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
 <?php
 $this->load->helper('custom_helper');
 // $h_services = $this->Home_model->getActiveServiceNames();
