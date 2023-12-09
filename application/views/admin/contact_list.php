@@ -30,7 +30,7 @@
                         <div class="card-body">
                             <div class="row mb-3">
                                 <div class="col-md-10">
-                                    <h4 class="card-title">Data table</h4>
+                                    <h4 class="card-title">Contact List</h4>
                                 </div>
                                 <!-- <div class="col-md-2 ms-auto">
                                     <a href="<?php echo base_url(); ?>admin/contact/add"
@@ -43,7 +43,7 @@
                             <!-- <a class="nav-link dropdown-toggle bg-primary" id="actionDropdown" href="#" data-toggle="dropdown">
                                 <span class="btn">+ Create new</span>
                             </a> -->
-                            <?php if ($this->session->flashdata('success')): ?>
+                            <?php if ($this->session->flashdata('success')) : ?>
                                 <div class="alert alert-success">
                                     <?php echo $this->session->flashdata('success'); ?>
                                 </div>
@@ -66,7 +66,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php foreach ($contacts as $contact): ?>
+                                                <?php foreach ($contacts as $contact) : ?>
                                                     <tr>
                                                         <td>
                                                             <?php echo $contact['id']; ?>
@@ -87,25 +87,22 @@
                                                             <?php echo $contact['services_ids']; ?>
                                                         </td> -->
                                                         <td>
-                                                            <?php
-                                                            if ($contact['status'] == '1') {
-                                                                echo 'Active';
-                                                            } elseif ($contact['status'] == '2') {
-                                                                echo 'Inactive';
-                                                            } elseif ($contact['status'] == '3') {
-                                                                echo 'Delete';
-                                                            }
-                                                            ?>
+                                                            <?php if ($contact['status'] == '1') : ?>
+                                                                <label class="badge badge-success">Pending</label>
+                                                            <?php elseif ($contact['status'] == '2') : ?>
+                                                                <label class="badge badge-danger">Contacted</label>
+                                                            <?php elseif ($contact['status'] == '3') : ?>
+                                                                <label class="badge badge-danger">Accepted</label>
+                                                            <?php else : ?>
+                                                                <label class="badge badge-info">Rejected</label>
+                                                            <?php endif; ?>
                                                         </td>
                                                         <td>
                                                             <?php echo $contact['created_at']; ?>
                                                         </td>
                                                         <td>
-                                                            <a href="<?php echo site_url('admin/contact/edit/' . $contact['id']); ?>"
-                                                                class="btn btn-primary btn-sm">Edit</a>
-                                                            <a href="<?php echo site_url('admin/contact/delete/' . $contact['id']); ?>"
-                                                                class="btn btn-danger btn-sm"
-                                                                onclick="return confirm('Are you sure you want to delete this contact?')">Delete</a>
+                                                            <a href="<?php echo site_url('admin/contact/view/' . $contact['id']); ?>" class="btn btn-primary btn-sm">View</a>
+                                                            <a href="<?php echo site_url('admin/contact/delete/' . $contact['id']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this contact?')">Delete</a>
                                                         </td>
                                                     </tr>
                                                 <?php endforeach; ?>

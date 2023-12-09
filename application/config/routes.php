@@ -167,12 +167,16 @@ $route['admin/training/update/(:num)'] = 'Admin/training/update/$1';
 $route['admin/training/delete/(:num)'] = 'Admin/training/delete/$1';
 
 
-$route['admin/contact'] = 'Admin/Contact';
+
+$route['admin/contact/(:num)'] = 'Admin/Contact/index/$1';
 $route['admin/contact/add'] = 'Admin/Contact/add';
 $route['admin/contact/create'] = 'Admin/Contact/create';
 $route['admin/contact/edit/(:num)'] = 'Admin/Contact/edit/$1';
+$route['admin/contact/view/(:num)'] = 'Admin/Contact/view/$1';
 $route['admin/contact/update/(:num)'] = 'Admin/Contact/update/$1';
 $route['admin/contact/delete/(:num)'] = 'Admin/Contact/delete/$1';
+$route['admin/contact/updateStatus'] = 'Admin/Contact/updateStatus';
+
 
 $route['admin/address'] = 'Admin/address/index';
 $route['admin/address/add'] = 'Admin/address/add';
@@ -218,4 +222,6 @@ $route['admin/static_pages_seo/delete/(:num)'] = 'Admin/StaticPagesSeo/delete/$1
 
 $route['admin/careers/(:num)'] = 'Admin/Careers/index/$1';
 $route['admin/careers/view/(:num)'] = 'Admin/Careers/view/$1';
+$route['admin/careers/updateStatus'] = 'Admin/Careers/updateStatus';
+
 ///////admin////////

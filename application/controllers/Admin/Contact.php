@@ -13,9 +13,9 @@ class Contact extends CI_Controller
         $this->load->library('form_validation');
     }
 
-    public function index()
+    public function index($status)
     {
-        $data['contacts'] = $this->contact_model->get_all_contacts();
+        $data['contacts'] = $this->contact_model->get_all_contacts($status);
         $this->load->view('admin/contact_list', $data); // Load the view for contact list
     }
 
@@ -62,6 +62,11 @@ class Contact extends CI_Controller
         $data['contact'] = $this->contact_model->get_contact_by_id($id);
         $this->load->view('admin/contact_edit', $data); // Load the view for editing contact
     }
+    public function view($id)
+    {
+        $data['contact'] = $this->contact_model->get_contact_by_id($id);
+        $this->load->view('admin/contact_view', $data); // Load the view for editing contact
+    }
 
     public function update($id)
     {
@@ -100,5 +105,20 @@ class Contact extends CI_Controller
     {
         $this->contact_model->delete_contact($id);
         redirect('admin/contact');
+    }
+    public function updateStatus()
+    {
+        $id = $this->input->post('id');
+        $newStatus = $this->input->post('status');
+
+        // Call the model function to update the status
+        $result = $this->contact_model->updateStatus($id, $newStatus);
+
+        // Check the result and send a response
+        if ($result) {
+            echo json_encode(array('status' => 'success'));
+        } else {
+            echo json_encode(array('status' => 'error', 'message' => 'Failed to update status'));
+        }
     }
 }

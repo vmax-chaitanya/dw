@@ -94,19 +94,33 @@
             </li>
         <?php } else { ?>
 
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>admin/contact">
                     <i class="icon-handbag menu-icon"></i>
                     <span class="menu-title">Contact form <?php echo $this->session->userdata('user_type'); ?></span>
                 </a>
-            </li>
-            <li class="nav-item">
+            </li> -->
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>admin/careers/1">
                     <i class="icon-handbag menu-icon"></i>
                     <span class="menu-title">Careers form</span>
                 </a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-toggle="collapse" href="#contact" aria-expanded="false" aria-controls="contact">
+                    <i class="icon-cup menu-icon"></i>
+                    <span class="menu-title">Contact</span>
+                </a>
+                <div class="collapse" id="contact">
+                    <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/contact/1">Pending</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/contact/2">Contacted</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/contact/3">Accepted</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>admin/contact/4">Rejected</a></li>
+
+                    </ul>
+                </div>
             </li>
-            
             <li class="nav-item">
                 <a class="nav-link collapsed" data-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
                     <i class="icon-cup menu-icon"></i>

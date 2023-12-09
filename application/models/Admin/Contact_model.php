@@ -9,11 +9,21 @@ class Contact_model extends CI_Model
         $this->load->database();
     }
 
-    public function get_all_contacts()
+    // public function get_all_contacts($status)
+    // {
+    //     $query = $this->db->get('contact');
+    //     return $query->result_array();
+    // }
+    public function get_all_contacts($status)
     {
-        $query = $this->db->get('contact');
+        $this->db->select('*');
+        $this->db->from('contact');
+        $this->db->where('status', $status);
+        $query = $this->db->get();
+
         return $query->result_array();
     }
+
 
     public function create_contact($data)
     {
@@ -37,5 +47,11 @@ class Contact_model extends CI_Model
     {
         $this->db->where('id', $id);
         return $this->db->delete('contact');
+    }
+    public function updateStatus($id, $newStatus)
+    {
+        $this->db->where('id', $id);
+        $data = array('status' => $newStatus);
+        return $this->db->update('contact', $data);
     }
 }
