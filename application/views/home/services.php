@@ -111,7 +111,7 @@
                             <!--Portfolio One Single-->
                             <div class="project-one__single">
                                 <div class="project-one__img">
-                                    <img src="<?php echo base_url('' . $service['image']); ?>" alt="">
+                                    <img src="<?php echo base_url('' . $service['image']); ?>" alt=" <?php echo ucfirst(strtolower($service['name'])); ?>">
                                     <div class="project-one__hover">
                                         <!-- <p class="project-one__tagline">Graphic</p> -->
                                         <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">

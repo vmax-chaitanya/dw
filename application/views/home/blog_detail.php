@@ -59,7 +59,7 @@
                     <div class="col-xl-8 col-lg-7">
                         <div class="blog-details__left">
                             <div class="blog-details__img">
-                                <img src="<?php echo base_url('' . $blog['image']); ?>" alt="">
+                                <img src="<?php echo base_url('' . $blog['image']); ?>" alt="<?php echo $blog['title'] ;?>">
                                 <div class="blog-details__date-box">
                                     <p>
                                         <?php echo date('j M', strtotime($blog['created_at'])); ?>
@@ -88,7 +88,7 @@
                                     foreach ($blogs as $blogs) : ?>
                                         <li>
                                             <div class="sidebar__post-image">
-                                                <img src="<?php echo base_url('' . $blogs['image']); ?>" alt="">
+                                                <img src="<?php echo base_url('' . $blogs['image']); ?>" alt="<?php echo $blogs['title']; ?>">
                                             </div>
                                             <div class="sidebar__post-content">
                                                 <h3>

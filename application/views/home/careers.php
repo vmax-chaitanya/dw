@@ -61,7 +61,7 @@
                                     our company</h2>
                             </div>
                             <div class="about-page__img cardimg">
-                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/careers.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/careers.jpg" alt="career image">
                             </div>
                             <p class="about-page__right-text-2"> DigitalWin Business Agency is continuously looking for
                                 qualified professionals to join its ever-expanding talent pool and help the firm thrive.

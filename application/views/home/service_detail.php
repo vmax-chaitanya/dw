@@ -154,7 +154,7 @@
                     <div class="col-xl-8 col-lg-7">
                         <div class="service-details__right">
                             <div class="about-page__img cardimg">
-                                <img src="<?php echo base_url('' . $services_detail['image']); ?>" alt="">
+                                <img src="<?php echo base_url('' . $services_detail['image']); ?>" alt="<?php echo $services_detail['name'];?>">
                             </div>
                             <div class="service-details__content">
                                 <h2 class="service-details__title">
@@ -349,7 +349,7 @@
                                 <div class="project-one__single">
                                     <div class="project-one__img">
 
-                                        <img src="<?php echo base_url('' . $service['image']); ?>" alt="">
+                                        <img src="<?php echo base_url('' . $service['image']); ?>" alt="<?php echo ucfirst(strtolower($service['name'])); ?>">
                                         <div class="project-one__hover">
                                             <p class="project-one__tagline">service</p>
                                             <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">

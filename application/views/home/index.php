@@ -122,7 +122,7 @@
                     <div class="col-xl-6">
                         <div class="get-to-know__left wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                             <div class="get-to-know__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images.jpg" alt="service_image">
                                 <div class="get-to-know__video-link">
                                     <a href="https://www.youtube.com/watch?v=tjeBik0Q860" class="video-popup">
                                         <div class="get-to-know__video-icon">
@@ -369,7 +369,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/api.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/api.jpg" alt="Api Integration">
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
                                     <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/api-integration">API Inegration</a>
@@ -382,7 +382,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/ai.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/ai.jpg" alt="Advance Digital Marketing Services with AI">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Service</p>
                                     <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services">Advance Digital Marketing Services with AI</a>
@@ -395,7 +395,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/google_ads.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/google_ads.jpg" alt="Google Ads">
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
                                     <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/google-ads">Google Ads</a>
@@ -408,7 +408,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/training.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/training.jpg" alt="Advance Digital Marketing Training with AI">
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Training</p>
                                     <h3 class="project-one__title"><a href="<?php echo base_url(); ?>training/advanced-digital-marketing-with-ai">Advance Digital Marketing Training with AI</a>
@@ -421,7 +421,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/native_ads.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/native_ads.jpg" alt="Native Marketing">
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
                                     <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/native-marketing">Native Marketing</a>
@@ -434,7 +434,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/ecommerce.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/ecommerce.jpg" alt="Responsive Websites for Ecommerce and More">
                                 <div class="project-one__hover project-one__hover-pl-40">
                                     <p class="project-one__tagline">Service</p>
                                     <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/responsive-website-design">Responsive Websites for Ecommerce and More</a>
@@ -447,7 +447,7 @@
                         <!--Portfolio One Single-->
                         <div class="project-one__single">
                             <div class="project-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/seo.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/showcase/seo.jpg" alt="SEO">
                                 <div class="project-one__hover">
                                     <p class="project-one__tagline">Service</p>
                                     <h3 class="project-one__title"><a href="<?php echo base_url(); ?>services/search-engine-optimization">SEO</a>
@@ -475,7 +475,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/driven/small_bussigness.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/small_bussigness.jpg" alt="Small Businesses">
 
                                
                             </div>
@@ -493,7 +493,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/driven/start_up.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/start_up.jpg" alt="Startups">
                                
                             </div>
                             <div class="blog-one__content">
@@ -510,7 +510,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img" style="text-align: center !important; ">
-                                <img src="<?php echo base_url(); ?>assets/images/driven/ecommerce.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/ecommerce.jpg" alt="E-commerce Businesses">
                                
                             </div>
                             <div class="blog-one__content">
@@ -528,7 +528,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/driven/b2b.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/b2b.jpg" alt="B2B Companies">
                               
                             </div>
                             <div class="blog-one__content">
@@ -548,7 +548,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/driven/professional_services.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/professional_services.jpg" alt="Professional Services">
                                
                             </div>
                             <div class="blog-one__content">
@@ -569,7 +569,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/driven/local_bussigness.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/local_bussigness.jpg" alt="Enterprenuers">
                                
                             </div>
                             <div class="blog-one__content">
@@ -589,7 +589,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/driven/non_profit_orginization.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/non_profit_orginization.jpg" alt="Banking & Finance">
                                
                             </div>
                             <div class="blog-one__content">
@@ -610,7 +610,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/driven/educational.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/educational.jpg" alt="Education Institutions">
                                 
                             </div>
                             <div class="blog-one__content">
@@ -631,7 +631,7 @@
                         <!--Blog One Start-->
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/driven/real-estate.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/images/driven/real-estate.jpg" alt="Real Estate Agencies">
                                
                             </div>
                             <div class="blog-one__content">
@@ -761,7 +761,8 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="why-choose-one__left wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                             <div class="why-choose-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images3.jpg" alt>
+                                <img src="<?php echo base_url(); ?>assets/home/images/home_images/home_images3.jpg" alt="Unlock new dimensions of success with our <BR>
+                                    AI-driven services">
                             </div>
                         </div>
                     </div>
@@ -858,9 +859,9 @@
                                 strategies helped us reach a broader audience and boost conversions.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt="PRANAV" width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt="services">
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -877,9 +878,9 @@
                                 elevating our brand visibility and driving more customers to our website.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt="CHAITANYA" width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt="service">
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -894,9 +895,9 @@
                                 strategies that have improved my website's organic rankings and traffic.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt="service" width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt="quote">
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -911,9 +912,9 @@
                                 landscape has helped me stay ahead of the competition.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg " alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg " alt="service" width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt="service">
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -928,9 +929,9 @@
                                 significantly improved my website's visibility and organic rankings.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt="service" width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt="service">
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -990,7 +991,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                        <image src="<?php echo base_url('' . $social_media['mission_image']); ?>" height="150px" width="150px" class="" alt="" />
+                                        <image src="<?php echo base_url('' . $social_media['mission_image']); ?>" height="150px" width="150px" class="" alt="social media" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -1007,7 +1008,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                        <image src="<?php echo base_url('' . $social_media['vision_image']); ?>" height="150px" width="150px" class="" alt="" />
+                                        <image src="<?php echo base_url('' . $social_media['vision_image']); ?>" height="150px" width="150px" class="" alt="vission" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -1024,7 +1025,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                        <image src="<?php echo base_url('' . $social_media['value_image']); ?>" height="150px" width="150px" class="" alt="" />
+                                        <image src="<?php echo base_url('' . $social_media['value_image']); ?>" height="150px" width="150px" class="" alt="value" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">

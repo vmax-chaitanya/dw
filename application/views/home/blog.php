@@ -54,7 +54,7 @@
                             <!--Blog One Start-->
                             <div class="blog-one__single">
                                 <div class="blog-one__img">
-                                    <img src="<?php echo base_url('' . $blog['image']); ?>" alt="">
+                                    <img src="<?php echo base_url('' . $blog['image']); ?>" alt="<?php echo $blog['title']; ?>">
                                     <a href="<?php echo base_url(); ?>blog-detail/<?php echo $blog['id']; ?>">
                                         <span class="blog-one__plus"></span>
                                     </a>

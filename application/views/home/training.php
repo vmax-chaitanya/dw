@@ -113,7 +113,7 @@
                             <!--Blog One Start-->
                             <div class="blog-one__single">
                                 <div class="blog-one__img">
-                                    <img src="<?php echo base_url('' . $training['image']); ?>" alt="">
+                                    <img src="<?php echo base_url('' . $training['image']); ?>" alt="<?php echo ucfirst(strtolower($training['name'])); ?>">
                                     <a href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>">
                                         <span class="blog-one__plus"></span>
                                     </a>
@@ -172,7 +172,7 @@
                                         </h3>
                                         <div class="blog-one__person">
                                             <div class="blog-one__person-img">
-                                                <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="">
+                                                <img src="assets/images/blog/blog-one-person-img-1.jpg" alt="<?php echo $certification_course['name']; ?>">
                                             </div>
                                             <div class="blog-one__date">
                                                 <p><?php echo $certification_course['tag']; ?></p>
@@ -217,7 +217,7 @@
                                 <div class="col-xl-3 col-lg-4 wow animated fadeInUp" data-wow-delay="0.'<?php echo  $i; ?>'s">
                                     <div class="business-growth-one__single">
                                         <div class="business-growth-one__single-img">
-                                            <img src="<?php echo base_url('' . $tools['image']); ?>" alt="" />
+                                            <img src="<?php echo base_url('' . $tools['image']); ?>" alt="<?php echo $tools['image']; ?>" />
                                         </div>
 
                                     </div>
@@ -252,7 +252,7 @@
                                 <div class="services-three__single">
                                     <div class="services-three__single-img">
                                         <div class="services-three__single-img-inner">
-                                            <img src="<?php echo base_url('' . $certification_courses['image']); ?>" alt="" />
+                                            <img src="<?php echo base_url('' . $certification_courses['image']); ?>" alt="Certifications" />
                                         </div>
 
                                     </div>

@@ -62,7 +62,7 @@
                     <div class="col-xl-4 pt-5">
                         <div class="about-page__img">
                             <a data-fancybox="about-gallery" data-caption="Image 1" href="<?php echo base_url('' . $val['image']); ?>">
-                                <img src="<?php echo base_url('' . $val['image']); ?>" alt="Image 1">
+                                <img src="<?php echo base_url('' . $val['image']); ?>" alt="<?php echo $val['title'];?>">
                             </a>
                         </div>
                     </div>

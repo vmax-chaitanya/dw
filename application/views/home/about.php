@@ -66,7 +66,7 @@
                     <div class="col-xl-6">
                         <div class="about-page__left">
                             <div class="about-page__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/about/about image.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/home/images/about/about image.jpg" alt="about image">
                             </div>
                             <div class="about-page__founded">
                                 <h5>Founded <br> in 2014</h5>
@@ -245,7 +245,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                        <image src="<?php echo base_url('' . $social_media['mission_image']); ?>" height="150px" width="150px" class="" alt="" />
+                                        <image src="<?php echo base_url('' . $social_media['mission_image']); ?>" height="150px" width="150px" class="" alt="mission_image" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -262,7 +262,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                        <image src="<?php echo base_url('' . $social_media['vision_image']); ?>" height="150px" width="150px" class="" alt="" />
+                                        <image src="<?php echo base_url('' . $social_media['vision_image']); ?>" height="150px" width="150px" class="" alt="vision_image" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -279,7 +279,7 @@
                             <div class="tabs-content__inner">
                                 <div class="row">
                                     <div class="col-xl-3">
-                                        <image src="<?php echo base_url('' . $social_media['value_image']); ?>" height="150px" width="150px" class="" alt="" />
+                                        <image src="<?php echo base_url('' . $social_media['value_image']); ?>" height="150px" width="150px" class="" alt="value_image" />
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
@@ -329,9 +329,9 @@
                                 strategies helped us reach a broader audience and boost conversions.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt="pranav" width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt="service">
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -348,9 +348,9 @@
                                 elevating our brand visibility and driving more customers to our website.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/male.jpg" alt="chaitanya" width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt="service">
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -365,9 +365,9 @@
                                 strategies that have improved my website's organic rankings and traffic.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt="annaya sharma" width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt="service">
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
@@ -399,9 +399,9 @@
                                 significantly improved my website's visibility and organic rankings.</p>
                             <div class="testimonial-one__client-info">
                                 <div class="testimonial-one__client-img">
-                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt width="80px" height="80px">
+                                    <img src="<?php echo base_url(); ?>assets/home/images/testimonial/female.jpg" alt="reshma" width="80px" height="80px">
                                     <div class="testimonial-one__quote">
-                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt>
+                                        <img src="<?php echo base_url(); ?>assets/home/images/testimonial/testimonial-one-quote.png" alt="service">
                                     </div>
                                 </div>
                                 <div class="testimonial-one__client-details">
