@@ -105,9 +105,20 @@ class HomeController extends CI_Controller
 	{
 		// Load the services view
 		$data['page_title'] = "Home || Digital win ||";
-		$data['services'] = $this->Home_model->getActiveServices($type = null);
+		$data['servicesw'] = $this->Home_model->getActiveServicesNew();
+		// echo "gi"; exit;
 		$this->load->view('home/services', $data);
 	}
+	public function category_services($url)
+	{
+
+        $categories = $this->Home_model->getServiceCategoryByUrl($url); 
+		$data['page_title'] = "Home || Digital win ||";
+		$data['servicesw'] = $this->Home_model->getCategoryServices($categories['id']);
+		//echo "<pre>"; print_r($data['services']); exit;
+		$this->load->view('home/services', $data);
+	}
+
 	public function other_services()
 	{
 		// Load the services view

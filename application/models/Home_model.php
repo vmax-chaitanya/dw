@@ -87,6 +87,12 @@ class Home_model extends CI_Model
         $this->db->where('status', '1');
         return $this->db->get('services')->result_array();
     }
+    public function getCategoryServices($type)
+    {
+        $this->db->where('type', $type);
+        $this->db->where('status', '1');
+       return $this->db->get('services')->result_array();
+    }
     public function getActiveServicesSideMenu($type)
 {
     $this->db->where('type', $type);
@@ -254,6 +260,13 @@ class Home_model extends CI_Model
     public function getActiveServicesCategories()
     {
         return $this->db->get_where('services_categories', array('status' => '1'))->result_array();
+    }
+    public function getServiceCategoryByUrl($url)
+    {
+        $this->db->select('id');
+        $this->db->like('url', $url, 'both'); // 'both' means '%url%'
+        $query = $this->db->get('services_categories');
+        return $query->row_array();
     }
     public function getActiveServicesNew()
     {

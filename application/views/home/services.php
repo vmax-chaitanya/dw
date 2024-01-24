@@ -106,7 +106,7 @@
                 </div>
                 <div class="row filter-layout">
                     <?php $i = 1;
-                    foreach ($services as $service) : ?>
+                    foreach ($servicesw as $service) : ?>
                         <div class="col-xl-4 col-lg-6 col-md-6 filter-item bra photo web">
                             <!--Portfolio One Single-->
                             <div class="project-one__single">

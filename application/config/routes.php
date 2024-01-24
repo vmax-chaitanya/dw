@@ -65,6 +65,7 @@ $route['blog'] = 'HomeController/blog';
 $route['faq'] = 'HomeController/faq';
 $route['gallery'] = 'HomeController/gallery';
 $route['services'] = 'HomeController/services';
+ $route['category-services/(:any)'] = 'HomeController/category_services/$1';
 $route['services/(:any)'] = 'HomeController/service_detail/$1';
 $route['sent-email'] = 'HomeController/send_email';
 $route['sendEmail'] = 'HomeController/sendEmail';

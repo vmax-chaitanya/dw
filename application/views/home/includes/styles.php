@@ -427,6 +427,7 @@ $social_media = get_social_media();
 $categories = $this->Home_model->getActiveServicesCategories();
 $services = $this->Home_model->getActiveServicesNew();
 
+
 ?>
 
 <!--Start Sticky Icon-->

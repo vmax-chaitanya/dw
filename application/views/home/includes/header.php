@@ -83,7 +83,7 @@
                             <a href="<?php echo base_url(); ?>services"">Services</a>
                             <ul>
                                 <?php foreach ($categories as $category): ?>
-                                    <li class=""><a href=" #">
+                                    <li class=""><a href="<?php echo base_url();?>category-services/<?= $category['url'] ?>">
                                     <?= $category['name'] ?>
                                 </a>
                                 <ul class="">
