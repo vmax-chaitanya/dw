@@ -33,7 +33,7 @@
         "debug": false,
         "newestOnTop": false,
         "progressBar": true,
-        "positionClass": "toast-top-right",
+        "positionClass": "toast-bottom-center",
         "preventDuplicates": false,
         "onclick": null,
         "showDuration": "300",
@@ -69,7 +69,13 @@
                     minlength: 9,
                     maxlength: 9
                 },
-                message: "required"
+                message: "required",
+                captcha: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 6
+                }
+
             },
             messages: {
                 name: "Enter Name",
@@ -86,7 +92,8 @@
                     maxlength: "Coupon must have exactly 9 characters"
                 },
                 email: "Enter Valid Email Address",
-                message: "Please write a message"
+                message: "Please write a message",
+                captcha: "Please enter captcha"
             },
             submitHandler: function(form) {
 
@@ -109,19 +116,33 @@
                     url: "<?php echo base_url('contact-enquiry'); ?>",
                     data: formData,
                     success: function(response) {
+                    // Hide loading indicator
+                    $(".loading-indicator").hide();
+                    $(".button-text").show();
+                    $('#exampleModal').modal('hide');
+                   
 
-                        // Hide loading indicator
-                        $(".loading-indicator").hide();
-                        $(".button-text").show();
-
-                        $('#exampleModal').modal('hide');
+                    // Parse the JSON response
+                    var responseData = JSON.parse(response);
+                        console.log(responseData.status);
+                    // Check status of the response
+                    if (responseData.status == "success") {
+                        // If success, show success message
+                        toastr.success(responseData.message);
                         $('#contact-form')[0].reset();
-                        $('.contact-form')[0].reset();
-                        //alert("hi");
-                        toastr.success('Thank you for your message. We will get in touch with you shortly');
-                        this.reset();
-
+                    $('.contact-form')[0].reset();
+                    } else {
+                        // If error, show error message
+                        toastr.error(responseData.message);
                     }
+                },
+                error: function(xhr, status, error) {
+                    // Hide loading indicator
+                    $(".loading-indicator").hide();
+                    $(".button-text").show();
+                    // Show error message
+                    toastr.error("Error: " + xhr.responseText);
+                }
                 });
             }
         });
@@ -134,6 +155,16 @@
         });
     });
 </script>
+<script>
+       $(document).ready(function(){
+           $('.captcha-refresh').on('click', function(){
+               $.get('<?php echo base_url().'generate-captcha/1'; ?>', function(data){
+                console.log(data);
+                   $('#image_captcha').html(data);
+               });
+           });
+       });
+   </script>
 
 
 <script>
@@ -289,7 +320,12 @@
                     minlength: "Enter Valid  Number",
                     maxlength: "Enter Valid  Number",
                 },
-                subject1: "Please enter a subject"
+                subject1: "Please enter a subject",
+                captcha1: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 6
+                }
             },
             submitHandler: function(form) {
                 // Show loading indicator

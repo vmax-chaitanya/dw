@@ -413,6 +413,17 @@
         100% { transform: rotate(360deg); }
     }
 </style>
+<style>
+    .capture-referwch-image{
+        width: 40px;
+        height: 40px;
+        margin-top: 7px;
+        
+    }
+</style>
+
+
+
 <?php
 $this->load->helper('custom_helper');
 // $h_services = $this->Home_model->getActiveServiceNames();

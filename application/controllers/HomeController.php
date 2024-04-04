@@ -9,11 +9,14 @@ class HomeController extends CI_Controller
 		parent::__construct();
 		$this->load->model('Admin/contact_model'); // Load the Contact_model
 		$this->load->model('Admin/CareerFormModel'); // Load the Contact_model
+		$this->load->helper('captcha');
 
 		$this->load->model('Home_model');
 		$this->load->helper('download');
 		$this->load->library('form_validation');
 		date_default_timezone_set('Asia/Calcutta');
+		// error_reporting(E_ALL);
+		// ini_set('display_errors', 0);
 	}
 	public function index()
 	{
@@ -21,6 +24,8 @@ class HomeController extends CI_Controller
 		$data['page_title'] = " Home || Digital win || ";
 		$data['banners'] = $this->Home_model->getActiveBanners();
 		$data['trainings'] = $this->Home_model->getActiveTraining();
+		$data['captcha_image'] = $this->generate_captcha(0); 
+
 		//echo $this->db->last_query(); exit;;
 		//print_r($data['banners']); exit;
 		$this->load->view('home/index', $data);
@@ -72,13 +77,17 @@ class HomeController extends CI_Controller
 
 	public function contact()
 	{
-		// Load the contact view
-		//echo "hi"; exit;
+
+		
 		$data['page_title'] = "Home || Digital win ||";
 		$data['services'] = $this->Home_model->getActiveServices(1);
-
-		$this->load->view('home/contact', $data);
+	 	$data['captcha_image'] = $this->generate_captcha(0); 
+ 		$this->load->view('home/contact', $data);
 	}
+
+	
+
+
 
 	// public function blog() {
 	//     // Load the blog view
@@ -146,6 +155,8 @@ class HomeController extends CI_Controller
 		// echo $this->db->last_query(); exit;
 		$data['upcoming_services'] = $this->Home_model->getUpcomingServices($service_primary_id, 5, $type);
 // echo $this->db->last_query(); exit;
+$data['captcha_image'] = $this->generate_captcha(0); 
+
 		$this->load->view('home/service_detail', $data);
 	}
 
@@ -174,6 +185,7 @@ class HomeController extends CI_Controller
 		$data['key_highlites'] = $this->Home_model->getActiveKeyHighlites($service_primary_id);
 		$data['trainings'] = $this->Home_model->getActiveTraining();
 		$data['upcoming_trainings'] = $this->Home_model->getUpcomingTraining($service_primary_id, 5);
+		$data['captcha_image'] = $this->generate_captcha(0); 
 
 		$this->load->view('home/training_detail', $data);
 	}
@@ -192,11 +204,21 @@ class HomeController extends CI_Controller
 		$data['page_title'] = "Blogs Details || Digital win ||";
 		$data['blog'] = $this->Home_model->get_blog_by_id($blog_id);
 		// echo $this->db->last_query(); exit;
+		$data['captcha_image'] = $this->generate_captcha(0); 
+
 		$this->load->view('home/blog_detail', $data);
 	}
 	public function popup_enquiry()
 	{
 		//print_r($this->input->post()); exit;
+		if ($this->input->post('captcha') != $this->session->userdata('captcha_code')) {
+			$response = array(
+				'status' => 'error',
+				'message' => 'Captcha Mismatch'
+			);
+			echo json_encode($response);
+			exit;
+		}
 		$data = array(
 			'name' => $this->input->post('name1'),
 			'email' => $this->input->post('email1'),
@@ -231,6 +253,14 @@ class HomeController extends CI_Controller
 	public function training_enquiry()
 	{
 		//print_r($this->input->post()); exit;
+		if ($this->input->post('captcha') != $this->session->userdata('captcha_code')) {
+			$response = array(
+				'status' => 'error',
+				'message' => 'Captcha Mismatch'
+			);
+			echo json_encode($response);
+			exit;
+		}
 		$data = array(
 			'name' => $this->input->post('name1'),
 			'email' => $this->input->post('email1'),
@@ -267,6 +297,14 @@ class HomeController extends CI_Controller
 	public function contact_enquiry()
 	{
 		//print_r($this->input->post()); exit;
+		if ($this->input->post('captcha') != $this->session->userdata('captcha_code')) {
+			$response = array(
+				'status' => 'error',
+				'message' => 'Captcha Mismatch'
+			);
+			echo json_encode($response);
+			exit;
+		}
 		$data = array(
 			'name' => $this->input->post('name'),
 			'email' => $this->input->post('email'),
@@ -296,10 +334,23 @@ class HomeController extends CI_Controller
 		if ($result) {
 			$subject ="Contact form details";
 			$this->send_email_contact_form($data_contact,$services_names,$subject);
-			echo "Thank you for your message. We will get in touch with you shortly";
+			// echo "Thank you for your message. We will get in touch with you shortly";
+			// exit;
+			  // Send success response
+			  $response = array(
+				'status' => 'success',
+				'message' => 'Thank you for your message. We will get in touch with you shortly'
+			);
+			echo json_encode($response);
 			exit;
 		} else {
-			echo "Error inserting data.";
+			// echo "Error inserting data.";
+			// exit;
+			$response = array(
+				'status' => 'error',
+				'message' => 'Error inserting data.'
+			);
+			echo json_encode($response);
 			exit;
 		}
 		exit;
@@ -318,6 +369,8 @@ class HomeController extends CI_Controller
 		$data['page_title'] = "Why Only We || Digital win ||";
 		$data['careers_list'] = $this->Home_model->getActiveCareers();
 		$data['careers_list_form'] = $this->Home_model->getActiveCareers();
+		$data['captcha_image'] = $this->generate_captcha(0); 
+
 		// echo $this->db->last_query(); exit;
 		$this->load->view('home/careers', $data);
 	}
@@ -508,7 +561,7 @@ class HomeController extends CI_Controller
 
 		$this->phpmailer->IsSMTP();
 		$this->phpmailer->Host = $smtp_host;
-		$this->phpmailer->SMTPDebug = 1;
+		$this->phpmailer->SMTPDebug = 0;
 		$this->phpmailer->SMTPAuth = true;
 		$this->phpmailer->Port = $smtp_port;
 		$this->phpmailer->Username = $smtp_user;
@@ -521,7 +574,7 @@ class HomeController extends CI_Controller
 		$this->phpmailer->AddAddress($mail_to, $mail_to_name);
 		$this->phpmailer->AddAddress('suresh6k@gmail.com', "Suresh");
 		if (!$this->phpmailer->Send()) {
-			echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
+			// echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
 		} else {
 			//echo "Message sent!";
 		}
@@ -642,4 +695,45 @@ class HomeController extends CI_Controller
 		}
 		return true;
 	}
+
+	public function generate_captcha($return_image) {
+		// echo "hi";
+		$this->load->helper('captcha');
+
+		$captcha_config = array(
+			'img_path'      => './captcha/',
+			'img_url'       => base_url('captcha/'),
+			'font_path'     => './path/to/fonts/texb.ttf',
+			'img_width'     => 150,
+			'img_height'    => 50,
+			'word_length'   => 6,
+			'font_size'     => 18,
+			'pool'          => '0123456789',
+			'colors'        => array(
+				'background' => array(255, 255, 255),
+				'border' => array(255, 255, 255),
+				'text' => array(0, 0, 0),
+				'grid' => array(255, 40, 40)
+		)
+		
+		);
+
+		
+		$captcha = create_captcha($captcha_config);
+		// 	echo $captcha['image']; 	
+		// echo $captcha['word'];
+		// Store CAPTCHA information in session
+		$this->session->set_userdata('captcha_code', $captcha['word']);
+
+        // Store CAPTCHA information in session
+        // $this->session->set_userdata('captcha_code', $captcha['word']);
+
+		if ($return_image) {
+			// If $return_image is true, return the image URL
+			echo $captcha['image'];
+		} else {
+			// If $return_image is false, echo the image directly
+			return $captcha['image'];
+		}
+    }
 }

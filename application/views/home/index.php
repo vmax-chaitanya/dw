@@ -6,8 +6,9 @@
 <head>
 
     <?php include("includes/styles.php"); ?>
-    <?php  //include("includes/seo_index_scripts.php"); ?>
-  
+    <?php  //include("includes/seo_index_scripts.php"); 
+    ?>
+
     <style>
         .blog-one__date {
             position: absolute;
@@ -180,8 +181,21 @@
                                             <div class="comment-form__input-box">
                                                 <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
                                             </div>
+                                            <div class="row mt-3">
+                                                <div class="col-md-4">
+                                                    <p id="image_captcha"><?php echo $captcha_image; ?></p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <a href="javascript:void(0);" class="captcha-refresh "><img class="capture-referwch-image" src="<?php echo base_url() . 'assets/home/images/refresh.png'; ?>" /></a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="comment-form__input-box">
+                                                        <input type="text" placeholder="Enter Captcha" name="captcha" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <button type="submit" class="thm-btn comment-form__btn mt-3"><span class="button-text">Send a message</span>
-        								<span class="loading-indicator"></span></button>
+                                                <span class="loading-indicator"></span></button>
                                         </div>
                                     </div>
                                 </form>
@@ -245,7 +259,7 @@
                                     </div>
                                 </div>
                             </div>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -352,7 +366,7 @@
         </section>
         <!--Services Two End-->
 
-       
+
 
         <!--Project One Start-->
         <section class="project-one pt-5 pb-0">
@@ -362,7 +376,7 @@
                     <h2 class="section-title__title">work showcase</h2>
                 </div>
                 <div class="row">
-                    
+
                 </div>
                 <div class="row filter-layout masonary-layout">
                     <div class="col-xl-3 col-lg-6 col-md-6 filter-item bra photo web">
@@ -477,15 +491,15 @@
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/small_bussigness.jpg" alt="Small Businesses">
 
-                               
+
                             </div>
                             <div class="blog-one__content">
-                               
+
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Small Businesses</a>
                                 </h3>
                                 <p class="services-two__text">We provide digital marketing services tailored to the unique needs of small businesses, helping them establish a strong online presence, reach their target audience, and compete effectively in the digital landscape.</p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -494,15 +508,15 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/start_up.jpg" alt="Startups">
-                               
+
                             </div>
                             <div class="blog-one__content">
-                               
+
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Startups</a>
                                 </h3>
                                 <p class="services-two__text"> For startups, navigating the complexities of digital marketing can be overwhelming. Our expert team crafts customized strategies to build brand awareness, drive traffic, and generate leads, ensuring a solid foundation for growth.</p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -511,16 +525,16 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img" style="text-align: center !important; ">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/ecommerce.jpg" alt="E-commerce Businesses">
-                               
+
                             </div>
                             <div class="blog-one__content">
-                               
+
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">E-commerce Businesses</a>
                                 </h3>
                                 <p class="services-two__text">In the highly competitive e-commerce industry, our digital marketing services drive traffic, optimize conversions, and enhance customer experiences, resulting in increased sales and repeat business.
                                 </p>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -529,17 +543,17 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/b2b.jpg" alt="B2B Companies">
-                              
+
                             </div>
                             <div class="blog-one__content">
-                               
+
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">B2B Companies </a>
                                 </h3>
                                 <p class="services-two__text">With our specialized B2B digital marketing solutions, we connect businesses with their ideal clients through targeted campaigns, lead generation, and nurturing strategies, fostering long-term partnerships.
                                 </p>
                                 <div class="blog-one__person">
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -549,10 +563,10 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/professional_services.jpg" alt="Professional Services">
-                               
+
                             </div>
                             <div class="blog-one__content">
-                                
+
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Professional Services
                                     </a>
@@ -560,7 +574,7 @@
                                 <p class="services-two__text">We understand the unique marketing challenges faced by professional service providers. Our services aim to showcase expertise, build credibility, and attract high-quality leads to grow their client base.
                                 </p>
                                 <div class="blog-one__person">
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -570,17 +584,17 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/local_bussigness.jpg" alt="Enterprenuers">
-                               
+
                             </div>
                             <div class="blog-one__content">
-                                
+
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Enterprenuers</a>
                                 </h3>
                                 <p class="services-two__text">Local businesses thrive on local visibility. Our location-based digital marketing strategies ensure that they remain visible to their target audience, driving foot traffic and increasing local brand awareness.
                                 </p>
                                 <div class="blog-one__person">
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -590,17 +604,17 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/non_profit_orginization.jpg" alt="Banking & Finance">
-                               
+
                             </div>
                             <div class="blog-one__content">
-                                
+
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Banking & Finance</a>
                                 </h3>
                                 <p class="services-two__text">Our digital marketing services for nonprofits focus on increasing awareness, attracting donors, and mobilizing support for their meaningful causes, ultimately driving positive social impact.
                                 </p>
                                 <div class="blog-one__person">
-                                  
+
                                 </div>
                             </div>
                         </div>
@@ -611,17 +625,17 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/educational.jpg" alt="Education Institutions">
-                                
+
                             </div>
                             <div class="blog-one__content">
-                                
+
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Education Institutions</a>
                                 </h3>
                                 <p class="services-two__text">Education providers benefit from our digital marketing expertise to reach prospective students, engage with parents, and build a strong online reputation that reflects their institution's quality.
                                 </p>
                                 <div class="blog-one__person">
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -632,23 +646,23 @@
                         <div class="blog-one__single">
                             <div class="blog-one__img">
                                 <img src="<?php echo base_url(); ?>assets/images/driven/real-estate.jpg" alt="Real Estate Agencies">
-                               
+
                             </div>
                             <div class="blog-one__content">
-                              
+
                                 <h3 class="blog-one__title" style="text-align: center !important; ">
                                     <a href="javascript:void(0);">Real Estate Agencies</a>
                                 </h3>
                                 <p class="services-two__text"> In the competitive real estate market, our digital marketing strategies help agencies stand out, generate leads, and showcase property listings to potential buyers, driving business growth.
                                 </p>
                                 <div class="blog-one__person">
-                                   
+
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                  
+
                 </div>
             </div>
         </section>
@@ -751,7 +765,7 @@
         </section>
         <!--Services Two End-->
 
-        
+
 
         <!--Why Choose One Start-->
         <section class="why-choose-one pt-5 pb-3 mt-1">
@@ -831,7 +845,7 @@
         </section>
         <!--Why Choose One End-->
 
-       
+
 
         <!--Testimonial One Start-->
         <section class="testimonial-one pt-5">
@@ -995,7 +1009,7 @@
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
-                                           
+
                                             <p class="about-page__right-text-2"><?php echo $social_media['mission']; ?></p>
                                         </div>
                                     </div>
@@ -1012,7 +1026,7 @@
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
-                                            
+
                                             <p class="about-page__right-text-2"><?php echo $social_media['vision']; ?></p>
                                         </div>
                                     </div>
@@ -1029,7 +1043,7 @@
                                     </div>
                                     <div class="col-xl-9">
                                         <div class="tabs-content__left">
-                                           
+
                                             <p class="about-page__right-text-2"><?php echo $social_media['value']; ?></p>
                                         </div>
                                     </div>
@@ -1081,7 +1095,7 @@
     <?php include("includes/mobilenav.php"); ?>
     <!-- /.mobile-nav__wrapper -->
 
-   
+
 
     <?php include("includes/scripts.php"); ?>
 </body>

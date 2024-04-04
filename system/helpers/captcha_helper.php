@@ -117,17 +117,17 @@ if ( ! function_exists('create_captcha'))
 		// Remove old images
 		// -----------------------------------
 
-		$now = microtime(TRUE);
+		$now = round(time());
 
 		$current_dir = @opendir($img_path);
 		while ($filename = @readdir($current_dir))
 		{
-			if (in_array(substr($filename, -4), array('.jpg', '.png'))
-				&& (str_replace(array('.jpg', '.png'), '', $filename) + $expiration) < $now)
+			if (in_array(substr($filename, -4), array('.jpg', '.png')))
 			{
 				@unlink($img_path.$filename);
 			}
 		}
+
 
 		@closedir($current_dir);
 
@@ -278,12 +278,12 @@ if ( ! function_exists('create_captcha'))
 		{
 			$theta += $thetac;
 			$rad = $radius * ($i / $points);
-			$x = ($rad * cos($theta)) + $x_axis;
-			$y = ($rad * sin($theta)) + $y_axis;
+			$x = round(($rad * cos($theta)) + $x_axis);
+			$y = round(($rad * sin($theta)) + $y_axis);
 			$theta += $thetac;
 			$rad1 = $radius * (($i + 1) / $points);
-			$x1 = ($rad1 * cos($theta)) + $x_axis;
-			$y1 = ($rad1 * sin($theta)) + $y_axis;
+			$x1 = round(($rad1 * cos($theta)) + $x_axis);
+			$y1 = round(($rad1 * sin($theta)) + $y_axis);
 			imageline($im, $x, $y, $x1, $y1, $colors['grid']);
 			$theta -= $thetac;
 		}
