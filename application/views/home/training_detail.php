@@ -116,7 +116,7 @@
 											</div>
 											<div class="col-md-5">
 												<div class="comment-form__input-box">
-													<input type="text" placeholder="Enter Captcha" name="captcha" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+													<input type="text" placeholder="Enter Captcha" name="captcha1" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
 												</div>
 											</div>
 										</div>

@@ -210,8 +210,9 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	}
 	public function popup_enquiry()
 	{
-		//print_r($this->input->post()); exit;
-		if ($this->input->post('captcha') != $this->session->userdata('captcha_code')) {
+	// echo	$this->session->userdata('captcha_code');
+	// 	print_r($this->input->post()); exit;
+		if ($this->input->post('captcha1') != $this->session->userdata('captcha_code')) {
 			$response = array(
 				'status' => 'error',
 				'message' => 'Captcha Mismatch'
@@ -242,7 +243,13 @@ $data['captcha_image'] = $this->generate_captcha(0);
 
 			$pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
 
-			echo $pdfFilePath;
+			$response = array(
+				'status' => 'success',
+				'message' => 'Thank you for your message. We will get in touch with you shortly',
+				'pdfPath' => $pdfFilePath
+			);
+			echo json_encode($response);
+			exit;
 		} else {
 			echo "Error inserting data.";
 			exit;
@@ -253,7 +260,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	public function training_enquiry()
 	{
 		//print_r($this->input->post()); exit;
-		if ($this->input->post('captcha') != $this->session->userdata('captcha_code')) {
+		if ($this->input->post('captcha1') != $this->session->userdata('captcha_code')) {
 			$response = array(
 				'status' => 'error',
 				'message' => 'Captcha Mismatch'
@@ -277,18 +284,26 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		$data_contact = $this->contact_model->get_contact_by_id($contact_id);
 
 		if ($result) {
-
-
 			$data['training_detail'] = $this->Home_model->get_training_by_id($this->input->post('training_url'));
 			$services_names = $data['training_detail']['name'];
 			$subject ="Training form details";
 			$this->send_email_contact_form($data_contact,$services_names,$subject);
-		
 		 	$pdfFilePath =  base_url('' . $data['training_detail']['brochure']); 
-
-			echo $pdfFilePath;
+			// echo $pdfFilePath;
+			$response = array(
+				'status' => 'success',
+				'message' => 'Thank you for your message. We will get in touch with you shortly',
+				'pdfPath' => $pdfFilePath
+			);
+			echo json_encode($response);
+			exit;
 		} else {
-			echo "Error inserting data.";
+			$response = array(
+				'status' => 'error',
+				'message' => 'data not inserted',
+				'pdfPath' => ''
+			);
+			echo json_encode($response);
 			exit;
 		}
 		exit;

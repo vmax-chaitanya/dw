@@ -37,7 +37,19 @@
                                     <textarea name="message1" placeholder="Write a message"></textarea>
                                 </div>
                                 <!-- <input type="hidden" name="services_ids" value="<?php echo $this->uri->segment(2); ?>"> -->
-
+                                <div class="row mt-3">
+											<div class="col-md-4">
+												<p id="image_captcha"><?php echo $captcha_image; ?></p>
+											</div>
+											<div class="col-md-2">
+												<!-- <a href="javascript:void(0);" class="captcha-refresh sm"><img class="capture-referwch-image" src="<?php echo base_url() . 'assets/home/images/refresh.png'; ?>" /></a> -->
+											</div>
+											<div class="col-md-5">
+												<div class="comment-form__input-box">
+													<input type="text" placeholder="Enter Captcha" name="captcha1" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+												</div>
+											</div>
+										</div>
                                 <button type="submit" class="thm-btn comment-form__btn ajax-form"><span class="button-text">Send a message</span>
                                     <span class="loading-indicator"></span></button>
                             </div>

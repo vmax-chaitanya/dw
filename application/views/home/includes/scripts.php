@@ -235,7 +235,12 @@
                     minlength: 10,
                     maxlength: 10
                 },
-                subject1: "required"
+                subject1: "required",
+                captcha1: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 6
+                }
             },
             messages: {
                 name1: "Please enter your name",
@@ -248,7 +253,8 @@
                     minlength: "Enter Valid  Number",
                     maxlength: "Enter Valid  Number",
                 },
-                subject1: "Please enter a subject"
+                subject1: "Please enter a subject",
+                captcha1: "Please enter captcha"
             },
             submitHandler: function(form) {
 
@@ -262,30 +268,35 @@
                     data: $(form).serialize(),
                     dataType: 'text',
                     success: function(response) {
-
-                        if (response) {
-                            // Force the browser to download the file
-                            var link = document.createElement('a');
-                            link.href = response;
-                            link.download = 'Brochure.pdf';
-                            link.click();
-                            toastr.success('Succesfully Downloaded');
-                            $('#brouchure')[0].reset();
-                            $('#exampleModal').modal('hide');
-                        } else {
-                            toastr.error('Error downloading PDF');
-                        }
-                        // Hide loading indicator
-                        $(".loading-indicator").hide();
-                        $(".button-text").show();
-
-                    },
-                    error: function(error) {
-                        console.log('Error:', error);
-                        // Hide loading indicator
-                        $(".loading-indicator").hide();
-                        $(".button-text").show();
+                    // Hide loading indicator
+                    $(".loading-indicator").hide();
+                    $(".button-text").show();
+                    
+                    // Parse the JSON response
+                    var responseData = JSON.parse(response);
+                    console.log(responseData);
+                    if (responseData.status == "success") {
+                        // If success, force the browser to download the file
+                        var pdfPath = responseData.pdfPath;
+                        var link = document.createElement('a');
+                        link.href = pdfPath;
+                        link.download = 'Brochure.pdf';
+                        link.click();
+                        toastr.success('Successfully Downloaded');
+                        $('#brouchure')[0].reset();
+                        $('#exampleModal').modal('hide');
+                    } else {
+                        // If error, show error message
+                        toastr.error(responseData.message);
                     }
+                },
+                error: function(xhr, status, error) {
+                    // Hide loading indicator
+                    $(".loading-indicator").hide();
+                    $(".button-text").show();
+                    // Show error message
+                    toastr.error("Error: " + xhr.responseText);
+                }
                 });
             }
         });
@@ -307,7 +318,12 @@
                     minlength: 10,
                     maxlength: 10
                 },
-                subject1: "required"
+                subject1: "required",
+                captcha1: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 6
+                }
             },
             messages: {
                 name1: "Please enter your name",
@@ -321,11 +337,9 @@
                     maxlength: "Enter Valid  Number",
                 },
                 subject1: "Please enter a subject",
-                captcha1: {
-                    required: true,
-                    minlength: 6,
-                    maxlength: 6
-                }
+                captcha1: "Please enter captcha"
+
+                
             },
             submitHandler: function(form) {
                 // Show loading indicator
@@ -338,31 +352,41 @@
                     data: $(form).serialize(),
                     dataType: 'text',
                     success: function(response) {
-
-
-                        if (response) {
-                            // Force the browser to download the file
-                            var link = document.createElement('a');
-                            link.href = response;
-                            link.download = 'Brochure.pdf';
-                            link.click();
-                            toastr.success('Succesfully Downloaded');
-                            $('#brouchure')[0].reset();
-                            $('#exampleModal').modal('hide');
-                        } else {
-                            toastr.error('Error downloading PDF');
-                        }
-
-                        // Hide loading indicator
-                        $(".loading-indicator").hide();
-                        $(".button-text").show();
-                    },
-                    error: function(error) {
-                        console.log('Error:', error);
-                        // Hide loading indicator
-                        $(".loading-indicator").hide();
-                        $(".button-text").show();
+                    // Hide loading indicator
+                    $(".loading-indicator").hide();
+                    $(".button-text").show();
+                    
+                    // Parse the JSON response
+                    var responseData = JSON.parse(response);
+                    
+                    if (responseData.status == "success") {
+                        // If success, retrieve the PDF path from the response
+                        var pdfPath = responseData.pdfPath;
+                        console.log(pdfPath);
+                        // Force the browser to download the file
+                        var link = document.createElement('a');
+                        link.href = pdfPath;
+                        link.download = 'Brochure.pdf';
+                        link.click();
+                        
+                        // Display success message
+                        toastr.success(responseData.message);
+                        
+                        // Reset form and close modal
+                        $('#brouchure')[0].reset();
+                        $('#exampleModal').modal('hide');
+                    } else {
+                        // If error, display error message
+                        toastr.error(responseData.message);
                     }
+                },
+                error: function(xhr, status, error) {
+                    // Hide loading indicator
+                    $(".loading-indicator").hide();
+                    $(".button-text").show();
+                    // Show error message
+                    toastr.error("Error: " + xhr.responseText);
+                }
                 });
             }
         });
