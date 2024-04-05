@@ -143,20 +143,23 @@
                                                 <textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
                                             </div>
                                             <div class="row mt-3">
-											<div class="col-md-5">
-												<p id="image_captcha"><?php echo $captcha_image; ?></p>
-											</div>
-											<div class="col-md-2">
-												<a href="javascript:void(0);" class="captcha-refresh sm"><img class="capture-referwch-image" src="<?php echo base_url() . 'assets/home/images/refresh.png'; ?>" /></a>
-											</div>
-											<div class="col-md-5">
-												<div class="comment-form__input-box">
-													<input type="text" placeholder="Enter Captcha" name="captcha" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
-												</div>
-											</div>
-										</div>
+                                                <div class="col-md-5">
+                                                    <p id="image_captcha"><?php echo $captcha_image; ?></p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <a href="javascript:void(0);" class="captcha-refresh sm"><img class="capture-referwch-image" src="<?php echo base_url() . 'assets/home/images/refresh.png'; ?>" /></a>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <div class="comment-form__input-box">
+                                                        <input type="text" placeholder="Enter Captcha" name="captcha" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <input type="checkbox" class="service-checkbox" id="" name="service[]" value="<?php echo $services_detail['id'] ?> " checked style="display:none">
+
                                             <button type="submit" class="thm-btn comment-form__btn"><span class="button-text">Send a message</span>
-        								<span class="loading-indicator"></span></button>
+                                                <span class="loading-indicator"></span></button>
                                         </div>
                                     </div>
                                 </form>
@@ -167,7 +170,7 @@
                     <div class="col-xl-8 col-lg-7">
                         <div class="service-details__right">
                             <div class="about-page__img cardimg">
-                                <img src="<?php echo base_url('' . $services_detail['image']); ?>" alt="<?php echo $services_detail['name'];?>">
+                                <img src="<?php echo base_url('' . $services_detail['image']); ?>" alt="<?php echo $services_detail['name']; ?>">
                             </div>
                             <div class="service-details__content">
                                 <h2 class="service-details__title">
@@ -251,7 +254,7 @@
                                             <?php echo $service['name']; ?>
                                         </a></h3>
                                     <p class="services-two__text">
-                                    <div class="my_div" style="text-align:center">  <?php echo $service['description']; ?> </div>
+                                    <div class="my_div" style="text-align:center"> <?php echo $service['description']; ?> </div>
                                     </p>
                                     <a class="services-two__arrow" href="javascript:void(0);"></a>
                                 </div>
@@ -290,7 +293,7 @@
                                             <?php echo $service['name']; ?>
                                         </a></h3>
                                     <p class="services-two__text">
-                                    <div class="my_div" style="text-align:center">  <?php echo $service['description']; ?> </div>
+                                    <div class="my_div" style="text-align:center"> <?php echo $service['description']; ?> </div>
                                     </p>
                                     <a class="services-two__arrow" href="javascript:void(0);"></a>
                                 </div>
