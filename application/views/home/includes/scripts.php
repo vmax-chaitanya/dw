@@ -129,7 +129,7 @@
                     if (responseData.status == "success") {
                         // If success, show success message
                         toastr.success(responseData.message);
-                        $('#contact-form')[0].reset();
+                    $('#contact-form')[0].reset();
                     $('.contact-form')[0].reset();
                     } else {
                         // If error, show error message
@@ -473,7 +473,9 @@
                 career_list: "required",
                 resume: "required",
 
-                message: "required"
+                message: "required",
+                captcha: "required",
+
             },
             messages: {
                 career_name: "Enter Name",
@@ -487,7 +489,9 @@
                 resume: "",
 
                 career_email: "Enter email address",
-                message: "Please write a message"
+                message: "Please write a message",
+                captcha: "Please write a Captcha",
+
             },
             submitHandler: function(form) {
                 var formData = new FormData(form);
@@ -502,10 +506,26 @@
                     contentType: false,
                     processData: false, // These two options are important for file uploads
                     success: function(response) {
-                        // Handle the response
-                        toastr.success('Thank you for your message. We will get in touch with you shortly');
+                    // Hide loading indicator
+                    $(".loading-indicator").hide();
+                    $(".button-text").show();
+                    
+                    // Parse the JSON response
+                    var responseData = JSON.parse(response);
+                    
+                    // Handle the response
+                    if (responseData.status === "success") {
+                        // If success, display success message
+                        toastr.success(responseData.message);
+                        
+                        // Reset form
                         form.reset();
+                    } else {
+                        // If error, display error message
+                        toastr.error(responseData.message);
                     }
+                }
+
                 });
             }
         });
