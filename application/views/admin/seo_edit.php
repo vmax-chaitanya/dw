@@ -83,7 +83,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-2 col-form-label">Page ID</label>
                                                     <div class="col-sm-10">
-                                                        <input type="text" class="form-control" name="page_id" value="<?php echo $seo_record['page_id']; ?>">
+                                                        <input type="hidden" class="form-control" name="page_id" value="<?php echo $seo_record['page_id']; ?>">
                                                         <?php // echo form_error('page_id', '<p class="text-danger">', '</p>'); ?>
                                                     </div>
                                                 </div>

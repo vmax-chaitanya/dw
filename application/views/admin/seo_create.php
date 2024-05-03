@@ -47,6 +47,14 @@
                                                             <option value="2">About</option>
                                                             <option value="3">Contact</option>
                                                             <option value="4">Careers</option>
+                                                            <option value="5">Why only we</option>
+                                                            <option value="6">Why digital marketing</option>
+                                                            <option value="7">services</option>
+                                                            <option value="8">training</option>
+                                                            <option value="9">Blog</option>
+                                                            <option value="10">Disclamer</option>
+                                                            <option value="11">Privacy Policy</option>
+                                                            <option value="12">Gallery</option>
                                                            
                                                         </select>
                                                     </div>
@@ -89,7 +97,7 @@
                                                     <label class="col-sm-3 col-form-label">Status</label>
                                                     <div class="col-sm-9">
                                                         <select class="form-control" name="status" required>
-                                                            <option value="">Select Status</option>
+                                                            <!-- <option value="">Select Status</option> -->
                                                             <option value="1">Active</option>
                                                             <option value="2">Inactive</option>
                                                             <option value="3">Other</option>

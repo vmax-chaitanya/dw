@@ -92,10 +92,16 @@
                     <span class="menu-title">Social media</span>
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url(); ?>admin/meta_tags_data">
                     <i class="icon-handbag menu-icon"></i>
                     <span class="menu-title">Meta tags </span>
+                </a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url(); ?>admin/static_pages_seo">
+                    <i class="icon-handbag menu-icon"></i>
+                    <span class="menu-title">Seo for static </span>
                 </a>
             </li>
         <?php } else { ?>

@@ -323,5 +323,10 @@ class Home_model extends CI_Model
         $this->db->like('page_name', $page_name);
         return $this->db->get('meta_tags_data')->row_array();
     }
+    public function getSeoRecordById($id)
+    {
+        // Retrieve a specific SEO record by ID
+        return $this->db->get_where('static_pages_seo', array('id' => $id))->row_array();
+    }
     
 }

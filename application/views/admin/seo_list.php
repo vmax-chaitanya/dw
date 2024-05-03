@@ -63,9 +63,23 @@
                                             </thead>
                                             <tbody>
                                                 <?php foreach ($seo_records as $record) : ?>
+    <?php    $page_names = array(
+    "1" => "Home",
+    "2" => "About",
+    "3" => "Contact",
+    "4" => "Careers",
+    "5" => "Why only we",
+    "6" => "Why digital marketing",
+    "7" => "Services",
+    "8" => "Training",
+    "9" => "Blog",
+    "10" => "Disclaimer",
+    "11" => "Privacy Policy",
+    "12" => "Gallery"
+); ?>
                                                     <tr>
                                                         <td><?php echo $record['id']; ?></td>
-                                                        <td><?php echo $record['page_id']; ?></td>
+                                                        <td><?php echo $page_names[$record['page_id']]; ?></td>
                                                         <td><?php echo $record['meta_name']; ?></td>
                                                         <!-- <td><?php echo $record['meta_description']; ?></td>
                                                         <td><?php echo $record['meta_keywords']; ?></td> -->
