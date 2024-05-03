@@ -22,12 +22,12 @@
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Phone number" name="mobile1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                    <input type="text" placeholder="Phone number" name="mobile1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10">
                                 </div>
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" placeholder="Subject" name="subject1" required>
+                                    <input type="text" placeholder="Subject" name="subject1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10">
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@
                                 <?php foreach ($f_training as $train) : ?>
 
                                     <li><a href="<?php echo base_url(); ?>training/<?php echo $train['training_url']; ?>"><span class="icon-draw-check-mark"></span> &nbsp;
-                                            <?php echo ucwords(strtolower($train['name'])) ?>
+                                            <?php echo $train['name'] ?>
                                         </a></li>
                                 <?php endforeach; ?>
 

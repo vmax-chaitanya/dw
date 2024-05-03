@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
 	<?php include("includes/styles.php"); ?>
@@ -130,12 +130,12 @@
 
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
-											<input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+											<input type="text" placeholder="Phone number" name="mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10">
 										</div>
 									</div>
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
-											<input type="text" placeholder="Subject" name="subject">
+											<input type="text" placeholder="Subject" name="subject" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10">
 										</div>
 									</div>
 									<div class="col-xl-6">

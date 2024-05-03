@@ -109,13 +109,13 @@
 
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
-                                            <input type="text" placeholder="Phone number" name="careeer_mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                            <input type="text" placeholder="Phone number" name="careeer_mobile" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10">
                                         </div>
                                     </div>
                                     <div class="col-xl-6">
                                         <div class="comment-form__input-box">
                                             <select name="career_list" id="copoun_select" style="display: block !important;">
-                                                <option style="color:#726d7b !important" value="">Select Job</option>
+                                                <!-- <option style="color:#726d7b !important" value="">Select Job</option> -->
                                                 <?php $i = 1;
                                                 foreach ($careers_list_form as $val) : ?>
                                                     <option value="<?php echo $val['id']; ?>">

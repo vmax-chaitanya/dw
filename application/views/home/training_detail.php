@@ -4,7 +4,7 @@
 
 
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
     <?php include("includes/styles.php"); ?>
@@ -72,7 +72,7 @@
                                     <?php $i = 1;
                                     foreach ($trainings as $training) : ?>
                                         <li <?php echo ($training['training_url'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a href="<?php echo base_url(); ?>training/<?php echo $training['training_url']; ?>">
-                                                <?php echo ucwords(strtolower($training['name'])); ?> <span class="icon-right-arrow"></span>
+                                                <?php echo $training['name']; ?> <span class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>
                                 </ul>
@@ -92,12 +92,12 @@
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Phone number" name="mobile1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                                <input type="text" placeholder="Phone number" name="mobile1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10">
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Subject" name="subject1" required>
+                                                <input type="text" placeholder="Subject" name="subject1" required onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10">
                                             </div>
                                         </div>
                                     </div>
@@ -160,7 +160,7 @@
                     <div class="section-title text-center">
                         <!-- <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
                             experts</span> -->
-                        <h2 class="section-title__title">Key Highlites</h2>
+                        <h2 class="section-title__title">Key Topics</h2>
                         <div class="row">
                             <?php $i = 1;
                             foreach ($key_highlites as $key_highlite) : ?>
@@ -198,7 +198,7 @@
                     <div class="section-title text-center">
                         <!-- <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
                             experts</span> -->
-                        <h2 class="section-title__title">Curriculums</h2>
+                        <h2 class="section-title__title">Curriculum</h2>
                         <div class="row" style="text-align:left; padding-top:30px !important">
                             <?php $i = 1;
                             foreach ($curriculums as $curriculum) : ?>

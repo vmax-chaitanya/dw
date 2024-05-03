@@ -318,4 +318,10 @@ class Home_model extends CI_Model
         $this->db->where('status', '1');
         return $this->db->get('gallery')->result_array();
     }
+
+    public function get_meta_tag_by_name($page_name) {
+        $this->db->like('page_name', $page_name);
+        return $this->db->get('meta_tags_data')->row_array();
+    }
+    
 }

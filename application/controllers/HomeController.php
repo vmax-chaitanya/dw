@@ -21,7 +21,11 @@ class HomeController extends CI_Controller
 	public function index()
 	{
 
-		$data['page_title'] = " Home || Digital win || ";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('home'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+
 		$data['banners'] = $this->Home_model->getActiveBanners();
 		$data['trainings'] = $this->Home_model->getActiveTraining();
 		$data['captcha_image'] = $this->generate_captcha(0); 
@@ -33,8 +37,11 @@ class HomeController extends CI_Controller
 
 	public function about()
 	{
-		// Load the about view
-		$data['page_title'] = "About || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('about'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+	
 
 		$this->load->view('home/about', $data);
 	}
@@ -45,31 +52,42 @@ class HomeController extends CI_Controller
     }
 	public function privacy_policy()
 	{
-		// Load the about view
-		$data['page_title'] = "Privacy Policy || Digital win ||";
-
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('privacy_policy'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+		
 		$this->load->view('home/privacy_policy', $data);
 	}
 	public function disclamer()
 	{
-		// Load the about view
-		$data['page_title'] = "Disclamer || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('disclamer'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+		
 
 		$this->load->view('home/disclamer', $data);
 	}
 
 	public function why_only_we()
 	{
-		// Load the about view
-		$data['page_title'] = "Why Only We || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('why_only_we'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+		
 
 		$this->load->view('home/why_only_we', $data);
 	}
 
 	public function why_digital_marketing()
 	{
-		// Load the about view
-		$data['page_title'] = "Why Digital Marketing || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('why_digital_marketing'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+		
 
 		$this->load->view('home/why_digital_marketing', $data);
 	}
@@ -78,8 +96,11 @@ class HomeController extends CI_Controller
 	public function contact()
 	{
 
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('contact'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
 		
-		$data['page_title'] = "Home || Digital win ||";
 		$data['services'] = $this->Home_model->getActiveServices(1);
 	 	$data['captcha_image'] = $this->generate_captcha(0); 
  		$this->load->view('home/contact', $data);
@@ -98,14 +119,22 @@ class HomeController extends CI_Controller
 	public function gallery()
 	{
 		// Load the FAQ view
-		$data['page_title'] = "Gallery || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('gallery'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+
 		$data['GalleryItems'] = $this->Home_model->getActiveGallery();
 		$this->load->view('home/gallery', $data);
 	}
 	public function faq()
 	{
 		// Load the FAQ view
-		$data['page_title'] = "Home || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('faq'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+		
 
 		$this->load->view('home/faq', $data);
 	}
@@ -113,7 +142,10 @@ class HomeController extends CI_Controller
 	public function services()
 	{
 		// Load the services view
-		$data['page_title'] = "Home || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('services'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
 		$data['servicesw'] = $this->Home_model->getActiveServicesNew();
 		// echo "gi"; exit;
 		$this->load->view('home/services', $data);
@@ -122,7 +154,7 @@ class HomeController extends CI_Controller
 	{
 
         $categories = $this->Home_model->getServiceCategoryByUrl($url); 
-		$data['page_title'] = "Home || Digital win ||";
+		
 		$data['servicesw'] = $this->Home_model->getCategoryServices($categories['id']);
 		//echo "<pre>"; print_r($data['services']); exit;
 		$this->load->view('home/services', $data);
@@ -131,15 +163,22 @@ class HomeController extends CI_Controller
 	public function other_services()
 	{
 		// Load the services view
-		$data['page_title'] = "Home || Digital win ||";
+		
 		$data['services'] = $this->Home_model->getActiveOtherServices();
 		$this->load->view('home/services', $data);
 	}
 	public function service_detail($service_id)
 	{
 		//echo $service_id; exit;
-		$data['page_title'] = "Home || Digital win ||";
+		
 		$data['services_detail'] = $this->Home_model->get_service_by_id($service_id);
+
+		// $data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('home'); 
+		$data['page_title'] = !empty($data['services_detail']['meta_name']) ? $data['services_detail']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['services_detail']['meta_description']) ? $data['services_detail']['meta_description'] :"page_title";
+		$data['meta_keywords'] = !empty($data['services_detail']['meta_keywords']) ? $data['services_detail']['meta_keywords'] :"page_title";
+
+
 		$service_primary_id = 	 $data['services_detail']['id'];
 		$type = 	 $data['services_detail']['type'];
 		$module = 1;
@@ -164,7 +203,10 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	public function training()
 	{
 
-		$data['page_title'] = "Home || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('training'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
 		$data['certification_course'] = $this->Home_model->getActiveCertification();
 		$data['trainings'] = $this->Home_model->getActiveTraining();
 		$data['tools'] = $this->Home_model->getActiveTools();
@@ -176,9 +218,16 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	public function training_detail($training_id)
 	{
 
-		$data['page_title'] = "Home || Digital win ||";
+		
+		
 		$data['training_detail'] = $this->Home_model->get_training_by_id($training_id);
-		//echo "hi"; exit;
+
+		// $data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('home'); 
+		$data['page_title'] = !empty($data['training_detail']['meta_name']) ? $data['training_detail']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['training_detail']['meta_description']) ? $data['training_detail']['meta_description'] :"page_title";
+		$data['meta_keywords'] = !empty($data['training_detail']['meta_keywords']) ? $data['training_detail']['meta_keywords'] :"page_title";
+
+		// echo "hi"; exit;
 		//	 echo "<pre>"; print_r($data['training_detail']); exit;
 		$service_primary_id = 	 $data['training_detail']['id'];
 		$data['curriculums'] = $this->Home_model->getActiveCurriculum($service_primary_id);
@@ -191,8 +240,11 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	}
 	public function blogs()
 	{
-
-		$data['page_title'] = "Blogs || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('blogs'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+	
 		$data['blogs'] = $this->Home_model->get_all_blogs();
 		//  print_r($data['blogs']); exit;
 		$this->load->view('home/blog', $data);
@@ -373,7 +425,11 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	public function seo()
 	{
 		// Load the about view
-		$data['page_title'] = "Why Only We || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('seo'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+	
 
 		$this->load->view('home/seo', $data);
 	}
@@ -381,7 +437,11 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	{
 		//echo "hi"; exit;
 		// Load the about view
-		$data['page_title'] = "Why Only We || Digital win ||";
+		$data['meta_data'] =  $this->Home_model->get_meta_tag_by_name('careers'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+		
 		$data['careers_list'] = $this->Home_model->getActiveCareers();
 		$data['careers_list_form'] = $this->Home_model->getActiveCareers();
 		$data['captcha_image'] = $this->generate_captcha(0); 
@@ -722,13 +782,13 @@ $data['captcha_image'] = $this->generate_captcha(0);
 			'img_width'     => 150,
 			'img_height'    => 50,
 			'word_length'   => 6,
-			'font_size'     => 18,
-			'pool'          => '0123456789',
+			'font_size'     => 30,
+			'pool'          => '123456789',
 			'colors'        => array(
-				'background' => array(255, 255, 255),
+				'background' => array(173, 216, 230),
 				'border' => array(255, 255, 255),
-				'text' => array(0, 0, 0),
-				'grid' => array(255, 40, 40)
+				'text' => array(10, 10, 10),
+				'grid' => array(173, 216, 230)
 		)
 		
 		);

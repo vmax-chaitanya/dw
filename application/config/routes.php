@@ -226,4 +226,12 @@ $route['admin/careers/(:num)'] = 'Admin/Careers/index/$1';
 $route['admin/careers/view/(:num)'] = 'Admin/Careers/view/$1';
 $route['admin/careers/updateStatus'] = 'Admin/Careers/updateStatus';
 
+$route['admin/meta_tags_data'] = 'Admin/MetaTagsDataController/index';
+$route['admin/meta_tags_data/create'] = 'Admin/MetaTagsDataController/create';
+$route['admin/meta_tags_data/store'] = 'Admin/MetaTagsDataController/store';
+$route['admin/meta_tags_data/edit/(:num)'] = 'Admin/MetaTagsDataController/edit/$1';
+$route['admin/meta_tags_data/update/(:num)'] = 'Admin/MetaTagsDataController/update/$1';
+$route['admin/meta_tags_data/delete/(:num)'] = 'Admin/MetaTagsDataController/delete/$1';
+
+
 ///////admin////////
