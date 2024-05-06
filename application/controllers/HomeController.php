@@ -668,7 +668,14 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	public function career_form()
 	{
 		//print_r($this->input->post()); exit;
-
+		if ($this->input->post('captcha') != $this->session->userdata('captcha_code')) {
+			$response = array(
+				'status' => 'error',
+				'message' => 'Captcha Mismatch'
+			);
+			echo json_encode($response);
+			exit;
+		}
 		if (!empty($_FILES['resume']['name'])) {
 
 			$temp = $_FILES['resume']['tmp_name'];
@@ -697,10 +704,21 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		//print_r($data_contact); exit;
 		if ($result) {
 			$subject ="Careers form details";
-			$this->send_email_career_form($data_contact,$subject);
-			echo "Success";
+			// $this->send_email_career_form($data_contact,$subject);
+			// echo "Success";
+
+			$response = array(
+				'status' => 'success',
+				'message' => 'Thank you for your message. We will get in touch with you shortly'
+			);
+			echo json_encode($response);
+			exit;
 		} else {
-			echo "Error inserting data.";
+			$response = array(
+				'status' => 'error',
+				'message' => 'Something went wrong'
+			);
+			echo json_encode($response);
 			exit;
 		}
 		exit;
@@ -770,7 +788,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		$this->phpmailer->AddAddress($mail_to, $mail_to_name);
 		$this->phpmailer->AddAddress('suresh6k@gmail.com', "Suresh");
 		if (!$this->phpmailer->Send()) {
-			echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
+			// echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
 		} else {
 			//echo "Message sent!";
 		}

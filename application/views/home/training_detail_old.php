@@ -181,7 +181,7 @@
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="email" placeholder="Subject" name="subject">
+                                                <input type="email" placeholder="Subject" name="subject"  onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode === 32">
                                             </div>
                                         </div>
                                     </div>

@@ -90,7 +90,7 @@
                                     <?php $i = 1;
                                     foreach ($services_menu as $service) : ?>
                                         <li <?php echo ($service['service_url'] == $this->uri->segment(2)) ? "class='current'" : "class=''"; ?>><a href="<?php echo base_url(); ?>services/<?php echo $service['service_url']; ?>">
-                                                <?php echo ucwords(strtolower($service['name'])); ?> <span class="icon-right-arrow"></span>
+                                                <?php echo $service['name']; ?> <span class="icon-right-arrow"></span>
                                             </a></li>
                                     <?php endforeach; ?>
                                 </ul>
@@ -116,7 +116,7 @@
                                         </div>
                                         <div class="col-xl-6">
                                             <div class="comment-form__input-box">
-                                                <input type="text" placeholder="Subject" name="subject" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" maxlength="10">
+                                                <input type="text" placeholder="Subject" name="subject" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode === 32" maxlength="10">
                                             </div>
                                         </div>
                                         <div class="col-xl-6">
@@ -324,13 +324,13 @@
                                             <div class="accrodion">
                                                 <div class="accrodion-title1">
                                                     <h4 class="text-align">
-                                                        <?php echo $faqs['question']; ?>
+                                                        <?php echo str_replace("?","",$faqs['question']); ?>
                                                     </h4>
                                                 </div>
                                                 <div class="accrodion-content">
                                                     <div class="inner">
                                                         <p class="text-align">
-                                                            <?php echo $faqs['answer']; ?>
+                                                            <?php echo str_replace("?","",$faqs['answer']) ?>
                                                         </p>
                                                     </div><!-- /.inner -->
                                                 </div>
