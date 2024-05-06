@@ -55,6 +55,7 @@
                                                             <option value="10">Disclamer</option>
                                                             <option value="11">Privacy Policy</option>
                                                             <option value="12">Gallery</option>
+                                                            <option value="13">Sarevices category</option>
                                                            
                                                         </select>
                                                     </div>

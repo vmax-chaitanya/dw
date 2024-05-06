@@ -152,6 +152,10 @@ class HomeController extends CI_Controller
 	}
 	public function category_services($url)
 	{
+		$data['meta_data'] =  $this->Home_model->getSeoRecordById('13'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
 
         $categories = $this->Home_model->getServiceCategoryByUrl($url); 
 		
