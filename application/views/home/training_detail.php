@@ -202,7 +202,7 @@
                         <div class="row" style="text-align:left; padding-top:30px !important">
                             <?php $i = 1;
                             foreach ($curriculums as $curriculum) : ?>
-                                <div class="col-xl-6 col-lg-6 mt-2 mb-2">
+                                <div class="col-xl-12 col-lg-12 mt-2 mb-2">
                                     <div class="faq-page__single">
                                         <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion2">
                                             <div class="accrodion">

@@ -12,11 +12,13 @@
                 <div class="main-menu-wrapper__main-menu">
                     <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                     <ul class="main-menu__list">
+                            <?php 
+                            $uri = $this->uri->segment(1);
+                            ?>
 
-
-                        <li><a href="<?php echo base_url(); ?>">Home</a></li>
+                        <li ><a href="<?php echo base_url(); ?>">Home</a></li>
                         <!-- <li><a href="<?php echo base_url(); ?>about">About</a></li> -->
-                        <li class="dropdown ">
+                        <li class="<?= ($uri == 'about' || $uri == 'why-only-we' || $uri == 'why-digital-marketing') ? 'dropdown current' : 'dropdown'; ?>">
                             <a href="<?php echo base_url(); ?>about">About Us</a>
                             <ul>
                                 <li><a href="<?php echo base_url(); ?>why-only-we">Why Only We</a>
@@ -79,8 +81,8 @@
                                 </li>
                             </ul>
                         </li> -->
-                        <li class="dropdown">
-                            <a href="<?php echo base_url(); ?>services"">Services</a>
+                        <li class="<?= ($uri == 'services' || $uri == 'category-services' ) ? 'dropdown current' : 'dropdown'; ?>">
+                            <a href="<?php echo base_url(); ?>services" >Services</a>
                             <ul>
                                 <?php foreach ($categories as $category): ?>
                                     <li class=""><a href="<?php echo base_url();?>category-services/<?= $category['url'] ?>">
@@ -99,7 +101,7 @@
                         <?php endforeach; ?>
                     </ul>
                     </li>
-                    <li class="dropdown ">
+                    <li class="<?= ($uri == 'training') ? 'dropdown current' : 'dropdown'; ?>">
                         <a href="<?php echo base_url(); ?>training">Trainings</a>
                         <ul>
                             <?php foreach ($h_training as $training): ?>
@@ -110,10 +112,9 @@
 
                         </ul>
                     </li>
-                    <li><a href="<?php echo base_url(); ?>careers">Careers</a></li>
-
-                    <li><a href="<?php echo base_url(); ?>blogs">Blogs</a></li>
-                    <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
+                    <li <?= ($uri == 'careers') ? 'class="current"' : ''; ?>><a href="<?php echo base_url(); ?>careers">Careers</a></li>
+                    <li <?= ($uri == 'blogs' || $uri == 'blog-detail') ? 'class="current"' : ''; ?>><a href="<?php echo base_url(); ?>blogs">Blogs</a></li>
+                    <li <?= ($uri == 'contact') ? 'class="current"' : ''; ?> ><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
 
 
 

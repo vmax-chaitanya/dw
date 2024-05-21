@@ -38,7 +38,7 @@
 						<li><a href="index.html">Home</a></li>
 						<li class="active">contact</li>
 					</ul> -->
-					<h2>Contact Us</h2>
+					<h2>Contact Form</h2>
 				</div>
 			</div>
 		</section>
@@ -125,7 +125,7 @@
 									</div>
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
-											<input type="email" placeholder="Email address" name="email">
+											<input type="email" placeholder="Email address" name="email" required>
 										</div>
 									</div>
 
@@ -178,6 +178,7 @@
 									<div class="col-xl-12">
 										<div class="comment-form__input-box">
 											<textarea name="message" placeholder="Write a message" style="display: block !important;"></textarea>
+											<input type="hidden" name="page_check" value="1" id="page_check" >
 										</div>
 
 										<div class="row mt-3">

@@ -848,7 +848,7 @@
 
 
         <!--Testimonial One Start-->
-        <section class="testimonial-one pt-5">
+        <!-- <section class="testimonial-one pt-5">
             <div class="testimonial-one__inner">
                 <div class="container">
                     <div class="row">
@@ -866,7 +866,7 @@
                 </div>
                 <div class="testimonial-one__right">
                     <div class="testimonial-one__carousel owl-theme owl-carousel">
-                        <!--Testimonial One Single-->
+                       Testimonial One Single
                         <div class="testimonial-one__single">
                             <p class="testimonial-one__text">I'm thrilled with the results
                                 from this digital marketing agency. Their team's in-depth knowledge and innovative
@@ -964,8 +964,44 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
         <!--Testimonial One End-->
+        <?php if (count($tools) > 0) { ?>
+
+<!--Start Business Growth One-->
+<section class="business-growth-one">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
+                experts</span>
+            <h2 class="section-title__title">Tools You Will Master</h2>
+        </div>
+        <div class="business-growth-one__bottom">
+            <div class="row">
+                <?php $i = 1;
+                foreach ($tools as $tools) : ?>
+
+
+                    <!--Start Business Growth One Single-->
+                    <div class="col-xl-3 col-lg-4 wow animated fadeInUp" data-wow-delay="0.'<?php echo  $i; ?>'s">
+                        <div class="business-growth-one__single">
+                            <div class="business-growth-one__single-img">
+                                <img src="<?php echo base_url('' . $tools['image']); ?>" alt="<?php echo $tools['image']; ?>" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--End Business Growth One Single-->
+                <?php $i++;
+                endforeach; ?>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Business Growth One-->
+<?php } ?>
 
         <!--DigitalWin Ready Start-->
         <section class="qutiiz-ready">

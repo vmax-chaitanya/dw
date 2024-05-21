@@ -47,14 +47,27 @@
     }
 </script>
 <script>
-    $(function() {
+            $(function() {
+                    // Custom email validation method
+                    $.validator.addMethod("strictEmail", function(value, element) {
+                return this.optional(element) || /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value);
+            }, "Please enter a valid email address.");
+
+             // Custom message validation based on service checkboxes and page_check
+            $.validator.addMethod("messageRequiredIfNoService", function(value, element) {
+                var pageCheck = $("#page_check").val();
+                var serviceChecked = $(".service-checkbox:checked").length > 0;
+                return (pageCheck != "1") || serviceChecked || value !== "";
+            }, "Message is required if no service is selected ");
+
+
         $("form[name='contact']").validate({
             rules: {
                 name: "required",
                 subject: "required",
                 email: {
                     required: true,
-                    email: true
+                    strictEmail: true
                 },
                 mobile: {
                     required: true,
@@ -69,7 +82,9 @@
                     minlength: 9,
                     maxlength: 9
                 },
-                message: "required",
+                message: {
+                        messageRequiredIfNoService: true
+                    },
                 captcha: {
                     required: true,
                     minlength: 6,
@@ -222,13 +237,18 @@
 <script>
     /////thisis for brouchure download////
     $(document).ready(function() {
+
+         // Custom email validation method
+         $.validator.addMethod("strictEmail", function(value, element) {
+                return this.optional(element) || /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value);
+            }, "Please enter a valid email address.");
         // Initialize form validation
         $("#brouchure").validate({
             rules: {
                 name1: "required",
                 email1: {
                     required: true,
-                    email: true // Validate email format
+                    strictEmail: true // Validate email format
                 },
                 mobile1: {
                     required: true,
@@ -305,13 +325,18 @@
 <script>
     /////thisis for brouchure download////
     $(document).ready(function() {
+
+         // Custom email validation method
+         $.validator.addMethod("strictEmail", function(value, element) {
+                return this.optional(element) || /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value);
+            }, "Please enter a valid email address.");
         // Initialize form validation
         $("#Trainingbrouchure").validate({
             rules: {
                 name1: "required",
                 email1: {
                     required: true,
-                    email: true // Validate email format
+                    strictEmail: true // Validate email format
                 },
                 mobile1: {
                     required: true,
@@ -457,13 +482,18 @@
 
 <script>
     $(function() {
+         // Custom email validation method
+         $.validator.addMethod("strictEmail", function(value, element) {
+                return this.optional(element) || /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value);
+            }, "Please enter a valid email address.");
+
         $("form[name='careeerForm']").validate({
             rules: {
                 career_name: "required",
                 subject: "required",
                 career_email: {
                     required: true,
-                    email: true
+                    strictEmail: true
                 },
                 careeer_mobile: {
                     required: true,
@@ -531,3 +561,5 @@
         });
     });
 </script>
+
+

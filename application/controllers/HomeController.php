@@ -25,6 +25,7 @@ class HomeController extends CI_Controller
 		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
 		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
 		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+		$data['tools'] = $this->Home_model->getActiveTools();
 
 		$data['banners'] = $this->Home_model->getActiveBanners();
 		$data['trainings'] = $this->Home_model->getActiveTraining();
@@ -591,46 +592,89 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		//	print_r($message); exit();
 		$this->load->library('Phpmailer');
 		$message_body = "
-		 <table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
+		<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
 			<tr>
 				<th>Field</th>
 				<th>Value</th>
-			</tr>
+			</tr>";
+	
+	// Add row for Name if it's not empty
+	if (!empty($message['name'])) {
+		$message_body .= "
 			<tr>
 				<td>Name</td>
 				<td>{$message['name']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Email if it's not empty
+	if (!empty($message['email'])) {
+		$message_body .= "
 			<tr>
 				<td>Email</td>
 				<td>{$message['email']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Mobile if it's not empty
+	if (!empty($message['mobile'])) {
+		$message_body .= "
 			<tr>
 				<td>Mobile</td>
 				<td>{$message['mobile']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Subject if it's not empty
+	if (!empty($message['subject'])) {
+		$message_body .= "
 			<tr>
 				<td>Subject</td>
 				<td>{$message['subject']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Coupon ID if it's not empty
+	if (!empty($message['coupon_id'])) {
+		$message_body .= "
 			<tr>
 				<td>Coupon ID</td>
 				<td>{$message['coupon_id']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Message if it's not empty
+	if (!empty($message['message'])) {
+		$message_body .= "
 			<tr>
 				<td>Message</td>
 				<td>{$message['message']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Services if it's not empty
+	if (!empty($services_names)) {
+		$message_body .= "
 			<tr>
-				<td>Services </td>
+				<td>Services</td>
 				<td>{$services_names}</td>
-			</tr>
-			
+			</tr>";
+	}
+	
+	// Add row for Received At if it's not empty
+	if (!empty($message['created_at'])) {
+		$message_body .= "
 			<tr>
 				<td>Received At</td>
 				<td>{$message['created_at']}</td>
-			</tr>
-		</table>
-		";
+			</tr>";
+	}
+	
+	$message_body .= "</table>";
+
+	$pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
+	
+	
 		$smtp_host = "localhost";
 		$smtp_user = "info@digitalwinbusinessagency.com";
 		$smtp_password = "digitalwin@123";
@@ -656,6 +700,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		$this->phpmailer->Subject = $subject;
 		$this->phpmailer->MsgHTML($body);
 		//$address = $mail_to;
+		$this->phpmailer->AddAttachment($pdfFilePath);
 		$this->phpmailer->AddAddress($mail_to, $mail_to_name);
 		$this->phpmailer->AddAddress('suresh6k@gmail.com', "Suresh");
 		if (!$this->phpmailer->Send()) {
@@ -733,37 +778,68 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		//	print_r($message); exit();
 		$this->load->library('Phpmailer');
 		$message_body = "
-		 <table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
+		<table border='1' cellpadding='5' cellspacing='0' style='border-collapse: collapse; width: 100%;'>
 			<tr>
 				<th>Field</th>
 				<th>Value</th>
-			</tr>
+			</tr>";
+	
+	// Add row for Name if it's not empty
+	if (!empty($message['name'])) {
+		$message_body .= "
 			<tr>
 				<td>Name</td>
 				<td>{$message['name']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Email if it's not empty
+	if (!empty($message['email'])) {
+		$message_body .= "
 			<tr>
 				<td>Email</td>
 				<td>{$message['email']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Mobile if it's not empty
+	if (!empty($message['mobile'])) {
+		$message_body .= "
 			<tr>
 				<td>Mobile</td>
 				<td>{$message['mobile']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Applied For if it's not empty
+	if (!empty($message['position'])) {
+		$message_body .= "
 			<tr>
 				<td>Applied For</td>
-				<td>{$message['poisition']}</td>
-			</tr>
+				<td>{$message['position']}</td>
+			</tr>";
+	}
+	
+	// Add row for Message if it's not empty
+	if (!empty($message['message'])) {
+		$message_body .= "
 			<tr>
 				<td>Message</td>
 				<td>{$message['message']}</td>
-			</tr>
+			</tr>";
+	}
+	
+	// Add row for Received At if it's not empty
+	if (!empty($message['created_at'])) {
+		$message_body .= "
 			<tr>
 				<td>Received At</td>
 				<td>{$message['created_at']}</td>
-			</tr>
-		</table>
-		";
+			</tr>";
+	}
+	
+	$message_body .= "</table>";
+	
 		$smtp_host = "localhost";
 		$smtp_user = "info@digitalwinbusinessagency.com";
 		$smtp_password = "digitalwin@123";
