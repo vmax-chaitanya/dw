@@ -1853,7 +1853,8 @@ class PHPMailer {
       //      return false;
       //    }
       //  }
-      $magic_quotes = get_magic_quotes_runtime();
+      $magic_quotes = @get_magic_quotes_runtime();
+
       if ($magic_quotes) {
         if (version_compare(PHP_VERSION, '5.3.0', '<')) {
           set_magic_quotes_runtime(0);

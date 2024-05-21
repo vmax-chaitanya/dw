@@ -421,6 +421,15 @@
         
     }
 </style>
+<style>
+    .modal-body {
+        text-align: center; /* Optional: Centers the image in the modal */
+    }
+    .responsive-image {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
 <!-- <style>
 .current > a {
     color: #9232b2 !important; /* Your desired color */

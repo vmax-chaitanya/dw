@@ -27,7 +27,7 @@
                             </div>
                             <div class="col-xl-6">
                                 <div class="comment-form__input-box">
-                                    <input type="text" z name="subject1" required onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode === 32" >
+                                    <input type="text" z name="subject1" required onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode === 32">
                                 </div>
                             </div>
                         </div>
@@ -38,18 +38,18 @@
                                 </div>
                                 <!-- <input type="hidden" name="services_ids" value="<?php echo $this->uri->segment(2); ?>"> -->
                                 <div class="row mt-3">
-											<div class="col-md-4">
-												<p id="image_captcha"><?php echo $captcha_image; ?></p>
-											</div>
-											<div class="col-md-2">
-												<!-- <a href="javascript:void(0);" class="captcha-refresh sm"><img class="capture-referwch-image" src="<?php echo base_url() . 'assets/home/images/refresh.png'; ?>" /></a> -->
-											</div>
-											<div class="col-md-5">
-												<div class="comment-form__input-box">
-													<input type="text" placeholder="Enter Captcha" name="captcha1" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
-												</div>
-											</div>
-										</div>
+                                    <div class="col-md-4">
+                                        <p id="image_captcha"><?php echo $captcha_image; ?></p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <!-- <a href="javascript:void(0);" class="captcha-refresh sm"><img class="capture-referwch-image" src="<?php echo base_url() . 'assets/home/images/refresh.png'; ?>" /></a> -->
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="comment-form__input-box">
+                                            <input type="text" placeholder="Enter Captcha" name="captcha1" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                                        </div>
+                                    </div>
+                                </div>
                                 <button type="submit" class="thm-btn comment-form__btn ajax-form"><span class="button-text">Send a message</span>
                                     <span class="loading-indicator"></span></button>
                             </div>
@@ -65,6 +65,33 @@
     </div>
 </div>
 <!-- //////// -->
+
+
+
+
+<!-- /////qrcode model////// -->
+<div class="modal fade" id="exampleModalQR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">QR code </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+                <img src="<?php echo base_url('assets/home/qr_code_payment.jpg'); ?>" alt="Brochure Image" class="responsive-image" />
+
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /////qrcode model////// -->
+
 <footer class="site-footer">
     <div class="site-footer__top">
         <div class="container">

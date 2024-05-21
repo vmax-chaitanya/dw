@@ -672,12 +672,17 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	
 	$message_body .= "</table>";
 
-	$pdfFilePath =  base_url('' . 'assets/home/Brochure.pdf');
-	
+         // Define the path to the PDF file
+        // $pdfFilePath = FCPATH . 'assets/home/Brochure.pdf';
+    
+        // Check if the file exists
+        // if (file_exists($pdfFilePath)) {
+        //     $this->phpmailer->AddAttachment($pdfFilePath);
+        // } 
 	
 		$smtp_host = "localhost";
 		$smtp_user = "info@digitalwinbusinessagency.com";
-		$smtp_password = "digitalwin@123";
+		$smtp_password = "digitalwinba@12345";
 		$smtp_port = 25;
 
 		$mail_from = "info@digitalwinbusinessagency.com";
@@ -700,9 +705,11 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		$this->phpmailer->Subject = $subject;
 		$this->phpmailer->MsgHTML($body);
 		//$address = $mail_to;
-		$this->phpmailer->AddAttachment($pdfFilePath);
+// 		$this->phpmailer->AddAttachment($pdfFilePath);
 		$this->phpmailer->AddAddress($mail_to, $mail_to_name);
 		$this->phpmailer->AddAddress('suresh6k@gmail.com', "Suresh");
+		
+// 		echo $this->phpmailer->ErrorInfo; exit;
 		if (!$this->phpmailer->Send()) {
 			// echo "Mailer Error: " . $this->phpmailer->ErrorInfo;
 		} else {
@@ -753,7 +760,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		//print_r($data_contact); exit;
 		if ($result) {
 			$subject ="Careers form details";
-			// $this->send_email_career_form($data_contact,$subject);
+			 $this->send_email_career_form($data_contact,$subject);
 			// echo "Success";
 
 			$response = array(
@@ -840,9 +847,18 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	
 	$message_body .= "</table>";
 	
+    	 // Define the path to the PDF file
+            $pdfFilePath = FCPATH . $message['resume'];
+        
+           // Check if the file exists
+            if (file_exists($pdfFilePath)) {
+                $this->phpmailer->AddAttachment($pdfFilePath);
+            } 
+        
+	
 		$smtp_host = "localhost";
 		$smtp_user = "info@digitalwinbusinessagency.com";
-		$smtp_password = "digitalwin@123";
+		$smtp_password = "digitalwinba@12345";
 		$smtp_port = 25;
 
 		$mail_from = "info@digitalwinbusinessagency.com";
@@ -865,6 +881,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		$this->phpmailer->Subject = $subject;
 		$this->phpmailer->MsgHTML($body);
 		//$address = $mail_to;
+		$this->phpmailer->AddAttachment($pdfFilePath);
 		$this->phpmailer->AddAddress($mail_to, $mail_to_name);
 		$this->phpmailer->AddAddress('suresh6k@gmail.com', "Suresh");
 		if (!$this->phpmailer->Send()) {

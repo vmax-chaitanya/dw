@@ -60,6 +60,10 @@
 								results-driven digital marketing agency
 								dedicated to helping businesses thrive in
 								the digital age.</p>
+
+								<button style="padding: left 20px; background-color:#9232b2" type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#exampleModalQR">
+                               Open QR code
+                            </button>
 						</div>
 					</div>
 					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
