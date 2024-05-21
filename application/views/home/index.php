@@ -967,41 +967,22 @@
         </section> -->
         <!--Testimonial One End-->
         <?php if (count($tools) > 0) { ?>
+            <div class="section-title text-center">
+                <!-- <span class="section-title__tagline">our team members</span> -->
+                <h2 class="section-title__title">Tools
 
-<!--Start Business Growth One-->
-<section class="business-growth-one">
-    <div class="container">
-        <div class="section-title text-center">
-            <span class="section-title__tagline">Advanced digital marketing tools used by digital marketing
-                experts</span>
-            <h2 class="section-title__title">Tools You Will Master</h2>
-        </div>
-        <div class="business-growth-one__bottom">
-            <div class="row">
-                <?php $i = 1;
-                foreach ($tools as $tools) : ?>
-
-
-                    <!--Start Business Growth One Single-->
-                    <div class="col-xl-3 col-lg-4 wow animated fadeInUp" data-wow-delay="0.'<?php echo  $i; ?>'s">
-                        <div class="business-growth-one__single">
-                            <div class="business-growth-one__single-img">
-                                <img src="<?php echo base_url('' . $tools['image']); ?>" alt="<?php echo $tools['image']; ?>" />
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--End Business Growth One Single-->
-                <?php $i++;
-                endforeach; ?>
-
-
+                </h2>
             </div>
-        </div>
-    </div>
-</section>
-<!--End Business Growth One-->
-<?php } ?>
+            <section class="customer-logos slider mb-3">
+                <?php $i = 1;
+                foreach ($tools as $row) : ?>
+
+                    <div class="slide"><img src="<?php echo base_url('' . $row['image']); ?>"></div>
+
+                <?php endforeach; ?>
+
+            </section>
+        <?php } ?>
 
         <!--DigitalWin Ready Start-->
         <section class="qutiiz-ready">

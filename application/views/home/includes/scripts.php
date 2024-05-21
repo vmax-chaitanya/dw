@@ -22,6 +22,7 @@
 <script src="<?php echo base_url(); ?>assets/home/vendors/vegas/vegas.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/home/vendors/jquery-ui/jquery-ui.js"></script>
 <script src="<?php echo base_url(); ?>assets/home/vendors/timepicker/timePicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
 <!-- template js -->
 <script src="<?php echo base_url(); ?>assets/home/js/qutiiz.js"></script>
@@ -558,6 +559,30 @@
 
                 });
             }
+        });
+    });
+
+      ////////////tools images js 
+      $(document).ready(function() {
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
         });
     });
 </script>
