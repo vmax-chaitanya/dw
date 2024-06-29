@@ -98,7 +98,7 @@
 									9154357402</a>
 								<a href="tel:919154357402" class="contact-info__phone">+91
 									9154357404</a>
-								<a href="tel040-42704708" class="contact-info__phone">
+								<a href="tel:040-42704708" class="contact-info__phone">
 									040-42704708</a>
 
 
@@ -140,7 +140,7 @@
 									</div>
 									<div class="col-xl-6">
 										<div class="comment-form__input-box">
-											<input type="text" placeholder="Subject" name="subject" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode === 32" maxlength="10">
+											<input type="text" placeholder="Subject" name="subject" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || event.charCode === 32" >
 										</div>
 									</div>
 									<div class="col-xl-6">
