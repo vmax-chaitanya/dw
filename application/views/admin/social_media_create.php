@@ -42,7 +42,7 @@
                                     ?>
 
                                     <form class="form-sample" method="POST"
-                                        action="<?php echo site_url('index.php/admin/social_media/create_or_update_social_media'); ?>" enctype="multipart/form-data">
+                                        action="<?php echo site_url('admin/social_media/create_or_update'); ?>" enctype="multipart/form-data">
                                       
                                         <p class="card-description">Social Media Details</p>
 

@@ -326,7 +326,7 @@ class Home_model extends CI_Model
     public function getSeoRecordById($id)
     {
         // Retrieve a specific SEO record by ID
-        return $this->db->get_where('static_pages_seo', array('id' => $id))->row_array();
+        return $this->db->get_where('static_pages_seo', array('page_id' => $id))->row_array();
     }
     
 }

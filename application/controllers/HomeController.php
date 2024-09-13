@@ -258,7 +258,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	{
 		$data['blogs'] = $this->Home_model->get_all_blogs();
 
-		$data['page_title'] = "Blogs Details || Digital win ||";
+		
 		$data['blog'] = $this->Home_model->get_blog_by_id($blog_id);
 
 		// $data['meta_data'] =  $this->Home_model->getSeoRecordById('home'); 
