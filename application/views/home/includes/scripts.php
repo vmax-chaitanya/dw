@@ -439,6 +439,16 @@
             this.value = this.value.replace(/[^a-zA-Z\s]/g, '');
         });
     });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the input element by its name attribute
+        var nameInput = document.querySelector("input[name='career_name']");
+
+        // Add an input event listener to the name input field
+        nameInput.addEventListener("input", function() {
+            // Remove any non-alphabet characters (including numbers)
+            this.value = this.value.replace(/[^a-zA-Z\s]/g, '');
+        });
+    });
 </script>
 <!-- //////select all checkboxez// -->
 <script>
