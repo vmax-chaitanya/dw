@@ -508,7 +508,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 // 		$smtp_port = 25;
 
 // 		$mail_from = "info@digitalwinbusinessagency.com";
-// 		$mail_from_name = "Digital Marketing Agency";
+// 		$mail_from_name = "Digital Win Business Agency";
 
 // 		$mail_to = "chaitanyakadali3@gmail.com";
 // 		$mail_to_name = "RDS Support";
@@ -588,6 +588,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 // 	}
 	public function send_email_contact_form($message,$services_names,$subject)
 	{
+		if (!empty($message['name'])) {
 		//echo "fg"; exit;
 		//	print_r($message); exit();
 		$this->load->library('Phpmailer');
@@ -686,7 +687,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		$smtp_port = 25;
 
 		$mail_from = "info@digitalwinbusinessagency.com";
-		$mail_from_name = "Digital Marketing Agency";
+		$mail_from_name = "Digital Win Business Agency";
 
 		$mail_to = "chaitanyakadali3@gmail.com";
 		$mail_to_name = "Chaitanya";
@@ -716,6 +717,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 			//echo "Message sent!";
 		}
 		return true;
+	}
 	}
 
 
@@ -781,6 +783,8 @@ $data['captcha_image'] = $this->generate_captcha(0);
 	}
 	public function send_email_career_form($message,$subject)
 	{
+
+		if (!empty($message['name'])) {
 		//echo "fg"; exit;
 		//	print_r($message); exit();
 		$this->load->library('Phpmailer');
@@ -862,7 +866,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 		$smtp_port = 25;
 
 		$mail_from = "info@digitalwinbusinessagency.com";
-		$mail_from_name = "Digital Marketing Agency";
+		$mail_from_name = "Digital Win Business Agency";
 
 		$mail_to = "chaitanyakadali3@gmail.com";
 		$mail_to_name = "Chaitanya"; 
@@ -890,6 +894,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 			//echo "Message sent!";
 		}
 		return true;
+	}
 	}
 
 	public function generate_captcha($return_image) {
