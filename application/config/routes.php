@@ -82,6 +82,7 @@ $route['blog-detail/(:num)'] = 'HomeController/blog_detail/$1';
 $route['careers'] = 'HomeController/careers';
 $route['seo'] = 'HomeController/seo';
 $route['generate-captcha/(:any)'] = 'HomeController/generate_captcha/$1';
+$route['outdoor-advertising'] = 'HomeController/OutdoorAdvertising';
 
 //////////Home Controller//////
 

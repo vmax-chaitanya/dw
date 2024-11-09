@@ -71,6 +71,8 @@ class HomeController extends CI_Controller
 		$this->load->view('home/disclamer', $data);
 	}
 
+
+
 	public function why_only_we()
 	{
 		$data['meta_data'] =  $this->Home_model->getSeoRecordById('5'); 
@@ -937,4 +939,24 @@ $data['captcha_image'] = $this->generate_captcha(0);
 			return $captcha['image'];
 		}
     }
+
+
+
+
+
+
+
+
+	//08/11/2024//
+
+	public function OutdoorAdvertising()
+	{
+		$data['meta_data'] =  $this->Home_model->getSeoRecordById('10'); 
+		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
+		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
+		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
+		
+
+		$this->load->view('home/OutdoorAdvertising', $data);
+	}
 }
