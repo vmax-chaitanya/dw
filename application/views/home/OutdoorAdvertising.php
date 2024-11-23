@@ -52,7 +52,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li class="active">about us</li>
                     </ul> -->
-                    <h2>about us</h2>
+                    <h2>Outdoor Advertising</h2>
                 </div>
             </div>
         </section>
@@ -73,20 +73,20 @@
                             <div class="carousel-item active">
                                 <div class="card-wrapper container-sm d-flex  justify-content-around">
                                     <div class="card  " style="width:  22rem;">
-                                        <img src="<?php echo base_url(); ?>assets/images/outdoors/liquid_led_letters.jpg" class="card-img-top" alt="...">
+                                        <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Roll_up_Standees.png" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Roll-Up standee flex
-                                            </h5>
+                                        <h3 class="blog-one__title" style="text-align: center;">Roll-Up standee flex
+                                        </h3>
                                             <p class="services-two__text">
                                                 Our Roll-Up Standee Flex is designed to make a lasting impression and effectively convey your message to your target audience.
                                             </p>
                                         </div>
                                     </div>
                                     <div class="card" style="width:  22rem;">
-                                        <img src="<?php echo base_url(); ?>assets/images/outdoors/liquid_led_letters.jpg" class="card-img-top" alt="...">
+                                        <img src="<?php echo base_url(); ?>assets/home/images/outdoor/visiting_card.png" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Visiting Cards
-                                            </h5>
+                                        <h3 class="blog-one__title" style="text-align: center;">Visiting Cards
+                                        </h3>
                                             <p class="services-two__text">
                                                 Our company provides visually appealing, superior quality visiting cards that leave a lasting impression.
 
@@ -94,9 +94,9 @@
                                         </div>
                                     </div>
                                     <div class="card" style="width:  22rem;">
-                                        <img src="<?php echo base_url(); ?>assets/images/outdoors/liquid_led_letters.jpg" class="card-img-top" alt="...">
+                                        <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Pamphlet.png" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Pamphlet Designing</h5>
+                                        <h3 class="blog-one__title" style="text-align: center;">Pamphlet Designing</h3>
                                             <p class="services-two__text">
                                                 Our company specializes in professional pamphlet designing services, we strive to deliver visually appealing and impactful designs that effectively communicate your message.
                                             </p>
@@ -107,18 +107,18 @@
                             <div class="carousel-item">
                                 <div class="card-wrapper container-sm d-flex   justify-content-around">
                                     <div class="card  " style="width:  22rem;">
-                                        <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                        <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Brochures.png" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Brochures</h5>
+                                        <h3 class="blog-one__title" style="text-align: center;">Brochures</h3>
                                             <p class="services-two__text">
                                                 we offer wide range of creative services such as logo design, flyer design, brochure design, poster design, catalogue design and much more.
                                             </p>
                                         </div>
                                     </div>
                                     <div class="card" style="width:  22rem;">
-                                        <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                        <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Bill_Book.png" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">Bill Book</h5>
+                                        <h3 class="blog-one__title" style="text-align: center;">Bill Book</h3>
                                             <p class="services-two__text">
                                                 Personalize this impressive Professional Bill Book Design template. Excellent print quality and speedy delivery
 
@@ -127,9 +127,9 @@
                                         </div>
                                     </div>
                                     <div class="card" style="width:  22rem;">
-                                        <img src="https://source.unsplash.com/collection/190727/1600x900" class="card-img-top" alt="...">
+                                        <img src="<?php echo base_url(); ?>assets/home/images/outdoor/LED_Photo_Frame.png" class="card-img-top" alt="...">
                                         <div class="card-body">
-                                            <h5 class="card-title">LED Photo Frames (Standard Sizes)</h5>
+                                        <h3 class="blog-one__title" style="text-align: center;">LED Photo Frames (Standard Sizes)</h3>
                                             <p class="services-two__text">
                                                 Light up your favorite photos with our customized LED photo frames with Standard SizesOnly.
 
@@ -172,7 +172,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/led_sign_board.jpg" alt="LED Sign board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/led_sign.png" alt="LED Sign board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -189,7 +189,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/open_led_board.jpg" alt="Open LED Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/OpenLEDBoard.png" alt="Open LED Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -206,7 +206,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/liquid_led_letters.jpg" alt="Liquid LED Letters Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Liquid_LED_Letters.png" alt="Liquid LED Letters Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -223,7 +223,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/closed_led_board.jpg" alt="Closed LED Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Closed_LED.png" alt="Closed LED Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -240,7 +240,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/backlit_board.jpg" alt="Backlit Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Backlit_Board.png" alt="Backlit Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -257,7 +257,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/flex_board.jpg" alt="FLEX Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/flex_board.png" alt="FLEX Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -274,7 +274,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/vinyl_sun_foam_board.jpg" alt="Vinyl Sun / Foam Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Vinyl_Sun.png" alt="Vinyl Sun / Foam Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -291,7 +291,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/one_way_vision_board.jpg" alt="One Way Vision Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/One_Way_Vision_Board.png" alt="One Way Vision Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -308,7 +308,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/acp_cladding_work.jpg" alt="ACP Cladding Work">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/ACP_Cladding_Work.png" alt="ACP Cladding Work">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -325,7 +325,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/roll_up_standees.jpg" alt="Roll up Standee’s">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Roll_up_Standees.png" alt="Roll up Standee’s">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -342,7 +342,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/promotional_canopy.jpg" alt="Promotional Canopy Outdoor">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Promotional_Canopy_Outdoor.png" alt="Promotional Canopy Outdoor">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -359,7 +359,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/ss_letters_board.jpg" alt="SS Letters Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/SS_Letters_Board.png" alt="SS Letters Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -376,7 +376,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/channel_led_board.jpg" alt="Channel LED Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/channel.png" alt="Channel LED Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -393,7 +393,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/pixel_led_board.jpg" alt="Pixel LED Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Pixel_LED_Board.png" alt="Pixel LED Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -411,7 +411,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/corporate_reception_logo.jpg" alt="Corporate Reception Logo">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Corporate_Reception_Logo.png" alt="Corporate Reception Logo">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -428,7 +428,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/gazebo_tent.jpg" alt="Gazebo Tent">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Gazebo_Tent.png" alt="Gazebo Tent">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -445,7 +445,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/clip_on_boards.jpg" alt="Clip-on Boards">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Clip_on_Boards.png" alt="Clip-on Boards">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -462,7 +462,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/company_promotional_acrylic_board.jpg" alt="Company Promotional Acrylic Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Company_Promotional_Acrylic.png" alt="Company Promotional Acrylic Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -479,7 +479,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/totem_board.jpg" alt="Totem Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Totem_Board.png" alt="Totem Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -496,7 +496,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/road_signage_board.jpg" alt="Road Signage Boards / RetroVinyl Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Road_Signage_Boards.png" alt="Road Signage Boards / RetroVinyl Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -513,7 +513,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/company_logo_brand.jpg" alt="Company Logo Brand">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Company_Logo_Brand.png" alt="Company Logo Brand">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -530,7 +530,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/fabric_board.jpg" alt="Fabric Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Fabric_Board.png" alt="Fabric Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -547,7 +547,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/3d_acrylic_display_board.jpg" alt="3D Acrylic Display Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Company_Promotional_Acrylic.png" alt="3D Acrylic Display Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -564,7 +564,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/led_photo_frame.jpg" alt="LED Photo Frame">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/LED_Photo_Frame.png" alt="LED Photo Frame">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -581,7 +581,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/ss_name_plates.jpg" alt="SS Name Plates">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/SS_Name_Plates.png" alt="SS Name Plates">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
@@ -594,105 +594,110 @@
                         </div>
                     </div>
 
-                    <!-- Item 26 to Item 31: Remaining Items -->
-                    <!-- Follow the same structure, adjusting image source and content text as needed -->
-                    <!-- Item 26: Glass Door Vinyl -->
+                    
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/glass_door_vinyl.jpg" alt="Glass Door Vinyl">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Business_Card_Display.png" alt="Glass Door Vinyl">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
-                                    <a href="javascript:void(0);">Glass Door Vinyl</a>
+                                    <a href="javascript:void(0);">Business Card Display Board</a>
                                 </h3>
                                 <p class="services-two__text">
-                                    Decorate glass doors with customized vinyl designs for enhanced privacy and aesthetics.
+                                   It Enables You to Choose Digital Flex Printing Services for Desired Sign Boards, Hoardings, Digital Prints, Blow-ups 
+
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 27: Wall Graphics & Murals -->
+                 
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/wall_graphics_murals.jpg" alt="Wall Graphics & Murals">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Business_Card.png" alt="Wall Graphics & Murals">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
-                                    <a href="javascript:void(0);">Wall Graphics & Murals</a>
+                                    <a href="javascript:void(0);"> Business Cards
+</a>
                                 </h3>
                                 <p class="services-two__text">
-                                    Transform any space with custom wall graphics and murals, bringing life to your walls.
+                                   We Provide a Business Card With High-quality Printing and Creative Designing Services So That Your Business Card Can Speak About Your Business in Hyderabad
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 28: Outdoor Banners -->
+                  
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/outdoor_banners.jpg" alt="Outdoor Banners">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Letterheads.png" alt="Outdoor Banners">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
-                                    <a href="javascript:void(0);">Outdoor Banners</a>
+                                    <a href="javascript:void(0);">Letterheads</a>
                                 </h3>
                                 <p class="services-two__text">
-                                    Durable outdoor banners for effective marketing, resistant to various weather conditions.
+                                    Build up your recognition with Printed Letterheads that’ll keep your office prepared and coordinated.
+
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 29: Roll-Up Stands -->
+                  
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/roll_up_stands.jpg" alt="Roll-Up Stands">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Vinyl_Branding.png" alt="Roll-Up Stands">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
-                                    <a href="javascript:void(0);">Roll-Up Stands</a>
+                                    <a href="javascript:void(0);">Vinyl Branding
+</a>
                                 </h3>
                                 <p class="services-two__text">
-                                    Portable and easy-to-set-up roll-up stands, perfect for trade shows, events, and more.
+                                    Vinyl branding flex prints are versatile and highly customizable marketing materials suitable for a variety of promotional purposes. 
+
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 30: Frosted Glass Films -->
+                  
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/frosted_glass_films.jpg" alt="Frosted Glass Films">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Flute_Board.png" alt="Frosted Glass Films">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
-                                    <a href="javascript:void(0);">Frosted Glass Films</a>
+                                    <a href="javascript:void(0);"> Flute Board
+</a>
                                 </h3>
                                 <p class="services-two__text">
-                                    Enhance privacy with frosted glass films, adding a stylish touch to office interiors.
+                                   Flute board prints are high-quality printed materials commonly used in the advertising and packaging industries. Flute board, also known as corrugated cardboard.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Item 31: 3D Logo Signage -->
+                  
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/images/outdoors/3d_logo_signage.jpg" alt="3D Logo Signage">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/Pamphlet.png" alt="3D Logo Signage">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">
-                                    <a href="javascript:void(0);">3D Logo Signage</a>
+                                    <a href="javascript:void(0);"> Pamphlet’s</a>
                                 </h3>
                                 <p class="services-two__text">
-                                    Make a lasting impression with 3D logo signage, ideal for corporate branding.
+                                  Pamphlet's printing services offer high-quality, professional printing solutions for various needs. With a focus on detail and precision
+
                                 </p>
                             </div>
                         </div>
