@@ -56,6 +56,7 @@
                                                             <option value="11">Privacy Policy</option>
                                                             <option value="12">Gallery</option>
                                                             <option value="13">Sarevices category</option>
+                                                            <option value="14">Outdoor Advertising</option>
                                                            
                                                         </select>
                                                     </div>

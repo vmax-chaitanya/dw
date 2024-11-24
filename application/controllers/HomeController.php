@@ -951,7 +951,7 @@ $data['captcha_image'] = $this->generate_captcha(0);
 
 	public function OutdoorAdvertising()
 	{
-		$data['meta_data'] =  $this->Home_model->getSeoRecordById('10'); 
+		$data['meta_data'] =  $this->Home_model->getSeoRecordById('14'); 
 		$data['page_title'] = !empty($data['meta_data']['meta_name']) ? $data['meta_data']['meta_name'] :"page_title";
 		$data['meta_description'] = !empty($data['meta_data']['meta_description']) ? $data['meta_data']['meta_description'] :"meta_description";
 		$data['meta_keywords'] = !empty($data['meta_data']['meta_keywords'])? $data['meta_data']['meta_keywords'] :"meta_keywords";
