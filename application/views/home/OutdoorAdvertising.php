@@ -257,7 +257,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="blog-one__single">
                             <div class="blog-one__img">
-                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/flex_board.png" alt="FLEX Board">
+                                <img src="<?php echo base_url(); ?>assets/home/images/outdoor/FLEX_Board.png" alt="FLEX Board">
                             </div>
                             <div class="blog-one__content">
                                 <h3 class="blog-one__title" style="text-align: center;">

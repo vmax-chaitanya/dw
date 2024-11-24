@@ -81,7 +81,7 @@
                                 </li>
                             </ul>
                         </li> -->
-                        <li class="<?= ($uri == 'services' || $uri == 'category-services' ) ? 'dropdown current' : 'dropdown'; ?>">
+                        <li class="<?= ($uri == 'services' || $uri == 'category-services' ||$uri = 'outdoor-advertising' ) ? 'dropdown current' : 'dropdown'; ?>">
                             <a href="<?php echo base_url(); ?>services" >Services</a>
                             <ul>
                                 <?php foreach ($categories as $category): ?>
@@ -99,6 +99,12 @@
                                 </ul>
                             </li>
                         <?php endforeach; ?>
+                        <!-- Static menu item for Outdoor -->
+                        <li class="">
+                            <a href="<?php echo base_url(); ?>category-services/outdoor-advertising">
+                            Outdoor Advertising
+                            </a>
+                        </li>
                     </ul>
                     </li>
                     <li class="<?= ($uri == 'training') ? 'dropdown current' : 'dropdown'; ?>">
