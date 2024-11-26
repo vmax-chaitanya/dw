@@ -18,6 +18,8 @@
             margin-bottom: 25px;
             text-align: left !important;
         }
+
+        
     </style>
 </head>
 
@@ -68,7 +70,7 @@
                     </h2>
                 </div>
                 <div class="row">
-                    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="2500">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="card-wrapper container-sm d-flex  justify-content-around">
@@ -140,16 +142,16 @@
                                 </div>
                             </div>
 
-                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                                data-bs-slide="prev">
+                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" 
+                                data-bs-slide="prev" style="padding-right: 150px;">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                                data-bs-slide="next">
+                                data-bs-slide="next" style="padding-left: 150px;">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
-                            </button> -->
+                            </button>
                         </div>
                     </div>
                 </div>

@@ -101,7 +101,7 @@
                         <?php endforeach; ?>
                         <!-- Static menu item for Outdoor -->
                         <li class="">
-                            <a href="<?php echo base_url(); ?>category-services/outdoor-advertising">
+                            <a href="<?php echo base_url(); ?>outdoor-advertising">
                             Outdoor Advertising
                             </a>
                         </li>
